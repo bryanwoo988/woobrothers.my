@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -17,14 +17,16 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Woo Brothers">
 <meta property="og:url" content="https://woobrothers.my/">
-<meta property="og:title" content="Woo Brothers · 免费农业 App">
-<meta property="og:description" content="免费、非营利的农业 App，支持华文、English、Bahasa Malaysia。Free farm apps for growers in Malaysia.">
-<meta property="og:image" content="https://woobrothers.my/img/brand/og-image.png">
-<meta property="og:image:type" content="image/png">
+<meta property="og:title" content="Woo Brothers · Free farm apps">
+<meta property="og:description" content="Free, non-profit farm apps for growers in Malaysia. Aplikasi pertanian percuma. 免费农业 App。">
+<meta property="og:image" content="https://woobrothers.my/img/brand/og-image.jpg?v=2">
+<meta property="og:image:secure_url" content="https://woobrothers.my/img/brand/og-image.jpg?v=2">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Woo Brothers · Agritech Software">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://woobrothers.my/img/brand/og-image.jpg?v=2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;700&display=swap">
@@ -270,6 +272,8 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
 }
 @media (max-width:560px){
   .brand-mark{width:38px;height:38px}
+  .lp-logo img:first-child{width:46px;height:46px}
+  .lp-logo img:last-child{height:30px}
   .brand-word{height:24px}
   .wrap{padding-inline:16px}
   .nav .navlink{display:none}
@@ -284,10 +288,34 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
   .demo{padding:20px}
 }
 @media (max-width:380px){.brand-mark{width:34px;height:34px}.brand-word{height:21px}.brand{gap:8px}}
+.lp{position:fixed;inset:0;z-index:50;background:var(--deep);color:var(--on-deep);display:grid;place-items:center;padding:24px 16px;overflow:auto}
+.lp[hidden]{display:none}
+.lp-box{width:100%;max-width:400px;text-align:center}
+.lp-logo{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:40px}
+.lp-logo img:first-child{width:56px;height:56px}
+.lp-logo img:last-child{height:36px;width:auto}
+.lp h2{font:600 22px var(--font-display);margin:0 0 6px}
+.lp p{color:var(--on-deep-2);margin:0 0 28px;font-size:15px}
+.lp-opts{display:grid;gap:10px}
+.lp-opts .btn{width:100%;justify-content:center}
+.lp-opts .btn.line-dark{background:transparent}
+html.lp-open{overflow:hidden}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
+<div class="lp" id="langPick" role="dialog" aria-modal="true" aria-labelledby="lpTitle" hidden>
+  <div class="lp-box">
+    <div class="lp-logo"><img src="img/brand/emblem-108.png" alt=""><img src="img/brand/wordmark.png" alt="Woo Brothers"></div>
+    <h2 id="lpTitle">Choose your language</h2>
+    <p>Pilih bahasa · 选择语言</p>
+    <div class="lp-opts">
+      <button class="btn primary" type="button" data-pick="en" lang="en">English</button>
+      <button class="btn line-dark" type="button" data-pick="ms" lang="ms">Bahasa Malaysia</button>
+      <button class="btn line-dark" type="button" data-pick="zh" lang="zh-Hans">华文</button>
+    </div>
+  </div>
+</div>
 
 <header class="top">
   <div class="wrap">
@@ -599,7 +627,7 @@ soonTitle:"Lebih banyak aplikasi akan datang",soonText:"Kami dan rakan-rakan aka
 foot:"© 2026 Woo Brothers · Bukan untung · Dikongsi percuma"}
 };
 const ORDER=["zh","en","ms"];
-let lang="zh";
+let lang="en";
 try{const s=localStorage.getItem("wb-lang");if(ORDER.includes(s))lang=s;}catch(e){}
 let APPS=[],appsReady=false;
 const $=id=>document.getElementById(id);
@@ -834,6 +862,19 @@ $("langBtn").addEventListener("click",()=>{
   try{localStorage.setItem("wb-lang",lang)}catch(e){}
   apply();
 });
+/* First visit: ask for a language. English is the default if they close it with Esc. */
+(()=>{
+  const box=$("langPick");let first=false;
+  try{first=localStorage.getItem("wb-lang")===null}catch(e){}
+  if(!first)return;
+  const pick=l=>{lang=l;try{localStorage.setItem("wb-lang",l)}catch(e){}
+    box.hidden=true;document.documentElement.classList.remove("lp-open");document.removeEventListener("keydown",esc);apply()};
+  const esc=e=>{if(e.key==="Escape")pick("en")};
+  box.querySelectorAll("[data-pick]").forEach(b=>b.addEventListener("click",()=>pick(b.dataset.pick)));
+  document.addEventListener("keydown",esc);
+  box.hidden=false;document.documentElement.classList.add("lp-open");
+  box.querySelector("[data-pick]").focus();
+})();
 
 /* ---------- light / dark ---------- */
 const root=document.documentElement,mq=matchMedia("(prefers-color-scheme: dark)");
