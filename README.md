@@ -15,6 +15,8 @@ Woo Brothers 农业 App 网站。免费、非营利。
 
 ## 加一个新 App
 
+朋友要加 App：请他们照 [`app-template.md`](app-template.md) 填好，连同图片发过来。
+
 1. 把图片上传到 `img/`，例如 `img/myapp-logo.png`。
 2. 打开 `apps.json`，复制一整个 `{ … }` 区块，贴在最后一个 App 后面。
 3. 前一个 App 的 `}` 后面要加逗号 `,`。
