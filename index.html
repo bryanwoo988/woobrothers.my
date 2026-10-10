@@ -72,9 +72,9 @@ button,input{font-family:inherit}
 /* top bar */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--deep);color:var(--on-deep);border-bottom:1px solid var(--deep-line)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.brand-mark{display:block;width:36px;height:36px}
-.brand-word{display:block;height:19px;width:auto}
-.brand{font-family:var(--font-display);font-weight:600;font-size:19px;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand-mark{display:block;width:44px;height:44px}
+.brand-word{display:block;height:32px;width:auto}
+.brand{font-family:var(--font-display);font-weight:600;font-size:19px;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:14px}
 .nav{display:flex;align-items:center;gap:6px}
 .nav a{font:500 15px var(--font-body);text-decoration:none;padding:10px 12px;color:var(--on-deep-2)}
 .nav a:hover,.nav a[aria-current="page"]{color:var(--on-deep)}
@@ -269,7 +269,8 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
   .dhead .dact{grid-column:1/-1}
 }
 @media (max-width:560px){
-  .brand-word{height:14px}
+  .brand-mark{width:38px;height:38px}
+  .brand-word{height:24px}
   .wrap{padding-inline:16px}
   .nav .navlink{display:none}
   .promise-grid{grid-template-columns:minmax(0,1fr)}
@@ -282,7 +283,7 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
   .dlogo{width:64px;height:64px}
   .demo{padding:20px}
 }
-@media (max-width:380px){.brand-word{height:12px}.brand{gap:8px}}
+@media (max-width:380px){.brand-mark{width:34px;height:34px}.brand-word{height:21px}.brand{gap:8px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -292,7 +293,7 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Woo Brothers">
       <img class="brand-mark" src="img/brand/emblem-108.png" width="36" height="36" alt="">
-      <img class="brand-word" src="img/brand/wordmark.png" width="250" height="19" alt="">
+      <img class="brand-word" src="img/brand/wordmark.png" width="248" height="32" alt="">
     </a>
     <nav class="nav" aria-label="Main">
       <a class="navlink" href="#home" id="navHome" data-i18n="navHome"></a>
