@@ -31,6 +31,7 @@ Woo Brothers 农业 App 网站。免费、非营利。
 | `category` | 类别：`weather` `field` `pest` `learn` `manage` | `"weather"` |
 | `url` | App 网址；还没有就写 `null` | `"https://…"` |
 | `logo` / `cover` | 图片路径；没有就写 `null` | `"img/myapp-logo.png"` |
+| `cover` 多张 | 放几张图片就会自动轮播（每 5 秒换一张，也可以左右滑） | `["img/myapp-cover.jpg", "img/myapp-cover-2.jpg"]` |
 | `languages` | 支持的语言 | `["BM", "EN", "华"]` |
 | `keywords` | 额外搜索关键字，用空格分开 | `"rain hujan 下雨"` |
 | `screenshots` | 截图路径列表，可以空 `[]` | `["img/myapp-1.png"]` |

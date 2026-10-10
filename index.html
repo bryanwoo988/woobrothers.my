@@ -189,6 +189,13 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-
 .acard:hover{border-color:var(--line-strong);transform:translateY(-2px)}
 .cover{aspect-ratio:16/9;max-width:100%;position:relative;background:var(--deep);display:block}
 .cover img.cimg{width:100%;height:100%;object-fit:cover;display:block}
+.cover .slides{display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.cover .slides::-webkit-scrollbar{display:none}
+.cover .slides img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;display:block;scroll-snap-align:start}
+.cover .dots{position:absolute;right:8px;bottom:6px;display:flex;z-index:2}
+.cover .dots span{padding:6px;cursor:pointer}
+.cover .dots span::before{content:"";display:block;width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.45);box-shadow:0 0 2px rgba(0,0,0,.5)}
+.cover .dots span.on::before{background:#fff}
 .cover .pattern{position:absolute;inset:0;background-image:linear-gradient(var(--deep-line) 1px,transparent 1px),linear-gradient(90deg,var(--deep-line) 1px,transparent 1px);background-size:28px 28px;opacity:.6}
 .cover .glyph{position:absolute;right:20px;bottom:16px;color:var(--accent);opacity:.9}
 .logo{position:absolute;left:20px;bottom:-22px;width:56px;height:56px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font:700 18px var(--font-display);color:var(--fg);overflow:hidden;z-index:1}
@@ -696,7 +703,9 @@ function drawDir(){
   $("emptyState").hidden=list.length>0;
   $("appGrid").innerHTML=list.map(a=>{
     const t=a[lang]||a.en||{},c=catOf(a);
-    const cover=a.cover?`<img class="cimg" src="${esc(a.cover)}" alt="" loading="lazy">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
+    const covers=[].concat(a.cover||[]);
+    const cover=covers.length>1?`<div class="slides">${covers.map(u=>`<img src="${esc(u)}" alt="" loading="lazy">`).join("")}</div><span class="dots">${covers.map((_,i)=>`<span data-i="${i}"${i?"":' class="on"'}></span>`).join("")}</span>`
+      :covers.length?`<img class="cimg" src="${esc(covers[0])}" alt="" loading="lazy">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
     const logo=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
     return `<article class="acard">
       <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(a.name)}">${cover}<span class="logo">${logo}</span></a>
@@ -709,6 +718,29 @@ function drawDir(){
   }).join("");
 }
 $("q").addEventListener("input",e=>{query=e.target.value.trim();drawDir()});
+
+/* Cover slideshow: swipe by hand, or it moves on by itself every 5 s. A swipe or dot tap pauses it for 8 s. */
+const slideTo=(el,i)=>el.scrollTo({left:i*el.clientWidth,behavior:"smooth"});
+const holdSlides=el=>{el.dataset.hold=Date.now()};
+document.addEventListener("scroll",e=>{
+  const el=e.target;if(!el.classList||!el.classList.contains("slides"))return;
+  const i=Math.round(el.scrollLeft/el.clientWidth);
+  el.parentElement.querySelectorAll(".dots span").forEach((d,k)=>d.classList.toggle("on",k===i));
+},true);
+for(const ev of ["pointerdown","touchstart","wheel"])document.addEventListener(ev,e=>{const el=e.target.closest&&e.target.closest(".slides");if(el)holdSlides(el)},{capture:true,passive:true});
+document.addEventListener("click",e=>{
+  const d=e.target.closest&&e.target.closest(".dots span");if(!d)return;
+  e.preventDefault();e.stopPropagation();
+  const el=d.closest(".cover").querySelector(".slides");holdSlides(el);slideTo(el,+d.dataset.i);
+},true);
+setInterval(()=>{
+  if(document.hidden||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  document.querySelectorAll(".slides").forEach(el=>{
+    if(!el.clientWidth||Date.now()-(+el.dataset.hold||0)<8000)return;
+    const n=el.children.length,i=Math.round(el.scrollLeft/el.clientWidth);
+    slideTo(el,(i+1)%n);
+  });
+},5000);
 $("qClear").addEventListener("click",()=>{$("q").value="";query="";drawDir();$("q").focus()});
 
 /* ---------- detail page ---------- */

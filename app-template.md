@@ -60,7 +60,7 @@
 | 图片 | 文件名 | 规格 | 必须？ |
 |---|---|---|---|
 | Logo | `代号-logo.png` | 正方形，至少 512×512，PNG | 建议有 |
-| 封面 | `代号-cover.jpg` | 横向 16:9，例如 1280×720 | 可以没有 |
+| 封面 | `代号-cover.jpg`，多张就 `代号-cover-2.jpg`、`代号-cover-3.jpg`…… | 横向 16:9，例如 1280×720。多张会自动轮播 | 可以没有 |
 | 截图 | `代号-1.png`、`代号-2.png`…… | 手机直式截图，最多 5 张，按顺序编号 | 建议 2–3 张 |
 
 没有 logo 的话，网站会用 App 名字的第一个字母代替；没有封面，会用深绿格子底加类别小图标。
@@ -116,7 +116,7 @@
 | 搜索关键字 | `keywords` |
 | 一句话介绍 / 详细介绍 / 功能 | `zh` / `en` / `ms` 里的 `tagline` / `description` / `features` |
 | `代号-logo.png` | `logo` → `img/代号-logo.png` |
-| `代号-cover.jpg` | `cover` → `img/代号-cover.jpg` |
+| `代号-cover.jpg`（多张） | `cover` → `"img/代号-cover.jpg"`，多张用列表 `["img/代号-cover.jpg", "img/代号-cover-2.jpg"]` |
 | `代号-1.png`…… | `screenshots` → `["img/代号-1.png", …]` |
 | 联系人 | 不放进 `apps.json` |
 

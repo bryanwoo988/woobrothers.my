@@ -5,7 +5,7 @@
     "category": "weather",
     "url": "https://bryanwoo988.github.io/CompareCast/",
     "logo": "img/comparecast-logo.png",
-    "cover": "img/comparecast-cover.jpg",
+    "cover": ["img/comparecast-cover.jpg", "img/comparecast-cover-2.jpg"],
     "languages": ["BM", "EN", "华"],
     "keywords": "rain hujan 下雨 雨 forecast ramalan 预报 weather cuaca 天气 wind angin 风 gust model ECMWF GFS ICON plot 地块 reminder peringatan 提醒",
     "screenshots": [],
