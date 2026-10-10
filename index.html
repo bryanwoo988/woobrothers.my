@@ -5,6 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Woo Brothers</title>
 <meta name="description" content="Woo Brothers: free farm apps for farmers and growers in Malaysia. Non-profit, nothing for sale.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/brand/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#122E20">
+<meta name="apple-mobile-web-app-title" content="Woo Brothers">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Woo Brothers">
+<meta property="og:url" content="https://woobrothers.my/">
+<meta property="og:title" content="Woo Brothers · 免费农业 App">
+<meta property="og:description" content="免费、非营利的农业 App，支持华文、English、Bahasa Malaysia。Free farm apps for growers in Malaysia.">
+<meta property="og:image" content="https://woobrothers.my/img/brand/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Woo Brothers · Agritech Software">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;700&display=swap">
@@ -52,6 +72,7 @@ button,input{font-family:inherit}
 /* top bar */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--deep);color:var(--on-deep);border-bottom:1px solid var(--deep-line)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand-mark{display:block;width:36px;height:36px}
 .brand{font-family:var(--font-display);font-weight:600;font-size:19px;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:10px}
 .nav{display:flex;align-items:center;gap:6px}
 .nav a{font:500 15px var(--font-body);text-decoration:none;padding:10px 12px;color:var(--on-deep-2)}
@@ -267,7 +288,7 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Woo Brothers">
-      <svg width="26" height="26" viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3c6 4 9 9 9 14a9 9 0 0 1-18 0c0-5 3-10 9-14Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 10v15" stroke="#D9A821" stroke-width="1.8"/></svg>
+      <img class="brand-mark" src="img/brand/emblem-108.png" width="36" height="36" alt="">
       Woo Brothers
     </a>
     <nav class="nav" aria-label="Main">
@@ -377,6 +398,17 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
           <div class="cacts">
             <a class="btn primary sm" href="https://wa.me/601140015077" target="_blank" rel="noopener" data-goatcounter-click="contact-whatsapp"><span data-i18n="waBtn"></span></a>
             <button class="copy" type="button" data-copy="wa" data-i18n="copy"></button>
+          </div>
+        </div>
+        <div class="ccard">
+          <div>
+            <div class="k">WhatsApp</div>
+            <div class="v" id="wa2">+60 19-382 4740</div>
+            <div class="who">Stanley Woo</div>
+          </div>
+          <div class="cacts">
+            <a class="btn primary sm" href="https://wa.me/60193824740" target="_blank" rel="noopener" data-goatcounter-click="contact-whatsapp-stanley"><span data-i18n="waBtn"></span></a>
+            <button class="copy" type="button" data-copy="wa2" data-i18n="copy"></button>
           </div>
         </div>
       </div>

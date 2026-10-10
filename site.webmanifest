@@ -1,0 +1,15 @@
+{
+  "name": "Woo Brothers",
+  "short_name": "Woo Brothers",
+  "description": "Free farm apps for growers in Malaysia. Non-profit.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#122E20",
+  "icons": [
+    { "src": "img/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "img/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "img/brand/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

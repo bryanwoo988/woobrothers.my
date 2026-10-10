@@ -9,6 +9,8 @@ Woo Brothers 农业 App 网站。免费、非营利。
 | `index.html` | 网站页面（首页、App 目录、App 详情页） |
 | `apps.json` | **所有 App 的资料**。加 App 只改这个文件 |
 | `img/` | logo、封面、截图 |
+| `img/brand/` | 网站 logo、主屏幕图标、WhatsApp 分享图。`logo-source.png` 是原图 |
+| `favicon.ico` `apple-touch-icon.png` `site.webmanifest` | 浏览器图标和加到主屏幕的设定，不要删 |
 | `CNAME` | 域名 woobrothers.my，不要删 |
 
 ## 加一个新 App
