@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Woo Brothers</title>
+<meta name="description" content="Woo Brothers: free farm apps for farmers and growers in Malaysia. Non-profit, nothing for sale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+/* Layout: three views in one file — Home, App Directory (#apps, searchable grid) and App Detail (#app-<id>). App data lives in apps.json. Deep field green, durian yellow used sparingly, square-cornered controls. */
+:root{
+  --bg:#F3F5EF;--surface:#FFFFFF;--fg:#11241A;--muted:#4D5F53;--line:#D3DACD;--line-strong:#AEB9A8;
+  --deep:#122E20;--on-deep:#ECF1E7;--on-deep-2:#B7C6B6;--deep-line:#2B4A38;
+  --accent:#D9A821;--accent-ink:#7A5800;--on-accent:#1A1400;
+  --fc:#2F7FC1;--good:#2F8F46;--mid:#7E9426;--weak:#C0612A;--error:#B3261E;
+  --r:4px;--r-card:6px;
+  --font-display:"Bricolage Grotesque","Noto Sans SC",system-ui,sans-serif;
+  --font-body:"Figtree","Noto Sans SC",system-ui,sans-serif;
+  --font-data:"JetBrains Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1A12;--surface:#122319;--fg:#E7EDE2;--muted:#9FB1A3;--line:#243A2C;--line-strong:#3A5544;
+    --deep:#08130D;--on-deep:#E7EDE2;--on-deep-2:#9FB1A3;--deep-line:#1F3528;
+    --accent:#E9BC3A;--accent-ink:#E9BC3A;--on-accent:#1A1400;
+    --fc:#62A9E6;--good:#52B469;--mid:#B3C04A;--weak:#E3814A;--error:#F2B8B5;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1A12;--surface:#122319;--fg:#E7EDE2;--muted:#9FB1A3;--line:#243A2C;--line-strong:#3A5544;
+  --deep:#08130D;--on-deep:#E7EDE2;--on-deep-2:#9FB1A3;--deep-line:#1F3528;
+  --accent:#E9BC3A;--accent-ink:#E9BC3A;--on-accent:#1A1400;
+  --fc:#62A9E6;--good:#52B469;--mid:#B3C04A;--weak:#E3814A;--error:#F2B8B5;color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:17px;line-height:1.7;margin:0;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+[hidden]{display:none!important}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:24px}
+h1,h2,h3{font-family:var(--font-display);text-wrap:balance;margin:0;line-height:1.12;letter-spacing:-.01em;font-weight:600}
+p{margin:0}
+a{color:inherit}
+button,input{font-family:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.label{font:600 12px var(--font-body);letter-spacing:.18em;text-transform:uppercase;color:var(--accent-ink);display:flex;align-items:center;gap:12px}
+.label::before{content:"";width:24px;height:1px;background:currentColor}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--deep);color:var(--on-deep);border-bottom:1px solid var(--deep-line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{font-family:var(--font-display);font-weight:600;font-size:19px;letter-spacing:.01em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{font:500 15px var(--font-body);text-decoration:none;padding:10px 12px;color:var(--on-deep-2)}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--on-deep)}
+.nav a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--accent)}
+.sq{font:600 14px var(--font-body);background:transparent;color:var(--on-deep);border:1px solid var(--deep-line);border-radius:var(--r);min-width:44px;min-height:44px;padding:0 12px;cursor:pointer;display:grid;place-items:center}
+.sq:hover{border-color:var(--on-deep-2)}
+.sep{width:1px;height:24px;background:var(--deep-line);margin-inline:6px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;min-height:52px;padding:14px 22px;border-radius:var(--r);font:600 16px var(--font-body);letter-spacing:.01em;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background-color .2s,border-color .2s,color .2s;background:transparent}
+.btn svg{transition:transform .2s;flex:none}
+.btn:hover svg{transform:translateX(4px)}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{background:color-mix(in srgb,var(--accent) 88%,#fff)}
+.btn.line-dark{color:var(--on-deep);border-color:color-mix(in srgb,var(--on-deep) 35%,transparent)}
+.btn.line-dark:hover{border-color:var(--on-deep)}
+.btn.line{color:var(--fg);border-color:var(--line-strong)}
+.btn.line:hover{border-color:var(--fg)}
+.btn.off{color:var(--muted);border:1px dashed var(--line-strong);cursor:default}
+.btn.off:hover svg{transform:none}
+.btn.sm{min-height:44px;padding:10px 16px;font-size:15px;gap:12px}
+
+/* home hero */
+.hero{background:var(--deep);color:var(--on-deep);padding-block:88px 96px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--deep-line) 1px,transparent 1px),linear-gradient(90deg,var(--deep-line) 1px,transparent 1px);background-size:56px 56px;opacity:.35;mask-image:linear-gradient(100deg,transparent 45%,#000 85%);-webkit-mask-image:linear-gradient(100deg,transparent 45%,#000 85%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:64px;align-items:end}
+.hero .label,.dir-hero .label{color:var(--accent)}
+.hero h1{font-size:clamp(38px,6vw,68px);margin-top:22px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{font-size:19px;max-width:32em;margin-top:24px;color:var(--on-deep-2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.facts{border-top:1px solid var(--deep-line)}
+.fact{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--deep-line);align-items:baseline}
+.fact b{font:500 26px var(--font-data);color:var(--accent)}
+.fact span{color:var(--on-deep-2);font-size:15px}
+
+section{padding-block:96px}
+.sec-head{max-width:42em}
+.sec-head h2{font-size:clamp(28px,4vw,44px);margin-top:16px}
+.sec-head p{color:var(--muted);margin-top:16px;font-size:18px}
+
+.why .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px}
+.why .quote{font-family:var(--font-display);font-weight:500;font-size:clamp(24px,3vw,34px);line-height:1.3;margin-top:28px;padding-left:24px;border-left:2px solid var(--accent)}
+.why .body{display:flex;flex-direction:column;gap:20px;font-size:18px;padding-top:44px}
+
+.problems{background:var(--surface);border-block:1px solid var(--line)}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);margin-top:48px;border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden}
+.plist{display:flex;flex-direction:column;border-right:1px solid var(--line)}
+.ptab{display:grid;grid-template-columns:44px minmax(0,1fr) 20px;gap:12px;align-items:center;text-align:left;padding:22px 24px;min-height:76px;background:transparent;border:0;border-bottom:1px solid var(--line);color:var(--muted);cursor:pointer;font:500 17px var(--font-body)}
+.ptab:last-child{border-bottom:0}
+.ptab .n{font:500 13px var(--font-data);color:var(--muted)}
+.ptab svg{opacity:0;transition:opacity .2s,transform .2s;color:var(--accent-ink)}
+.ptab:hover{color:var(--fg)}
+.ptab[aria-selected="true"]{background:var(--bg);color:var(--fg);font-weight:600;box-shadow:inset 3px 0 0 var(--accent)}
+.ptab[aria-selected="true"] svg{opacity:1;transform:translateX(2px)}
+.ppanel{padding:40px;display:flex;flex-direction:column;gap:28px;min-width:0}
+.pblock .k{font:600 12px var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.pblock p{margin-top:10px;font-size:18px}
+.pblock.ours .k{color:var(--accent-ink)}
+.pblock.ours p{font-family:var(--font-display);font-size:clamp(20px,2.4vw,26px);line-height:1.35;font-weight:500}
+.pdots{display:flex;gap:6px;margin-top:auto}
+.pdots i{width:22px;height:3px;background:var(--line)}
+.pdots i.on{background:var(--accent)}
+
+.promise-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:48px;border-top:1px solid var(--line-strong)}
+.pr{padding:28px 24px 8px 0;display:flex;flex-direction:column;gap:12px}
+.pr+.pr{padding-left:24px;border-left:1px solid var(--line)}
+.pr .ix{font:500 13px var(--font-data);color:var(--accent-ink)}
+.pr h3{font-size:21px}
+.pr p{color:var(--muted);font-size:16px}
+
+.band{background:var(--deep);color:var(--on-deep)}
+.band .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) auto;gap:40px;align-items:center}
+.band h2{font-size:clamp(28px,4vw,44px)}
+.band p{color:var(--on-deep-2);margin-top:14px;max-width:34em}
+.band .count{font:500 13px var(--font-data);color:var(--accent);letter-spacing:.06em}
+
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.cards{display:flex;flex-direction:column;border-top:1px solid var(--line-strong)}
+.ccard{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:24px;border-bottom:1px solid var(--line)}
+.ccard .k{font:600 12px var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.ccard .v{font:500 24px var(--font-data);user-select:all;margin-top:4px}
+.ccard .who{color:var(--muted);font-size:15px;margin-top:2px}
+.cacts{display:flex;gap:8px;flex-wrap:wrap}
+.copy{font:600 14px var(--font-body);background:transparent;color:var(--fg);border:1px solid var(--line-strong);border-radius:var(--r);padding:0 16px;min-height:44px;cursor:pointer}
+.copy:hover{border-color:var(--fg)}
+
+footer{background:var(--deep);color:var(--on-deep-2);font-size:14px}
+footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* directory */
+.dir-hero{background:var(--deep);color:var(--on-deep);padding-block:64px 0}
+.dir-hero h1{font-size:clamp(34px,5vw,56px);margin-top:18px}
+.dir-hero p{color:var(--on-deep-2);margin-top:16px;max-width:36em;font-size:18px}
+.toolbar{margin-top:40px;padding-block:20px 24px;border-top:1px solid var(--deep-line);display:flex;flex-direction:column;gap:16px}
+.search{display:flex;align-items:center;gap:12px;background:var(--bg);color:var(--fg);border-radius:var(--r);padding:0 16px;min-height:56px;border:1px solid transparent}
+.search:focus-within{border-color:var(--accent)}
+.search svg{flex:none;color:var(--muted)}
+.search input{flex:1;min-width:0;border:0;background:transparent;color:var(--fg);font:500 17px var(--font-body);min-height:54px;outline:0}
+.search input::placeholder{color:var(--muted)}
+.search button{background:transparent;border:0;color:var(--muted);cursor:pointer;min-width:44px;min-height:44px;font-size:14px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.fchip{font:500 14px var(--font-body);background:transparent;color:var(--on-deep-2);border:1px solid var(--deep-line);border-radius:var(--r);min-height:40px;padding:0 14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.fchip span{font:500 12px var(--font-data);opacity:.7}
+.fchip:hover{color:var(--on-deep);border-color:var(--on-deep-2)}
+.fchip[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.result-line{font:500 13px var(--font-data);color:var(--muted);padding-block:28px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.acard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);display:flex;flex-direction:column;overflow:hidden;transition:border-color .2s,transform .2s}
+.acard:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+.cover{aspect-ratio:16/9;max-width:100%;position:relative;background:var(--deep);display:block}
+.cover img.cimg{width:100%;height:100%;object-fit:cover;display:block}
+.cover .pattern{position:absolute;inset:0;background-image:linear-gradient(var(--deep-line) 1px,transparent 1px),linear-gradient(90deg,var(--deep-line) 1px,transparent 1px);background-size:28px 28px;opacity:.6}
+.cover .glyph{position:absolute;right:20px;bottom:16px;color:var(--accent);opacity:.9}
+.logo{position:absolute;left:20px;bottom:-22px;width:56px;height:56px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font:700 18px var(--font-display);color:var(--fg);overflow:hidden;z-index:1}
+.logo img{width:100%;height:100%;object-fit:cover}
+.acard .body{padding:36px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.acard .meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center}
+.acard h3{font-size:22px}
+.acard .q{color:var(--muted);font-size:15px;flex:1}
+.acard .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.acard .acts .btn{flex:1 1 auto}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font:600 11px var(--font-body);letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--line-strong);border-radius:2px;color:var(--muted)}
+.tag.free{border-color:var(--good);color:var(--good)}
+.langs{font:500 12px var(--font-data);color:var(--muted)}
+mark{background:color-mix(in srgb,var(--accent) 35%,transparent);color:inherit;padding:0 1px}
+.empty{border:1px dashed var(--line-strong);border-radius:var(--r-card);padding:48px 24px;text-align:center;color:var(--muted)}
+.empty h3{color:var(--fg);font-size:22px;margin-bottom:8px}
+.load-error{border:1px solid var(--error);border-left-width:4px;border-radius:var(--r);padding:20px 24px;margin-bottom:20px;background:var(--surface)}
+.load-error h3{color:var(--error);font-size:20px}
+.load-error p{margin-top:8px;color:var(--muted)}
+.load-error code{font:500 14px var(--font-data);color:var(--fg);display:block;margin-top:10px;white-space:pre-wrap;overflow-wrap:anywhere}
+.soon{border:1px dashed var(--line-strong);border-radius:var(--r-card);padding:36px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;margin-block:24px 96px}
+.soon h3{font-size:24px}
+.soon p{color:var(--muted);margin-top:8px}
+
+/* detail */
+.detail-top{background:var(--deep);color:var(--on-deep);padding-block:28px 56px}
+.back{display:inline-flex;align-items:center;gap:10px;color:var(--on-deep-2);text-decoration:none;font:500 15px var(--font-body);min-height:44px}
+.back:hover{color:var(--on-deep)}
+.dhead{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:24px;align-items:center;margin-top:20px}
+.dlogo{width:80px;height:80px;border-radius:var(--r);background:var(--surface);color:var(--fg);display:grid;place-items:center;font:700 26px var(--font-display);overflow:hidden}
+.dlogo img{width:100%;height:100%;object-fit:cover}
+.dhead h1{font-size:clamp(32px,5vw,52px)}
+.dhead .q{font-family:var(--font-display);font-size:20px;color:var(--accent);margin-top:6px}
+.dhead .tags .tag{border-color:var(--deep-line);color:var(--on-deep-2)}
+.dhead .tags .tag.free{border-color:var(--good);color:#8FD6A1}
+.dbody{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;padding-block:56px 40px}
+.dinfo{display:flex;flex-direction:column;gap:20px;min-width:0}
+.dinfo .desc{font-size:18px}
+.feats{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;font-size:16px;border-top:1px solid var(--line);padding-top:20px}
+.feats li{display:flex;gap:10px;align-items:flex-start}
+.feats li::before{content:"";flex:none;width:6px;height:6px;margin-top:10px;background:var(--accent)}
+.dinfo small{color:var(--muted);font-size:13px}
+.demo{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:28px;min-width:0}
+.demo-head{display:flex;justify-content:space-between;gap:8px;font:500 12px var(--font-data);color:var(--muted)}
+.seg{display:grid;margin-top:16px;border:1px solid var(--line-strong);border-radius:var(--r)}
+.seg button{background:transparent;border:0;border-right:1px solid var(--line-strong);padding:10px 12px;min-height:56px;cursor:pointer;color:var(--fg);text-align:left;display:flex;flex-direction:column;gap:4px;min-width:0}
+.seg button:last-child{border-right:0}
+.seg .cn{font:500 12px var(--font-data);color:var(--muted);overflow-wrap:anywhere}
+.seg .cv{font:600 14px var(--font-body);font-variant-numeric:tabular-nums}
+.seg .bar{height:3px;background:var(--line);width:100%}
+.seg .bar i{display:block;height:100%;background:var(--accent)}
+.seg button[aria-pressed="true"]{background:var(--bg);box-shadow:inset 0 -2px 0 var(--accent)}
+.seg button[aria-pressed="true"] .cn{color:var(--fg)}
+svg.chart{width:100%;height:auto;display:block;margin-top:14px;touch-action:manipulation}
+svg.chart .hit{cursor:pointer;fill:transparent}
+svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:16px;height:2px;display:inline-block}
+.info{margin-top:12px;min-height:52px;padding:12px 14px;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);font-size:15px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center}
+.info b{font:500 15px var(--font-data);font-variant-numeric:tabular-nums}
+.st{font:600 11px var(--font-body);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:2px;color:#fff}
+.note{font-size:12px;margin-top:10px;color:var(--muted)}
+.shots{padding-bottom:96px}
+.shots h2{font-size:24px;margin-bottom:16px}
+.gallery{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.gallery img{flex:none;height:min(520px,70vh);width:auto;max-width:85%;border-radius:var(--r-card);border:1px solid var(--line);scroll-snap-align:start;object-fit:contain;background:var(--surface)}
+
+@media (max-width:900px){
+  .hero .wrap,.why .wrap,.contact .wrap,.band .wrap,.pgrid,.soon,.dbody{grid-template-columns:minmax(0,1fr)}
+  .why .body{padding-top:0}
+  .plist{border-right:0;border-bottom:1px solid var(--line)}
+  .promise-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pr:nth-child(3){padding-left:0;border-left:0}
+  .ppanel{padding:28px}
+  section{padding-block:64px}
+  .hero{padding-block:56px 64px}
+  .dhead{grid-template-columns:auto minmax(0,1fr)}
+  .dhead .dact{grid-column:1/-1}
+}
+@media (max-width:560px){
+  .wrap{padding-inline:16px}
+  .nav .navlink{display:none}
+  .promise-grid{grid-template-columns:minmax(0,1fr)}
+  .pr,.pr+.pr{padding-left:0;border-left:0;border-bottom:1px solid var(--line);padding-bottom:24px}
+  .feats{grid-template-columns:minmax(0,1fr)}
+  .fact{grid-template-columns:96px minmax(0,1fr)}
+  .cta .btn,.soon .btn{width:100%}
+  .sep{display:none}
+  .app-grid{grid-template-columns:minmax(0,1fr)}
+  .dlogo{width:64px;height:64px}
+  .demo{padding:20px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Woo Brothers">
+      <svg width="26" height="26" viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3c6 4 9 9 9 14a9 9 0 0 1-18 0c0-5 3-10 9-14Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 10v15" stroke="#D9A821" stroke-width="1.8"/></svg>
+      Woo Brothers
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="navlink" href="#home" id="navHome" data-i18n="navHome"></a>
+      <a class="navlink" href="#apps" id="navApps" data-i18n="navApps"></a>
+      <span class="sep" aria-hidden="true"></span>
+      <button class="sq" id="langBtn" type="button" aria-label="Language"></button>
+      <button class="sq" id="themeBtn" type="button" aria-label="Light or dark mode"><svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"></svg></button>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HOME ================= -->
+<main id="viewHome">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <div class="label" data-i18n="heroLabel"></div>
+        <h1 data-i18n-html="h1"></h1>
+        <p class="lead" data-i18n="lead"></p>
+        <div class="cta">
+          <a class="btn primary" href="#apps"><span data-i18n="ctaApps"></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn line-dark" href="#contact"><span data-i18n="ctaContact"></span></a>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>RM 0</b><span data-i18n="f1"></span></div>
+        <div class="fact"><b>0</b><span data-i18n="f2"></span></div>
+        <div class="fact"><b>3</b><span data-i18n="f3"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="why">
+    <div class="wrap">
+      <div>
+        <div class="label" data-i18n="whyLabel"></div>
+        <h2 style="font-size:clamp(28px,4vw,44px);margin-top:16px" data-i18n="whyTitle"></h2>
+        <p class="quote" data-i18n="whyQuote"></p>
+      </div>
+      <div class="body">
+        <p data-i18n="why1"></p>
+        <p data-i18n="why2"></p>
+        <p data-i18n="why3"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="problems">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="label" data-i18n="probLabel"></div>
+        <h2 data-i18n="probTitle"></h2>
+        <p data-i18n="probSub"></p>
+      </div>
+      <div class="pgrid">
+        <div class="plist" role="tablist" id="plist" aria-label="Problems"></div>
+        <div class="ppanel" role="tabpanel" id="ppanel" aria-live="polite">
+          <div class="pblock"><div class="k" data-i18n="kProblem"></div><p id="pProblem"></p></div>
+          <div class="pblock ours"><div class="k" data-i18n="kOurs"></div><p id="pOurs"></p></div>
+          <div class="pdots" id="pdots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promise">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="label" data-i18n="promLabel"></div>
+        <h2 data-i18n="promTitle"></h2>
+      </div>
+      <div class="promise-grid">
+        <div class="pr"><span class="ix">01</span><h3 data-i18n="pr1t"></h3><p data-i18n="pr1"></p></div>
+        <div class="pr"><span class="ix">02</span><h3 data-i18n="pr2t"></h3><p data-i18n="pr2"></p></div>
+        <div class="pr"><span class="ix">03</span><h3 data-i18n="pr3t"></h3><p data-i18n="pr3"></p></div>
+        <div class="pr"><span class="ix">04</span><h3 data-i18n="pr4t"></h3><p data-i18n="pr4"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div>
+        <div class="count" id="bandCount"></div>
+        <h2 style="margin-top:12px" data-i18n="bandTitle"></h2>
+        <p data-i18n="bandText"></p>
+      </div>
+      <a class="btn primary" href="#apps"><span data-i18n="ctaApps"></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="label" data-i18n="contactLabel"></div>
+        <h2 data-i18n="contactTitle"></h2>
+        <p data-i18n="contactText"></p>
+      </div>
+      <div class="cards">
+        <div class="ccard">
+          <div>
+            <div class="k">WhatsApp</div>
+            <div class="v" id="wa">+60 11-4001 5077</div>
+            <div class="who">Bryan Woo</div>
+          </div>
+          <div class="cacts">
+            <a class="btn primary sm" href="https://wa.me/601140015077" target="_blank" rel="noopener" data-goatcounter-click="contact-whatsapp"><span data-i18n="waBtn"></span></a>
+            <button class="copy" type="button" data-copy="wa" data-i18n="copy"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= APP DIRECTORY ================= -->
+<main id="viewApps" hidden>
+  <div class="dir-hero">
+    <div class="wrap">
+      <div class="label" data-i18n="dirLabel"></div>
+      <h1 data-i18n="dirTitle"></h1>
+      <p data-i18n="dirText"></p>
+      <div class="toolbar">
+        <label class="search" for="q">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <input id="q" type="search" autocomplete="off" aria-label="Search">
+          <button type="button" id="qClear" hidden data-i18n="clear"></button>
+        </label>
+        <div class="filters" id="filters" role="group" aria-label="Category"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="result-line"><span id="resultCount" aria-live="polite"></span><span data-i18n="allFree"></span></div>
+    <div class="load-error" id="loadError" hidden role="alert"><h3 data-i18n="errTitle"></h3><p data-i18n="errText"></p><code id="errDetail"></code></div>
+    <div class="app-grid" id="appGrid"></div>
+    <div class="empty" id="emptyState" hidden><h3 data-i18n="emptyTitle"></h3><p data-i18n="emptyText"></p></div>
+    <div class="soon">
+      <div><h3 data-i18n="soonTitle"></h3><p data-i18n="soonText"></p></div>
+      <a class="btn line" href="#contact"><span data-i18n="ctaContact"></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</main>
+
+<!-- ================= APP DETAIL ================= -->
+<main id="viewApp" hidden>
+  <div class="detail-top">
+    <div class="wrap">
+      <a class="back" href="#apps"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-i18n="back"></span></a>
+      <div class="dhead">
+        <div class="dlogo" id="dLogo"></div>
+        <div>
+          <div class="tags" id="dTags"></div>
+          <h1 id="dName" style="margin-top:10px"></h1>
+          <p class="q" id="dQ"></p>
+        </div>
+        <div class="dact" id="dAct"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap dbody">
+    <div class="dinfo">
+      <p class="desc" id="dDesc"></p>
+      <ul class="feats" id="dFeats"></ul>
+      <small id="dLangs"></small>
+    </div>
+    <div>
+      <div class="demo" id="demoBox" hidden>
+        <div class="demo-head"><span id="demoTitle"></span><span data-i18n="sample"></span></div>
+        <div class="seg" id="demoChips" role="group"></div>
+        <svg class="chart" id="demoChart" viewBox="0 0 360 180" role="img"></svg>
+        <div class="legend" id="demoLegend"></div>
+        <div class="info" id="demoInfo" aria-live="polite"></div>
+        <p class="note" id="demoHint"></p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap shots" id="shotsBox" hidden>
+    <h2 data-i18n="shots"></h2>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</main>
+
+<footer><div class="wrap"><span data-i18n="foot"></span><span>woobrothers.my</span></div></footer>
+
+<script>
+/* App data is in apps.json. Categories are below; a new category needs a new key here. */
+const CATS={
+ weather:{zh:"天气",en:"Weather",ms:"Cuaca",icon:'<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9Z"/><path d="M9 21l1-2M13 21l1-2"/>'},
+ field:{zh:"卫星监测",en:"Satellite",ms:"Satelit",icon:'<path d="M5 12l7-7 3 3-7 7z"/><path d="M14 5l2-2 5 5-2 2M3 21l4-4M9 17a4 4 0 0 0 6-6"/>'},
+ pest:{zh:"病虫害",en:"Pests",ms:"Perosak",icon:'<ellipse cx="12" cy="14" rx="5" ry="6"/><path d="M12 8V5M9 4l3 1 3-1M7 12H3M21 12h-4M7 17l-3 2M17 17l3 2"/>'},
+ learn:{zh:"学习",en:"Learning",ms:"Pembelajaran",icon:'<path d="M3 6l9-3 9 3-9 3z"/><path d="M7 8v5c0 2 2.5 3 5 3s5-1 5-3V8"/>'},
+ manage:{zh:"园地管理",en:"Farm records",ms:"Pengurusan",icon:'<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 8h6M9 12h6M9 16h4"/>'}
+};
+
+const T={
+zh:{pill:"华",navHome:"首页",navApps:"App 目录",
+heroLabel:"Woo Brothers · 农业科技公益",
+h1:"把好用的农业科技，<em>免费</em>交到农友手上。",
+lead:"我们是一群关心农业的朋友，用业余时间开发农业 App，分享给有需要的农民和种植户。不收费，不卖东西。",
+ctaApps:"浏览 App 目录",ctaContact:"联系我们",
+f1:"所有 App 完全免费，没有隐藏收费",f2:"我们不是公司，不卖任何产品",f3:"支持 Bahasa Malaysia、English、华文",
+whyLabel:"初衷",whyTitle:"为什么我们要做这件事",whyQuote:"好的技术，不应该只有大公司用得起。",
+why1:"农业养活了马来西亚许多家庭。可是很多好用的农业技术，价格高、操作复杂，小园主和种植户很难用上。",
+why2:"我们想回馈社会。把我们懂的技术，做成简单、实用的工具，免费送给有需要的人。",
+why3:"这不是生意，也不是随便玩玩。每一个 App 我们都认真做，因为我们相信，当每一位种植户都能看懂自己的园地，整个马来西亚的农业都会更好。",
+probLabel:"我们看到的问题",probTitle:"农友想用科技，却常常被挡在门外",probSub:"点左边每一个问题，看看我们怎么解决。",
+kProblem:"问题",kOurs:"我们的做法",
+probs:[["价格太高","很多农业软件要按月或按年订阅，小园主和种植户负担不起。","所有 App 完全免费，不用订阅，也不用付任何费用。"],["操作太复杂","专业工具界面复杂、术语很多，没有受过训练很难上手。","大按钮、少术语，打开就知道该看哪里。"],["语言不通","大部分农业工具只有英文，很多农友看不习惯。","每个 App 都支持 Bahasa Malaysia、English 和华文。"],["数据看不懂","卫星图和天气模型数据很多，却不知道对自己的园地有什么意义。","把数据变成简单的答案：哪块地要去看、哪个预报比较准。"]],
+promLabel:"我们的承诺",promTitle:"免费，而且认真",
+pr1t:"完全免费",pr1:"不收费、不订阅、没有隐藏收费，以后也一样。",
+pr2t:"不是公司",pr2:"我们不卖产品，也不靠这些 App 赚钱。",
+pr3t:"认真做",pr3:"不是做来玩的。每个 App 都是为了真正帮到有需要的人。",
+pr4t:"数据来源公开",pr4:"使用 Copernicus 卫星、Open-Meteo 天气等公开数据，每个来源都写清楚。",
+bandCount:n=>`目前 ${n} 个 App · 陆续增加中`,bandTitle:"看看我们做了哪些 App",bandText:"App 目录列出我们所有的 App，可以搜索，也可以按类别筛选。",
+contactLabel:"联系",contactTitle:"想合作，或者有建议？",contactText:"如果你也想为农友出一分力，或者对我们的 App 有建议，欢迎联系我们。WhatsApp 最快。",
+waBtn:"WhatsApp 我们",copy:"复制",copied:"已复制",
+dirLabel:"App 目录",dirTitle:"我们的农业 App",dirText:"输入关键字搜索，或者按类别筛选。所有 App 都免费使用。",
+search:"搜索关键字",clear:"清除",all:"全部",allFree:"全部免费 · RM 0",loading:"加载中…",
+results:(n,t)=>n===t?`共 ${t} 个 App`:`找到 ${n} 个 App（共 ${t} 个）`,
+emptyTitle:"找不到相关的 App",emptyText:"换个关键字试试，或者选“全部”。",
+errTitle:"App 资料读取失败",errText:"apps.json 可能有格式错误。请检查下面提到的位置附近，有没有少了逗号、多了逗号，或者用了中文引号。",
+details:"查看详情",open:"打开网站",soon:"网址即将公布",free:"免费",
+back:"返回 App 目录",langsLabel:"语言",linkNote:"链接整理中，很快就能打开。",sample:"示意",shots:"App 截图",
+acc:"准确度",diff:n=>n===0?"完全准确":`差 ${n}`,vsFirst:(n,x)=>n>=0?`比 ${x} 高 ${n}`:`比 ${x} 低 ${Math.abs(n)}`,
+hintCompare:"点上面的按钮切换线条，点图上任何一格看数字。示意数据。",hintTrend:"点上面的按钮切换线条，点图上任何一格看数值。示意数据。",
+soonTitle:"更多 App 开发中",soonText:"我们和朋友会继续开发新的农业 App。有想法或需要？告诉我们。",
+foot:"© 2026 Woo Brothers · 非营利 · 免费分享"},
+en:{pill:"EN",navHome:"Home",navApps:"App Directory",
+heroLabel:"Woo Brothers · Agri-tech for good",
+h1:"Useful farm technology, <em>free</em> for every farmer.",
+lead:"We are a group of friends who care about farming. In our spare time we build farm apps and share them with farmers and growers who need them. No fees. Nothing for sale.",
+ctaApps:"Browse the App Directory",ctaContact:"Contact us",
+f1:"Every app is completely free, with no hidden charges",f2:"We are not a company and we sell nothing",f3:"Available in Bahasa Malaysia, English and 华文",
+whyLabel:"Why",whyTitle:"Why we do this",whyQuote:"Good technology should not be only for big companies.",
+why1:"Farming supports many families in Malaysia. But many good farm tools are costly and hard to use, so small growers rarely get to use them.",
+why2:"We want to give back. We take the technology we know, turn it into simple, useful tools, and give them free to the people who need them.",
+why3:"This is not a business, and it is not a hobby we take lightly. We build every app with care, because when every grower understands their own land, farming in Malaysia gets better for everyone.",
+probLabel:"What we see",probTitle:"Farmers want to use technology, but are often shut out",probSub:"Tap each problem on the left to see how we answer it.",
+kProblem:"The problem",kOurs:"What we do",
+probs:[["Too expensive","Many farm software tools need a monthly or yearly subscription that small growers cannot afford.","Every app is completely free. No subscription, no fees."],["Too complicated","Professional tools have busy screens and technical words. They are hard to use without training.","Big buttons and few technical words. You know where to look straight away."],["Language barrier","Most farm tools are in English only, which many farmers are not comfortable with.","Every app works in Bahasa Malaysia, English and 华文."],["Data is hard to read","Satellite images and weather models give lots of data, but it is unclear what it means for your own farm.","We turn data into simple answers: which patch to check, and which forecast to trust."]],
+promLabel:"Our promise",promTitle:"Free, and done properly",
+pr1t:"Completely free",pr1:"No fees, no subscriptions, no hidden charges. Now and later.",
+pr2t:"Not a company",pr2:"We sell no products, and we do not make money from these apps.",
+pr3t:"Built with care",pr3:"Not built for fun. Every app is made to truly help people who need it.",
+pr4t:"Open data sources",pr4:"Built on open data such as Copernicus satellites and Open-Meteo weather. Every source is clearly shown.",
+bandCount:n=>`${n} apps so far · more on the way`,bandTitle:"See the apps we have built",bandText:"The App Directory lists all our apps. Search by keyword or filter by category.",
+contactLabel:"Contact",contactTitle:"Want to work with us, or have an idea?",contactText:"If you also want to help farmers, or have suggestions for our apps, please get in touch. WhatsApp is the fastest way.",
+waBtn:"WhatsApp us",copy:"Copy",copied:"Copied",
+dirLabel:"App Directory",dirTitle:"Our farm apps",dirText:"Search by keyword or filter by category. Every app is free to use.",
+search:"Search keyword",clear:"Clear",all:"All",allFree:"All free · RM 0",loading:"Loading…",
+results:(n,t)=>n===t?`${t} apps`:`${n} of ${t} apps`,
+emptyTitle:"No matching apps",emptyText:"Try another keyword, or choose \"All\".",
+errTitle:"Could not load the app list",errText:"apps.json may have a formatting mistake. Check near the position below for a missing or extra comma, or curly quotes.",
+details:"View details",open:"Open website",soon:"Link coming soon",free:"Free",
+back:"Back to App Directory",langsLabel:"Languages",linkNote:"We are preparing the link. It will open soon.",sample:"Example",shots:"Screenshots",
+acc:"Accuracy",diff:n=>n===0?"Spot on":`Off by ${n}`,vsFirst:(n,x)=>n>=0?`${n} higher than ${x}`:`${Math.abs(n)} lower than ${x}`,
+hintCompare:"Tap a button to switch lines, then tap any point on the chart. Example data.",hintTrend:"Tap a button to switch lines, then tap any point on the chart. Example data.",
+soonTitle:"More apps on the way",soonText:"We and our friends will keep building new farm apps. Have an idea or a need? Tell us.",
+foot:"© 2026 Woo Brothers · Non-profit · Shared free"},
+ms:{pill:"BM",navHome:"Utama",navApps:"Direktori Aplikasi",
+heroLabel:"Woo Brothers · Teknologi pertanian untuk masyarakat",
+h1:"Teknologi pertanian yang berguna, <em>percuma</em> untuk setiap petani.",
+lead:"Kami sekumpulan rakan yang prihatin terhadap pertanian. Pada masa lapang, kami bina aplikasi pertanian dan kongsikan dengan petani dan pekebun yang memerlukan. Tiada bayaran. Tiada jualan.",
+ctaApps:"Lihat Direktori Aplikasi",ctaContact:"Hubungi kami",
+f1:"Semua aplikasi percuma sepenuhnya, tiada caj tersembunyi",f2:"Kami bukan syarikat dan tidak menjual apa-apa",f3:"Tersedia dalam Bahasa Malaysia, English dan 华文",
+whyLabel:"Tujuan",whyTitle:"Kenapa kami buat ini",whyQuote:"Teknologi yang baik tidak sepatutnya untuk syarikat besar sahaja.",
+why1:"Pertanian menyara ramai keluarga di Malaysia. Tetapi banyak teknologi pertanian yang bagus mahal dan rumit, jadi pekebun kecil susah untuk menggunakannya.",
+why2:"Kami mahu menyumbang kembali kepada masyarakat. Kami jadikan teknologi yang kami faham sebagai alat yang mudah dan berguna, dan berikan secara percuma kepada yang memerlukan.",
+why3:"Ini bukan perniagaan, dan bukan sekadar suka-suka. Setiap aplikasi dibina dengan teliti, kerana apabila setiap pekebun faham keadaan kebun sendiri, pertanian Malaysia akan jadi lebih baik.",
+probLabel:"Masalah yang kami lihat",probTitle:"Petani mahu guna teknologi, tetapi sering terhalang",probSub:"Tekan setiap masalah di sebelah kiri untuk lihat cara kami menyelesaikannya.",
+kProblem:"Masalah",kOurs:"Cara kami",
+probs:[["Terlalu mahal","Banyak perisian pertanian perlu langganan bulanan atau tahunan yang tidak mampu dibayar oleh pekebun kecil.","Semua aplikasi percuma sepenuhnya. Tiada langganan, tiada bayaran."],["Terlalu rumit","Alat profesional ada skrin yang padat dan banyak istilah teknikal. Susah diguna tanpa latihan.","Butang besar, kurang istilah. Terus tahu apa yang perlu dilihat."],["Halangan bahasa","Kebanyakan alat pertanian hanya dalam bahasa Inggeris, dan ramai petani kurang selesa.","Setiap aplikasi boleh diguna dalam Bahasa Malaysia, English dan 华文."],["Data susah difahami","Imej satelit dan model cuaca beri banyak data, tetapi tidak jelas apa maksudnya untuk kebun sendiri.","Kami jadikan data sebagai jawapan mudah: kawasan mana perlu diperiksa, ramalan mana boleh dipercayai."]],
+promLabel:"Janji kami",promTitle:"Percuma, dan dibuat dengan serius",
+pr1t:"Percuma sepenuhnya",pr1:"Tiada bayaran, tiada langganan, tiada caj tersembunyi. Sekarang dan akan datang.",
+pr2t:"Bukan syarikat",pr2:"Kami tidak menjual produk dan tidak mengaut untung daripada aplikasi ini.",
+pr3t:"Dibina dengan teliti",pr3:"Bukan untuk suka-suka. Setiap aplikasi dibuat untuk benar-benar membantu yang memerlukan.",
+pr4t:"Sumber data terbuka",pr4:"Guna data terbuka seperti satelit Copernicus dan cuaca Open-Meteo. Setiap sumber dinyatakan dengan jelas.",
+bandCount:n=>`${n} aplikasi setakat ini · lebih akan datang`,bandTitle:"Lihat aplikasi yang kami bina",bandText:"Direktori Aplikasi menyenaraikan semua aplikasi kami. Cari dengan kata kunci atau tapis mengikut kategori.",
+contactLabel:"Hubungi",contactTitle:"Mahu bekerjasama, atau ada cadangan?",contactText:"Jika anda juga mahu membantu petani, atau ada cadangan untuk aplikasi kami, sila hubungi kami. WhatsApp paling cepat.",
+waBtn:"WhatsApp kami",copy:"Salin",copied:"Disalin",
+dirLabel:"Direktori Aplikasi",dirTitle:"Aplikasi pertanian kami",dirText:"Cari dengan kata kunci atau tapis mengikut kategori. Semua aplikasi percuma.",
+search:"Carian Kata Kunci",clear:"Padam",all:"Semua",allFree:"Semua percuma · RM 0",loading:"Memuatkan…",
+results:(n,t)=>n===t?`${t} aplikasi`:`${n} daripada ${t} aplikasi`,
+emptyTitle:"Tiada aplikasi yang sepadan",emptyText:"Cuba kata kunci lain, atau pilih \"Semua\".",
+errTitle:"Senarai aplikasi gagal dimuatkan",errText:"apps.json mungkin ada kesilapan format. Semak berhampiran kedudukan di bawah: koma tertinggal, koma berlebihan, atau tanda petik yang salah.",
+details:"Lihat butiran",open:"Buka laman web",soon:"Pautan akan diumumkan",free:"Percuma",
+back:"Kembali ke Direktori",langsLabel:"Bahasa",linkNote:"Pautan sedang disediakan. Akan dibuka tidak lama lagi.",sample:"Contoh",shots:"Tangkapan skrin",
+acc:"Ketepatan",diff:n=>n===0?"Tepat":`Beza ${n}`,vsFirst:(n,x)=>n>=0?`${n} lebih tinggi dari ${x}`:`${Math.abs(n)} lebih rendah dari ${x}`,
+hintCompare:"Tekan butang untuk tukar garis, kemudian tekan mana-mana titik pada carta. Data contoh.",hintTrend:"Tekan butang untuk tukar garis, kemudian tekan mana-mana titik pada carta. Data contoh.",
+soonTitle:"Lebih banyak aplikasi akan datang",soonText:"Kami dan rakan-rakan akan terus membina aplikasi pertanian baharu. Ada idea atau keperluan? Beritahu kami.",
+foot:"© 2026 Woo Brothers · Bukan untung · Dikongsi percuma"}
+};
+const ORDER=["zh","en","ms"];
+let lang="zh";
+try{const s=localStorage.getItem("wb-lang");if(ORDER.includes(s))lang=s;}catch(e){}
+let APPS=[],appsReady=false;
+const $=id=>document.getElementById(id);
+const NS="http://www.w3.org/2000/svg";
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const L=v=>v==null?"":typeof v==="string"||typeof v==="number"?String(v):(v[lang]??v.en??v.zh??Object.values(v)[0]??"");
+const LA=v=>Array.isArray(v)?v:(v&&(v[lang]||v.en||v.zh))||[];
+function el(tag,a,p){const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
+function txt(p,x,y,s,o){const t=el("text",Object.assign({x,y,"font-size":10,"font-family":"JetBrains Mono, monospace",fill:"var(--muted)"},o||{}),p);t.textContent=s;return t}
+const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+const EXT='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>';
+const initials=n=>String(n).split(/\s+/).filter(Boolean).map(w=>w[0]).join("").slice(0,2).toUpperCase();
+const catOf=a=>CATS[a.category]||{zh:a.category,en:a.category,ms:a.category,icon:'<circle cx="12" cy="12" r="8"/>'};
+function openBtn(a,cls){
+  const d=T[lang];
+  return a.url?`<a class="btn primary ${cls}" href="${esc(a.url)}" target="_blank" rel="noopener" data-goatcounter-click="open-${esc(a.id)}"><span>${d.open}</span>${EXT}</a>`
+              :`<span class="btn off ${cls}"><span>${d.soon}</span></span>`;
+}
+const round=v=>Math.round(v*100)/100;
+
+/* ---------- problems tabs ---------- */
+let prob=0;
+function drawProbs(){
+  const d=T[lang],list=$("plist");list.innerHTML="";
+  d.probs.forEach((p,i)=>{
+    const b=document.createElement("button");b.type="button";b.className="ptab";b.setAttribute("role","tab");b.setAttribute("aria-selected",i===prob);b.tabIndex=i===prob?0:-1;
+    b.innerHTML=`<span class="n">0${i+1}</span><span>${p[0]}</span>${ARROW}`;
+    b.addEventListener("click",()=>{prob=i;drawProbs()});
+    b.addEventListener("keydown",e=>{if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();prob=(prob+(e.key==="ArrowDown"?1:3))%4;drawProbs();list.children[prob].focus()}});
+    list.appendChild(b);
+  });
+  $("pProblem").textContent=d.probs[prob][1];
+  $("pOurs").textContent=d.probs[prob][2];
+  $("pdots").innerHTML=d.probs.map((_,i)=>`<i class="${i===prob?"on":""}"></i>`).join("");
+}
+
+/* ---------- directory: search + filter ---------- */
+let query="",cat="all";
+function haystack(a){
+  const parts=[a.name,a.keywords||"",(a.languages||[]).join(" "),a.category];
+  for(const l of ORDER){const t=a[l]||{};parts.push(t.tagline||"",t.description||"",(t.features||[]).join(" "),catOf(a)[l]||"")}
+  return parts.join(" ").toLowerCase();
+}
+function hl(s){
+  const t=esc(s);if(!query)return t;
+  const terms=query.split(/\s+/).filter(Boolean).map(q=>esc(q).replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
+  return terms.length?t.replace(new RegExp(terms.join("|"),"gi"),m=>`<mark>${m}</mark>`):t;
+}
+function drawDir(){
+  const d=T[lang];
+  $("q").placeholder=d.search;
+  $("qClear").hidden=!query;
+  if(!appsReady){$("resultCount").textContent=$("loadError").hidden?d.loading:"";$("filters").innerHTML="";$("appGrid").innerHTML="";$("emptyState").hidden=true;return}
+  const terms=query.toLowerCase().split(/\s+/).filter(Boolean);
+  const textMatch=a=>terms.every(t=>a._h.includes(t));
+  const f=$("filters");f.innerHTML="";
+  const used=["all",...[...new Set(APPS.map(a=>a.category))]];
+  used.forEach(k=>{
+    const n=APPS.filter(a=>(k==="all"||a.category===k)&&textMatch(a)).length;
+    const b=document.createElement("button");b.type="button";b.className="fchip";b.setAttribute("aria-pressed",k===cat);
+    b.innerHTML=`${k==="all"?d.all:esc(catOf({category:k})[lang])}<span>${n}</span>`;
+    b.addEventListener("click",()=>{cat=k;drawDir()});f.appendChild(b);
+  });
+  const list=APPS.filter(a=>(cat==="all"||a.category===cat)&&textMatch(a));
+  $("resultCount").textContent=d.results(list.length,APPS.length);
+  $("emptyState").hidden=list.length>0;
+  $("appGrid").innerHTML=list.map(a=>{
+    const t=a[lang]||a.en||{},c=catOf(a);
+    const cover=a.cover?`<img class="cimg" src="${esc(a.cover)}" alt="" loading="lazy">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
+    const logo=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
+    return `<article class="acard">
+      <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(a.name)}">${cover}<span class="logo">${logo}</span></a>
+      <div class="body">
+        <div class="meta"><span class="tags"><span class="tag free">${d.free}</span><span class="tag">${hl(c[lang])}</span></span><span class="langs">${esc((a.languages||[]).join(" · "))}</span></div>
+        <h3>${hl(a.name)}</h3>
+        <p class="q">${hl(t.tagline||"")}</p>
+        <div class="acts"><a class="btn line sm" href="#app-${esc(a.id)}"><span>${d.details}</span>${ARROW}</a>${openBtn(a,"sm")}</div>
+      </div></article>`;
+  }).join("");
+}
+$("q").addEventListener("input",e=>{query=e.target.value.trim();drawDir()});
+$("qClear").addEventListener("click",()=>{$("q").value="";query="";drawDir();$("q").focus()});
+
+/* ---------- detail page ---------- */
+let current=null,demoSel=0,demoX=0,demoFor=null;
+function drawDetail(){
+  const a=APPS.find(x=>x.id===current);if(!a)return;
+  const d=T[lang],t=a[lang]||a.en||{},c=catOf(a);
+  $("dLogo").innerHTML=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
+  $("dTags").innerHTML=`<span class="tag free">${d.free}</span><span class="tag">${esc(c[lang])}</span>`;
+  $("dName").textContent=a.name;
+  $("dQ").textContent=t.tagline||"";
+  $("dAct").innerHTML=openBtn(a,"");
+  $("dDesc").textContent=t.description||"";
+  $("dFeats").innerHTML=(t.features||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  $("dLangs").textContent=`${d.langsLabel}: ${(a.languages||[]).join(" · ")}${a.url?"":" · "+d.linkNote}`;
+  const shots=a.screenshots||[];
+  $("shotsBox").hidden=!shots.length;
+  $("gallery").innerHTML=shots.map((s,i)=>`<img src="${esc(s)}" alt="${esc(a.name)} ${i+1}" loading="lazy">`).join("");
+  const demo=a.demo;
+  $("demoBox").hidden=!demo;
+  if(demo){
+    if(demoFor!==a.id){demoFor=a.id;demoSel=0;demoX=(demo.type==="compare")?Math.min(2,(demo.xLabels||[]).length-1):LA(demo.xLabels).length-1}
+    $("demoTitle").textContent=L(demo.title);
+    if(demo.type==="compare")drawCompare(demo);else drawTrend(demo);
+  }
+}
+
+/* ---------- chart template: compare (bars = actual, lines = predictions) ---------- */
+function niceMax(v){if(v<=0)return 1;const p=Math.pow(10,Math.floor(Math.log10(v)));const n=v/p;return (n<=1?1:n<=2?2:n<=5?5:10)*p}
+function drawCompare(demo){
+  const d=T[lang],xs=LA(demo.xLabels),bars=demo.bars||{values:[]},lines=demo.lines||[],unit=demo.unit||"";
+  const actual=bars.values;
+  const mean=actual.reduce((s,v)=>s+v,0)/Math.max(1,actual.length)||1;
+  lines.forEach(m=>{const mae=m.values.reduce((s,v,i)=>s+Math.abs(v-(actual[i]??0)),0)/Math.max(1,m.values.length);m._acc=Math.max(0,Math.round(100*(1-mae/mean)))});
+  if(demoSel>=lines.length)demoSel=0;
+  const box=$("demoChips");box.innerHTML="";box.style.gridTemplateColumns=`repeat(${Math.max(1,lines.length)},minmax(0,1fr))`;
+  lines.forEach((m,i)=>{
+    const b=document.createElement("button");b.type="button";b.setAttribute("aria-pressed",i===demoSel);
+    b.innerHTML=`<span class="cn">${esc(L(m.name))}</span><span class="cv">${d.acc} ${m._acc}%</span><span class="bar"><i style="width:${m._acc}%"></i></span>`;
+    b.addEventListener("click",()=>{demoSel=i;drawDetail()});box.appendChild(b);
+  });
+  const all=[...actual,...lines.flatMap(m=>m.values)],top=niceMax(Math.max(...all));
+  const n=xs.length,W=360,x0=50,x1=345,step=n>1?(x1-x0)/(n-1):0;
+  const fx=i=>n>1?x0+i*step:(x0+x1)/2,fy=v=>150-v/top*120;
+  const s=$("demoChart");s.setAttribute("viewBox","0 0 360 180");s.innerHTML="";
+  const bw=Math.min(18,step*.4||18),hw=Math.max(16,step/2||24);
+  el("rect",{class:"sel",x:fx(demoX)-hw,y:22,width:hw*2,height:132},s);
+  for(let k=0;k<=4;k++){const v=top*k/4;el("line",{x1:38,x2:352,y1:fy(v),y2:fy(v),stroke:"var(--line)"},s);txt(s,32,fy(v)+3,round(v),{"text-anchor":"end"})}
+  actual.forEach((a,i)=>{el("rect",{x:fx(i)-bw/2,y:fy(a),width:bw,height:Math.max(0,150-fy(a)),fill:"var(--accent)",opacity:i===demoX?1:.65},s)});
+  xs.forEach((x,i)=>txt(s,fx(i),170,x,{"text-anchor":"middle",fill:i===demoX?"var(--fg)":"var(--muted)","font-weight":i===demoX?700:400}));
+  const m=lines[demoSel];
+  if(m){
+    el("polyline",{points:m.values.map((v,i)=>`${fx(i)},${fy(v)}`).join(" "),fill:"none",stroke:"var(--fc)","stroke-width":2,"stroke-linejoin":"round"},s);
+    m.values.forEach((v,i)=>el("circle",{cx:fx(i),cy:fy(v),r:i===demoX?5:2.5,fill:"var(--fc)",stroke:"var(--surface)","stroke-width":i===demoX?2:0},s));
+  }
+  xs.forEach((x,i)=>{const h=el("rect",{class:"hit",x:fx(i)-hw,y:20,width:hw*2,height:156},s);h.addEventListener("click",()=>{demoX=i;drawDetail()})});
+  $("demoLegend").innerHTML=`<span><i style="background:var(--fc)"></i>${esc(m?L(m.name):"")}</span><span><i style="background:var(--accent);height:8px;width:10px"></i>${esc(L(bars.name))}</span><span>${esc(unit)}</span>`;
+  if(m){
+    const p=m.values[demoX],a=actual[demoX],diff=round(Math.abs(p-a)),rel=diff/(mean||1);
+    $("demoInfo").innerHTML=`<strong>${esc(xs[demoX])}</strong><span>${esc(L(m.name))} <b>${p} ${esc(unit)}</b> · ${esc(L(bars.name))} <b>${a} ${esc(unit)}</b></span><span class="st" style="background:${rel<=.25?"var(--good)":rel<=.6?"var(--mid)":"var(--weak)"}">${esc(d.diff(diff))}</span>`;
+  }
+  $("demoHint").textContent=d.hintCompare;
+}
+
+/* ---------- chart template: trend (several lines over time) ---------- */
+const TREND_COLORS=["var(--good)","var(--fc)","var(--weak)","var(--mid)"];
+function drawTrend(demo){
+  const d=T[lang],xs=LA(demo.xLabels),lines=demo.lines||[],unit=demo.unit||"";
+  if(demoSel>=lines.length)demoSel=0;
+  if(demoX>=xs.length)demoX=xs.length-1;
+  const box=$("demoChips");box.innerHTML="";box.style.gridTemplateColumns=`repeat(${Math.max(1,lines.length)},minmax(0,1fr))`;
+  lines.forEach((ln,i)=>{
+    const last=ln.values[ln.values.length-1];
+    const b=document.createElement("button");b.type="button";b.setAttribute("aria-pressed",i===demoSel);
+    b.innerHTML=`<span class="cn"><span style="display:inline-block;width:8px;height:8px;background:${TREND_COLORS[i%4]};margin-right:6px"></span>${esc(L(ln.name))}</span><span class="cv">${esc(unit)} ${last}</span>`;
+    b.addEventListener("click",()=>{demoSel=i;drawDetail()});box.appendChild(b);
+  });
+  const all=lines.flatMap(l=>l.values),lo=Math.min(...all),hi=Math.max(...all),pad=(hi-lo)*.15||1;
+  const y0=lo-pad,y1=hi+pad,n=xs.length,x0=50,x1=345,step=n>1?(x1-x0)/(n-1):0;
+  const fx=i=>n>1?x0+i*step:(x0+x1)/2,fy=v=>130-(v-y0)/(y1-y0)*110;
+  const s=$("demoChart");s.setAttribute("viewBox","0 0 360 160");s.innerHTML="";
+  const hw=Math.max(12,step/2||20);
+  el("rect",{class:"sel",x:fx(demoX)-hw,y:14,width:hw*2,height:122},s);
+  for(let k=0;k<=3;k++){const v=y0+(y1-y0)*k/3;el("line",{x1:38,x2:352,y1:fy(v),y2:fy(v),stroke:"var(--line)"},s);txt(s,32,fy(v)+3,round(v),{"text-anchor":"end"})}
+  xs.forEach((x,i)=>txt(s,fx(i),152,x,{"text-anchor":"middle",fill:i===demoX?"var(--fg)":"var(--muted)","font-weight":i===demoX?700:400}));
+  lines.forEach((ln,i)=>{if(i!==demoSel)el("polyline",{points:ln.values.map((v,j)=>`${fx(j)},${fy(v)}`).join(" "),fill:"none",stroke:TREND_COLORS[i%4],"stroke-width":1.25,opacity:.35},s)});
+  const ln=lines[demoSel],col=TREND_COLORS[demoSel%4];
+  if(ln){
+    el("polyline",{points:ln.values.map((v,j)=>`${fx(j)},${fy(v)}`).join(" "),fill:"none",stroke:col,"stroke-width":2.5,"stroke-linejoin":"round"},s);
+    ln.values.forEach((v,j)=>el("circle",{cx:fx(j),cy:fy(v),r:j===demoX?5:2.5,fill:col,stroke:"var(--surface)","stroke-width":j===demoX?2:0},s));
+  }
+  xs.forEach((x,i)=>{const h=el("rect",{class:"hit",x:fx(i)-hw,y:10,width:hw*2,height:146},s);h.addEventListener("click",()=>{demoX=i;drawDetail()})});
+  $("demoLegend").innerHTML="";
+  if(ln){
+    const v=ln.values[demoX],ch=round(v-ln.values[0]);
+    $("demoInfo").innerHTML=`<strong>${esc(L(ln.name))} · ${esc(xs[demoX])}</strong><b>${esc(unit)} ${v}</b><span style="color:var(--muted)">${esc(d.vsFirst(ch,xs[0]))}</span>`;
+  }
+  $("demoHint").textContent=d.hintTrend;
+}
+
+/* ---------- load apps.json ---------- */
+function lineCol(text,pos){const before=text.slice(0,pos).split("\n");return `line ${before.length}, column ${before[before.length-1].length+1}`}
+async function loadApps(){
+  let text="";
+  try{
+    const r=await fetch("apps.json",{cache:"no-cache"});
+    if(!r.ok)throw new Error(`HTTP ${r.status}: apps.json not found`);
+    text=await r.text();
+    let data;
+    try{data=JSON.parse(text)}catch(e){
+      const m=String(e.message).match(/position (\d+)/);
+      throw new Error(m?`${e.message} (${lineCol(text,+m[1])})`:e.message);
+    }
+    if(!Array.isArray(data))throw new Error("apps.json must start with [ and end with ]");
+    data.forEach((a,i)=>{if(!a.id||!a.name)throw new Error(`App #${i+1} is missing "id" or "name"`)});
+    APPS=data;APPS.forEach(a=>a._h=haystack(a));appsReady=true;
+  }catch(e){
+    $("loadError").hidden=false;$("errDetail").textContent=String(e.message||e);
+  }
+  $("bandCount").textContent=T[lang].bandCount(APPS.length);
+  drawDir();route();
+}
+
+/* ---------- views: #home, #apps, #app-<id>, #contact ---------- */
+function route(){
+  const h=location.hash.replace("#","");
+  const isDetail=h.startsWith("app-")&&APPS.some(a=>"app-"+a.id===h);
+  const isDir=h==="apps"||(h.startsWith("app-")&&!isDetail);
+  const isHome=!isDetail&&!isDir;
+  $("viewHome").hidden=!isHome;$("viewApps").hidden=!isDir;$("viewApp").hidden=!isDetail;
+  $("navHome").removeAttribute("aria-current");$("navApps").removeAttribute("aria-current");
+  (isHome?$("navHome"):$("navApps")).setAttribute("aria-current","page");
+  if(isDetail){current=h.slice(4);drawDetail()}
+  const target=isHome&&h&&h!=="home"?$(h):null;
+  if(target)requestAnimationFrame(()=>target.scrollIntoView());else window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+
+/* ---------- language ---------- */
+function apply(){
+  const d=T[lang];
+  document.documentElement.lang=lang==="zh"?"zh-Hans":lang==="ms"?"ms":"en";
+  document.querySelectorAll("[data-i18n]").forEach(e=>{const v=d[e.dataset.i18n];e.textContent=typeof v==="string"?v:""});
+  document.querySelectorAll("[data-i18n-html]").forEach(e=>{e.innerHTML=d[e.dataset.i18nHtml]??""});
+  $("langBtn").textContent=d.pill;
+  $("bandCount").textContent=d.bandCount(APPS.length);
+  drawProbs();drawDir();if(current)drawDetail();
+}
+$("langBtn").addEventListener("click",()=>{
+  lang=ORDER[(ORDER.indexOf(lang)+1)%ORDER.length];
+  try{localStorage.setItem("wb-lang",lang)}catch(e){}
+  apply();
+});
+
+/* ---------- light / dark ---------- */
+const root=document.documentElement,mq=matchMedia("(prefers-color-scheme: dark)");
+const SUN='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
+const MOON='<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/>';
+function isDark(){const t=root.getAttribute("data-theme");return t?t==="dark":mq.matches}
+function drawTheme(){$("themeIcon").innerHTML=isDark()?SUN:MOON}
+try{const s=localStorage.getItem("wb-theme");if(s==="dark"||s==="light")root.setAttribute("data-theme",s)}catch(e){}
+$("themeBtn").addEventListener("click",()=>{
+  const next=isDark()?"light":"dark";
+  root.setAttribute("data-theme",next);
+  try{localStorage.setItem("wb-theme",next)}catch(e){}
+  drawTheme();
+});
+mq.addEventListener("change",drawTheme);
+
+/* ---------- copy ---------- */
+document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
+  const e=$(b.dataset.copy);
+  const done=()=>{b.textContent=T[lang].copied;setTimeout(()=>b.textContent=T[lang].copy,1500)};
+  const sel=()=>{const r=document.createRange();r.selectNodeContents(e);const s=getSelection();s.removeAllRanges();s.addRange(r)};
+  if(navigator.clipboard){navigator.clipboard.writeText(e.textContent.trim()).then(done,sel)}else sel();
+}));
+
+drawTheme();apply();route();loadApps();
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+[
+  {
+    "id": "comparecast",
+    "name": "CompareCast",
+    "category": "weather",
+    "url": "https://bryanwoo988.github.io/CompareCast/",
+    "logo": null,
+    "cover": null,
+    "languages": ["BM", "EN", "华"],
+    "keywords": "rain hujan 下雨 雨 forecast ramalan 预报 weather cuaca 天气 wind angin 风 gust model ECMWF GFS ICON plot 地块 reminder peringatan 提醒",
+    "screenshots": [],
+    "zh": {
+      "tagline": "多模型天气比较，按地块提醒",
+      "description": "不同的天气模型，预报常常不一样。CompareCast 把几个模型的预报和实际下雨量放在一起比较，告诉你哪个模型在你的园地最准，还可以为每个地块设定下雨提醒。",
+      "features": ["预报与实际雨量对比", "多个天气模型并排比较", "阵风地图，提前防断枝倒树", "按地块的下雨提醒"]
+    },
+    "en": {
+      "tagline": "Multi-model weather comparison with per-plot reminders",
+      "description": "Different weather models often disagree. CompareCast puts several models next to the rain that actually fell, shows which one is most accurate for your farm, and lets you set rain reminders for each plot.",
+      "features": ["Forecast vs actual rain", "Several weather models side by side", "Wind gust map, to prepare for broken branches", "Rain reminders for each plot"]
+    },
+    "ms": {
+      "tagline": "Perbandingan cuaca pelbagai model dengan peringatan mengikut plot",
+      "description": "Model cuaca yang berbeza selalu beri ramalan berbeza. CompareCast bandingkan ramalan beberapa model dengan hujan sebenar, tunjuk model mana paling tepat untuk kebun anda, dan boleh tetapkan peringatan hujan untuk setiap plot.",
+      "features": ["Ramalan vs hujan sebenar", "Bandingkan beberapa model cuaca", "Peta angin kencang, elak dahan patah", "Peringatan hujan mengikut plot"]
+    },
+    "demo": {
+      "type": "compare",
+      "unit": "mm",
+      "title": { "zh": "7 天预报 vs 实际雨量", "en": "7-day forecast vs actual rain", "ms": "Ramalan 7 hari vs hujan sebenar" },
+      "xLabels": ["1", "2", "3", "4", "5", "6", "7"],
+      "bars": {
+        "name": { "zh": "实际", "en": "Actual", "ms": "Sebenar" },
+        "values": [10, 0, 35, 18, 4, 24, 6]
+      },
+      "lines": [
+        { "name": "ECMWF IFS", "values": [12, 2, 30, 20, 6, 20, 8] },
+        { "name": "ICON", "values": [6, 5, 25, 12, 10, 28, 3] },
+        { "name": "GFS", "values": [18, 10, 15, 25, 0, 10, 15] }
+      ]
+    }
+  },
+  {
+    "id": "ndvi",
+    "name": "NDVI Remote Sensing",
+    "category": "field",
+    "url": "https://bryanwoo988.github.io/NDVI/",
+    "logo": null,
+    "cover": null,
+    "languages": ["BM", "EN", "华"],
+    "keywords": "NDVI NDMI satellite satelit 卫星 Sentinel remote sensing penderiaan jauh 遥感 crop tanaman 作物 长势 growth tumbesaran moisture kelembapan 水分 weather cuaca 天气 plot 地块",
+    "screenshots": [],
+    "zh": {
+      "tagline": "Sentinel-2 卫星看地块长势、水分和天气",
+      "description": "用 Sentinel-2 卫星图计算植被指数（NDVI）和水分指数（NDMI），找出长得比较弱的地方，同时看地块当地的天气。巡园不用再靠猜，直接去最需要的地方。",
+      "features": ["NDVI 作物长势图", "NDMI 水分指数", "生产力分区", "地块当地天气"]
+    },
+    "en": {
+      "tagline": "Sentinel-2 satellite view of crop growth, moisture and weather for each plot",
+      "description": "Uses Sentinel-2 satellite images to work out a plant health index (NDVI) and a moisture index (NDMI), find the weaker spots, and show local weather for the plot. No more guessing on field rounds; go straight to where it matters.",
+      "features": ["NDVI crop growth map", "NDMI moisture index", "Productivity zones", "Local weather for the plot"]
+    },
+    "ms": {
+      "tagline": "Satelit Sentinel-2 untuk lihat tumbesaran, kelembapan dan cuaca setiap plot",
+      "description": "Guna imej satelit Sentinel-2 untuk kira indeks tumbuhan (NDVI) dan indeks kelembapan (NDMI), cari kawasan yang lemah, dan lihat cuaca setempat plot. Tak perlu meneka lagi, terus pergi ke tempat yang paling perlu.",
+      "features": ["Peta tumbesaran tanaman NDVI", "Indeks kelembapan NDMI", "Zon produktiviti", "Cuaca setempat plot"]
+    },
+    "demo": {
+      "type": "trend",
+      "unit": "NDVI",
+      "title": { "zh": "分区 NDVI 走势（1–9 月）", "en": "NDVI trend by zone (Jan–Sep)", "ms": "Trend NDVI mengikut zon (Jan–Sep)" },
+      "xLabels": {
+        "zh": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月"],
+        "en": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+        "ms": ["Jan", "Feb", "Mac", "Apr", "Mei", "Jun", "Jul", "Ogo", "Sep"]
+      },
+      "lines": [
+        { "name": { "zh": "A 区", "en": "Zone A", "ms": "Zon A" }, "values": [0.78, 0.80, 0.79, 0.77, 0.80, 0.79, 0.81, 0.80, 0.82] },
+        { "name": { "zh": "B 区", "en": "Zone B", "ms": "Zon B" }, "values": [0.65, 0.66, 0.62, 0.60, 0.61, 0.63, 0.60, 0.62, 0.61] },
+        { "name": { "zh": "C 区", "en": "Zone C", "ms": "Zon C" }, "values": [0.60, 0.58, 0.54, 0.50, 0.46, 0.44, 0.47, 0.41, 0.38] }
+      ]
+    }
+  }
+]
