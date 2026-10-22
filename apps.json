@@ -1109,5 +1109,58 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "duriantreescience",
+    "name": "Durian Tree Science",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/duriantreescience/",
+    "added": "2026-10-22",
+    "logo": "img/duriantreescience-logo.png",
+    "cover": "img/duriantreescience-cover.jpg",
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "durian 榴莲 botany botani 植物学 physiology fisiologi 生理学 flower bunga 花 pollination pendebungaan 授粉 fruit buah 果实 clone klon 品种 Musang King 猫山王 D197 Black Thorn 黑刺 cultivar kultivar handbook buku panduan 手册",
+    "screenshots": [
+      "img/duriantreescience-1.jpg",
+      "img/duriantreescience-2.jpg",
+      "img/duriantreescience-3.jpg"
+    ],
+    "zh": {
+      "tagline": "榴莲树的植物学与生理学图解手册",
+      "description": "从分类、树形、根和树干，到树干开花、蝙蝠授粉、催花、坐果和果实发育，再到营养、水分、修剪和病虫害，一步一步讲清楚榴莲树怎么生长。后半部分比较泰国、马来西亚、越南、印尼、菲律宾和中国海南的种植方法和品种。共 45 个章节、31 张图版，离线可用。",
+      "features": [
+        "45 个章节，从分类到采后",
+        "31 张图版：花的结构、授粉、果实发育等",
+        "催花、坐果、落果和成熟的生理原理",
+        "东南亚各国的种植方法和品种对照",
+        "搜索、书签，离线可用"
+      ]
+    },
+    "en": {
+      "tagline": "An illustrated handbook of durian tree botany and physiology",
+      "description": "Explains how the durian tree grows, step by step: taxonomy, tree form, roots and trunk, then trunk-borne flowers, bat pollination, floral induction, fruit set and fruit development, and on to nutrition, water, pruning, pests and diseases. The second half compares the practices and clones of Thailand, Malaysia, Vietnam, Indonesia, the Philippines and China's Hainan. 45 sections and 31 plates, usable offline.",
+      "features": [
+        "45 sections, from taxonomy to post-harvest",
+        "31 plates: flower structure, pollination, fruit growth and more",
+        "The physiology behind floral induction, fruit set, fruit drop and ripening",
+        "Practices and clones compared across Southeast Asia",
+        "Search, bookmarks, works offline"
+      ]
+    },
+    "ms": {
+      "tagline": "Buku panduan bergambar botani dan fisiologi pokok durian",
+      "description": "Menerangkan cara pokok durian tumbuh, langkah demi langkah: taksonomi, bentuk pokok, akar dan batang, kemudian bunga pada batang, pendebungaan oleh kelawar, aruhan pembungaan, pembentukan buah dan perkembangan buah, seterusnya nutrisi, air, cantasan, perosak dan penyakit. Bahagian kedua membandingkan amalan dan klon di Thailand, Malaysia, Vietnam, Indonesia, Filipina dan Hainan, China. 45 bahagian dan 31 plat, boleh digunakan tanpa internet.",
+      "features": [
+        "45 bahagian, dari taksonomi hingga lepas tuai",
+        "31 plat: struktur bunga, pendebungaan, pertumbuhan buah dan lain-lain",
+        "Fisiologi di sebalik aruhan pembungaan, pembentukan, keguguran dan kemasakan buah",
+        "Amalan dan klon dibandingkan di seluruh Asia Tenggara",
+        "Carian, penanda buku, guna tanpa internet"
+      ]
+    },
+    "demo": null
   }
 ]
