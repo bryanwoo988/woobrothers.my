@@ -1040,5 +1040,53 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "windaccum",
+    "name": "Wind Accumulation",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/windaccum/",
+    "logo": "img/windaccum-logo.png",
+    "cover": null,
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "wind angin 风 convergence penumpuan 辐合 thunderstorm ribut petir 雷暴 storm ribut rain hujan 降雨 下雨 gust angin kencang 强风 ECMWF ensemble 集合 satellite satelit 卫星 isobar isobar 等压线 forecast ramalan 预报 WhatsApp",
+    "screenshots": [],
+    "zh": {
+      "tagline": "雷暴、降雨、强风预警：看 ECMWF 低层风辐合",
+      "description": "低空的风往同一处汇聚，空气就会被迫上升，容易形成午后雷暴、大雨和阵风。风的累积在地图上画出 ECMWF 模型的低层风辐合，告诉你未来 48 小时哪个时段最危险，再用 51 个集合成员看预报有多可信。可以叠加红外卫星云图和等压线，结果能用 WhatsApp 分享。所有时间都按马来西亚时间显示。",
+      "features": [
+        "地图显示 ECMWF 低层风辐合",
+        "未来 48 小时的雷暴、降雨、强风风险",
+        "51 个集合成员的预报信心度",
+        "叠加红外卫星云图和等压线",
+        "收藏地点、WhatsApp 分享、马来西亚时间"
+      ]
+    },
+    "en": {
+      "tagline": "Storm, rain and strong-wind watch from ECMWF low-level convergence",
+      "description": "When low-level winds pile into one place, the air is forced up, which is how afternoon thunderstorms, heavy rain and gusts start. Wind Accumulation maps ECMWF's low-level wind convergence, shows which of the next 48 hours carry the most risk, and uses the 51 ensemble members to show how confident the forecast is. You can overlay infrared satellite imagery and isobars and share the result on WhatsApp. Every time is shown in Malaysia time.",
+      "features": [
+        "Map of ECMWF low-level wind convergence",
+        "Storm, rain and strong-wind risk for the next 48 hours",
+        "Forecast confidence from 51 ensemble members",
+        "Infrared satellite and isobar overlays",
+        "Saved places, WhatsApp sharing, Malaysia time"
+      ]
+    },
+    "ms": {
+      "tagline": "Amaran ribut, hujan dan angin kencang daripada penumpuan angin aras rendah ECMWF",
+      "description": "Apabila angin aras rendah berkumpul di satu tempat, udara terpaksa naik, dan dari situlah ribut petir petang, hujan lebat dan angin kencang bermula. Wind Accumulation memetakan penumpuan angin aras rendah ECMWF, menunjukkan jam mana dalam 48 jam akan datang paling berisiko, dan menggunakan 51 ahli ensemble untuk menunjukkan tahap keyakinan ramalan. Anda boleh tindih imej satelit inframerah dan isobar serta kongsi hasilnya di WhatsApp. Semua masa dipaparkan dalam waktu Malaysia.",
+      "features": [
+        "Peta penumpuan angin aras rendah ECMWF",
+        "Risiko ribut, hujan dan angin kencang untuk 48 jam akan datang",
+        "Keyakinan ramalan daripada 51 ahli ensemble",
+        "Tindihan satelit inframerah dan isobar",
+        "Tempat kegemaran, kongsi WhatsApp, waktu Malaysia"
+      ]
+    },
+    "demo": null
   }
 ]

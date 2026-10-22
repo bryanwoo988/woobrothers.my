@@ -75,6 +75,7 @@ App 一更新，使用者下次打开时就要看到一个弹窗，写清楚：
 | AgriPro DIPM | 还没有，需要开发者加上 |
 | AgriPro Notebook | 还没有，需要开发者加上 |
 | DroneDose | 有更新提示，但还没有按版本列出更新内容 |
+| Wind Accumulation | 自动更新，但还没有「更新了什么」弹窗 |
 
 ## 2. 有新版本时先问一句
 
