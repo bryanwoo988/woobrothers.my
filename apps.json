@@ -46,10 +46,10 @@
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/suhu/",
     "logo": "img/suhu-logo.png",
-    "cover": ["img/suhu-cover.jpg", "img/suhu-cover-2.jpg"],
+    "cover": ["img/suhu-cover.jpg?v=2", "img/suhu-cover-2.jpg?v=2"],
     "languages": ["EN", "华"],
     "keywords": "ENSO El Niño La Niña 厄尔尼诺 拉尼娜 iklim climate 气候 kemarau drought 干旱 jerebu haze 烟霾 IOD MJO NOAA PM2.5 api fire 火点 hotspot panas heat 高温 UV Sabah Sarawak 沙巴 砂拉越",
-    "screenshots": ["img/suhu-1.jpg", "img/suhu-2.jpg", "img/suhu-3.jpg"],
+    "screenshots": ["img/suhu-1.jpg?v=2", "img/suhu-2.jpg?v=2", "img/suhu-3.jpg?v=2"],
     "zh": {
       "tagline": "厄尔尼诺监测，看懂马来西亚的干旱和烟霾风险",
       "description": "厄尔尼诺一来，园里会不会旱、会不会有烟霾？SUHU 汇集 NOAA、澳洲气象局等机构的厄尔尼诺（ENSO）、印度洋偶极子（IOD）和 MJO 监测数据，翻译成半岛、沙巴和砂拉越的干旱、烟霾和洪水风险。它不是另一个预报，而是帮你读懂官方数据。数据每 6 小时自动更新，可以安装到手机，离线也能看。",
