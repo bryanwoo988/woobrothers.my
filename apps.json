@@ -266,13 +266,13 @@
     "category": "field",
     "url": "https://stanleywoosweeleong.github.io/TerraDurian/",
     "logo": "img/terradurian-logo.png",
-    "cover": null,
+    "cover": "img/terradurian-cover.jpg",
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 NASA satellite satelit 卫星 SMAP soil moisture kelembapan tanah 土壤水分 flowering berbunga 开花 催花 irrigation pengairan 灌溉 MODIS NDVI drought kemarau 干旱 forecast ramalan 预报 soil tanah 土壤",
-    "screenshots": [],
+    "screenshots": ["img/terradurian-1.jpg", "img/terradurian-2.jpg", "img/terradurian-3.jpg"],
     "zh": {
       "tagline": "用 NASA 卫星数据管理榴莲园：土壤水分、催花和灌溉",
       "description": "输入园地位置，TerraDurian 就会拉取 NASA 的卫星和气候数据（POWER、MODIS、SMAP）、ERA5-Land 土壤水分、SoilGrids 土壤和 16 天天气预报。它算出这块地种榴莲的适合度，看根区水分压力是否足够催花，并按 FAO-56 方法算出要不要灌溉。",
