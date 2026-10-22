@@ -62,6 +62,15 @@ App 一更新，使用者下次打开时就要看到一个弹窗，写清楚：
 | Bible | `js/releases.js` |
 | Learn Statistics | `index.html` 的 `RELEASES` |
 | SUHU | 还没有，需要开发者加上 |
+| ENSO Monitor | 还没有，需要开发者加上 |
+| SkewT Sounding | 还没有，需要开发者加上 |
+| TerraDurian | 还没有，需要开发者加上 |
+| Durian Borer Action | 还没有，需要开发者加上 |
+| Durian Trunk Disease Triage | 还没有，需要开发者加上 |
+| InsectEye | 还没有，需要开发者加上 |
+| C:N Learning Garden | 还没有，需要开发者加上 |
+| FormuLab | 还没有，需要开发者加上 |
+| ChemLog Lab 2 | 还没有，需要开发者加上 |
 
 ## 2. 有新版本时先问一句
 

@@ -123,5 +123,504 @@
         { "name": { "zh": "C 区", "en": "Zone C", "ms": "Zon C" }, "values": [0.60, 0.58, 0.54, 0.50, 0.46, 0.44, 0.47, 0.41, 0.38] }
       ]
     }
+  },
+  {
+    "id": "enso",
+    "name": "ENSO Monitor",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/enso/",
+    "logo": "img/enso-logo.png",
+    "cover": null,
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "ENSO El Niño La Niña 厄尔尼诺 拉尼娜 RONI Niño 3.4 IOD MJO monsoon monsun 季风 surge iklim climate 气候 hujan rain 下雨 orchard dusun 果园 MetMalaysia NOAA",
+    "screenshots": [],
+    "zh": {
+      "tagline": "给果园看的厄尔尼诺、季风和 MJO 监测",
+      "description": "直接读 NOAA 的 RONI 和每周 Niño 3.4 数据，告诉你现在是厄尔尼诺、拉尼娜还是中性，再加上印度洋偶极子（IOD）、MJO 和东北季风寒潮。每一项都附上对果园的意思：要防旱、顾排水，还是先别喷药。官方暴雨和水灾警报请看 MetMalaysia。",
+      "features": [
+        "RONI 官方指数和每周 Niño 3.4 海温",
+        "印度洋偶极子（IOD）和 MJO 对本地降雨的影响",
+        "东北季风寒潮提醒：1–3 天大雨",
+        "按季风季节给果园工作建议",
+        "直接连到 MetMalaysia 官方警报"
+      ]
+    },
+    "en": {
+      "tagline": "El Niño, monsoon and MJO monitor for orchards",
+      "description": "Reads NOAA's RONI and weekly Niño 3.4 data to show whether we are in El Niño, La Niña or neutral, then adds the Indian Ocean Dipole (IOD), the MJO and Northeast Monsoon surges. Each one comes with what it means for the orchard: guard against drought, prepare drainage, or hold off spraying. For official heavy-rain and flood warnings, it points you to MetMalaysia.",
+      "features": [
+        "RONI official index and weekly Niño 3.4 sea temperature",
+        "Indian Ocean Dipole (IOD) and MJO effect on local rain",
+        "Northeast Monsoon surge alerts: 1–3 days of heavy rain",
+        "Orchard advice for each monsoon season",
+        "Links straight to MetMalaysia official warnings"
+      ]
+    },
+    "ms": {
+      "tagline": "Pemantau El Niño, monsun dan MJO untuk dusun",
+      "description": "Membaca data RONI dan Niño 3.4 mingguan NOAA untuk tunjuk sama ada kita dalam El Niño, La Niña atau neutral, kemudian tambah Dipol Lautan Hindi (IOD), MJO dan luruan Monsun Timur Laut. Setiap satu disertakan maksudnya untuk dusun: berjaga dengan kemarau, sediakan saliran, atau tangguhkan semburan. Untuk amaran rasmi hujan lebat dan banjir, ia bawa anda ke MetMalaysia.",
+      "features": [
+        "Indeks rasmi RONI dan suhu laut Niño 3.4 mingguan",
+        "Kesan Dipol Lautan Hindi (IOD) dan MJO pada hujan tempatan",
+        "Amaran luruan Monsun Timur Laut: 1–3 hari hujan lebat",
+        "Nasihat dusun untuk setiap musim monsun",
+        "Pautan terus ke amaran rasmi MetMalaysia"
+      ]
+    },
+    "demo": {
+      "type": "trend",
+      "unit": "°C",
+      "signed": true,
+      "yMin": 0,
+      "yMax": 1.6,
+      "title": {
+        "zh": "印度洋偶极子（IOD）· 每周",
+        "en": "Indian Ocean Dipole (IOD) · weekly",
+        "ms": "Dipol Lautan Hindi (IOD) · mingguan"
+      },
+      "refs": [
+        {
+          "value": 0.4,
+          "name": {
+            "zh": "+0.4 以上 = 偏干",
+            "en": "above +0.4 = drier for us",
+            "ms": "atas +0.4 = lebih kering"
+          }
+        }
+      ],
+      "xLabels": [
+        "22/9",
+        "29/9",
+        "6/10",
+        "13/10",
+        "20/10"
+      ],
+      "lines": [
+        {
+          "name": "IOD (DMI)",
+          "values": [
+            1.49,
+            0.91,
+            1.0,
+            1.18,
+            0.59
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "skewt",
+    "name": "SkewT Sounding",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/SkewT/",
+    "logo": "img/skewt-logo.png",
+    "cover": null,
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "Skew-T sounding 探空 thunderstorm ribut petir 雷暴 CAPE storm hujan rain 下雨 atmosphere atmosfera 大气 ECMWF GFS model jet hail 冰雹 forecast ramalan 预报 farm ladang 园地",
+    "screenshots": [],
+    "zh": {
+      "tagline": "大气垂直剖面，判断今天会不会有雷雨",
+      "description": "气象员用来判断雷暴的 Skew-T 探空图，现在按你的园地位置直接画出来。它把天气模型的高空数据整理成水汽、不稳定度和触发条件三要素，加上逐小时风险条，帮你判断下午是短阵雨还是真正的风暴。还有一整套入门指南，教你一步一步看懂这张图。",
+      "features": [
+        "按定位或园地画出 Skew-T 探空图",
+        "多个天气模型可切换比较",
+        "CAPE 和不稳定指数，判断雷暴强弱",
+        "逐小时风险条和降雨量估算",
+        "图解入门指南，从零开始学看探空图"
+      ]
+    },
+    "en": {
+      "tagline": "Vertical atmosphere profile: will a storm build today?",
+      "description": "The Skew-T sounding that forecasters use to judge thunderstorms, drawn for your own farm's location. It turns weather-model data from the upper air into the three storm ingredients (moisture, instability and a trigger) plus an hourly risk strip, so you can tell a quick afternoon shower from a real storm. A step-by-step guide teaches you how to read the chart.",
+      "features": [
+        "Skew-T sounding for your location or saved farms",
+        "Switch between several weather models",
+        "CAPE and instability indices for storm strength",
+        "Hourly risk strip and rain amount estimate",
+        "Illustrated beginner's guide to reading soundings"
+      ]
+    },
+    "ms": {
+      "tagline": "Profil menegak atmosfera: adakah ribut akan terbentuk hari ini?",
+      "description": "Carta Skew-T yang digunakan oleh ahli meteorologi untuk menilai ribut petir, dilukis untuk lokasi kebun anda sendiri. Ia menukar data model cuaca di udara atas kepada tiga bahan ribut (lembapan, ketidakstabilan dan pencetus) serta jalur risiko setiap jam, supaya anda boleh bezakan hujan sekejap petang dengan ribut sebenar. Panduan langkah demi langkah mengajar cara membaca carta ini.",
+      "features": [
+        "Carta Skew-T untuk lokasi anda atau kebun yang disimpan",
+        "Tukar antara beberapa model cuaca",
+        "CAPE dan indeks ketidakstabilan untuk kekuatan ribut",
+        "Jalur risiko setiap jam dan anggaran jumlah hujan",
+        "Panduan bergambar untuk pemula membaca carta"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "terradurian",
+    "name": "TerraDurian",
+    "category": "field",
+    "url": "https://stanleywoosweeleong.github.io/TerraDurian/",
+    "logo": "img/terradurian-logo.png",
+    "cover": null,
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "durian 榴莲 NASA satellite satelit 卫星 SMAP soil moisture kelembapan tanah 土壤水分 flowering berbunga 开花 催花 irrigation pengairan 灌溉 MODIS NDVI drought kemarau 干旱 forecast ramalan 预报 soil tanah 土壤",
+    "screenshots": [],
+    "zh": {
+      "tagline": "用 NASA 卫星数据管理榴莲园：土壤水分、催花和灌溉",
+      "description": "输入园地位置，TerraDurian 就会拉取 NASA 的卫星和气候数据（POWER、MODIS、SMAP）、ERA5-Land 土壤水分、SoilGrids 土壤和 16 天天气预报。它算出这块地种榴莲的适合度，看根区水分压力是否足够催花，并按 FAO-56 方法算出要不要灌溉。",
+      "features": [
+        "榴莲种植适合度评分",
+        "根区水分压力：催花信号和收成推算",
+        "FAO-56 水分平衡与灌溉建议",
+        "高温天数、干旱天数和 16 天预报",
+        "MODIS 植被长势（NDVI / EVI）和土壤资料"
+      ]
+    },
+    "en": {
+      "tagline": "NASA satellite data for durian farms: soil moisture, flowering and irrigation",
+      "description": "Enter your farm's location and TerraDurian pulls NASA satellite and climate data (POWER, MODIS, SMAP), ERA5-Land soil moisture, SoilGrids soil data and a 16-day forecast. It scores how suitable the site is for durian, checks whether root-zone water stress is enough to trigger flowering, and works out irrigation needs with the FAO-56 method.",
+      "features": [
+        "Durian site suitability score",
+        "Root-zone water stress: flowering signal and harvest projection",
+        "FAO-56 water balance and irrigation advice",
+        "Heat-stress days, dry spells and a 16-day forecast",
+        "MODIS vegetation vigour (NDVI / EVI) and soil data"
+      ]
+    },
+    "ms": {
+      "tagline": "Data satelit NASA untuk kebun durian: kelembapan tanah, pembungaan dan pengairan",
+      "description": "Masukkan lokasi kebun dan TerraDurian akan menarik data satelit dan iklim NASA (POWER, MODIS, SMAP), kelembapan tanah ERA5-Land, data tanah SoilGrids dan ramalan 16 hari. Ia memberi skor kesesuaian tapak untuk durian, menyemak sama ada tekanan air di zon akar cukup untuk merangsang pembungaan, dan mengira keperluan pengairan dengan kaedah FAO-56.",
+      "features": [
+        "Skor kesesuaian tapak untuk durian",
+        "Tekanan air zon akar: isyarat pembungaan dan unjuran tuaian",
+        "Imbangan air FAO-56 dan nasihat pengairan",
+        "Hari tekanan haba, musim kering dan ramalan 16 hari",
+        "Kesuburan tumbuhan MODIS (NDVI / EVI) dan data tanah"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "durian-borer",
+    "name": "Durian Borer Action",
+    "category": "pest",
+    "url": "https://stanleywoosweeleong.github.io/Pinholeborer/",
+    "logo": "img/durian-borer-logo.png",
+    "cover": "img/durian-borer-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "durian 榴莲 borer pengorek 蛀干 小蠹 pinhole ambrosia beetle kumbang 甲虫 trunk batang 树干 Phytophthora Fusarium dieback mati rosot 回枯 spray semburan 喷药 schedule jadual 时间表",
+    "screenshots": [
+      "img/durian-borer-1.jpg",
+      "img/durian-borer-2.jpg",
+      "img/durian-borer-3.jpg"
+    ],
+    "zh": {
+      "tagline": "榴莲蛀干小蠹：辨认、分级、处理、排时间表",
+      "description": "树干上的小洞有好几种，处理方法完全不同，认错了就白花钱。这个 App 先教你分清小蠹（针孔）、天牛和疫霉病，再按洞的数量和树皮状况给树分级，然后列出该怎么处理和喷药时间表。它也解释为什么内吸药对小蠹没用、为什么不建议用酒精诱捕器。",
+      "features": [
+        "辨认针孔小蠹、天牛和疫霉病",
+        "看洞数和树皮给树分级",
+        "按等级给出处理方案",
+        "喷药和巡园时间表",
+        "附上研究来源"
+      ]
+    },
+    "en": {
+      "tagline": "Durian pinhole borer: identify, grade, act, schedule",
+      "description": "Holes in the trunk come from different causes that need completely different treatment, and getting it wrong wastes money. This app first helps you tell pinhole borers (ambrosia beetles) from longhorn beetles and Phytophthora, then grades the tree by hole count and bark condition, and gives an action plan and spray schedule. It also explains why systemic insecticides do nothing against this beetle and why alcohol traps are not used.",
+      "features": [
+        "Tell pinhole borer, longhorn beetle and Phytophthora apart",
+        "Grade the tree by hole count and bark condition",
+        "Action plan for each grade",
+        "Spray and patrol schedule",
+        "Research sources included"
+      ]
+    },
+    "ms": {
+      "tagline": "Pengorek lubang jarum durian: kenal pasti, gred, tindakan, jadual",
+      "description": "Lubang pada batang datang daripada punca berbeza yang perlukan rawatan yang sama sekali berbeza, dan silap kenal membazir wang. Aplikasi ini mula-mula bantu anda bezakan pengorek lubang jarum (kumbang ambrosia), kumbang tanduk panjang dan Phytophthora, kemudian beri gred pokok mengikut bilangan lubang dan keadaan kulit kayu, serta pelan tindakan dan jadual semburan. Ia juga terangkan kenapa racun sistemik tidak berkesan untuk kumbang ini dan kenapa perangkap alkohol tidak digunakan.",
+      "features": [
+        "Bezakan pengorek lubang jarum, kumbang tanduk panjang dan Phytophthora",
+        "Gred pokok mengikut bilangan lubang dan keadaan kulit kayu",
+        "Pelan tindakan untuk setiap gred",
+        "Jadual semburan dan rondaan",
+        "Sumber kajian disertakan"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "durian-trunk",
+    "name": "Durian Trunk Disease Triage",
+    "category": "pest",
+    "url": "https://stanleywoosweeleong.github.io/duriantrunkdiseases/",
+    "logo": "img/durian-trunk-logo.png",
+    "cover": "img/durian-trunk-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "durian 榴莲 trunk batang 树干 disease penyakit 病 Phytophthora canker kanker 溃疡 Fusarium Botryosphaeriaceae dieback mati rosot 回枯 root akar 根 white root akar putih 白根病 fungicide racun kulat 杀菌剂 gum 流胶",
+    "screenshots": [
+      "img/durian-trunk-1.jpg",
+      "img/durian-trunk-2.jpg",
+      "img/durian-trunk-3.jpg"
+    ],
+    "zh": {
+      "tagline": "疫霉、回枯、镰刀菌还是根病？勾选看到的症状",
+      "description": "榴莲树干上的四种病看起来很像，处理方法却完全不同。你只要勾选树上真的看得到的症状（流胶、小黑点、白色霉、整棵树枯萎），App 就会指出最可能是哪一种病。另外还有杀菌剂和抗药性说明、有益微生物、果腐和田间记录。整个 App 离线也能用。",
+      "features": [
+        "勾选看得到的症状，找出最可能的病",
+        "疫霉、葡萄座腔菌回枯、镰刀菌、根病四种对比",
+        "先排除不是病的情况，不乱喷药",
+        "杀菌剂选择和抗药性管理",
+        "完全离线可用"
+      ]
+    },
+    "en": {
+      "tagline": "Phytophthora, dieback, Fusarium or root disease? Tick what you see",
+      "description": "The four durian trunk diseases look alike but need entirely different handling. Tick only the symptoms you can actually see on the tree (weeping gum, black dots, white mould, a wilting tree with a clean trunk) and the app points to the most likely disease. It also covers fungicides and resistance management, beneficial microbes, fruit rot and a field log. Works fully offline.",
+      "features": [
+        "Tick visible symptoms to find the most likely disease",
+        "Compares Phytophthora, Botryosphaeriaceae dieback, Fusarium and root disease",
+        "Rule out non-disease causes first, so you don't spray for nothing",
+        "Fungicide choice and resistance management",
+        "Works fully offline"
+      ]
+    },
+    "ms": {
+      "tagline": "Phytophthora, mati rosot, Fusarium atau penyakit akar? Tandakan apa yang anda nampak",
+      "description": "Empat penyakit batang durian nampak serupa tetapi perlukan rawatan yang sama sekali berbeza. Tandakan hanya simptom yang betul-betul anda nampak pada pokok (gam meleleh, bintik hitam, kulat putih, pokok layu dengan batang yang bersih) dan aplikasi akan tunjuk penyakit yang paling mungkin. Ia juga merangkumi racun kulat dan pengurusan kerintangan, mikrob berfaedah, reput buah dan rekod ladang. Boleh digunakan sepenuhnya tanpa internet.",
+      "features": [
+        "Tandakan simptom yang nampak untuk cari penyakit paling mungkin",
+        "Bandingkan Phytophthora, mati rosot Botryosphaeriaceae, Fusarium dan penyakit akar",
+        "Tolak dulu punca yang bukan penyakit, supaya tidak sembur sia-sia",
+        "Pilihan racun kulat dan pengurusan kerintangan",
+        "Boleh digunakan sepenuhnya tanpa internet"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "insecteye",
+    "name": "InsectEye",
+    "category": "pest",
+    "url": "https://stanleywoosweeleong.github.io/insecteye/",
+    "logo": "img/insecteye-logo.png",
+    "cover": "img/insecteye-cover.jpg",
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "insect serangga 昆虫 trap perangkap 诱捕 sticky card kad melekit 黄板 粘虫板 light lampu 诱虫灯 colour warna 颜色 wavelength 波长 aphid afid 蚜虫 whitefly lalat putih 粉虱 thrips 蓟马 durian 榴莲 vegetables sayur 蔬菜",
+    "screenshots": [
+      "img/insecteye-1.jpg",
+      "img/insecteye-2.jpg",
+      "img/insecteye-3.jpg"
+    ],
+    "zh": {
+      "tagline": "昆虫看到什么颜色？选对黄板和诱虫灯",
+      "description": "为什么黄板能粘到蚜虫和粉虱，诱虫灯却吸引另一批虫？InsectEye 让你拖动颜色条，看每个波长对昆虫眼睛的作用，以及哪些害虫有记录的反应。按你要对付的害虫和目的（监测还是大量诱杀），它会推荐合适的诱捕方式，还告诉你黏板多久要换，以及榴莲园和菜园各生长期的用法。",
+      "features": [
+        "拖动颜色条，看昆虫对各波长的反应",
+        "按害虫和目的推荐黄板或诱虫灯",
+        "什么时候该换黏板",
+        "榴莲园和菜园各阶段的用法",
+        "每项都标明证据来源和等级"
+      ]
+    },
+    "en": {
+      "tagline": "What colours do insects see? Pick the right sticky card or light trap",
+      "description": "Why does a yellow card catch aphids and whiteflies while a light trap pulls in a different crowd? InsectEye lets you drag a colour bar to see how each wavelength affects insect eyes and which pests have a documented response. Choose the pest and your goal (monitoring or mass trapping) and it recommends a trap, tells you when to replace cards, and shows how to use them at each stage of a durian orchard or vegetable plot.",
+      "features": [
+        "Drag the colour bar to see insect response by wavelength",
+        "Card or lamp recommendation by pest and goal",
+        "When to replace sticky cards",
+        "Use by growth stage for durian and vegetables",
+        "Every claim labelled with its evidence and source"
+      ]
+    },
+    "ms": {
+      "tagline": "Warna apa yang serangga nampak? Pilih kad melekit atau perangkap lampu yang betul",
+      "description": "Kenapa kad kuning dapat tangkap afid dan lalat putih, sedangkan perangkap lampu menarik serangga lain? InsectEye membolehkan anda seret bar warna untuk lihat kesan setiap panjang gelombang pada mata serangga dan perosak mana yang ada tindak balas yang direkodkan. Pilih perosak dan tujuan anda (pemantauan atau perangkap besar-besaran), dan ia akan cadangkan perangkap, beritahu bila perlu tukar kad, serta cara guna pada setiap peringkat kebun durian atau sayur.",
+      "features": [
+        "Seret bar warna untuk lihat tindak balas serangga",
+        "Cadangan kad atau lampu mengikut perosak dan tujuan",
+        "Bila perlu tukar kad melekit",
+        "Cara guna mengikut peringkat untuk durian dan sayur",
+        "Setiap maklumat dilabel dengan bukti dan sumbernya"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "cn-garden",
+    "name": "C:N Learning Garden",
+    "category": "learn",
+    "url": null,
+    "logo": "img/cn-garden-logo.png",
+    "cover": "img/cn-garden-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "C:N carbon nitrogen karbon nitrogen 碳氮比 durian 榴莲 flowering berbunga 开花 flush pucuk 抽梢 fertiliser baja 肥料 fruit drop gugur buah 落果 lesson pelajaran 课程",
+    "screenshots": [
+      "img/cn-garden-1.jpg",
+      "img/cn-garden-2.jpg",
+      "img/cn-garden-3.jpg"
+    ],
+    "zh": {
+      "tagline": "榴莲现在该做什么？按碳氮比给今天的行动",
+      "description": "榴莲一直抽梢不开花、花苞掉落、刚收成要恢复……每种情况的做法都不一样。选出你的问题，回答几个会改变决定的问题（土壤湿度、树龄、最近有没有下氮肥），App 就会给出今天该做的事和接下来要观察什么，并说明背后碳和氮的道理。另外有课程、其他作物资料和研究来源。",
+      "features": [
+        "九种榴莲情况，按问题给出今天的行动",
+        "只问会改变决定的几个问题",
+        "解释碳、氮和开花的关系",
+        "可选的氮肥用量计算",
+        "课程和研究来源"
+      ]
+    },
+    "en": {
+      "tagline": "What should I do for my durian now? Today's actions, explained by C:N",
+      "description": "A durian that keeps flushing but won't flower, buds that drop, a tree that needs to recover after harvest: each needs a different response. Pick your problem, answer the few questions that actually change the decision (soil moisture, tree maturity, recent nitrogen), and the app gives today's actions, what to watch next, and the carbon and nitrogen reasoning behind it. Lessons, other crop profiles and research sources are included.",
+      "features": [
+        "Nine durian situations, each with today's actions",
+        "Only asks the questions that change the decision",
+        "Explains how carbon, nitrogen and flowering connect",
+        "Optional nitrogen input calculator",
+        "Lessons and research sources"
+      ]
+    },
+    "ms": {
+      "tagline": "Apa perlu saya buat untuk durian sekarang? Tindakan hari ini, diterangkan dengan C:N",
+      "description": "Durian yang asyik keluar pucuk tetapi tidak berbunga, putik yang gugur, pokok yang perlu pulih selepas tuaian: setiap satu perlukan tindakan berbeza. Pilih masalah anda, jawab beberapa soalan yang betul-betul mengubah keputusan (kelembapan tanah, kematangan pokok, baja nitrogen baru-baru ini), dan aplikasi akan beri tindakan hari ini, apa yang perlu diperhatikan seterusnya, dan sebab karbon dan nitrogen di sebaliknya. Disertakan pelajaran, profil tanaman lain dan sumber kajian.",
+      "features": [
+        "Sembilan situasi durian, setiap satu dengan tindakan hari ini",
+        "Hanya tanya soalan yang mengubah keputusan",
+        "Terangkan kaitan karbon, nitrogen dan pembungaan",
+        "Kalkulator input nitrogen (pilihan)",
+        "Pelajaran dan sumber kajian"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "formulab",
+    "name": "FormuLab",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/emulsiontypes/",
+    "logo": "img/formulab-logo.png",
+    "cover": "img/formulab-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "formulation formulasi 剂型 pesticide racun perosak 农药 EC EW SC WP WG CS SL emulsion emulsi 乳油 tank mix campuran tangki 混药 mixing order turutan campuran 混药顺序 sprayer penyembur 喷雾器",
+    "screenshots": [
+      "img/formulab-1.jpg",
+      "img/formulab-2.jpg",
+      "img/formulab-3.jpg"
+    ],
+    "zh": {
+      "tagline": "农药剂型通：EC、SC、WP 有什么不同？",
+      "description": "农药瓶上的 EC、EW、SC、WP、CS 是剂型代码，决定药怎么保存、怎么稀释、有什么优缺点。FormuLab 把常见剂型按类别列出来，点开就看到简单说明和比较。混药时，勾选要放进药桶的东西，它会排出正确的加药顺序，避免结块、分层和堵喷头，还会按喷雾器类型提醒注意事项。",
+      "features": [
+        "常见农药剂型一览（乳油、悬浮剂、可湿性粉剂等）",
+        "每种剂型的保存、稀释、优缺点",
+        "剂型并排比较",
+        "混药顺序：避免结块、分层和堵喷头",
+        "按喷雾器类型给提醒"
+      ]
+    },
+    "en": {
+      "tagline": "Pesticide formulation types: what EC, SC and WP actually mean",
+      "description": "EC, EW, SC, WP and CS on a pesticide label are formulation codes that decide how a product is stored, how it dilutes, and what it does well and badly. FormuLab lists the common types by family; tap one for a plain explanation and comparison. When mixing, tick what goes in the tank and it gives the right order to add them, so you avoid clumps, separation and blocked nozzles, with tips for your type of sprayer.",
+      "features": [
+        "Common pesticide formulation types at a glance",
+        "Storage, dilution, strengths and weaknesses of each",
+        "Compare formulations side by side",
+        "Tank-mix order to avoid clumps, separation and blocked nozzles",
+        "Tips by sprayer type"
+      ]
+    },
+    "ms": {
+      "tagline": "Jenis formulasi racun perosak: maksud sebenar EC, SC dan WP",
+      "description": "EC, EW, SC, WP dan CS pada label racun ialah kod formulasi yang menentukan cara produk disimpan, cara ia dicairkan, serta kelebihan dan kelemahannya. FormuLab menyenaraikan jenis biasa mengikut kumpulan; tekan satu untuk penerangan ringkas dan perbandingan. Semasa membancuh, tandakan apa yang masuk ke dalam tangki dan ia beri turutan yang betul, supaya tidak berketul, terpisah atau muncung tersumbat, dengan tip mengikut jenis penyembur.",
+      "features": [
+        "Jenis formulasi racun perosak yang biasa",
+        "Cara simpan, cairan, kelebihan dan kelemahan setiap satu",
+        "Bandingkan formulasi sebelah-menyebelah",
+        "Turutan campuran tangki supaya tidak berketul atau tersumbat",
+        "Tip mengikut jenis penyembur"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "chemlog",
+    "name": "ChemLog Lab 2",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/ChemLogLab2/",
+    "logo": "img/chemlog-logo.png",
+    "cover": "img/chemlog-cover.jpg",
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "tank mix campuran tangki 配药 混药 calculator kalkulator 计算 spray semburan 喷药 fertiliser baja 施肥 log rekod 记录 stock stok 库存 cost kos 成本 worker pekerja 工人 zone zon 区 WhatsApp",
+    "screenshots": [
+      "img/chemlog-1.jpg",
+      "img/chemlog-2.jpg"
+    ],
+    "zh": {
+      "tagline": "配药计算和喷药、施肥记录",
+      "description": "输入药桶容量和每种药的用量，ChemLog 马上算出每桶要放多少、需要几包，结果可以直接用 WhatsApp 发给工人。每次喷药或施肥都能按园地、区和工人记录下来，同时追踪库存和成本。离线也能用，资料可以导出备份。",
+      "features": [
+        "按药桶容量算每桶用量和包数",
+        "施肥按棵数算用量",
+        "按园地、区、工人记录喷药和施肥",
+        "库存和成本追踪",
+        "WhatsApp 分享、导出备份、离线可用"
+      ]
+    },
+    "en": {
+      "tagline": "Tank-mix calculator with spray and fertiliser logs",
+      "description": "Enter the tank volume and the rate of each product, and ChemLog works out how much goes in each tank and how many packs you need, ready to send to workers on WhatsApp. Every spray or fertiliser round can be logged by farm, zone and worker, with stock and cost tracking. Works offline, and records can be exported as a backup.",
+      "features": [
+        "Per-tank amounts and pack counts from tank volume",
+        "Fertiliser amounts by number of trees",
+        "Spray and fertiliser logs by farm, zone and worker",
+        "Stock and cost tracking",
+        "WhatsApp sharing, export backup, works offline"
+      ]
+    },
+    "ms": {
+      "tagline": "Kalkulator campuran tangki dengan rekod semburan dan baja",
+      "description": "Masukkan isi padu tangki dan kadar setiap produk, dan ChemLog akan kira berapa banyak masuk ke setiap tangki dan berapa pek yang diperlukan, sedia untuk dihantar kepada pekerja melalui WhatsApp. Setiap pusingan semburan atau baja boleh direkod mengikut ladang, zon dan pekerja, dengan jejakan stok dan kos. Boleh digunakan tanpa internet, dan rekod boleh dieksport sebagai sandaran.",
+      "features": [
+        "Jumlah setiap tangki dan bilangan pek daripada isi padu tangki",
+        "Jumlah baja mengikut bilangan pokok",
+        "Rekod semburan dan baja mengikut ladang, zon dan pekerja",
+        "Jejakan stok dan kos",
+        "Kongsi WhatsApp, eksport sandaran, guna tanpa internet"
+      ]
+    },
+    "demo": null
   }
 ]
