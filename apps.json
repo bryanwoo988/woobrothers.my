@@ -887,5 +887,105 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "agripro-dipm",
+    "name": "AgriPro DIPM",
+    "category": "pest",
+    "url": "https://stanleywoosweeleong.github.io/agripro-dipm-app/",
+    "logo": "img/agripro-dipm-logo.png",
+    "cover": null,
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "durian 榴莲 IPM pest perosak 虫害 害虫 disease penyakit 病害 psyllid psilid 木虱 thrips 蓟马 mite hama 螨 MOA IRAC FRAC insecticide racun serangga 杀虫剂 fungicide 杀菌剂 DT50 residue sisa 残留 tank mix campuran 混配",
+    "screenshots": [],
+    "zh": {
+      "tagline": "榴莲园综合虫害管理：病虫害数据库、作用机理和混配方案",
+      "description": "收录 85 种榴莲园的害虫、病害、螨类和杂草，每一种都写明危害部位、诊断特征和防治方法。按作用机理（MOA）分组用药，避免产生抗药性；分阶段给出击倒、巩固和预防的用药方案，并附生物防治和栽培方法。另有 49 种药剂的半衰期（DT50），方便出口时参考残留。离线可用。",
+      "features": [
+        "85 种病虫害资料，附诊断特征",
+        "按作用机理（MOA）轮换用药",
+        "分阶段用药方案：击倒、巩固、预防",
+        "生物防治和栽培、物理方法",
+        "49 种药剂的半衰期（DT50）参考"
+      ]
+    },
+    "en": {
+      "tagline": "Durian IPM: pest and disease database, modes of action and mixing plans",
+      "description": "Covers 85 durian orchard pests, diseases, mites and weeds, each with where it attacks, how to recognise it and how to control it. Products are grouped by mode of action (MOA) so you rotate and avoid resistance, with phased plans for knockdown, consolidation and prevention, plus biological, cultural and physical methods. Half-life (DT50) for 49 chemicals helps with residue planning for export. Works offline.",
+      "features": [
+        "85 pests and diseases, with diagnostic signs",
+        "Rotate by mode of action (MOA)",
+        "Phased plans: knockdown, consolidation, prevention",
+        "Biological, cultural and physical methods",
+        "Half-life (DT50) reference for 49 chemicals"
+      ]
+    },
+    "ms": {
+      "tagline": "IPM durian: pangkalan data perosak dan penyakit, mod tindakan dan pelan campuran",
+      "description": "Merangkumi 85 perosak, penyakit, hama dan rumpai kebun durian, setiap satu dengan bahagian yang diserang, cara mengenal pasti dan cara mengawal. Produk dikumpulkan mengikut mod tindakan (MOA) supaya anda boleh bergilir dan elak kerintangan, dengan pelan berperingkat untuk tumbangkan, pengukuhan dan pencegahan, serta kaedah biologi, kultur dan fizikal. Separuh hayat (DT50) bagi 49 bahan kimia membantu perancangan sisa untuk eksport. Boleh digunakan tanpa internet.",
+      "features": [
+        "85 perosak dan penyakit, dengan tanda pengecaman",
+        "Bergilir mengikut mod tindakan (MOA)",
+        "Pelan berperingkat: tumbangkan, pengukuhan, pencegahan",
+        "Kaedah biologi, kultur dan fizikal",
+        "Rujukan separuh hayat (DT50) bagi 49 bahan kimia"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "agripro-nutrients",
+    "name": "AgriPro Notebook",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/agripronutrients/",
+    "logo": "img/agripro-nutrients-logo.png",
+    "cover": "img/agripro-nutrients-cover.jpg",
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "nutrient nutrien 营养 养分 fertiliser baja 肥料 deficiency kekurangan 缺素 pH soil tanah 土壤 antagonism antagonisme 拮抗 synergy sinergi 协同 tank mix campuran tangki 混配 durian 榴莲 Musang King 猫山王 advisor penasihat 顾问",
+    "screenshots": [
+      "img/agripro-nutrients-1.jpg",
+      "img/agripro-nutrients-2.jpg",
+      "img/agripro-nutrients-3.jpg"
+    ],
+    "zh": {
+      "tagline": "农学笔记：营养元素、土壤 pH、混配规则和施肥顾问",
+      "description": "点一下任何营养元素，就会看到它在植物里的作用、关键酶，以及和其他元素之间的拮抗、抑制和协同关系。pH 有效性图告诉你不同土壤 pH 下哪些养分吸收得到；混配规则说明叶面肥怎样调才不会结块、堵喷头；施肥顾问按作物和榴莲品种给出配方建议。离线可用。",
+      "features": [
+        "20 多种营养元素的作用和关键酶",
+        "元素之间的拮抗、抑制、协同关系图",
+        "土壤 pH 对养分有效性的互动图",
+        "叶面肥混配规则，避免结块和堵喷头",
+        "按作物和榴莲品种的施肥顾问"
+      ]
+    },
+    "en": {
+      "tagline": "Agronomy notebook: nutrients, soil pH, mixing rules and a fertiliser advisor",
+      "description": "Tap any nutrient to see what it does in the plant, its key enzymes, and how it competes with, blocks or helps other nutrients. The pH availability chart shows which nutrients a plant can take up at each soil pH; the mixing rules explain how to mix foliar fertilisers without gelling or blocked nozzles; and the advisor suggests a recipe by crop and durian variety. Works offline.",
+      "features": [
+        "Role and key enzymes of 20+ nutrients",
+        "Map of antagonism, blockage and synergy between nutrients",
+        "Interactive soil pH availability chart",
+        "Foliar mixing rules to avoid gelling and blocked nozzles",
+        "Fertiliser advisor by crop and durian variety"
+      ]
+    },
+    "ms": {
+      "tagline": "Buku nota agronomi: nutrien, pH tanah, peraturan campuran dan penasihat baja",
+      "description": "Tekan mana-mana nutrien untuk lihat fungsinya dalam tumbuhan, enzim utamanya, dan cara ia bersaing, menyekat atau membantu nutrien lain. Carta ketersediaan pH menunjukkan nutrien yang boleh diserap pada setiap pH tanah; peraturan campuran menerangkan cara membancuh baja daun tanpa menjadi gel atau menyumbat muncung; dan penasihat mencadangkan resipi mengikut tanaman dan varieti durian. Boleh digunakan tanpa internet.",
+      "features": [
+        "Fungsi dan enzim utama 20+ nutrien",
+        "Peta antagonisme, sekatan dan sinergi antara nutrien",
+        "Carta interaktif ketersediaan nutrien mengikut pH tanah",
+        "Peraturan campuran baja daun supaya tidak jadi gel atau tersumbat",
+        "Penasihat baja mengikut tanaman dan varieti durian"
+      ]
+    },
+    "demo": null
   }
 ]
