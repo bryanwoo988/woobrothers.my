@@ -186,6 +186,12 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-
 .sortbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .sortbar .lbl{font:500 12px var(--font-data);color:var(--on-deep-2);text-transform:uppercase;letter-spacing:.08em;margin-right:4px}
 .sortbar .fchip{min-height:36px;font-size:13px}
+.totop{position:fixed;right:max(16px,env(safe-area-inset-right,0px) + 16px);bottom:calc(env(safe-area-inset-bottom,0px) + 20px);z-index:40;width:48px;height:48px;border-radius:50%;border:1px solid var(--deep-line);background:var(--deep);color:var(--on-deep);display:grid;place-items:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}
+.totop.show{opacity:1;visibility:visible;transform:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .totop{background:var(--line-strong);color:var(--fg);border-color:var(--muted)}}
+:root[data-theme="dark"] .totop{background:var(--line-strong);color:var(--fg);border-color:var(--muted)}
+.totop:hover{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+@media (prefers-reduced-motion: reduce){.totop{transition:none}}
 .result-line{font:500 13px var(--font-data);color:var(--muted);padding-block:28px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
 .acard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);display:flex;flex-direction:column;overflow:hidden;transition:border-color .2s,transform .2s}
@@ -528,6 +534,7 @@ html.lp-open{overflow:hidden}
 </main>
 
 <footer><div class="wrap"><span data-i18n="foot"></span><span>woobrothers.my</span></div></footer>
+<button class="totop" id="toTop" type="button" aria-label="Back to top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
 <script>
 /* App data is in apps.json. Categories are below; a new category needs a new key here. The category chips follow this order. */
@@ -562,7 +569,7 @@ bandCount:n=>`目前 ${n} 个 App · 陆续增加中`,bandTitle:"看看我们做
 contactLabel:"联系",contactTitle:"想合作，或者有建议？",contactText:"如果你也想为农友出一分力，或者对我们的 App 有建议，欢迎联系我们。WhatsApp 最快。",
 waBtn:"WhatsApp 我们",copy:"复制",copied:"已复制",
 dirLabel:"App 目录",dirTitle:"我们的农业 App",dirText:"输入关键字搜索，或者按类别筛选。所有 App 都免费使用。",
-search:"搜索关键字",sortLabel:"排序",sortNew:"最新在前",sortOld:"最旧在前",sortAZ:"按字母 A–Z",clear:"清除",all:"全部",allFree:"全部免费 · RM 0",loading:"加载中…",
+search:"搜索关键字",toTop:"回到顶部",sortLabel:"排序",sortNew:"最新在前",sortOld:"最旧在前",sortAZ:"按字母 A–Z",clear:"清除",all:"全部",allFree:"全部免费 · RM 0",loading:"加载中…",
 results:(n,t)=>n===t?`共 ${t} 个 App`:`找到 ${n} 个 App（共 ${t} 个）`,
 emptyTitle:"找不到相关的 App",emptyText:"换个关键字试试，或者选“全部”。",
 errTitle:"App 资料读取失败",errText:"apps.json 可能有格式错误。请检查下面提到的位置附近，有没有少了逗号、多了逗号，或者用了中文引号。",
@@ -594,7 +601,7 @@ bandCount:n=>`${n} apps so far · more on the way`,bandTitle:"See the apps we ha
 contactLabel:"Contact",contactTitle:"Want to work with us, or have an idea?",contactText:"If you also want to help farmers, or have suggestions for our apps, please get in touch. WhatsApp is the fastest way.",
 waBtn:"WhatsApp us",copy:"Copy",copied:"Copied",
 dirLabel:"App Directory",dirTitle:"Our farm apps",dirText:"Search by keyword or filter by category. Every app is free to use.",
-search:"Search keyword",sortLabel:"Sort",sortNew:"Newest first",sortOld:"Oldest first",sortAZ:"A–Z",clear:"Clear",all:"All",allFree:"All free · RM 0",loading:"Loading…",
+search:"Search keyword",toTop:"Back to top",sortLabel:"Sort",sortNew:"Newest first",sortOld:"Oldest first",sortAZ:"A–Z",clear:"Clear",all:"All",allFree:"All free · RM 0",loading:"Loading…",
 results:(n,t)=>n===t?`${t} apps`:`${n} of ${t} apps`,
 emptyTitle:"No matching apps",emptyText:"Try another keyword, or choose \"All\".",
 errTitle:"Could not load the app list",errText:"apps.json may have a formatting mistake. Check near the position below for a missing or extra comma, or curly quotes.",
@@ -626,7 +633,7 @@ bandCount:n=>`${n} aplikasi setakat ini · lebih akan datang`,bandTitle:"Lihat a
 contactLabel:"Hubungi",contactTitle:"Mahu bekerjasama, atau ada cadangan?",contactText:"Jika anda juga mahu membantu petani, atau ada cadangan untuk aplikasi kami, sila hubungi kami. WhatsApp paling cepat.",
 waBtn:"WhatsApp kami",copy:"Salin",copied:"Disalin",
 dirLabel:"Direktori Aplikasi",dirTitle:"Aplikasi pertanian kami",dirText:"Cari dengan kata kunci atau tapis mengikut kategori. Semua aplikasi percuma.",
-search:"Carian Kata Kunci",sortLabel:"Susun",sortNew:"Terbaru dahulu",sortOld:"Terlama dahulu",sortAZ:"Abjad A–Z",clear:"Padam",all:"Semua",allFree:"Semua percuma · RM 0",loading:"Memuatkan…",
+search:"Carian Kata Kunci",toTop:"Kembali ke atas",sortLabel:"Susun",sortNew:"Terbaru dahulu",sortOld:"Terlama dahulu",sortAZ:"Abjad A–Z",clear:"Padam",all:"Semua",allFree:"Semua percuma · RM 0",loading:"Memuatkan…",
 results:(n,t)=>n===t?`${t} aplikasi`:`${n} daripada ${t} aplikasi`,
 emptyTitle:"Tiada aplikasi yang sepadan",emptyText:"Cuba kata kunci lain, atau pilih \"Semua\".",
 errTitle:"Senarai aplikasi gagal dimuatkan",errText:"apps.json mungkin ada kesilapan format. Semak berhampiran kedudukan di bawah: koma tertinggal, koma berlebihan, atau tanda petik yang salah.",
@@ -899,6 +906,12 @@ function route(){
 }
 window.addEventListener("hashchange",route);
 
+/* Back-to-top button: shows after about one screen of scrolling. */
+const toTop=$("toTop");
+const syncTop=()=>toTop.classList.toggle("show",scrollY>innerHeight*.8);
+addEventListener("scroll",syncTop,{passive:true});syncTop();
+toTop.addEventListener("click",()=>{scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});document.querySelector(".brand")?.focus({preventScroll:true})});
+
 /* ---------- language ---------- */
 function apply(){
   const d=T[lang];
@@ -906,6 +919,7 @@ function apply(){
   document.querySelectorAll("[data-i18n]").forEach(e=>{const v=d[e.dataset.i18n];e.textContent=typeof v==="string"?v:""});
   document.querySelectorAll("[data-i18n-html]").forEach(e=>{e.innerHTML=d[e.dataset.i18nHtml]??""});
   $("langBtn").textContent=d.pill;
+  $("toTop").setAttribute("aria-label",d.toTop);$("toTop").title=d.toTop;
   $("bandCount").textContent=d.bandCount(APPS.length);
   drawProbs();drawDir();if(current)drawDetail();
 }
