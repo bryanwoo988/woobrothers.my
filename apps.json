@@ -1162,5 +1162,58 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "pest-moa",
+    "name": "Pest MoA",
+    "category": "pest",
+    "url": "https://stanleywoosweeleong.github.io/Moarotationguide/",
+    "added": "2026-10-22",
+    "logo": "img/pest-moa-logo.png",
+    "cover": "img/pest-moa-cover.jpg",
+    "languages": [
+      "EN",
+      "华"
+    ],
+    "keywords": "insecticide racun serangga 杀虫剂 rotation giliran 轮替 轮换 IRAC MoA mode of action mod tindakan 作用机理 resistance kerintangan 抗药性 thrips 蓟马 mite hama 红蜘蛛 psyllid 木虱 leafhopper 叶蝉 mealybug 粉蚧 caterpillar ulat 毛虫 tank mix campuran tangki 混药",
+    "screenshots": [
+      "img/pest-moa-1.jpg",
+      "img/pest-moa-2.jpg",
+      "img/pest-moa-3.jpg"
+    ],
+    "zh": {
+      "tagline": "按 IRAC 作用机理轮替杀虫剂，减缓抗药性",
+      "description": "同一类杀虫剂连续用，害虫很快就会产生抗药性。虫药轮替收录 69 种有效成分，按 IRAC 作用机理分组，标明能防哪些害虫、抗药风险和毒性等级。选好害虫和上次用的药组，轮替助手就告诉你哪些要避开、可以换哪些组，并提醒有交互抗性的组合。另附混药顺序。依据郑先生（Mr. Tee）的作用机理轮替表制作，离线可用。",
+      "features": [
+        "69 种有效成分，按 IRAC 作用机理分组",
+        "按害虫和抗药风险筛选",
+        "轮替助手：避开同组，建议换哪一组",
+        "交互抗性提醒和说明",
+        "9 步混药顺序"
+      ]
+    },
+    "en": {
+      "tagline": "Rotate insecticides by IRAC mode of action to slow resistance",
+      "description": "Using the same kind of insecticide again and again lets pests become resistant fast. Pest MoA lists 69 active ingredients grouped by IRAC mode of action, with the pests each one controls, its resistance risk and hazard class. Pick the pest and the group you used last, and the Rotation Helper shows what to avoid, which groups to rotate to, and where cross-resistance is a risk. A tank-mix order is included. Built from Mr. Tee's MoA rotation chart; works offline.",
+      "features": [
+        "69 active ingredients grouped by IRAC mode of action",
+        "Filter by pest and resistance risk",
+        "Rotation Helper: avoid the same group, rotate to another",
+        "Cross-resistance cautions with an explainer",
+        "9-step tank-mix order"
+      ]
+    },
+    "ms": {
+      "tagline": "Gilirkan racun serangga mengikut mod tindakan IRAC untuk melambatkan kerintangan",
+      "description": "Menggunakan jenis racun serangga yang sama berulang kali menyebabkan perosak cepat menjadi rintang. Pest MoA menyenaraikan 69 bahan aktif yang dikumpulkan mengikut mod tindakan IRAC, dengan perosak yang dikawal, risiko kerintangan dan kelas bahayanya. Pilih perosak dan kumpulan yang terakhir digunakan, dan Pembantu Giliran menunjukkan apa yang perlu dielakkan, kumpulan mana untuk bertukar, dan di mana risiko kerintangan silang. Disertakan turutan campuran tangki. Dibina daripada carta giliran MoA Mr. Tee; boleh digunakan tanpa internet.",
+      "features": [
+        "69 bahan aktif mengikut mod tindakan IRAC",
+        "Tapis mengikut perosak dan risiko kerintangan",
+        "Pembantu Giliran: elak kumpulan sama, tukar ke kumpulan lain",
+        "Amaran kerintangan silang dengan penerangan",
+        "Turutan campuran tangki 9 langkah"
+      ]
+    },
+    "demo": null
   }
 ]
