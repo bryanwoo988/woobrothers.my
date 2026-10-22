@@ -89,10 +89,10 @@
     "category": "field",
     "url": "https://bryanwoo988.github.io/NDVI/",
     "logo": "img/ndvi-logo.png",
-    "cover": "img/ndvi-cover.jpg",
+    "cover": "img/ndvi-cover.jpg?v=2",
     "languages": ["BM", "EN", "华"],
     "keywords": "NDVI NDMI satellite satelit 卫星 Sentinel remote sensing penderiaan jauh 遥感 crop tanaman 作物 长势 growth tumbesaran moisture kelembapan 水分 weather cuaca 天气 plot 地块",
-    "screenshots": [],
+    "screenshots": ["img/ndvi-1.jpg", "img/ndvi-2.jpg", "img/ndvi-3.jpg"],
     "zh": {
       "tagline": "Sentinel-2 卫星看地块长势、水分和天气",
       "description": "用 Sentinel-2 卫星图计算植被指数（NDVI）和水分指数（NDMI），找出长得比较弱的地方，同时看地块当地的天气。巡园不用再靠猜，直接去最需要的地方。",
