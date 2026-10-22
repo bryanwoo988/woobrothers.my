@@ -17,7 +17,7 @@
 | App 名字 | | 网站上显示的名字，例如 `CompareCast` |
 | App 代号 | | 小写英文、数字、`-`，不能有空格，例如 `comparecast`、`rain-alert`。图片名字要用这个代号开头 |
 | App 网址 | | 打开 App 的完整网址，`https://` 开头。还没上线就写「无」 |
-| 类别（选一个） | | 天气 / 卫星监测 / 病虫害 / 学习 / 园地管理。都不适合的话写你想要的类别名 |
+| 类别（选一个） | | 天气与气候 / 卫星监测 / 病虫害 / 学习 / 园地管理。都不适合的话写你想要的类别名 |
 | 支持的语言 | | 在 BM、EN、华 里面选，例如 `BM, EN, 华` |
 | 搜索关键字 | | 别人可能会搜什么字就写什么，三种语言都可以，用空格分开，例如 `rain hujan 下雨 forecast 预报` |
 
@@ -121,7 +121,7 @@
 | App 名字 | `name` |
 | App 代号 | `id`（网址会变成 `woobrothers.my/#app-代号`） |
 | App 网址 | `url`（「无」→ `null`） |
-| 类别 | `category`：天气 `weather`、卫星监测 `field`、病虫害 `pest`、学习 `learn`、园地管理 `manage` |
+| 类别 | `category`：天气与气候 `weather`、卫星监测 `field`、病虫害 `pest`、学习 `learn`、园地管理 `manage` |
 | 支持的语言 | `languages` |
 | 搜索关键字 | `keywords` |
 | 一句话介绍 / 详细介绍 / 功能 | `zh` / `en` / `ms` 里的 `tagline` / `description` / `features` |

@@ -41,6 +41,41 @@
     }
   },
   {
+    "id": "suhu",
+    "name": "SUHU",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/suhu/",
+    "logo": "img/suhu-logo.png",
+    "cover": ["img/suhu-cover.jpg", "img/suhu-cover-2.jpg"],
+    "languages": ["EN", "华"],
+    "keywords": "ENSO El Niño La Niña 厄尔尼诺 拉尼娜 iklim climate 气候 kemarau drought 干旱 jerebu haze 烟霾 IOD MJO NOAA PM2.5 api fire 火点 hotspot panas heat 高温 UV Sabah Sarawak 沙巴 砂拉越",
+    "screenshots": ["img/suhu-1.jpg", "img/suhu-2.jpg", "img/suhu-3.jpg"],
+    "zh": {
+      "tagline": "厄尔尼诺监测，看懂马来西亚的干旱和烟霾风险",
+      "description": "厄尔尼诺一来，园里会不会旱、会不会有烟霾？SUHU 汇集 NOAA、澳洲气象局等机构的厄尔尼诺（ENSO）、印度洋偶极子（IOD）和 MJO 监测数据，翻译成半岛、沙巴和砂拉越的干旱、烟霾和洪水风险。它不是另一个预报，而是帮你读懂官方数据。数据每 6 小时自动更新，可以安装到手机，离线也能看。",
+      "features": ["一眼看懂现在是厄尔尼诺、拉尼娜还是中性", "半岛东西海岸、沙巴、砂拉越的区域风险", "苏门答腊、加里曼丹火点数，烟霾提前预警", "按地点看空气质量（PM2.5）、体感温度和紫外线", "MJO 未来 1–2 周偏干还是偏湿"]
+    },
+    "en": {
+      "tagline": "El Niño monitor: what it means for drought and haze in Malaysia",
+      "description": "When El Niño arrives, will your farm go dry, and will the haze come? SUHU gathers El Niño (ENSO), Indian Ocean Dipole (IOD) and MJO monitoring from NOAA, Australia's Bureau of Meteorology and others, and turns it into drought, haze and flood risk for the Peninsula, Sabah and Sarawak. It is not another forecast; it helps you read the official data. Data refreshes every 6 hours, and the app installs on your phone and works offline.",
+      "features": ["See at a glance: El Niño, La Niña or neutral", "Risk for the Peninsula west and east coasts, Sabah and Sarawak", "Fire hotspot counts in Sumatra and Kalimantan, an early haze warning", "Air quality (PM2.5), feels-like temperature and UV for your location", "MJO outlook: drier or wetter in the next 1–2 weeks"]
+    },
+    "ms": {
+      "tagline": "Pemantau El Niño: risiko kemarau dan jerebu di Malaysia",
+      "description": "Bila El Niño datang, adakah kebun anda akan kering, dan adakah jerebu akan tiba? SUHU kumpulkan data pemantauan El Niño (ENSO), Dipol Lautan Hindi (IOD) dan MJO daripada NOAA, Biro Meteorologi Australia dan lain-lain, lalu terjemahkan kepada risiko kemarau, jerebu dan banjir untuk Semenanjung, Sabah dan Sarawak. Ia bukan ramalan baharu; ia bantu anda faham data rasmi. Data dikemas kini setiap 6 jam, dan aplikasi boleh dipasang di telefon serta digunakan tanpa internet.",
+      "features": ["Lihat sekilas: El Niño, La Niña atau neutral", "Risiko untuk pantai barat dan timur Semenanjung, Sabah dan Sarawak", "Bilangan titik panas di Sumatera dan Kalimantan, amaran awal jerebu", "Kualiti udara (PM2.5), suhu terasa dan UV mengikut lokasi", "Tinjauan MJO: lebih kering atau basah dalam 1–2 minggu"]
+    },
+    "demo": {
+      "type": "trend",
+      "unit": "°C",
+      "title": { "zh": "Niño 3.4 海温距平 · 最近 9 周", "en": "Niño 3.4 sea temperature anomaly · last 9 weeks", "ms": "Anomali suhu laut Niño 3.4 · 9 minggu lepas" },
+      "xLabels": ["19/8", "26/8", "2/9", "9/9", "16/9", "23/9", "30/9", "7/10", "14/10"],
+      "lines": [
+        { "name": "Niño 3.4", "values": [2.6, 2.6, 2.8, 2.8, 3.0, 3.1, 3.2, 3.3, 3.3] }
+      ]
+    }
+  },
+  {
     "id": "ndvi",
     "name": "NDVI Remote Sensing",
     "category": "field",

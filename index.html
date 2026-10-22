@@ -526,9 +526,9 @@ html.lp-open{overflow:hidden}
 <footer><div class="wrap"><span data-i18n="foot"></span><span>woobrothers.my</span></div></footer>
 
 <script>
-/* App data is in apps.json. Categories are below; a new category needs a new key here. */
+/* App data is in apps.json. Categories are below; a new category needs a new key here. The directory lists categories, and apps within them, in this order. */
 const CATS={
- weather:{zh:"天气",en:"Weather",ms:"Cuaca",icon:'<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9Z"/><path d="M9 21l1-2M13 21l1-2"/>'},
+ weather:{zh:"天气与气候",en:"Weather & climate",ms:"Cuaca & iklim",icon:'<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9Z"/><path d="M9 21l1-2M13 21l1-2"/>'},
  field:{zh:"卫星监测",en:"Satellite",ms:"Satelit",icon:'<path d="M5 12l7-7 3 3-7 7z"/><path d="M14 5l2-2 5 5-2 2M3 21l4-4M9 17a4 4 0 0 0 6-6"/>'},
  pest:{zh:"病虫害",en:"Pests",ms:"Perosak",icon:'<ellipse cx="12" cy="14" rx="5" ry="6"/><path d="M12 8V5M9 4l3 1 3-1M7 12H3M21 12h-4M7 17l-3 2M17 17l3 2"/>'},
  learn:{zh:"学习",en:"Learning",ms:"Pembelajaran",icon:'<path d="M3 6l9-3 9 3-9 3z"/><path d="M7 8v5c0 2 2.5 3 5 3s5-1 5-3V8"/>'},
@@ -856,7 +856,8 @@ async function loadApps(){
     }
     if(!Array.isArray(data))throw new Error("apps.json must start with [ and end with ]");
     data.forEach((a,i)=>{if(!a.id||!a.name)throw new Error(`App #${i+1} is missing "id" or "name"`)});
-    APPS=data;APPS.forEach(a=>a._h=haystack(a));appsReady=true;
+    const rank=a=>{const i=Object.keys(CATS).indexOf(a.category);return i<0?99:i};
+    APPS=data.slice().sort((x,y)=>rank(x)-rank(y));APPS.forEach(a=>a._h=haystack(a));appsReady=true;
   }catch(e){
     $("loadError").hidden=false;$("errDetail").textContent=String(e.message||e);
   }
