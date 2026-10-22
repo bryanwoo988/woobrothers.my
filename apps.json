@@ -4,6 +4,7 @@
     "name": "CompareCast",
     "category": "weather",
     "url": "https://bryanwoo988.github.io/CompareCast/",
+    "added": "2026-10-10",
     "logo": "img/comparecast-logo.png",
     "cover": "img/comparecast-cover.jpg?v=2",
     "languages": ["BM", "EN", "华"],
@@ -45,6 +46,7 @@
     "name": "SUHU",
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/suhu/",
+    "added": "2026-10-22",
     "logo": "img/suhu-logo.png",
     "cover": "img/suhu-cover.jpg?v=3",
     "languages": ["EN", "华"],
@@ -88,6 +90,7 @@
     "name": "NDVI Remote Sensing",
     "category": "field",
     "url": "https://bryanwoo988.github.io/NDVI/",
+    "added": "2026-10-10",
     "logo": "img/ndvi-logo.png",
     "cover": "img/ndvi-cover.jpg?v=2",
     "languages": ["BM", "EN", "华"],
@@ -129,6 +132,7 @@
     "name": "ENSO Monitor",
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/enso/",
+    "added": "2026-10-22",
     "logo": "img/enso-logo.png",
     "cover": "img/enso-cover.jpg?v=2",
     "languages": [
@@ -217,6 +221,7 @@
     "name": "SkewT Sounding",
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/SkewT/",
+    "added": "2026-10-22",
     "logo": "img/skewt-logo.png",
     "cover": "img/skewt-cover.jpg?v=2",
     "languages": [
@@ -265,6 +270,7 @@
     "name": "TerraDurian",
     "category": "field",
     "url": "https://stanleywoosweeleong.github.io/TerraDurian/",
+    "added": "2026-10-22",
     "logo": "img/terradurian-logo.png",
     "cover": "img/terradurian-cover.jpg",
     "languages": [
@@ -313,6 +319,7 @@
     "name": "Durian Borer Action",
     "category": "pest",
     "url": "https://stanleywoosweeleong.github.io/Pinholeborer/",
+    "added": "2026-10-22",
     "logo": "img/durian-borer-logo.png",
     "cover": "img/durian-borer-cover.jpg",
     "languages": [
@@ -366,6 +373,7 @@
     "name": "Durian Trunk Disease Triage",
     "category": "pest",
     "url": "https://stanleywoosweeleong.github.io/duriantrunkdiseases/",
+    "added": "2026-10-22",
     "logo": "img/durian-trunk-logo.png",
     "cover": "img/durian-trunk-cover.jpg",
     "languages": [
@@ -419,6 +427,7 @@
     "name": "InsectEye",
     "category": "pest",
     "url": "https://stanleywoosweeleong.github.io/insecteye/",
+    "added": "2026-10-22",
     "logo": "img/insecteye-logo.png",
     "cover": "img/insecteye-cover.jpg",
     "languages": [
@@ -471,6 +480,7 @@
     "name": "C:N Learning Garden",
     "category": "learn",
     "url": "https://stanleywoosweeleong.github.io/carbonnitrogen/",
+    "added": "2026-10-22",
     "logo": "img/cn-garden-logo.png",
     "cover": "img/cn-garden-cover.jpg",
     "languages": [
@@ -524,6 +534,7 @@
     "name": "FormuLab",
     "category": "learn",
     "url": "https://stanleywoosweeleong.github.io/emulsiontypes/",
+    "added": "2026-10-22",
     "logo": "img/formulab-logo.png",
     "cover": "img/formulab-cover.jpg",
     "languages": [
@@ -577,6 +588,7 @@
     "name": "ChemLog Lab 2",
     "category": "manage",
     "url": "https://stanleywoosweeleong.github.io/ChemLogLab2/",
+    "added": "2026-10-22",
     "logo": "img/chemlog-logo.png",
     "cover": "img/chemlog-cover.jpg",
     "languages": [
@@ -628,6 +640,7 @@
     "name": "Bugs · Entomology",
     "category": "learn",
     "url": "https://bryanwoo988.github.io/Entomology/",
+    "added": "2026-10-22",
     "logo": "img/entomology-logo.png",
     "cover": "img/entomology-cover.jpg",
     "languages": [
@@ -681,6 +694,7 @@
     "name": "Meteorology",
     "category": "learn",
     "url": "https://bryanwoo988.github.io/Meteorology/",
+    "added": "2026-10-22",
     "logo": "img/meteorology-logo.png",
     "cover": "img/meteorology-cover.jpg",
     "languages": [
@@ -734,6 +748,7 @@
     "name": "Plant Physiology",
     "category": "learn",
     "url": "https://bryanwoo988.github.io/plant-physiology/",
+    "added": "2026-10-22",
     "logo": "img/plant-physiology-logo.png",
     "cover": "img/plant-physiology-cover.jpg",
     "languages": [
@@ -787,6 +802,7 @@
     "name": "Oil Palm Wiki",
     "category": "learn",
     "url": "https://bryanwoo988.github.io/OilPalmWiki/",
+    "added": "2026-10-22",
     "logo": "img/oilpalmwiki-logo.png",
     "cover": "img/oilpalmwiki-cover.jpg",
     "languages": [
@@ -840,6 +856,7 @@
     "name": "Oil Palm Basics",
     "category": "learn",
     "url": "https://bryanwoo988.github.io/SawitBasics/",
+    "added": "2026-10-22",
     "logo": "img/sawitbasics-logo.png",
     "cover": "img/sawitbasics-cover.jpg",
     "languages": [
@@ -893,6 +910,7 @@
     "name": "AgriPro DIPM",
     "category": "pest",
     "url": "https://stanleywoosweeleong.github.io/agripro-dipm-app/",
+    "added": "2026-10-22",
     "logo": "img/agripro-dipm-logo.png",
     "cover": "img/agripro-dipm-cover.jpg",
     "languages": [
@@ -941,6 +959,7 @@
     "name": "AgriPro Notebook",
     "category": "learn",
     "url": "https://stanleywoosweeleong.github.io/agripronutrients/",
+    "added": "2026-10-22",
     "logo": "img/agripro-nutrients-logo.png",
     "cover": "img/agripro-nutrients-cover.jpg",
     "languages": [
@@ -993,6 +1012,7 @@
     "name": "DroneDose",
     "category": "manage",
     "url": "https://stanleywoosweeleong.github.io/droneusage/",
+    "added": "2026-10-22",
     "logo": "img/dronedose-logo.png",
     "cover": "img/dronedose-cover.jpg",
     "languages": [
@@ -1046,6 +1066,7 @@
     "name": "Wind Accumulation",
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/windaccum/",
+    "added": "2026-10-22",
     "logo": "img/windaccum-logo.png",
     "cover": "img/windaccum-cover.jpg",
     "languages": [

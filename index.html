@@ -183,6 +183,9 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-
 .fchip span{font:500 12px var(--font-data);opacity:.7}
 .fchip:hover{color:var(--on-deep);border-color:var(--on-deep-2)}
 .fchip[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.sortbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sortbar .lbl{font:500 12px var(--font-data);color:var(--on-deep-2);text-transform:uppercase;letter-spacing:.08em;margin-right:4px}
+.sortbar .fchip{min-height:36px;font-size:13px}
 .result-line{font:500 13px var(--font-data);color:var(--muted);padding-block:28px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
 .acard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);display:flex;flex-direction:column;overflow:hidden;transition:border-color .2s,transform .2s}
@@ -469,6 +472,7 @@ html.lp-open{overflow:hidden}
           <button type="button" id="qClear" hidden data-i18n="clear"></button>
         </label>
         <div class="filters" id="filters" role="group" aria-label="Category"></div>
+        <div class="sortbar" id="sortbar" role="group" aria-label="Sort"></div>
       </div>
     </div>
   </div>
@@ -526,7 +530,7 @@ html.lp-open{overflow:hidden}
 <footer><div class="wrap"><span data-i18n="foot"></span><span>woobrothers.my</span></div></footer>
 
 <script>
-/* App data is in apps.json. Categories are below; a new category needs a new key here. The directory lists categories, and apps within them, in this order. */
+/* App data is in apps.json. Categories are below; a new category needs a new key here. The category chips follow this order. */
 const CATS={
  weather:{zh:"天气与气候",en:"Weather & climate",ms:"Cuaca & iklim",icon:'<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9a4.5 4.5 0 0 0 1 9Z"/><path d="M9 21l1-2M13 21l1-2"/>'},
  field:{zh:"卫星监测",en:"Satellite",ms:"Satelit",icon:'<path d="M5 12l7-7 3 3-7 7z"/><path d="M14 5l2-2 5 5-2 2M3 21l4-4M9 17a4 4 0 0 0 6-6"/>'},
@@ -558,7 +562,7 @@ bandCount:n=>`目前 ${n} 个 App · 陆续增加中`,bandTitle:"看看我们做
 contactLabel:"联系",contactTitle:"想合作，或者有建议？",contactText:"如果你也想为农友出一分力，或者对我们的 App 有建议，欢迎联系我们。WhatsApp 最快。",
 waBtn:"WhatsApp 我们",copy:"复制",copied:"已复制",
 dirLabel:"App 目录",dirTitle:"我们的农业 App",dirText:"输入关键字搜索，或者按类别筛选。所有 App 都免费使用。",
-search:"搜索关键字",clear:"清除",all:"全部",allFree:"全部免费 · RM 0",loading:"加载中…",
+search:"搜索关键字",sortLabel:"排序",sortNew:"最新在前",sortOld:"最旧在前",sortAZ:"按字母 A–Z",clear:"清除",all:"全部",allFree:"全部免费 · RM 0",loading:"加载中…",
 results:(n,t)=>n===t?`共 ${t} 个 App`:`找到 ${n} 个 App（共 ${t} 个）`,
 emptyTitle:"找不到相关的 App",emptyText:"换个关键字试试，或者选“全部”。",
 errTitle:"App 资料读取失败",errText:"apps.json 可能有格式错误。请检查下面提到的位置附近，有没有少了逗号、多了逗号，或者用了中文引号。",
@@ -590,7 +594,7 @@ bandCount:n=>`${n} apps so far · more on the way`,bandTitle:"See the apps we ha
 contactLabel:"Contact",contactTitle:"Want to work with us, or have an idea?",contactText:"If you also want to help farmers, or have suggestions for our apps, please get in touch. WhatsApp is the fastest way.",
 waBtn:"WhatsApp us",copy:"Copy",copied:"Copied",
 dirLabel:"App Directory",dirTitle:"Our farm apps",dirText:"Search by keyword or filter by category. Every app is free to use.",
-search:"Search keyword",clear:"Clear",all:"All",allFree:"All free · RM 0",loading:"Loading…",
+search:"Search keyword",sortLabel:"Sort",sortNew:"Newest first",sortOld:"Oldest first",sortAZ:"A–Z",clear:"Clear",all:"All",allFree:"All free · RM 0",loading:"Loading…",
 results:(n,t)=>n===t?`${t} apps`:`${n} of ${t} apps`,
 emptyTitle:"No matching apps",emptyText:"Try another keyword, or choose \"All\".",
 errTitle:"Could not load the app list",errText:"apps.json may have a formatting mistake. Check near the position below for a missing or extra comma, or curly quotes.",
@@ -622,7 +626,7 @@ bandCount:n=>`${n} aplikasi setakat ini · lebih akan datang`,bandTitle:"Lihat a
 contactLabel:"Hubungi",contactTitle:"Mahu bekerjasama, atau ada cadangan?",contactText:"Jika anda juga mahu membantu petani, atau ada cadangan untuk aplikasi kami, sila hubungi kami. WhatsApp paling cepat.",
 waBtn:"WhatsApp kami",copy:"Salin",copied:"Disalin",
 dirLabel:"Direktori Aplikasi",dirTitle:"Aplikasi pertanian kami",dirText:"Cari dengan kata kunci atau tapis mengikut kategori. Semua aplikasi percuma.",
-search:"Carian Kata Kunci",clear:"Padam",all:"Semua",allFree:"Semua percuma · RM 0",loading:"Memuatkan…",
+search:"Carian Kata Kunci",sortLabel:"Susun",sortNew:"Terbaru dahulu",sortOld:"Terlama dahulu",sortAZ:"Abjad A–Z",clear:"Padam",all:"Semua",allFree:"Semua percuma · RM 0",loading:"Memuatkan…",
 results:(n,t)=>n===t?`${t} aplikasi`:`${n} daripada ${t} aplikasi`,
 emptyTitle:"Tiada aplikasi yang sepadan",emptyText:"Cuba kata kunci lain, atau pilih \"Semua\".",
 errTitle:"Senarai aplikasi gagal dimuatkan",errText:"apps.json mungkin ada kesilapan format. Semak berhampiran kedudukan di bawah: koma tertinggal, koma berlebihan, atau tanda petik yang salah.",
@@ -672,7 +676,14 @@ function drawProbs(){
 }
 
 /* ---------- directory: search + filter ---------- */
-let query="",cat="all";
+let query="",cat="all",sort="new";
+try{const s=localStorage.getItem("wb-sort");if(["new","old","az"].includes(s))sort=s}catch(e){}
+/* Newest/oldest use "added" (the date an app joined this site); apps added the same day keep their apps.json order. */
+const SORTS={
+  new:(x,y)=>(y.added||"").localeCompare(x.added||"")||y._i-x._i,
+  old:(x,y)=>(x.added||"").localeCompare(y.added||"")||x._i-y._i,
+  az:(x,y)=>x.name.localeCompare(y.name,"en",{sensitivity:"base"})
+};
 function haystack(a){
   const parts=[a.name,a.keywords||"",(a.languages||[]).join(" "),a.category];
   for(const l of ORDER){const t=a[l]||{};parts.push(t.tagline||"",t.description||"",(t.features||[]).join(" "),catOf(a)[l]||"")}
@@ -691,14 +702,20 @@ function drawDir(){
   const terms=query.toLowerCase().split(/\s+/).filter(Boolean);
   const textMatch=a=>terms.every(t=>a._h.includes(t));
   const f=$("filters");f.innerHTML="";
-  const used=["all",...[...new Set(APPS.map(a=>a.category))]];
+  const cats=[...new Set(APPS.map(a=>a.category))],rank=k=>{const i=Object.keys(CATS).indexOf(k);return i<0?99:i};
+  const used=["all",...cats.sort((x,y)=>rank(x)-rank(y))];
   used.forEach(k=>{
     const n=APPS.filter(a=>(k==="all"||a.category===k)&&textMatch(a)).length;
     const b=document.createElement("button");b.type="button";b.className="fchip";b.setAttribute("aria-pressed",k===cat);
     b.innerHTML=`${k==="all"?d.all:esc(catOf({category:k})[lang])}<span>${n}</span>`;
     b.addEventListener("click",()=>{cat=k;drawDir()});f.appendChild(b);
   });
-  const list=APPS.filter(a=>(cat==="all"||a.category===cat)&&textMatch(a));
+  const sb=$("sortbar");sb.innerHTML=`<span class="lbl">${esc(d.sortLabel)}</span>`;
+  [["new",d.sortNew],["old",d.sortOld],["az",d.sortAZ]].forEach(([k,t])=>{
+    const b=document.createElement("button");b.type="button";b.className="fchip";b.setAttribute("aria-pressed",k===sort);b.textContent=t;
+    b.addEventListener("click",()=>{sort=k;try{localStorage.setItem("wb-sort",k)}catch(e){}drawDir()});sb.appendChild(b);
+  });
+  const list=APPS.filter(a=>(cat==="all"||a.category===cat)&&textMatch(a)).sort(SORTS[sort]);
   $("resultCount").textContent=d.results(list.length,APPS.length);
   $("emptyState").hidden=list.length>0;
   $("appGrid").innerHTML=list.map(a=>{
@@ -859,8 +876,7 @@ async function loadApps(){
     }
     if(!Array.isArray(data))throw new Error("apps.json must start with [ and end with ]");
     data.forEach((a,i)=>{if(!a.id||!a.name)throw new Error(`App #${i+1} is missing "id" or "name"`)});
-    const rank=a=>{const i=Object.keys(CATS).indexOf(a.category);return i<0?99:i};
-    APPS=data.slice().sort((x,y)=>rank(x)-rank(y));APPS.forEach(a=>a._h=haystack(a));appsReady=true;
+    APPS=data;APPS.forEach((a,i)=>{a._h=haystack(a);a._i=i});appsReady=true;
   }catch(e){
     $("loadError").hidden=false;$("errDetail").textContent=String(e.message||e);
   }

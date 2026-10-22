@@ -28,8 +28,9 @@ Woo Brothers 农业 App 网站。免费、非营利。
 |---|---|---|
 | `id` | 代号，小写英文、数字、`-`，不能重复 | `"comparecast"` |
 | `name` | App 名字 | `"CompareCast"` |
-| `category` | 类别：`weather`（天气与气候）`field` `pest` `learn` `manage`。App 目录按这个顺序排列，同类别的按 `apps.json` 里的先后 | `"weather"` |
+| `category` | 类别：`weather`（天气与气候）`field` `pest` `learn` `manage`。类别按钮按这个顺序排列 | `"weather"` |
 | `url` | App 网址；还没有就写 `null` | `"https://…"` |
+| `added` | 加进网站的日期（马来西亚时间），「最新在前 / 最旧在前」排序用。同一天的按 `apps.json` 里的先后，所以新 App 一律加在最后 | `"2026-10-22"` |
 | `logo` / `cover` | 图片路径；没有就写 `null` | `"img/myapp-logo.png"` |
 | `cover` 多张 | 放几张图片就会自动轮播（每 5 秒换一张，也可以左右滑） | `["img/myapp-cover.jpg", "img/myapp-cover-2.jpg"]` |
 | `languages` | 支持的语言 | `["BM", "EN", "华"]` |
