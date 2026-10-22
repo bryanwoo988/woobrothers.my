@@ -1047,13 +1047,13 @@
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/windaccum/",
     "logo": "img/windaccum-logo.png",
-    "cover": null,
+    "cover": "img/windaccum-cover.jpg",
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "wind angin 风 convergence penumpuan 辐合 thunderstorm ribut petir 雷暴 storm ribut rain hujan 降雨 下雨 gust angin kencang 强风 ECMWF ensemble 集合 satellite satelit 卫星 isobar isobar 等压线 forecast ramalan 预报 WhatsApp",
-    "screenshots": [],
+    "screenshots": ["img/windaccum-1.jpg", "img/windaccum-2.jpg", "img/windaccum-3.jpg"],
     "zh": {
       "tagline": "雷暴、降雨、强风预警：看 ECMWF 低层风辐合",
       "description": "低空的风往同一处汇聚，空气就会被迫上升，容易形成午后雷暴、大雨和阵风。风的累积在地图上画出 ECMWF 模型的低层风辐合，告诉你未来 48 小时哪个时段最危险，再用 51 个集合成员看预报有多可信。可以叠加红外卫星云图和等压线，结果能用 WhatsApp 分享。所有时间都按马来西亚时间显示。",
