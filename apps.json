@@ -130,13 +130,13 @@
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/enso/",
     "logo": "img/enso-logo.png",
-    "cover": null,
+    "cover": "img/enso-cover.jpg",
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "ENSO El Niño La Niña 厄尔尼诺 拉尼娜 RONI Niño 3.4 IOD MJO monsoon monsun 季风 surge iklim climate 气候 hujan rain 下雨 orchard dusun 果园 MetMalaysia NOAA",
-    "screenshots": [],
+    "screenshots": ["img/enso-1.jpg"],
     "zh": {
       "tagline": "给果园看的厄尔尼诺、季风和 MJO 监测",
       "description": "直接读 NOAA 的 RONI 和每周 Niño 3.4 数据，告诉你现在是厄尔尼诺、拉尼娜还是中性，再加上印度洋偶极子（IOD）、MJO 和东北季风寒潮。每一项都附上对果园的意思：要防旱、顾排水，还是先别喷药。官方暴雨和水灾警报请看 MetMalaysia。",
@@ -218,13 +218,13 @@
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/SkewT/",
     "logo": "img/skewt-logo.png",
-    "cover": null,
+    "cover": "img/skewt-cover.jpg",
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "Skew-T sounding 探空 thunderstorm ribut petir 雷暴 CAPE storm hujan rain 下雨 atmosphere atmosfera 大气 ECMWF GFS model jet hail 冰雹 forecast ramalan 预报 farm ladang 园地",
-    "screenshots": [],
+    "screenshots": ["img/skewt-1.jpg"],
     "zh": {
       "tagline": "大气垂直剖面，判断今天会不会有雷雨",
       "description": "气象员用来判断雷暴的 Skew-T 探空图，现在按你的园地位置直接画出来。它把天气模型的高空数据整理成水汽、不稳定度和触发条件三要素，加上逐小时风险条，帮你判断下午是短阵雨还是真正的风暴。还有一整套入门指南，教你一步一步看懂这张图。",
