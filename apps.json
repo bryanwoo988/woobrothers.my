@@ -5,10 +5,10 @@
     "category": "weather",
     "url": "https://bryanwoo988.github.io/CompareCast/",
     "logo": "img/comparecast-logo.png",
-    "cover": ["img/comparecast-cover.jpg", "img/comparecast-cover-2.jpg"],
+    "cover": "img/comparecast-cover.jpg?v=2",
     "languages": ["BM", "EN", "华"],
     "keywords": "rain hujan 下雨 雨 forecast ramalan 预报 weather cuaca 天气 wind angin 风 gust model ECMWF GFS ICON plot 地块 reminder peringatan 提醒",
-    "screenshots": [],
+    "screenshots": ["img/comparecast-1.jpg", "img/comparecast-2.jpg", "img/comparecast-3.jpg"],
     "zh": {
       "tagline": "多模型天气比较，按地块提醒",
       "description": "不同的天气模型，预报常常不一样。CompareCast 把几个模型的预报和实际下雨量放在一起比较，告诉你哪个模型在你的园地最准，还可以为每个地块设定下雨提醒。",
