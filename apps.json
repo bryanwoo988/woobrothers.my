@@ -1215,5 +1215,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "amis",
+    "name": "AMIS · AgriMicrobe",
+    "category": "pest",
+    "url": "https://stanleywoosweeleong.github.io/AMIS/",
+    "added": "2026-10-22",
+    "logo": "img/amis-logo.png",
+    "cover": "img/amis-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "microbe mikrob 微生物 beneficial berfaedah 有益菌 Trichoderma Bacillus biocontrol kawalan biologi 生物防治 PGPR synergy sinergi 协同 tank mix campuran tangki 混配 first aid pertolongan cemas 急救 durian 榴莲 heavy metal logam berat 重金属 fermentation penapaian 发酵",
+    "screenshots": [
+      "img/amis-1.jpg",
+      "img/amis-2.jpg",
+      "img/amis-3.jpg"
+    ],
+    "zh": {
+      "tagline": "农业有益微生物决策工具：选菌、搭配、混配和作物急救",
+      "description": "收录 83 种有益微生物、42 种作物，每一种都写明功能、抗逆性、用量和自己扩繁的方法。协同指南告诉你哪些菌种搭配效果加倍、哪些互相拮抗；混配检查器即时判断微生物、叶面肥和农药能不能同桶；作物急救按作物和紧急程度给出今天该做的事，也会直说什么时候微生物不是答案。另有重金属土壤、生产和发酵安全指南。大部分功能离线可用，AI 顾问需要自己填 API key。",
+      "features": [
+        "83 种有益微生物资料库，可按功能和作物筛选",
+        "菌种协同与拮抗指南",
+        "混配兼容性检查和加料顺序",
+        "作物急救：按紧急程度给出行动",
+        "重金属土壤、生产和发酵安全指南"
+      ]
+    },
+    "en": {
+      "tagline": "Decision support for beneficial farm microbes: choose, combine, tank-mix and first aid",
+      "description": "Covers 83 beneficial microbes and 42 crops, each with its function, stress tolerance, dosage and how to propagate it yourself. The Synergy Guide shows which microbes boost each other and which work against each other; the Tank-Mix Checker tells you in real time whether microbes, foliar fertilisers and pesticides can share a tank; and First Aid gives today's actions by crop and urgency, including when microbes are not the answer. There are also guides for contaminated soils, manufacturing and brew safety. Most features work offline; the AI advisor needs your own API key.",
+      "features": [
+        "Library of 83 beneficial microbes, filter by function and crop",
+        "Synergy and antagonism guide",
+        "Tank-mix compatibility check and mixing order",
+        "Crop first aid by urgency",
+        "Guides for contaminated soil, manufacturing and brew safety"
+      ]
+    },
+    "ms": {
+      "tagline": "Sokongan keputusan untuk mikrob ladang berfaedah: pilih, gabung, campur tangki dan pertolongan cemas",
+      "description": "Merangkumi 83 mikrob berfaedah dan 42 tanaman, setiap satu dengan fungsi, ketahanan, dos dan cara membiakkannya sendiri. Panduan Sinergi menunjukkan mikrob mana yang saling menguatkan dan mana yang bertentangan; Pemeriksa Campuran Tangki memberitahu serta-merta sama ada mikrob, baja daun dan racun perosak boleh dicampur dalam satu tangki; dan Pertolongan Cemas memberi tindakan hari ini mengikut tanaman dan tahap kecemasan, termasuk bila mikrob bukan jawapannya. Turut ada panduan tanah tercemar, pengeluaran dan keselamatan penapaian. Kebanyakan fungsi boleh digunakan tanpa internet; penasihat AI memerlukan kunci API anda sendiri.",
+      "features": [
+        "Pustaka 83 mikrob berfaedah, tapis mengikut fungsi dan tanaman",
+        "Panduan sinergi dan antagonisme",
+        "Semakan keserasian campuran tangki dan turutan",
+        "Pertolongan cemas tanaman mengikut tahap kecemasan",
+        "Panduan tanah tercemar, pengeluaran dan keselamatan penapaian"
+      ]
+    },
+    "demo": null
   }
 ]
