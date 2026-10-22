@@ -894,13 +894,13 @@
     "category": "pest",
     "url": "https://stanleywoosweeleong.github.io/agripro-dipm-app/",
     "logo": "img/agripro-dipm-logo.png",
-    "cover": null,
+    "cover": "img/agripro-dipm-cover.jpg",
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 IPM pest perosak 虫害 害虫 disease penyakit 病害 psyllid psilid 木虱 thrips 蓟马 mite hama 螨 MOA IRAC FRAC insecticide racun serangga 杀虫剂 fungicide 杀菌剂 DT50 residue sisa 残留 tank mix campuran 混配",
-    "screenshots": [],
+    "screenshots": ["img/agripro-dipm-1.jpg", "img/agripro-dipm-2.jpg", "img/agripro-dipm-3.jpg"],
     "zh": {
       "tagline": "榴莲园综合虫害管理：病虫害数据库、作用机理和混配方案",
       "description": "收录 85 种榴莲园的害虫、病害、螨类和杂草，每一种都写明危害部位、诊断特征和防治方法。按作用机理（MOA）分组用药，避免产生抗药性；分阶段给出击倒、巩固和预防的用药方案，并附生物防治和栽培方法。另有 49 种药剂的半衰期（DT50），方便出口时参考残留。离线可用。",
