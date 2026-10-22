@@ -72,6 +72,7 @@ App 一更新，使用者下次打开时就要看到一个弹窗，写清楚：
 | C:N Learning Garden | 还没有，需要开发者加上 |
 | FormuLab | 还没有，需要开发者加上 |
 | ChemLog Lab 2 | 还没有，需要开发者加上 |
+| AgriPro DIPM | 还没有，需要开发者加上 |
 | AgriPro Notebook | 还没有，需要开发者加上 |
 
 ## 2. 有新版本时先问一句
