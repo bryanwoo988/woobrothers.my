@@ -987,5 +987,58 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "dronedose",
+    "name": "DroneDose",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/droneusage/",
+    "logo": "img/dronedose-logo.png",
+    "cover": "img/dronedose-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "drone dron 无人机 DJI Agras T50 T40 spray semburan 喷药 dosage dos 药量 tank tangki 药箱 mix campuran 配药 acre ekar 英亩 hectare hektar 公顷 durian 榴莲 calculator kalkulator 计算",
+    "screenshots": [
+      "img/dronedose-1.jpg",
+      "img/dronedose-2.jpg",
+      "img/dronedose-3.jpg"
+    ],
+    "zh": {
+      "tagline": "农用无人机药量计算，以大疆机型为准",
+      "description": "用无人机喷药，不能直接照搬背负式喷雾器的稀释倍数。选好大疆机型和药箱容量，输入地图面积和遥控器上的亩用量，再输入药剂的标签用量，DroneDose 就算出要飞几箱、每箱放多少水和药，配药表可以一键复制发给飞手。离线可用。",
+      "features": [
+        "内置大疆 Agras 各机型的药箱容量",
+        "按面积、按每箱或按地面稀释三种算法",
+        "每次最多 4 种药剂，显示药箱浓度",
+        "平均分箱或先装满再补最后一箱",
+        "一键复制配药表，保存常用配方"
+      ]
+    },
+    "en": {
+      "tagline": "Agricultural drone spray dosage calculator, using DJI models as the baseline",
+      "description": "A drone cannot reuse a knapsack sprayer's dilution. Pick the DJI model and tank size, enter the mapped area and the application rate from the controller, then each product's label rate, and DroneDose works out how many loads to fly and how much water and product goes in each tank. Copy the mixing sheet to send to the pilot. Works offline.",
+      "features": [
+        "Tank capacities for DJI Agras models built in",
+        "Three ways to enter a dose: by area, per tank, or from a ground dilution",
+        "Up to 4 products per mix, with tank concentration shown",
+        "Balance loads evenly, or fill tanks first",
+        "Copy the mixing sheet and save recipes"
+      ]
+    },
+    "ms": {
+      "tagline": "Kalkulator dos semburan dron pertanian, berasaskan model DJI",
+      "description": "Dron tidak boleh guna semula kadar cairan penyembur galas. Pilih model DJI dan saiz tangki, masukkan keluasan yang dipetakan dan kadar aplikasi daripada alat kawalan, kemudian kadar label setiap produk, dan DroneDose akan kira berapa muatan perlu diterbangkan serta berapa banyak air dan produk dalam setiap tangki. Salin helaian campuran untuk dihantar kepada juruterbang. Boleh digunakan tanpa internet.",
+      "features": [
+        "Kapasiti tangki model DJI Agras terbina dalam",
+        "Tiga cara masukkan dos: ikut keluasan, setiap tangki, atau daripada cairan darat",
+        "Sehingga 4 produk setiap campuran, dengan kepekatan tangki",
+        "Bahagi muatan sama rata, atau penuhkan tangki dahulu",
+        "Salin helaian campuran dan simpan resipi"
+      ]
+    },
+    "demo": null
   }
 ]
