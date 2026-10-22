@@ -564,8 +564,8 @@ emptyTitle:"找不到相关的 App",emptyText:"换个关键字试试，或者选
 errTitle:"App 资料读取失败",errText:"apps.json 可能有格式错误。请检查下面提到的位置附近，有没有少了逗号、多了逗号，或者用了中文引号。",
 details:"查看详情",open:"打开网站",soon:"网址即将公布",free:"免费",
 back:"返回 App 目录",langsLabel:"语言",linkNote:"链接整理中，很快就能打开。",sample:"示意",shots:"App 截图",
-acc:"准确度",diff:n=>n===0?"完全准确":`差 ${n}`,vsFirst:(n,x)=>n>=0?`比 ${x} 高 ${n}`:`比 ${x} 低 ${Math.abs(n)}`,
-hintCompare:"点上面的按钮切换线条，点图上任何一格看数字。示意数据。",hintTrend:"点上面的按钮切换线条，点图上任何一格看数值。示意数据。",
+acc:"准确度",diff:n=>n===0?"完全准确":`差 ${n}`,vsFirst:(n,x,u="")=>n>=0?`比 ${x} 高 ${n} ${u}`.trim():`比 ${x} 低 ${Math.abs(n)} ${u}`.trim(),
+hintCompare:"点上面的按钮切换线条，点图上任何一格看数字。示意数据。",hintTrend:"点上面的按钮切换线条，点图上任何一格看数值。示意数据。",hintTrend1:"点图上任何一格看数值。示意数据。",
 soonTitle:"更多 App 开发中",soonText:"我们和朋友会继续开发新的农业 App。有想法或需要？告诉我们。",
 foot:"© 2026 Woo Brothers · 非营利 · 免费分享"},
 en:{pill:"EN",navHome:"Home",navApps:"App Directory",
@@ -596,8 +596,8 @@ emptyTitle:"No matching apps",emptyText:"Try another keyword, or choose \"All\".
 errTitle:"Could not load the app list",errText:"apps.json may have a formatting mistake. Check near the position below for a missing or extra comma, or curly quotes.",
 details:"View details",open:"Open website",soon:"Link coming soon",free:"Free",
 back:"Back to App Directory",langsLabel:"Languages",linkNote:"We are preparing the link. It will open soon.",sample:"Example",shots:"Screenshots",
-acc:"Accuracy",diff:n=>n===0?"Spot on":`Off by ${n}`,vsFirst:(n,x)=>n>=0?`${n} higher than ${x}`:`${Math.abs(n)} lower than ${x}`,
-hintCompare:"Tap a button to switch lines, then tap any point on the chart. Example data.",hintTrend:"Tap a button to switch lines, then tap any point on the chart. Example data.",
+acc:"Accuracy",diff:n=>n===0?"Spot on":`Off by ${n}`,vsFirst:(n,x,u="")=>n>=0?`${`${n} ${u}`.trim()} higher than ${x}`:`${`${Math.abs(n)} ${u}`.trim()} lower than ${x}`,
+hintCompare:"Tap a button to switch lines, then tap any point on the chart. Example data.",hintTrend:"Tap a button to switch lines, then tap any point on the chart. Example data.",hintTrend1:"Tap any point on the chart to see its value. Example data.",
 soonTitle:"More apps on the way",soonText:"We and our friends will keep building new farm apps. Have an idea or a need? Tell us.",
 foot:"© 2026 Woo Brothers · Non-profit · Shared free"},
 ms:{pill:"BM",navHome:"Utama",navApps:"Direktori Aplikasi",
@@ -628,8 +628,8 @@ emptyTitle:"Tiada aplikasi yang sepadan",emptyText:"Cuba kata kunci lain, atau p
 errTitle:"Senarai aplikasi gagal dimuatkan",errText:"apps.json mungkin ada kesilapan format. Semak berhampiran kedudukan di bawah: koma tertinggal, koma berlebihan, atau tanda petik yang salah.",
 details:"Lihat butiran",open:"Buka laman web",soon:"Pautan akan diumumkan",free:"Percuma",
 back:"Kembali ke Direktori",langsLabel:"Bahasa",linkNote:"Pautan sedang disediakan. Akan dibuka tidak lama lagi.",sample:"Contoh",shots:"Tangkapan skrin",
-acc:"Ketepatan",diff:n=>n===0?"Tepat":`Beza ${n}`,vsFirst:(n,x)=>n>=0?`${n} lebih tinggi dari ${x}`:`${Math.abs(n)} lebih rendah dari ${x}`,
-hintCompare:"Tekan butang untuk tukar garis, kemudian tekan mana-mana titik pada carta. Data contoh.",hintTrend:"Tekan butang untuk tukar garis, kemudian tekan mana-mana titik pada carta. Data contoh.",
+acc:"Ketepatan",diff:n=>n===0?"Tepat":`Beza ${n}`,vsFirst:(n,x,u="")=>n>=0?`${`${n} ${u}`.trim()} lebih tinggi dari ${x}`:`${`${Math.abs(n)} ${u}`.trim()} lebih rendah dari ${x}`,
+hintCompare:"Tekan butang untuk tukar garis, kemudian tekan mana-mana titik pada carta. Data contoh.",hintTrend:"Tekan butang untuk tukar garis, kemudian tekan mana-mana titik pada carta. Data contoh.",hintTrend1:"Tekan mana-mana titik pada carta untuk lihat nilainya. Data contoh.",
 soonTitle:"Lebih banyak aplikasi akan datang",soonText:"Kami dan rakan-rakan akan terus membina aplikasi pertanian baharu. Ada idea atau keperluan? Beritahu kami.",
 foot:"© 2026 Woo Brothers · Bukan untung · Dikongsi percuma"}
 };
@@ -776,7 +776,7 @@ function drawCompare(demo){
   const mean=actual.reduce((s,v)=>s+v,0)/Math.max(1,actual.length)||1;
   lines.forEach(m=>{const mae=m.values.reduce((s,v,i)=>s+Math.abs(v-(actual[i]??0)),0)/Math.max(1,m.values.length);m._acc=Math.max(0,Math.round(100*(1-mae/mean)))});
   if(demoSel>=lines.length)demoSel=0;
-  const box=$("demoChips");box.innerHTML="";box.style.gridTemplateColumns=`repeat(${Math.max(1,lines.length)},minmax(0,1fr))`;
+  const box=$("demoChips");box.innerHTML="";box.hidden=false;box.style.gridTemplateColumns=`repeat(${Math.max(1,lines.length)},minmax(0,1fr))`;
   lines.forEach((m,i)=>{
     const b=document.createElement("button");b.type="button";b.setAttribute("aria-pressed",i===demoSel);
     b.innerHTML=`<span class="cn">${esc(L(m.name))}</span><span class="cv">${d.acc} ${m._acc}%</span><span class="bar"><i style="width:${m._acc}%"></i></span>`;
@@ -811,20 +811,23 @@ function drawTrend(demo){
   const d=T[lang],xs=LA(demo.xLabels),lines=demo.lines||[],unit=demo.unit||"";
   if(demoSel>=lines.length)demoSel=0;
   if(demoX>=xs.length)demoX=xs.length-1;
-  const box=$("demoChips");box.innerHTML="";box.style.gridTemplateColumns=`repeat(${Math.max(1,lines.length)},minmax(0,1fr))`;
+  const fv=v=>`${demo.signed&&v>0?"+":""}${v} ${unit}`.trim();
+  const box=$("demoChips");box.innerHTML="";box.hidden=lines.length<2;box.style.gridTemplateColumns=`repeat(${Math.max(1,lines.length)},minmax(0,1fr))`;
   lines.forEach((ln,i)=>{
     const last=ln.values[ln.values.length-1];
     const b=document.createElement("button");b.type="button";b.setAttribute("aria-pressed",i===demoSel);
-    b.innerHTML=`<span class="cn"><span style="display:inline-block;width:8px;height:8px;background:${TREND_COLORS[i%4]};margin-right:6px"></span>${esc(L(ln.name))}</span><span class="cv">${esc(unit)} ${last}</span>`;
+    b.innerHTML=`<span class="cn"><span style="display:inline-block;width:8px;height:8px;background:${TREND_COLORS[i%4]};margin-right:6px"></span>${esc(L(ln.name))}</span><span class="cv">${esc(fv(last))}</span>`;
     b.addEventListener("click",()=>{demoSel=i;drawDetail()});box.appendChild(b);
   });
   const all=lines.flatMap(l=>l.values),lo=Math.min(...all),hi=Math.max(...all),pad=(hi-lo)*.15||1;
-  const y0=lo-pad,y1=hi+pad,n=xs.length,x0=50,x1=345,step=n>1?(x1-x0)/(n-1):0;
+  const y0=demo.yMin??lo-pad,y1=demo.yMax??hi+pad,n=xs.length,x0=50,x1=345,step=n>1?(x1-x0)/(n-1):0;
   const fx=i=>n>1?x0+i*step:(x0+x1)/2,fy=v=>130-(v-y0)/(y1-y0)*110;
   const s=$("demoChart");s.setAttribute("viewBox","0 0 360 160");s.innerHTML="";
   const hw=Math.max(12,step/2||20);
   el("rect",{class:"sel",x:fx(demoX)-hw,y:14,width:hw*2,height:122},s);
-  for(let k=0;k<=3;k++){const v=y0+(y1-y0)*k/3;el("line",{x1:38,x2:352,y1:fy(v),y2:fy(v),stroke:"var(--line)"},s);txt(s,32,fy(v)+3,round(v),{"text-anchor":"end"})}
+  const raw=(y1-y0)/3,mag=10**Math.floor(Math.log10(raw)),tick=[1,2,2.5,5,10].map(m=>m*mag).find(t=>t>=raw/1.5);
+  for(let v=Math.ceil(y0/tick)*tick;v<=y1+1e-9;v+=tick){const r=round(v);el("line",{x1:38,x2:352,y1:fy(r),y2:fy(r),stroke:"var(--line)"},s);txt(s,32,fy(r)+3,(demo.signed&&r>0?"+":"")+r,{"text-anchor":"end"})}
+  (demo.refs||[]).forEach(r=>{el("line",{x1:38,x2:352,y1:fy(r.value),y2:fy(r.value),stroke:"var(--muted)","stroke-dasharray":"3 3",opacity:.7},s);txt(s,42,fy(r.value)-3,L(r.name),{"font-size":9})});
   xs.forEach((x,i)=>txt(s,fx(i),152,x,{"text-anchor":"middle",fill:i===demoX?"var(--fg)":"var(--muted)","font-weight":i===demoX?700:400}));
   lines.forEach((ln,i)=>{if(i!==demoSel)el("polyline",{points:ln.values.map((v,j)=>`${fx(j)},${fy(v)}`).join(" "),fill:"none",stroke:TREND_COLORS[i%4],"stroke-width":1.25,opacity:.35},s)});
   const ln=lines[demoSel],col=TREND_COLORS[demoSel%4];
@@ -836,9 +839,9 @@ function drawTrend(demo){
   $("demoLegend").innerHTML="";
   if(ln){
     const v=ln.values[demoX],ch=round(v-ln.values[0]);
-    $("demoInfo").innerHTML=`<strong>${esc(L(ln.name))} · ${esc(xs[demoX])}</strong><b>${esc(unit)} ${v}</b><span style="color:var(--muted)">${esc(d.vsFirst(ch,xs[0]))}</span>`;
+    $("demoInfo").innerHTML=`<strong>${esc(L(ln.name))} · ${esc(xs[demoX])}</strong><b>${esc(fv(v))}</b><span style="color:var(--muted)">${esc(d.vsFirst(ch,xs[0],unit))}</span>`;
   }
-  $("demoHint").textContent=d.hintTrend;
+  $("demoHint").textContent=lines.length<2?d.hintTrend1:d.hintTrend;
 }
 
 /* ---------- load apps.json ---------- */
