@@ -218,13 +218,13 @@
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/SkewT/",
     "logo": "img/skewt-logo.png",
-    "cover": "img/skewt-cover.jpg",
+    "cover": ["img/skewt-cover.jpg", "img/skewt-cover-2.jpg", "img/skewt-cover-3.jpg"],
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "Skew-T sounding 探空 thunderstorm ribut petir 雷暴 CAPE storm hujan rain 下雨 atmosphere atmosfera 大气 ECMWF GFS model jet hail 冰雹 forecast ramalan 预报 farm ladang 园地",
-    "screenshots": ["img/skewt-1.jpg"],
+    "screenshots": ["img/skewt-1.jpg", "img/skewt-2.jpg", "img/skewt-3.jpg"],
     "zh": {
       "tagline": "大气垂直剖面，判断今天会不会有雷雨",
       "description": "气象员用来判断雷暴的 Skew-T 探空图，现在按你的园地位置直接画出来。它把天气模型的高空数据整理成水汽、不稳定度和触发条件三要素，加上逐小时风险条，帮你判断下午是短阵雨还是真正的风暴。还有一整套入门指南，教你一步一步看懂这张图。",
