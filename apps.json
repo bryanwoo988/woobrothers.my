@@ -46,7 +46,7 @@
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/suhu/",
     "logo": "img/suhu-logo.png",
-    "cover": ["img/suhu-cover.jpg?v=2", "img/suhu-cover-2.jpg?v=2"],
+    "cover": "img/suhu-cover.jpg?v=3",
     "languages": ["EN", "华"],
     "keywords": "ENSO El Niño La Niña 厄尔尼诺 拉尼娜 iklim climate 气候 kemarau drought 干旱 jerebu haze 烟霾 IOD MJO NOAA PM2.5 api fire 火点 hotspot panas heat 高温 UV Sabah Sarawak 沙巴 砂拉越",
     "screenshots": ["img/suhu-1.jpg?v=2", "img/suhu-2.jpg?v=2", "img/suhu-3.jpg?v=2"],
@@ -218,7 +218,7 @@
     "category": "weather",
     "url": "https://stanleywoosweeleong.github.io/SkewT/",
     "logo": "img/skewt-logo.png",
-    "cover": ["img/skewt-cover.jpg", "img/skewt-cover-2.jpg", "img/skewt-cover-3.jpg"],
+    "cover": "img/skewt-cover.jpg?v=2",
     "languages": [
       "EN",
       "华"
@@ -619,6 +619,271 @@
         "Rekod semburan dan baja mengikut ladang, zon dan pekerja",
         "Jejakan stok dan kos",
         "Kongsi WhatsApp, eksport sandaran, guna tanpa internet"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "entomology",
+    "name": "Bugs · Entomology",
+    "category": "learn",
+    "url": "https://bryanwoo988.github.io/Entomology/",
+    "logo": "img/entomology-logo.png",
+    "cover": "img/entomology-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "insect serangga 昆虫 entomology entomologi 昆虫学 identify kenal pasti 辨认 pest perosak 害虫 beetle kumbang 甲虫 oil palm sawit 油棕 rice padi 稻 vegetables sayur 蔬菜 IPM quiz kuiz 测验",
+    "screenshots": [
+      "img/entomology-1.jpg",
+      "img/entomology-2.jpg",
+      "img/entomology-3.jpg"
+    ],
+    "zh": {
+      "tagline": "认识昆虫，一步一步辨认，学马来西亚农场常见昆虫",
+      "description": "从昆虫身体构造、分类和生活史开始，学到马来西亚常见的 17 个昆虫目，再到油棕、稻米、蔬菜、水果和可可的害虫与益虫，以及按综合防治（IPM）顺序的防治方法。内置一步一步的辨认检索表，回答几个问题就能认出昆虫属于哪一目。离线可用。",
+      "features": [
+        "63 页，分 6 个阶段，从零开始",
+        "一步一步的昆虫辨认检索表",
+        "马来西亚农场害虫与益虫，附防治方法",
+        "照片都注明来源",
+        "测验、闪卡、错题本"
+      ]
+    },
+    "en": {
+      "tagline": "Meet the insects, identify them step by step, and learn Malaysia's farm insects",
+      "description": "Starts with an insect's body, classification and life cycles, then the 17 insect orders common in Malaysia, and on to the pests and helpful insects of oil palm, rice, vegetables, fruit and cocoa, with control methods in IPM order. A step-by-step key tells you which order an insect belongs to after a few questions. Works offline.",
+      "features": [
+        "63 pages in 6 stages, from the basics",
+        "Step-by-step identification key",
+        "Malaysia's farm pests and helpful insects, with control methods",
+        "Every photo credited",
+        "Quizzes, flashcards and a wrong-answer book"
+      ]
+    },
+    "ms": {
+      "tagline": "Kenali serangga, kenal pasti langkah demi langkah, dan pelajari serangga ladang Malaysia",
+      "description": "Bermula dengan badan serangga, pengelasan dan kitaran hidup, kemudian 17 order serangga yang biasa di Malaysia, dan seterusnya perosak serta serangga berguna bagi sawit, padi, sayur, buah dan koko, dengan kaedah kawalan mengikut turutan IPM. Kunci langkah demi langkah memberitahu order serangga selepas beberapa soalan. Boleh digunakan tanpa internet.",
+      "features": [
+        "63 halaman dalam 6 peringkat, dari asas",
+        "Kunci pengecaman langkah demi langkah",
+        "Perosak dan serangga berguna ladang Malaysia, dengan kaedah kawalan",
+        "Setiap foto dikreditkan",
+        "Kuiz, kad imbas dan buku jawapan salah"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "meteorology",
+    "name": "Meteorology",
+    "category": "learn",
+    "url": "https://bryanwoo988.github.io/Meteorology/",
+    "logo": "img/meteorology-logo.png",
+    "cover": "img/meteorology-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "meteorology meteorologi 气象学 weather cuaca 天气 monsoon monsun 季风 ENSO MJO forecast ramalan 预报 ECMWF ensemble Skew-T radar satellite satelit 卫星 haze jerebu 烟霾 course kursus 课程",
+    "screenshots": [
+      "img/meteorology-1.jpg",
+      "img/meteorology-2.jpg",
+      "img/meteorology-3.jpg"
+    ],
+    "zh": {
+      "tagline": "离线气象学课程，以马来西亚为例",
+      "description": "从大气怎么运作讲起，一直到 ECMWF 的集合预报怎么做出来，全程用马来西亚的天气做例子：季风、午后雷雨、MetMalaysia 警报、水灾、干旱和烟霾。每一章只用前面教过的词，适合初学者。有很多可以用手指拖动的互动图，最后一个阶段讲天气和农业的关系。",
+      "features": [
+        "42 章，分 9 个阶段，循序渐进",
+        "马来西亚季风、雷雨、烟霾专章",
+        "可以拖动的互动图（探空图、集合预报等）",
+        "天气模型和预报 App 怎么看",
+        "闪卡、测验、术语表"
+      ]
+    },
+    "en": {
+      "tagline": "An offline course in meteorology, with Malaysia as the running example",
+      "description": "From how the atmosphere works to how ECMWF's ensemble forecasts are made, using Malaysia's weather throughout: monsoons, afternoon storms, MetMalaysia warnings, floods, drought and haze. Each chapter only uses terms taught before it, so beginners can follow. Many figures can be dragged with a finger, and the last stage brings it back to farming.",
+      "features": [
+        "42 chapters in 9 stages, in beginner order",
+        "Chapters on Malaysia's monsoons, storms and haze",
+        "Interactive figures you drag (Skew-T, ensembles and more)",
+        "How weather models and forecast apps work",
+        "Flashcards, quizzes and a glossary"
+      ]
+    },
+    "ms": {
+      "tagline": "Kursus meteorologi luar talian, dengan Malaysia sebagai contoh",
+      "description": "Dari cara atmosfera berfungsi hingga cara ramalan ensemble ECMWF dihasilkan, menggunakan cuaca Malaysia sepanjang kursus: monsun, ribut petang, amaran MetMalaysia, banjir, kemarau dan jerebu. Setiap bab hanya guna istilah yang telah diajar sebelumnya, jadi pemula boleh ikut. Banyak rajah boleh diseret dengan jari, dan peringkat terakhir mengaitkannya dengan pertanian.",
+      "features": [
+        "42 bab dalam 9 peringkat, mengikut turutan pemula",
+        "Bab tentang monsun, ribut dan jerebu Malaysia",
+        "Rajah interaktif yang boleh diseret (Skew-T, ensemble dan lain-lain)",
+        "Cara model cuaca dan aplikasi ramalan berfungsi",
+        "Kad imbas, kuiz dan glosari"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "plant-physiology",
+    "name": "Plant Physiology",
+    "category": "learn",
+    "url": "https://bryanwoo988.github.io/plant-physiology/",
+    "logo": "img/plant-physiology-logo.png",
+    "cover": "img/plant-physiology-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "plant physiology fisiologi tumbuhan 植物生理学 photosynthesis fotosintesis 光合作用 water air 水分 nutrient nutrien 营养 hormone hormon 激素 flowering berbunga 开花 respiration respirasi 呼吸 course kursus 课程",
+    "screenshots": [
+      "img/plant-physiology-1.jpg",
+      "img/plant-physiology-2.jpg",
+      "img/plant-physiology-3.jpg"
+    ],
+    "zh": {
+      "tagline": "离线植物生理学课程：从水分到开花",
+      "description": "一门完整的植物生理学课程：水分和养分怎么进到植物、光合作用和呼吸作用、氮素和逆境、植物激素，再到光、运动和开花。每一章只用前面教过的词，并标明属于第几次期中考的范围。27 个可以用手指拖动的互动图，帮你看懂抽象的概念。",
+      "features": [
+        "28 章，分 5 个阶段",
+        "每章标明期中考范围（I、II、III）",
+        "27 个可以拖动的互动图",
+        "画重点、笔记、书签、朗读",
+        "自测和闪卡"
+      ]
+    },
+    "en": {
+      "tagline": "An offline course in plant physiology, from water to flowering",
+      "description": "A full plant physiology course: how water and nutrients get into the plant, photosynthesis and respiration, nitrogen and stress, plant hormones, then light, movement and flowering. Each chapter only uses terms taught before it and is tagged with the midterm it belongs to. 27 figures you drag with a finger make the abstract ideas easier to see.",
+      "features": [
+        "28 chapters in 5 stages",
+        "Each chapter tagged by midterm (I, II, III)",
+        "27 interactive figures you drag",
+        "Highlights, notes, bookmarks and read-aloud",
+        "Self-tests and flashcards"
+      ]
+    },
+    "ms": {
+      "tagline": "Kursus fisiologi tumbuhan luar talian, dari air hingga pembungaan",
+      "description": "Kursus fisiologi tumbuhan yang lengkap: cara air dan nutrien masuk ke tumbuhan, fotosintesis dan respirasi, nitrogen dan tekanan, hormon tumbuhan, kemudian cahaya, pergerakan dan pembungaan. Setiap bab hanya guna istilah yang telah diajar sebelumnya dan dilabel mengikut peperiksaan pertengahan semester. 27 rajah yang boleh diseret dengan jari memudahkan konsep abstrak difahami.",
+      "features": [
+        "28 bab dalam 5 peringkat",
+        "Setiap bab dilabel mengikut peperiksaan pertengahan (I, II, III)",
+        "27 rajah interaktif yang boleh diseret",
+        "Serlahan, nota, penanda buku dan bacaan kuat",
+        "Ujian kendiri dan kad imbas"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "oilpalmwiki",
+    "name": "Oil Palm Wiki",
+    "category": "learn",
+    "url": "https://bryanwoo988.github.io/OilPalmWiki/",
+    "logo": "img/oilpalmwiki-logo.png",
+    "cover": "img/oilpalmwiki-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "oil palm sawit 油棕 kelapa sawit wiki 百科 rujukan reference 手册 tenera dura pisifera climate iklim 气候 soil tanah 土壤 yield hasil 产量 nursery tapak semaian 苗圃 breeding pembiakbakaan 育种",
+    "screenshots": [
+      "img/oilpalmwiki-1.jpg",
+      "img/oilpalmwiki-2.jpg",
+      "img/oilpalmwiki-3.jpg"
+    ],
+    "zh": {
+      "tagline": "离线油棕种植百科",
+      "description": "一本放在手机里的油棕种植手册，从油棕的历史、植物学和果型，到气候、土壤、产量形成、育种、组培、苗圃和开垦。共 20 章、90 节，16 个互动图表。装到主屏幕后完全不用网络，在园里也能查。",
+      "features": [
+        "20 章、90 节完整内容",
+        "16 个互动图表",
+        "搜索病虫害、养分、品种",
+        "画重点、笔记、书签、朗读",
+        "完全离线可用"
+      ]
+    },
+    "en": {
+      "tagline": "An offline oil palm field reference",
+      "description": "An oil palm handbook on your phone, from the crop's history, botany and fruit forms to climate, soils, yield formation, breeding, tissue culture, nursery and land preparation. 20 chapters, 90 sections and 16 interactive charts. Once added to the home screen it needs no network, so it works out in the field.",
+      "features": [
+        "20 chapters and 90 sections",
+        "16 interactive charts",
+        "Search pests, nutrients and varieties",
+        "Highlights, notes, bookmarks and read-aloud",
+        "Works fully offline"
+      ]
+    },
+    "ms": {
+      "tagline": "Rujukan sawit luar talian",
+      "description": "Buku panduan sawit dalam telefon anda, dari sejarah, botani dan bentuk buah hingga iklim, tanah, pembentukan hasil, pembiakbakaan, kultur tisu, tapak semaian dan penyediaan tanah. 20 bab, 90 bahagian dan 16 carta interaktif. Selepas ditambah ke skrin utama, ia tidak perlukan internet, jadi boleh digunakan di ladang.",
+      "features": [
+        "20 bab dan 90 bahagian",
+        "16 carta interaktif",
+        "Cari perosak, nutrien dan varieti",
+        "Serlahan, nota, penanda buku dan bacaan kuat",
+        "Boleh digunakan sepenuhnya tanpa internet"
+      ]
+    },
+    "demo": null
+  },
+  {
+    "id": "sawitbasics",
+    "name": "Oil Palm Basics",
+    "category": "learn",
+    "url": "https://bryanwoo988.github.io/SawitBasics/",
+    "logo": "img/sawitbasics-logo.png",
+    "cover": "img/sawitbasics-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "oil palm sawit 油棕 basics asas 基础 harvesting penuaian 收割 grading penggredan 分级 FFB BTS 鲜果串 fertiliser baja 肥料 Ganoderma rat tikus 老鼠 mill kilang 榨油厂 OER executive eksekutif 主管 interview temuduga 面试",
+    "screenshots": [
+      "img/sawitbasics-1.jpg",
+      "img/sawitbasics-2.jpg",
+      "img/sawitbasics-3.jpg"
+    ],
+    "zh": {
+      "tagline": "油棕园新人必备：收割、分级、施肥、病虫害和关键数字",
+      "description": "给刚进油棕园的新主管准备面试或头几个月用的口袋手册：油棕怎么生长、怎么收割和分级、怎么施肥和保护，还有面试和早会常问的关键数字（产量、出油率等）。内容来自小园主油棕手册和 MPOB 统计，附 83 张照片和图解，还有自测题。",
+      "features": [
+        "面试常考的关键数字",
+        "种苗：dura、tenera、pisifera",
+        "收割标准和果串分级扣分",
+        "施肥、园地维护和病虫害",
+        "83 张照片、自测题、离线可用"
+      ]
+    },
+    "en": {
+      "tagline": "Oil palm basics: harvesting, grading, fertiliser, pests and the key numbers",
+      "description": "A pocket guide for new plantation executives preparing for interviews or their first months in the field: how the palm grows, how it is harvested and graded, how it is fed and protected, plus the numbers you are expected to know by heart. Content comes from the Smallholder Oil Palm Handbook and MPOB statistics, with 83 photos and diagrams and a self-test.",
+      "features": [
+        "The key numbers asked in interviews",
+        "Planting material: dura, tenera, pisifera",
+        "Harvesting standards and bunch grading deductions",
+        "Fertiliser, field upkeep, pests and diseases",
+        "83 photos, self-test, works offline"
+      ]
+    },
+    "ms": {
+      "tagline": "Asas sawit: penuaian, penggredan, baja, perosak dan angka utama",
+      "description": "Panduan poket untuk eksekutif ladang baharu yang bersedia untuk temuduga atau bulan-bulan pertama di ladang: cara sawit tumbuh, cara dituai dan digred, cara dibaja dan dilindungi, serta angka yang perlu dihafal. Kandungan daripada Smallholder Oil Palm Handbook dan statistik MPOB, dengan 83 foto dan rajah serta ujian kendiri.",
+      "features": [
+        "Angka utama yang ditanya dalam temuduga",
+        "Bahan tanaman: dura, tenera, pisifera",
+        "Standard penuaian dan potongan gred tandan",
+        "Baja, penyelenggaraan ladang, perosak dan penyakit",
+        "83 foto, ujian kendiri, guna tanpa internet"
       ]
     },
     "demo": null
