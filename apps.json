@@ -1269,5 +1269,55 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "rainlog-lab",
+    "name": "RainLog Lab",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/Rainlog-lab/",
+    "added": "2026-10-23",
+    "logo": "img/rainlog-lab-logo.png",
+    "cover": null,
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "rain hujan 雨 雨量 rainfall taburan hujan 降雨量 record rekod 记录 dry spell kemarau 干旱 flowering berbunga 开花 催花 orchard dusun 果园 durian 榴莲 monthly bulanan 每月 Excel Raub 劳勿 Bentong 文冬",
+    "screenshots": [],
+    "zh": {
+      "tagline": "每个园地的雨量记录，看出干旱期和催花信号",
+      "description": "RainLog Lab 为每个园地拉取历史雨量，显示总雨量、每月雨量，以及现在已经连续几天没下雨、今年最长的干旱期，帮你判断催花的时机。可以自己设定多少毫米才算一个雨天，一次更新整个地区的园地，再导出 Excel 或分享图片。已经预载 114 个园地，也可以用 GPS 加自己的。",
+      "features": [
+        "每个园地的总雨量和每月雨量",
+        "目前连续干旱天数和今年最长干旱期",
+        "自订「雨天」的毫米标准",
+        "一次更新整个地区的园地",
+        "导出 Excel、分享图片，预载 114 个园地"
+      ]
+    },
+    "en": {
+      "tagline": "Rainfall records for each orchard, with dry spells and the flowering signal",
+      "description": "RainLog Lab pulls the rainfall history for each orchard and shows total and monthly rainfall, the current dry streak and the longest dry spell this year, to help you judge when trees are ready to flower. Set how many millimetres count as a rainy day, update every orchard in a region at once, then export to Excel or share an image. 114 orchards come pre-loaded, and you can add your own by GPS.",
+      "features": [
+        "Total and monthly rainfall for each orchard",
+        "Current dry streak and the longest dry spell this year",
+        "Set your own rainy-day threshold in mm",
+        "Update a whole region at once",
+        "Excel export, image sharing, 114 orchards pre-loaded"
+      ]
+    },
+    "ms": {
+      "tagline": "Rekod hujan setiap kebun, dengan musim kering dan isyarat berbunga",
+      "description": "RainLog Lab mengambil sejarah hujan bagi setiap kebun dan menunjukkan jumlah hujan, hujan bulanan, kemarau semasa dan kemarau terpanjang tahun ini, untuk membantu anda menilai bila pokok sedia berbunga. Tetapkan berapa milimeter dikira sebagai hari hujan, kemas kini semua kebun di satu kawasan sekaligus, kemudian eksport ke Excel atau kongsi gambar. 114 kebun sudah dimuatkan, dan anda boleh tambah kebun sendiri melalui GPS.",
+      "features": [
+        "Jumlah hujan dan hujan bulanan setiap kebun",
+        "Kemarau semasa dan kemarau terpanjang tahun ini",
+        "Tetapkan sendiri had hari hujan dalam mm",
+        "Kemas kini seluruh kawasan sekaligus",
+        "Eksport Excel, kongsi gambar, 114 kebun sudah dimuatkan"
+      ]
+    },
+    "demo": null
   }
 ]
