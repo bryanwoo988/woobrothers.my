@@ -962,10 +962,7 @@
     "added": "2026-10-22",
     "logo": "img/agripro-nutrients-logo.png",
     "cover": "img/agripro-nutrients-cover.jpg",
-    "languages": [
-      "EN",
-      "华"
-    ],
+    "languages": ["BM", "EN", "华"],
     "keywords": "nutrient nutrien 营养 养分 fertiliser baja 肥料 deficiency kekurangan 缺素 pH soil tanah 土壤 antagonism antagonisme 拮抗 synergy sinergi 协同 tank mix campuran tangki 混配 durian 榴莲 Musang King 猫山王 advisor penasihat 顾问",
     "screenshots": [
       "img/agripro-nutrients-1.jpg",
