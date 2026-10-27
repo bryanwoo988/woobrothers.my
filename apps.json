@@ -1323,5 +1323,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "crophormone",
+    "name": "Tropical Fruit Hormone Charts",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/crophormone/",
+    "added": "2026-10-27",
+    "logo": "img/crophormone-logo.png",
+    "cover": "img/crophormone-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "hormone hormon 激素 gibberellin giberelin 赤霉素 GA cytokinin sitokinin 细胞分裂素 ABA auxin auksin 生长素 ethylene etilena 乙烯 paclobutrazol 多效唑 flowering berbunga 开花 fruit set pembentukan buah 坐果 ripening kemasakan 成熟 durian 榴莲 mango mangga 芒果 longan 龙眼 residue sisa 残留",
+    "screenshots": [
+      "img/crophormone-1.jpg",
+      "img/crophormone-2.jpg",
+      "img/crophormone-3.jpg"
+    ],
+    "zh": {
+      "tagline": "热带水果激素图表：13 种作物在开花、坐果和成熟阶段的激素变化",
+      "description": "赤霉素、细胞分裂素、脱落酸、生长素和乙烯，在开花、坐果和成熟时各自是升还是降？这个 App 把榴莲、芒果、龙眼、山竹、红毛丹、香蕉等 13 种热带水果的研究整理成图表，每一格都标明是实测、推断、只做过喷施试验，还是还没有研究。另外列出常用的调节剂（例如多效唑）怎样影响激素、在土壤里残留多久，以及各国的果实残留限量。每项数据都附上来源，离线可用。",
+      "features": [
+        "13 种热带水果、10 类激素的变化表",
+        "开花、坐果、成熟三个阶段的图表",
+        "每项注明：实测、推断、只做过喷施或没有数据",
+        "调节剂的作用、副作用和土壤残留",
+        "各国果实残留限量，附研究报告和来源"
+      ]
+    },
+    "en": {
+      "tagline": "Tropical fruit hormone charts: how hormones change at flowering, fruit set and ripening in 13 crops",
+      "description": "Do gibberellin, cytokinin, ABA, auxin and ethylene rise or fall at flowering, fruit set and ripening? This app turns the research on 13 tropical fruits, including durian, mango, longan, mangosteen, rambutan and banana, into charts, and every cell says whether it was measured, inferred, only tested as a spray, or has no study yet. It also lists how common regulators such as paclobutrazol change hormones, how long they last in soil, and fruit residue limits by market. Every value has a source, and it works offline.",
+      "features": [
+        "Hormone changes for 13 tropical fruits and 10 hormone classes",
+        "Charts for flowering, fruit set and ripening",
+        "Each value marked measured, inferred, spray-only or no data",
+        "Regulators: effects, side effects and soil persistence",
+        "Fruit residue limits by market, with a full research report"
+      ]
+    },
+    "ms": {
+      "tagline": "Carta hormon buah tropika: perubahan hormon semasa berbunga, pembentukan buah dan kemasakan bagi 13 tanaman",
+      "description": "Adakah giberelin, sitokinin, ABA, auksin dan etilena naik atau turun semasa berbunga, pembentukan buah dan kemasakan? Aplikasi ini menukar kajian tentang 13 buah tropika, termasuk durian, mangga, longan, manggis, rambutan dan pisang, kepada carta, dan setiap sel menyatakan sama ada ia diukur, disimpulkan, hanya diuji sebagai semburan, atau belum dikaji. Ia juga menyenaraikan cara pengawal atur biasa seperti paklobutrazol mengubah hormon, berapa lama ia kekal dalam tanah, dan had sisa buah mengikut pasaran. Setiap nilai ada sumbernya, dan boleh digunakan tanpa internet.",
+      "features": [
+        "Perubahan hormon bagi 13 buah tropika dan 10 kelas hormon",
+        "Carta untuk berbunga, pembentukan buah dan kemasakan",
+        "Setiap nilai ditanda diukur, disimpulkan, semburan sahaja atau tiada data",
+        "Pengawal atur: kesan, kesan sampingan dan ketahanan dalam tanah",
+        "Had sisa buah mengikut pasaran, dengan laporan kajian penuh"
+      ]
+    },
+    "demo": null
   }
 ]
