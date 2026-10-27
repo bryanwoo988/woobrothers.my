@@ -1377,5 +1377,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "taijiang-insects",
+    "name": "Taijiang Insects",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/taijiang-insects/",
+    "added": "2026-10-27",
+    "logo": "img/taijiang-insects-logo.png",
+    "cover": "img/taijiang-insects-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "insect serangga 昆虫 昆蟲 field guide panduan lapangan 图鉴 圖鑑 Taijiang Taiwan 台江 台湾 dragonfly pepatung 蜻蜓 identify kenal pasti 辨认 mangrove bakau 红树林 calendar kalendar 月历 quiz kuiz",
+    "screenshots": [
+      "img/taijiang-insects-1.jpg",
+      "img/taijiang-insects-2.jpg",
+      "img/taijiang-insects-3.jpg"
+    ],
+    "zh": {
+      "tagline": "台江国家公园 180 种昆虫图鉴",
+      "description": "以台江国家公园（台湾台南）的 180 种昆虫为对象的离线图鉴，内容整理自《游黽飛蛉：台江昆蟲圖鑑》。可以按目浏览和搜索，或者勾选看到的栖地、停留位置、月份和大小来缩小范围，也有一步一步辨认昆虫目的检索。月历显示这个月有哪些昆虫活动；学习单元介绍昆虫身体、口器、足和生活史。另有照片测验、闪卡和野外笔记，支持简体、繁体、英文和马来文。",
+      "features": [
+        "180 种昆虫，按目浏览和搜索",
+        "勾选栖地、位置、月份、大小来辨认",
+        "一步一步辨认昆虫目的检索",
+        "月历：这个月有哪些昆虫活动",
+        "学习单元、照片测验、闪卡和野外笔记"
+      ]
+    },
+    "en": {
+      "tagline": "A field guide to the 180 insects of Taijiang National Park",
+      "description": "An offline field guide to the 180 insects of Taijiang National Park (Tainan, Taiwan), based on the park's field guide 《游黽飛蛉：台江昆蟲圖鑑》. Browse and search by order, or narrow it down by tapping the habitat, where the insect sat, the month and its size; a step-by-step key leads to the insect order. A calendar shows what is active this month, and a Learn section covers insect bodies, mouthparts, legs and life cycles. There is also a photo quiz, flashcards and a field notebook, in Simplified and Traditional Chinese, English and Malay.",
+      "features": [
+        "180 insects, browse and search by order",
+        "Identify by habitat, perch, month and size",
+        "Step-by-step key to insect orders",
+        "Calendar of what is active this month",
+        "Learn section, photo quiz, flashcards and field notebook"
+      ]
+    },
+    "ms": {
+      "tagline": "Panduan lapangan 180 serangga Taman Negara Taijiang",
+      "description": "Panduan lapangan luar talian bagi 180 serangga di Taman Negara Taijiang (Tainan, Taiwan), berdasarkan buku panduan taman tersebut 《游黽飛蛉：台江昆蟲圖鑑》. Layari dan cari mengikut order, atau kecilkan pilihan dengan menekan habitat, tempat serangga hinggap, bulan dan saiznya; kunci langkah demi langkah membawa anda ke order serangga. Kalendar menunjukkan serangga yang aktif bulan ini, dan bahagian Belajar merangkumi badan serangga, bahagian mulut, kaki dan kitaran hidup. Turut ada kuiz foto, kad imbas dan buku nota lapangan, dalam bahasa Cina Ringkas dan Tradisional, Inggeris dan Melayu.",
+      "features": [
+        "180 serangga, layari dan cari mengikut order",
+        "Kenal pasti ikut habitat, tempat hinggap, bulan dan saiz",
+        "Kunci langkah demi langkah ke order serangga",
+        "Kalendar serangga yang aktif bulan ini",
+        "Bahagian Belajar, kuiz foto, kad imbas dan buku nota lapangan"
+      ]
+    },
+    "demo": null
   }
 ]

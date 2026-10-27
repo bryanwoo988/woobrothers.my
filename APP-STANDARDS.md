@@ -81,6 +81,7 @@ App 一更新，使用者下次打开时就要看到一个弹窗，写清楚：
 | AMIS | 有更新提示，但还没有按版本列出更新内容 |
 | RainLog Lab | 还没有，需要开发者加上 |
 | Tropical Fruit Hormone Charts | 有更新提示，但还没有按版本列出更新内容 |
+| Taijiang Insects | 还没有，需要开发者加上 |
 
 ## 2. 有新版本时先问一句
 
