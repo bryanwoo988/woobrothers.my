@@ -83,6 +83,7 @@ App 一更新，使用者下次打开时就要看到一个弹窗，写清楚：
 | Tropical Fruit Hormone Charts | 有更新提示，但还没有按版本列出更新内容 |
 | Taijiang Insects | 还没有，需要开发者加上 |
 | RainScore Lab | 还没有，需要开发者加上 |
+| Grass Cutting | 有「已更新到某版本」提示，但还没有列出更新内容 |
 
 ## 2. 有新版本时先问一句
 

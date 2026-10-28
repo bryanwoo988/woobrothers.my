@@ -1485,5 +1485,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "grasscutting",
+    "name": "Grass Cutting",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/grasscutting/",
+    "added": "2026-10-28",
+    "logo": "img/grasscutting-logo.png",
+    "cover": "img/grasscutting-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "grass rumput 草 割草 cutting memotong mowing soil tanah 土壤 养土 herbicide racun rumpai 除草剂 glyphosate glifosat 草甘膦 cover crop tanaman penutup 覆盖作物 pinto peanut kacang pinto 蔓花生 cogongrass lalang 白茅 durian 榴莲 roots akar 根",
+    "screenshots": [
+      "img/grasscutting-1.jpg",
+      "img/grasscutting-2.jpg",
+      "img/grasscutting-3.jpg"
+    ],
+    "zh": {
+      "tagline": "割草养土：用割草代替喷除草剂，养出榴莲园的好土",
+      "description": "为什么割草比喷除草剂更能养土？活的根会一直喂养土壤，被除草剂杀死的根只喂一次。这个小手册用 9 个章节讲清楚草和土壤怎样互相影响：单子叶草和双子叶覆盖植物的差别、长什么草反映土壤状况、蔓花生和白茅各在什么土壤占优势、什么时候割、割多高。另有榴莲园干湿两季的地面管理，每一点都附上研究来源，离线可用。",
+      "features": [
+        "9 个章节，每章配一张图解",
+        "割草 vs 除草剂：根和土壤的差别",
+        "蔓花生、白茅等地被植物的竞争",
+        "什么时候割、割多高",
+        "榴莲园两季地面管理，附研究来源"
+      ]
+    },
+    "en": {
+      "tagline": "Build orchard soil by cutting grass instead of spraying it, written for durian growers",
+      "description": "Why does cutting build soil better than spraying herbicide? Living roots feed the soil all the time, while roots killed by spray feed it only once. In 9 short sections with a diagram each, this guide explains how grass and soil shape each other: grasses versus broadleaf ground covers, what the plants growing tell you about the soil, where pinto peanut and cogongrass each win, and when and how high to cut. It also covers the orchard floor through durian's two seasons, with the research behind every point. Works offline.",
+      "features": [
+        "9 sections, each with a diagram",
+        "Cutting vs herbicide: what happens to roots and soil",
+        "How pinto peanut, cogongrass and other covers compete",
+        "When to cut, and how high",
+        "Orchard floor through durian's two seasons, with sources"
+      ]
+    },
+    "ms": {
+      "tagline": "Bina tanah kebun dengan memotong rumput, bukan menyembur racun, untuk penanam durian",
+      "description": "Kenapa memotong rumput lebih baik membina tanah daripada menyembur racun rumpai? Akar yang hidup memberi makan tanah sepanjang masa, manakala akar yang mati disembur hanya memberi sekali. Dalam 9 bahagian ringkas, setiap satu dengan rajah, panduan ini menerangkan bagaimana rumput dan tanah saling mempengaruhi: rumput berbanding tanaman penutup berdaun lebar, apa yang tumbuh memberitahu tentang tanah, di mana kacang pinto dan lalang masing-masing menang, serta bila dan setinggi mana perlu memotong. Ia juga merangkumi pengurusan lantai kebun sepanjang dua musim durian, dengan kajian di sebalik setiap perkara. Boleh digunakan tanpa internet.",
+      "features": [
+        "9 bahagian, setiap satu dengan rajah",
+        "Memotong vs racun rumpai: kesan pada akar dan tanah",
+        "Persaingan kacang pinto, lalang dan tanaman penutup lain",
+        "Bila perlu memotong, dan setinggi mana",
+        "Lantai kebun sepanjang dua musim durian, dengan sumber"
+      ]
+    },
+    "demo": null
   }
 ]
