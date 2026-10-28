@@ -1431,5 +1431,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "rainscore-lab",
+    "name": "RainScore Lab",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/Rainscore-lab/",
+    "added": "2026-10-28",
+    "logo": "img/rainscore-lab-logo.png",
+    "cover": "img/rainscore-lab-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "rain hujan 雨 雨量 forecast ramalan 预报 accuracy ketepatan 准确 model ECMWF IFS ICON JMA CMA GEM GFS ERA5 compare banding 比较 orchard dusun 果园 Excel WhatsApp",
+    "screenshots": [
+      "img/rainscore-lab-1.jpg",
+      "img/rainscore-lab-2.jpg",
+      "img/rainscore-lab-3.jpg"
+    ],
+    "zh": {
+      "tagline": "哪个天气模型在你的园地最准？6 个模型的雨量预报对比实际雨量",
+      "description": "RainScore Lab 是一个研究工具：把 IFS 9km、ICON、JMA、CMA、GEM、GFS 六个天气模型的雨量预报，和 ERA5 再分析的实际雨量逐日对比，算出每个模型平均差多少毫米、下不下雨猜对几成，告诉你在这个园地哪个模型最准。每天清晨自动收集 114 个预载园地的数据，打开就能看；也能加自己的园地、导出 Excel、分享到 WhatsApp。",
+      "features": [
+        "6 个天气模型并排比较",
+        "平均误差和晴雨判断两种评分",
+        "7、14、30 天的比较区间",
+        "每天自动收集 114 个园地",
+        "导出 Excel、分享到 WhatsApp"
+      ]
+    },
+    "en": {
+      "tagline": "Which weather model is most accurate at your orchard? Six rain forecasts against actual rain",
+      "description": "RainScore Lab is a research tool. It compares the rain forecasts of six weather models (IFS 9km, ICON, JMA, CMA, GEM and GFS) day by day against ERA5 actual rainfall, scores each model on its average miss in mm and how often it called rain or dry correctly, and shows which model is most accurate at that orchard. Data for 114 pre-loaded orchards is collected automatically every morning, so it opens ready; you can also add your own orchards, export to Excel and share to WhatsApp.",
+      "features": [
+        "Six weather models side by side",
+        "Two scores: average miss and dry/wet calls",
+        "Compare over 7, 14 or 30 days",
+        "Auto-collected daily for 114 orchards",
+        "Excel export and WhatsApp sharing"
+      ]
+    },
+    "ms": {
+      "tagline": "Model cuaca mana paling tepat di kebun anda? Enam ramalan hujan berbanding hujan sebenar",
+      "description": "RainScore Lab ialah alat penyelidikan. Ia membandingkan ramalan hujan enam model cuaca (IFS 9km, ICON, JMA, CMA, GEM dan GFS) setiap hari dengan hujan sebenar ERA5, memberi skor setiap model mengikut purata tersasar dalam mm dan berapa kerap ia betul meneka hujan atau kering, serta menunjukkan model mana paling tepat di kebun itu. Data bagi 114 kebun yang dimuatkan dikumpul secara automatik setiap pagi, jadi ia sedia apabila dibuka; anda juga boleh tambah kebun sendiri, eksport ke Excel dan kongsi ke WhatsApp.",
+      "features": [
+        "Enam model cuaca sebelah-menyebelah",
+        "Dua skor: purata tersasar dan ramalan kering/basah",
+        "Banding untuk 7, 14 atau 30 hari",
+        "Data dikumpul automatik setiap hari untuk 114 kebun",
+        "Eksport Excel dan kongsi WhatsApp"
+      ]
+    },
+    "demo": null
   }
 ]
