@@ -31,6 +31,7 @@ Woo Brothers 农业 App 网站。免费、非营利。
 | `category` | 类别：`weather`（天气与气候）`field` `pest` `learn` `manage`。类别按钮按这个顺序排列 | `"weather"` |
 | `url` | App 网址；还没有就写 `null` | `"https://…"` |
 | `added` | 加进网站的日期（马来西亚时间）。用途：「最新在前 / 最旧在前」排序；详情页显示「上架日期」；7 天内加的 App 卡片上自动显示「新」标签。同一天的按 `apps.json` 里的先后，所以新 App 一律加在最后 | `"2026-10-22"` |
+| `author` | 谁做的：`"bryan"`（Bryan Woo）或 `"stanley"`（Stanley Woo）。卡片名字下面和详情页会显示「开发者」，搜索名字也找得到。要加新的开发者，在 `index.html` 的 `AUTHORS` 里加一行 | `"stanley"` |
 | `logo` / `cover` | 图片路径；没有就写 `null` | `"img/myapp-logo.png"` |
 | `cover` 多张 | 放几张图片就会自动轮播（每 5 秒换一张，也可以左右滑） | `["img/myapp-cover.jpg", "img/myapp-cover-2.jpg"]` |
 | `languages` | 支持的语言 | `["BM", "EN", "华"]` |

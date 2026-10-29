@@ -75,7 +75,7 @@
 | 发布日期 | 例如 `2026-10-13` |
 | 这一版的内容 | 每种语言 1–3 句 |
 
-### 5. 联系人（不会放上网站）
+### 5. 联系人（开发者名字会显示在网站上，WhatsApp 不会）
 
 | 项目 | 填写 |
 |---|---|
@@ -128,6 +128,7 @@
 | `代号-logo.png` | `logo` → `img/代号-logo.png` |
 | `代号-cover.jpg`（多张） | `cover` → `"img/代号-cover.jpg"`，多张用列表 `["img/代号-cover.jpg", "img/代号-cover-2.jpg"]` |
 | `代号-1.png`…… | `screenshots` → `["img/代号-1.png", …]` |
-| 联系人 | 不放进 `apps.json` |
+| 开发者名字 | `author`（网站上显示「开发者：名字」） |
+| WhatsApp | 不放进 `apps.json` |
 
 互动图表（`demo`）不放在模板里，新 App 默认是 `null`。需要的话个别讨论。
