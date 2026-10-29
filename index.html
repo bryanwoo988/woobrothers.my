@@ -218,6 +218,7 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-
 .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font:600 11px var(--font-body);letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--line-strong);border-radius:2px;color:var(--muted)}
 .tag.free{border-color:var(--good);color:var(--good)}
+.tag.new{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 .langs{font:500 12px var(--font-data);color:var(--muted)}
 mark{background:color-mix(in srgb,var(--accent) 35%,transparent);color:inherit;padding:0 1px}
 .empty{border:1px dashed var(--line-strong);border-radius:var(--r-card);padding:48px 24px;text-align:center;color:var(--muted)}
@@ -247,7 +248,8 @@ mark{background:color-mix(in srgb,var(--accent) 35%,transparent);color:inherit;p
 .feats{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;font-size:16px;border-top:1px solid var(--line);padding-top:20px}
 .feats li{display:flex;gap:10px;align-items:flex-start}
 .feats li::before{content:"";flex:none;width:6px;height:6px;margin-top:10px;background:var(--accent)}
-.dinfo small{color:var(--muted);font-size:13px}
+.dinfo small{color:var(--muted);font-size:13px;display:block}
+.dinfo small+small{margin-top:-16px}
 .demo{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:28px;min-width:0}
 .demo-head{display:flex;justify-content:space-between;gap:8px;font:500 12px var(--font-data);color:var(--muted)}
 .seg{display:grid;margin-top:16px;border:1px solid var(--line-strong);border-radius:var(--r)}
@@ -515,6 +517,7 @@ html.lp-open{overflow:hidden}
       <p class="desc" id="dDesc"></p>
       <ul class="feats" id="dFeats"></ul>
       <small id="dLangs"></small>
+      <small id="dAdded"></small>
     </div>
     <div>
       <div class="demo" id="demoBox" hidden>
@@ -574,7 +577,7 @@ results:(n,t)=>n===t?`共 ${t} 个 App`:`找到 ${n} 个 App（共 ${t} 个）`,
 emptyTitle:"找不到相关的 App",emptyText:"换个关键字试试，或者选“全部”。",
 errTitle:"App 资料读取失败",errText:"apps.json 可能有格式错误。请检查下面提到的位置附近，有没有少了逗号、多了逗号，或者用了中文引号。",
 details:"查看详情",open:"打开网站",soon:"网址即将公布",free:"免费",
-back:"返回 App 目录",langsLabel:"语言",linkNote:"链接整理中，很快就能打开。",sample:"示意",shots:"App 截图",
+back:"返回 App 目录",langsLabel:"语言",newTag:"新",addedOn:x=>`上架日期：${x}`,date:(y,m,d)=>`${y}年${m}月${d}日`,linkNote:"链接整理中，很快就能打开。",sample:"示意",shots:"App 截图",
 acc:"准确度",diff:n=>n===0?"完全准确":`差 ${n}`,vsFirst:(n,x,u="")=>n>=0?`比 ${x} 高 ${n} ${u}`.trim():`比 ${x} 低 ${Math.abs(n)} ${u}`.trim(),
 hintCompare:"点上面的按钮切换线条，点图上任何一格看数字。示意数据。",hintTrend:"点上面的按钮切换线条，点图上任何一格看数值。示意数据。",hintTrend1:"点图上任何一格看数值。示意数据。",
 soonTitle:"更多 App 开发中",soonText:"我们和朋友会继续开发新的农业 App。有想法或需要？告诉我们。",
@@ -606,7 +609,7 @@ results:(n,t)=>n===t?`${t} apps`:`${n} of ${t} apps`,
 emptyTitle:"No matching apps",emptyText:"Try another keyword, or choose \"All\".",
 errTitle:"Could not load the app list",errText:"apps.json may have a formatting mistake. Check near the position below for a missing or extra comma, or curly quotes.",
 details:"View details",open:"Open website",soon:"Link coming soon",free:"Free",
-back:"Back to App Directory",langsLabel:"Languages",linkNote:"We are preparing the link. It will open soon.",sample:"Example",shots:"Screenshots",
+back:"Back to App Directory",langsLabel:"Languages",newTag:"New",addedOn:x=>`Added ${x}`,date:(y,m,d)=>`${d} ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][m-1]} ${y}`,linkNote:"We are preparing the link. It will open soon.",sample:"Example",shots:"Screenshots",
 acc:"Accuracy",diff:n=>n===0?"Spot on":`Off by ${n}`,vsFirst:(n,x,u="")=>n>=0?`${`${n} ${u}`.trim()} higher than ${x}`:`${`${Math.abs(n)} ${u}`.trim()} lower than ${x}`,
 hintCompare:"Tap a button to switch lines, then tap any point on the chart. Example data.",hintTrend:"Tap a button to switch lines, then tap any point on the chart. Example data.",hintTrend1:"Tap any point on the chart to see its value. Example data.",
 soonTitle:"More apps on the way",soonText:"We and our friends will keep building new farm apps. Have an idea or a need? Tell us.",
@@ -638,7 +641,7 @@ results:(n,t)=>n===t?`${t} aplikasi`:`${n} daripada ${t} aplikasi`,
 emptyTitle:"Tiada aplikasi yang sepadan",emptyText:"Cuba kata kunci lain, atau pilih \"Semua\".",
 errTitle:"Senarai aplikasi gagal dimuatkan",errText:"apps.json mungkin ada kesilapan format. Semak berhampiran kedudukan di bawah: koma tertinggal, koma berlebihan, atau tanda petik yang salah.",
 details:"Lihat butiran",open:"Buka laman web",soon:"Pautan akan diumumkan",free:"Percuma",
-back:"Kembali ke Direktori",langsLabel:"Bahasa",linkNote:"Pautan sedang disediakan. Akan dibuka tidak lama lagi.",sample:"Contoh",shots:"Tangkapan skrin",
+back:"Kembali ke Direktori",langsLabel:"Bahasa",newTag:"Baharu",addedOn:x=>`Ditambah ${x}`,date:(y,m,d)=>`${d} ${["Jan","Feb","Mac","Apr","Mei","Jun","Jul","Ogo","Sep","Okt","Nov","Dis"][m-1]} ${y}`,linkNote:"Pautan sedang disediakan. Akan dibuka tidak lama lagi.",sample:"Contoh",shots:"Tangkapan skrin",
 acc:"Ketepatan",diff:n=>n===0?"Tepat":`Beza ${n}`,vsFirst:(n,x,u="")=>n>=0?`${`${n} ${u}`.trim()} lebih tinggi dari ${x}`:`${`${Math.abs(n)} ${u}`.trim()} lebih rendah dari ${x}`,
 hintCompare:"Tekan butang untuk tukar garis, kemudian tekan mana-mana titik pada carta. Data contoh.",hintTrend:"Tekan butang untuk tukar garis, kemudian tekan mana-mana titik pada carta. Data contoh.",hintTrend1:"Tekan mana-mana titik pada carta untuk lihat nilainya. Data contoh.",
 soonTitle:"Lebih banyak aplikasi akan datang",soonText:"Kami dan rakan-rakan akan terus membina aplikasi pertanian baharu. Ada idea atau keperluan? Beritahu kami.",
@@ -686,6 +689,10 @@ function drawProbs(){
 let query="",cat="all",sort="new";
 try{const s=localStorage.getItem("wb-sort");if(["new","old","az"].includes(s))sort=s}catch(e){}
 /* Newest/oldest use "added" (the date an app joined this site); apps added the same day keep their apps.json order. */
+const NEW_DAYS=7;
+const isNew=a=>{if(!a.added)return false;const age=(Date.parse(new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kuala_Lumpur"}))-Date.parse(a.added))/864e5;return age>=0&&age<NEW_DAYS};
+const addedText=a=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(a.added||"");return m?T[lang].addedOn(T[lang].date(+m[1],+m[2],+m[3])):""};
+const newTag=a=>isNew(a)?`<span class="tag new">${esc(T[lang].newTag)}</span>`:"";
 const SORTS={
   new:(x,y)=>(y.added||"").localeCompare(x.added||"")||y._i-x._i,
   old:(x,y)=>(x.added||"").localeCompare(y.added||"")||x._i-y._i,
@@ -734,7 +741,7 @@ function drawDir(){
     return `<article class="acard">
       <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(a.name)}">${cover}<span class="logo">${logo}</span></a>
       <div class="body">
-        <div class="meta"><span class="tags"><span class="tag free">${d.free}</span><span class="tag">${hl(c[lang])}</span></span><span class="langs">${esc((a.languages||[]).join(" · "))}</span></div>
+        <div class="meta"><span class="tags"><span class="tag free">${d.free}</span>${newTag(a)}<span class="tag">${hl(c[lang])}</span></span><span class="langs">${esc((a.languages||[]).join(" · "))}</span></div>
         <h3>${hl(a.name)}</h3>
         <p class="q">${hl(t.tagline||"")}</p>
         <div class="acts"><a class="btn line sm" href="#app-${esc(a.id)}"><span>${d.details}</span>${ARROW}</a>${openBtn(a,"sm")}</div>
@@ -773,13 +780,14 @@ function drawDetail(){
   const a=APPS.find(x=>x.id===current);if(!a)return;
   const d=T[lang],t=a[lang]||a.en||{},c=catOf(a);
   $("dLogo").innerHTML=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
-  $("dTags").innerHTML=`<span class="tag free">${d.free}</span><span class="tag">${esc(c[lang])}</span>`;
+  $("dTags").innerHTML=`<span class="tag free">${d.free}</span>${newTag(a)}<span class="tag">${esc(c[lang])}</span>`;
   $("dName").textContent=a.name;
   $("dQ").textContent=t.tagline||"";
   $("dAct").innerHTML=openBtn(a,"");
   $("dDesc").textContent=t.description||"";
   $("dFeats").innerHTML=(t.features||[]).map(x=>`<li>${esc(x)}</li>`).join("");
   $("dLangs").textContent=`${d.langsLabel}: ${(a.languages||[]).join(" · ")}${a.url?"":" · "+d.linkNote}`;
+  $("dAdded").textContent=addedText(a);$("dAdded").hidden=!a.added;
   const shots=a.screenshots||[];
   $("shotsBox").hidden=!shots.length;
   $("gallery").innerHTML=shots.map((s,i)=>`<img src="${esc(s)}" alt="${esc(a.name)} ${i+1}" loading="lazy">`).join("");
