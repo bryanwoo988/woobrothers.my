@@ -603,10 +603,7 @@
     "author": "stanley",
     "logo": "img/chemlog-logo.png",
     "cover": "img/chemlog-cover.jpg",
-    "languages": [
-      "EN",
-      "华"
-    ],
+    "languages": ["BM", "EN", "华"],
     "keywords": "tank mix campuran tangki 配药 混药 calculator kalkulator 计算 spray semburan 喷药 fertiliser baja 施肥 log rekod 记录 stock stok 库存 cost kos 成本 worker pekerja 工人 zone zon 区 WhatsApp",
     "screenshots": [
       "img/chemlog-1.jpg",
