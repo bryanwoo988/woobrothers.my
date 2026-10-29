@@ -218,7 +218,8 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-
 .tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font:600 11px var(--font-body);letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--line-strong);border-radius:2px;color:var(--muted)}
 .tag.free{border-color:var(--good);color:var(--good)}
-.tag.new{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.newmark{font:700 12px var(--font-body);letter-spacing:.06em;color:var(--accent);align-self:center}
+.cover .newmark{position:absolute;top:8px;right:10px;z-index:2;font-size:13px;text-shadow:0 0 3px rgba(0,0,0,.95),0 0 8px rgba(0,0,0,.7)}
 .langs{font:500 12px var(--font-data);color:var(--muted)}
 mark{background:color-mix(in srgb,var(--accent) 35%,transparent);color:inherit;padding:0 1px}
 .empty{border:1px dashed var(--line-strong);border-radius:var(--r-card);padding:48px 24px;text-align:center;color:var(--muted)}
@@ -692,7 +693,7 @@ try{const s=localStorage.getItem("wb-sort");if(["new","old","az"].includes(s))so
 const NEW_DAYS=7;
 const isNew=a=>{if(!a.added)return false;const age=(Date.parse(new Date().toLocaleDateString("en-CA",{timeZone:"Asia/Kuala_Lumpur"}))-Date.parse(a.added))/864e5;return age>=0&&age<NEW_DAYS};
 const addedText=a=>{const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(a.added||"");return m?T[lang].addedOn(T[lang].date(+m[1],+m[2],+m[3])):""};
-const newTag=a=>isNew(a)?`<span class="tag new">${esc(T[lang].newTag)}</span>`:"";
+const newTag=a=>isNew(a)?`<span class="newmark">${esc(T[lang].newTag)}</span>`:"";
 const SORTS={
   new:(x,y)=>(y.added||"").localeCompare(x.added||"")||y._i-x._i,
   old:(x,y)=>(x.added||"").localeCompare(y.added||"")||x._i-y._i,
@@ -739,9 +740,9 @@ function drawDir(){
       :covers.length?`<img class="cimg" src="${esc(covers[0])}" alt="" loading="lazy">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
     const logo=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
     return `<article class="acard">
-      <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(a.name)}">${cover}<span class="logo">${logo}</span></a>
+      <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(a.name)}">${cover}${newTag(a)}<span class="logo">${logo}</span></a>
       <div class="body">
-        <div class="meta"><span class="tags"><span class="tag free">${d.free}</span>${newTag(a)}<span class="tag">${hl(c[lang])}</span></span><span class="langs">${esc((a.languages||[]).join(" · "))}</span></div>
+        <div class="meta"><span class="tags"><span class="tag free">${d.free}</span><span class="tag">${hl(c[lang])}</span></span><span class="langs">${esc((a.languages||[]).join(" · "))}</span></div>
         <h3>${hl(a.name)}</h3>
         <p class="q">${hl(t.tagline||"")}</p>
         <div class="acts"><a class="btn line sm" href="#app-${esc(a.id)}"><span>${d.details}</span>${ARROW}</a>${openBtn(a,"sm")}</div>
@@ -780,7 +781,7 @@ function drawDetail(){
   const a=APPS.find(x=>x.id===current);if(!a)return;
   const d=T[lang],t=a[lang]||a.en||{},c=catOf(a);
   $("dLogo").innerHTML=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
-  $("dTags").innerHTML=`<span class="tag free">${d.free}</span>${newTag(a)}<span class="tag">${esc(c[lang])}</span>`;
+  $("dTags").innerHTML=`<span class="tag free">${d.free}</span><span class="tag">${esc(c[lang])}</span>${newTag(a)}`;
   $("dName").textContent=a.name;
   $("dQ").textContent=t.tagline||"";
   $("dAct").innerHTML=openBtn(a,"");
