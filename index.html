@@ -219,7 +219,8 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-
 .tag{font:600 11px var(--font-body);letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--line-strong);border-radius:2px;color:var(--muted)}
 .tag.free{border-color:var(--good);color:var(--good)}
 .newmark{font:700 12px var(--font-body);letter-spacing:.06em;color:var(--accent);align-self:center}
-.cover .newmark{position:absolute;top:8px;right:10px;z-index:2;font-size:13px;text-shadow:0 0 3px rgba(0,0,0,.95),0 0 8px rgba(0,0,0,.7)}
+.acard .body{position:relative}
+.acard .body>.newmark{position:absolute;top:10px;right:20px;font-size:13px;color:var(--accent-ink)}
 .langs{font:500 12px var(--font-data);color:var(--muted)}
 mark{background:color-mix(in srgb,var(--accent) 35%,transparent);color:inherit;padding:0 1px}
 .empty{border:1px dashed var(--line-strong);border-radius:var(--r-card);padding:48px 24px;text-align:center;color:var(--muted)}
@@ -740,8 +741,8 @@ function drawDir(){
       :covers.length?`<img class="cimg" src="${esc(covers[0])}" alt="" loading="lazy">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
     const logo=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
     return `<article class="acard">
-      <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(a.name)}">${cover}${newTag(a)}<span class="logo">${logo}</span></a>
-      <div class="body">
+      <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(a.name)}">${cover}<span class="logo">${logo}</span></a>
+      <div class="body">${newTag(a)}
         <div class="meta"><span class="tags"><span class="tag free">${d.free}</span><span class="tag">${hl(c[lang])}</span></span><span class="langs">${esc((a.languages||[]).join(" · "))}</span></div>
         <h3>${hl(a.name)}</h3>
         <p class="q">${hl(t.tagline||"")}</p>
