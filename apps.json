@@ -139,10 +139,7 @@
     "author": "stanley",
     "logo": "img/enso-logo.png",
     "cover": "img/enso-cover.jpg?v=2",
-    "languages": [
-      "EN",
-      "华"
-    ],
+    "languages": ["BM", "EN", "华"],
     "keywords": "ENSO El Niño La Niña 厄尔尼诺 拉尼娜 RONI Niño 3.4 IOD MJO monsoon monsun 季风 surge iklim climate 气候 hujan rain 下雨 orchard dusun 果园 MetMalaysia NOAA",
     "screenshots": ["img/enso-1.jpg?v=2", "img/enso-2.jpg", "img/enso-3.jpg"],
     "zh": {
