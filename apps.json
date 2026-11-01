@@ -1559,5 +1559,60 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "typhoonwatch",
+    "name": "TyphoonWatch",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/typhoonwatch/",
+    "added": "2026-11-01",
+    "author": "stanley",
+    "logo": "img/typhoonwatch-logo.png",
+    "cover": "img/typhoonwatch-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "typhoon taufan 台风 颱風 风眼 cyclone siklon 气旋 JMA monsoon monsun 季风 cold surge luruan sejuk 寒潮 pressure tekanan 气压 isobar 等压线 squall ribut 飑线 Sumatra Sabah Sarawak",
+    "screenshots": [
+      "img/typhoonwatch-1.jpg",
+      "img/typhoonwatch-2.jpg",
+      "img/typhoonwatch-3.jpg"
+    ],
+    "zh": {
+      "tagline": "台风监测：日本气象厅公报，离你多远、季风会不会受影响",
+      "description": "台风本身几乎不会到马来西亚，但会加强东北季风，带来大雨。风眼每 3 小时镜像一次日本气象厅（WMO 指定的西北太平洋台风中心）的台风公报，显示台风在哪里、强度多少、离你的地点多远、预计路径。另有等压线地图、东北季风寒潮指数，以及每个地点「偏湿 / 偏干 / 平稳」的气压趋势读数。离线也能看上一次的资料。这不是警报服务，官方警报请看 MetMalaysia。",
+      "features": [
+        "日本气象厅台风公报，每 3 小时更新",
+        "台风离你的地点多远、预计路径",
+        "等压线地图",
+        "东北季风寒潮指数",
+        "各地气压趋势：偏湿、偏干或平稳"
+      ]
+    },
+    "en": {
+      "tagline": "Typhoon watch from Japan's JMA bulletins: how far away, and what it means for the monsoon",
+      "description": "Typhoons almost never reach Malaysia, but they strengthen the northeast monsoon that does. TyphoonWatch mirrors the Japan Meteorological Agency's bulletins (the WMO-designated centre for the western North Pacific) every 3 hours and shows where each typhoon is, how strong it is, how far it is from your place and its forecast track. It adds an isobar map, a northeast-monsoon cold surge index and a Wetter / Drier / Steady pressure-trend reading for each place. The last data stays readable offline. Not a warning service; for official warnings, see MetMalaysia.",
+      "features": [
+        "JMA typhoon bulletins, updated every 3 hours",
+        "Distance from your place and forecast track",
+        "Isobar map",
+        "Northeast-monsoon cold surge index",
+        "Pressure-trend reading for each place: wetter, drier or steady"
+      ]
+    },
+    "ms": {
+      "tagline": "Pemantau taufan daripada buletin JMA Jepun: sejauh mana, dan kesannya pada monsun",
+      "description": "Taufan hampir tidak pernah sampai ke Malaysia, tetapi ia menguatkan monsun timur laut yang sampai. TyphoonWatch menyalin buletin Agensi Meteorologi Jepun (pusat yang ditetapkan WMO bagi Pasifik Utara barat) setiap 3 jam dan menunjukkan di mana setiap taufan, kekuatannya, jaraknya dari tempat anda dan laluan ramalannya. Turut ada peta isobar, indeks luruan sejuk monsun timur laut, dan bacaan arah tekanan Lebih basah / Lebih kering / Stabil bagi setiap tempat. Data terakhir masih boleh dibaca tanpa internet. Ini bukan perkhidmatan amaran; untuk amaran rasmi, rujuk MetMalaysia.",
+      "features": [
+        "Buletin taufan JMA, dikemas kini setiap 3 jam",
+        "Jarak dari tempat anda dan laluan ramalan",
+        "Peta isobar",
+        "Indeks luruan sejuk monsun timur laut",
+        "Bacaan arah tekanan setiap tempat: lebih basah, lebih kering atau stabil"
+      ]
+    },
+    "demo": null
   }
 ]

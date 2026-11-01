@@ -84,6 +84,7 @@ App 一更新，使用者下次打开时就要看到一个弹窗，写清楚：
 | Taijiang Insects | 还没有，需要开发者加上 |
 | RainScore Lab | 还没有，需要开发者加上 |
 | Grass Cutting | 有「已更新到某版本」提示，但还没有列出更新内容 |
+| TyphoonWatch | 还没有，需要开发者加上 |
 
 ## 2. 有新版本时先问一句
 
