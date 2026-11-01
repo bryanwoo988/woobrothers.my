@@ -226,10 +226,7 @@
     "author": "stanley",
     "logo": "img/skewt-logo.png",
     "cover": "img/skewt-cover.jpg?v=2",
-    "languages": [
-      "EN",
-      "华"
-    ],
+    "languages": ["BM", "EN", "华"],
     "keywords": "Skew-T sounding 探空 thunderstorm ribut petir 雷暴 CAPE storm hujan rain 下雨 atmosphere atmosfera 大气 ECMWF GFS model jet hail 冰雹 forecast ramalan 预报 farm ladang 园地",
     "screenshots": ["img/skewt-1.jpg", "img/skewt-2.jpg", "img/skewt-3.jpg"],
     "zh": {
