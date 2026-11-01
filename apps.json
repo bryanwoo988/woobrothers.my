@@ -1568,7 +1568,7 @@
     "added": "2026-11-01",
     "author": "stanley",
     "logo": "img/typhoonwatch-logo.png",
-    "cover": "img/typhoonwatch-cover.jpg",
+    "cover": "img/typhoonwatch-cover.jpg?v=2",
     "languages": [
       "BM",
       "EN",
@@ -1576,9 +1576,9 @@
     ],
     "keywords": "typhoon taufan 台风 颱風 风眼 cyclone siklon 气旋 JMA monsoon monsun 季风 cold surge luruan sejuk 寒潮 pressure tekanan 气压 isobar 等压线 squall ribut 飑线 Sumatra Sabah Sarawak",
     "screenshots": [
-      "img/typhoonwatch-1.jpg",
-      "img/typhoonwatch-2.jpg",
-      "img/typhoonwatch-3.jpg"
+      "img/typhoonwatch-1.jpg?v=2",
+      "img/typhoonwatch-2.jpg?v=2",
+      "img/typhoonwatch-3.jpg?v=2"
     ],
     "zh": {
       "tagline": "台风监测：日本气象厅公报，离你多远、季风会不会受影响",
