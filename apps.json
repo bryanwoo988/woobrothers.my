@@ -1614,5 +1614,60 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "nutrienttriage",
+    "name": "Nutrient Triage",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/NutrientTriage/",
+    "added": "2026-11-03",
+    "author": "stanley",
+    "logo": "img/nutrienttriage-logo.png",
+    "cover": "img/nutrienttriage-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "nutrient nutrien 养分 营养 deficiency kekurangan 缺素 缺乏 leaf daun 叶子 yellow kuning 黄叶 magnesium kalium nitrogen boron 镁 钾 氮 硼 pH EC soil tanah 土壤 fertiliser baja 肥料 durian 榴莲 oil palm sawit 油棕 vegetables sayur 蔬菜 diagnose diagnosis 辨症",
+    "screenshots": [
+      "img/nutrienttriage-1.jpg",
+      "img/nutrienttriage-2.jpg",
+      "img/nutrienttriage-3.jpg"
+    ],
+    "zh": {
+      "tagline": "养分辨症：看叶子，找出作物缺哪一种元素",
+      "description": "叶子发黄、焦边、变紫，往往是缺了某种养分。选好作物（榴莲、其他果树、蔬菜或油棕），说明最近有没有喷药、施肥或下大雨，再选症状先出现在老叶还是嫩叶、叶子长什么样，App 就会告诉你最可能缺哪一种元素，以及马上该怎么处理：叶面喷施和土壤施用的建议。另有土壤 pH 和 EC 判读、元素之间的拮抗、毒害和容易混淆的症状，每一项都有图解，离线可用。",
+      "features": [
+        "看叶子图解，一步一步找出缺哪种元素",
+        "榴莲、其他果树、蔬菜、油棕四类作物",
+        "叶面喷施和土壤施用建议",
+        "土壤 pH 和 EC 判读",
+        "拮抗、毒害和相似症状对照，附参考来源"
+      ]
+    },
+    "en": {
+      "tagline": "Nutrient Triage: check the leaves to find which nutrient your crop is short of",
+      "description": "Yellowing, scorched or purple leaves usually mean a nutrient is missing. Pick the crop (durian, other fruit trees, vegetables or oil palm), say whether you sprayed, fertilised or had heavy rain recently, then whether the symptoms started on old or young leaves and what the leaf looks like. The app shows the most likely deficiency and what to do now, with foliar-spray and soil-application advice. It also covers soil pH and EC readings, nutrient antagonisms, toxicities and look-alike symptoms, all illustrated, and works offline.",
+      "features": [
+        "Illustrated, step-by-step leaf key to the missing nutrient",
+        "Durian, other fruit trees, vegetables and oil palm",
+        "Foliar spray and soil application advice",
+        "Soil pH and EC interpretation",
+        "Antagonisms, toxicities and look-alikes, with sources"
+      ]
+    },
+    "ms": {
+      "tagline": "Triaj Nutrien: periksa daun untuk cari nutrien yang kurang pada tanaman",
+      "description": "Daun kuning, hangus di tepi atau keunguan biasanya bermaksud tanaman kekurangan sesuatu nutrien. Pilih tanaman (durian, pokok buah lain, sayur atau sawit), nyatakan sama ada anda baru menyembur, membaja atau ada hujan lebat, kemudian sama ada simptom bermula pada daun tua atau muda dan rupa daun itu. Aplikasi menunjukkan kekurangan yang paling mungkin dan apa perlu dibuat sekarang, dengan nasihat semburan daun dan pembajaan tanah. Turut merangkumi bacaan pH dan EC tanah, antagonisme nutrien, ketoksikan dan simptom yang mirip, semuanya bergambar, dan boleh digunakan tanpa internet.",
+      "features": [
+        "Kunci daun bergambar langkah demi langkah ke nutrien yang kurang",
+        "Durian, pokok buah lain, sayur dan sawit",
+        "Nasihat semburan daun dan pembajaan tanah",
+        "Tafsiran pH dan EC tanah",
+        "Antagonisme, ketoksikan dan simptom mirip, dengan sumber"
+      ]
+    },
+    "demo": null
   }
 ]
