@@ -1669,5 +1669,62 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "offseason",
+    "name": "Offseason Durian",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/Offseason/",
+    "added": "2026-11-04",
+    "author": "stanley",
+    "logo": "img/offseason-logo.png",
+    "cover": "img/offseason-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华",
+      "Tiếng Việt",
+      "ខ្មែរ"
+    ],
+    "keywords": "off-season luar musim 反季节 反季 durian 榴莲 flowering berbunga 开花 催花 induction aruhan paclobutrazol PBZ 多效唑 Musang King 猫山王 Monthong 金枕 Ri6 harvest tuaian 收成 planner perancang 计划 Vietnam Thailand 越南 泰国",
+    "screenshots": [
+      "img/offseason-1.jpg",
+      "img/offseason-2.jpg",
+      "img/offseason-3.jpg"
+    ],
+    "zh": {
+      "tagline": "反季节榴莲：从催花到收成，每一步都有研究依据",
+      "description": "反季节的榴莲价格可以是旺季的 2 到 3 倍，但催花、保果到收成每一步都不容易。这个 App 把整个反季节周期整理成 8 个步骤：选收成月份、整理树势、喷多效唑（PBZ）、控水、从花芽到开花、保住果实、收成，以及收成后避免 PBZ 累积。计划页选好品种和目标收成日，就算出喷药期和逐日时间表；PBZ 页并排列出所有榴莲 PBZ 试验，还有药桶用量计算。每个数字都附上研究来源，离线可用。",
+      "features": [
+        "反季节周期 8 个步骤，每步都有来源",
+        "选品种和收成日，算出喷药期和逐日时间表",
+        "所有榴莲 PBZ 试验并排对照",
+        "PBZ 药桶用量计算、安全和残留说明",
+        "检查清单和资料库，另有越南文和高棉文"
+      ]
+    },
+    "en": {
+      "tagline": "Off-season durian, from flower induction to harvest, with the research behind every step",
+      "description": "Off-season durian can sell for 2 to 3 times the peak-season price, but inducing flowers and carrying the crop through to harvest is hard. This app lays out the whole off-season cycle in 8 steps: choosing the harvest month, preparing the tree, spraying paclobutrazol (PBZ), drying the root zone, buds to bloom, holding the crop, harvest, and resetting so PBZ does not build up. Pick a cultivar and a target harvest date to get the spray window and a dated protocol; the PBZ tab puts every durian PBZ trial side by side and includes a tank calculator. Every figure links to a published source, and it works offline.",
+      "features": [
+        "The off-season cycle in 8 sourced steps",
+        "Spray window and dated protocol from cultivar and harvest date",
+        "Every durian PBZ trial side by side",
+        "PBZ tank calculator, safety and residue notes",
+        "Checklist and research library, also in Vietnamese and Khmer"
+      ]
+    },
+    "ms": {
+      "tagline": "Durian luar musim, dari aruhan bunga hingga tuaian, dengan kajian di sebalik setiap langkah",
+      "description": "Durian luar musim boleh dijual 2 hingga 3 kali ganda harga musim puncak, tetapi mengaruh bunga dan membawa hasil hingga tuaian tidak mudah. Aplikasi ini menyusun seluruh kitaran luar musim dalam 8 langkah: memilih bulan tuaian, menyediakan pokok, menyembur paklobutrazol (PBZ), mengeringkan zon akar, putik hingga berbunga, mengekalkan buah, tuaian, dan menetapkan semula supaya PBZ tidak terkumpul. Pilih kultivar dan tarikh tuaian sasaran untuk mendapat tempoh semburan dan protokol bertarikh; tab PBZ meletakkan setiap ujian PBZ durian sebelah-menyebelah dan ada kalkulator tangki. Setiap angka dipautkan kepada sumber yang diterbitkan, dan boleh digunakan tanpa internet.",
+      "features": [
+        "Kitaran luar musim dalam 8 langkah bersumber",
+        "Tempoh semburan dan protokol bertarikh daripada kultivar dan tarikh tuaian",
+        "Setiap ujian PBZ durian sebelah-menyebelah",
+        "Kalkulator tangki PBZ, nota keselamatan dan sisa",
+        "Senarai semak dan pustaka kajian, juga dalam bahasa Vietnam dan Khmer"
+      ]
+    },
+    "demo": null
   }
 ]
