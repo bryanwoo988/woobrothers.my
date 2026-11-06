@@ -921,14 +921,14 @@
     "added": "2026-11-06",
     "author": "stanley",
     "logo": "img/durianipm-logo.png",
-    "cover": null,
+    "cover": "img/durianipm-cover.jpg",
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 IPM pest perosak 虫害 害虫 disease penyakit 病害 Phytophthora 疫霉 psyllid psilid 木虱 leafhopper 青蚊 叶蝉 thrips 蓟马 mite hama 螨 borer pengorek 蛀虫 mealybug 粉蚧 MoA IRAC rotation giliran 轮替 organic organik 有机 insecticide racun serangga 杀虫剂 fungicide 杀菌剂 MRL residue sisa 残留",
-    "screenshots": [],
+    "screenshots": ["img/durianipm-1.jpg", "img/durianipm-2.jpg", "img/durianipm-3.jpg"],
     "zh": {
       "tagline": "榴莲综合防治：看到什么问题，就告诉你什么有效",
       "description": "不用先知道是什么虫。点一下问题出现在哪个部位、看到什么、是什么样的虫，App 就把它归到约 22 个害虫类别之一，告诉你最先该做的非化学措施，以及按效果排序的有机和化学用药选择。每个害虫页面都会根据「上次喷的药」建议轮替，避开同一作用机理；也会提醒开花期对蜜蜂的危害、接近收成的安全间隔，以及哪些药已经禁用。另有常见问题快捷入口、钻蛀害虫分级和简短课程，离线可用。",
