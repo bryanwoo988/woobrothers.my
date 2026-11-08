@@ -1727,5 +1727,60 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "durianexport",
+    "name": "DurianExport · 榴莲输华通",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/DurianExport/",
+    "added": "2026-11-08",
+    "author": "stanley",
+    "logo": "img/durianexport-logo.png",
+    "cover": "img/durianexport-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "export eksport 出口 输华 China China 中国 durian 榴莲 SF Express 顺丰 logistics logistik 物流 air freight kargo udara 空运 cold chain rantaian sejuk 冷链 phytosanitary fitosanitari 植检 MAQIS FAMA Form E GACC MyGAP documents dokumen 文件 Shenzhen 深圳",
+    "screenshots": [
+      "img/durianexport-1.jpg",
+      "img/durianexport-2.jpg",
+      "img/durianexport-3.jpg"
+    ],
+    "zh": {
+      "tagline": "榴莲输华通：鲜榴莲从果园空运到中国的流程、文件和航班",
+      "description": "根据顺丰马来西亚的鲜果冷链物流宣传册整理：鲜榴莲从果园采收、包装预冷、送到吉隆坡机场，空运到深圳，清关后配送到中国各城市，全程保持 2–5°C。文件清单按「有没有干冰」「是不是果肉产品」列出出口需要的文件（植检证书、FAMA、MAQIS、产地证 Form E 等），可以逐项打勾。航班页选交货日和目的城市，就算出几号到货。另有中国约 200 个城市的送达时效，以及鲜榴莲输华的注册和 MyGAP 要求。本 App 由 Stanley Woo 整理，并非顺丰官方 App。",
+      "features": [
+        "出口五个步骤：采收包装到中国配送",
+        "出口文件清单，按情况列出，可逐项打勾",
+        "选交货日和城市，估算到货日",
+        "中国城市送达时效（24 / 48 / 72 小时）",
+        "鲜榴莲输华的注册、MyGAP 和检疫要求"
+      ]
+    },
+    "en": {
+      "tagline": "Fresh durian from orchard to China: export steps, documents and flights",
+      "description": "Built from SF Express Malaysia's fresh-fruit logistics brochure: how fresh durian goes from harvest and pre-cooling to KLIA, by air to Shenzhen, through clearance and on to cities across China, held at 2–5°C throughout. The document checklist lists what an export needs (phytosanitary certificate, FAMA, MAQIS, Form E and more) depending on dry ice and whether it is a pulp product, with tick boxes. The flights tab estimates the delivery day from your handover day and destination city. It also covers delivery times to about 200 Chinese cities and the registration and MyGAP rules for fresh durian. Made by Stanley Woo; not an official SF Express app.",
+      "features": [
+        "The five export steps, from packing to delivery in China",
+        "Export document checklist that adapts to your shipment",
+        "Delivery-day estimate from handover day and city",
+        "Delivery times to Chinese cities (24 / 48 / 72 h)",
+        "Registration, MyGAP and quarantine rules for fresh durian"
+      ]
+    },
+    "ms": {
+      "tagline": "Durian segar dari kebun ke China: langkah eksport, dokumen dan penerbangan",
+      "description": "Disusun daripada risalah logistik buah segar SF Express Malaysia: bagaimana durian segar dibawa dari tuaian dan prapenyejukan ke KLIA, diterbangkan ke Shenzhen, melalui pelepasan kastam dan dihantar ke bandar di seluruh China, pada suhu 2–5°C sepanjang masa. Senarai semak dokumen menunjukkan apa yang diperlukan untuk eksport (sijil fitosanitari, FAMA, MAQIS, Form E dan lain-lain) bergantung pada ais kering dan sama ada ia produk isi, dengan kotak tanda. Tab penerbangan menganggar hari penghantaran daripada hari serahan dan bandar destinasi. Turut merangkumi tempoh penghantaran ke kira-kira 200 bandar di China serta syarat pendaftaran dan MyGAP untuk durian segar. Dibuat oleh Stanley Woo; bukan aplikasi rasmi SF Express.",
+      "features": [
+        "Lima langkah eksport, dari pembungkusan hingga penghantaran di China",
+        "Senarai semak dokumen eksport yang ikut jenis kiriman",
+        "Anggaran hari sampai daripada hari serahan dan bandar",
+        "Tempoh penghantaran ke bandar China (24 / 48 / 72 jam)",
+        "Syarat pendaftaran, MyGAP dan kuarantin untuk durian segar"
+      ]
+    },
+    "demo": null
   }
 ]
