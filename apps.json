@@ -7,24 +7,24 @@
     "added": "2026-10-10",
     "author": "bryan",
     "logo": "img/comparecast-logo.png",
-    "cover": "img/comparecast-cover.jpg?v=2",
+    "cover": "img/comparecast-cover.jpg?v=3",
     "languages": ["BM", "EN", "华"],
     "keywords": "rain hujan 下雨 雨 forecast ramalan 预报 weather cuaca 天气 wind angin 风 gust model ECMWF GFS ICON plot 地块 reminder peringatan 提醒",
-    "screenshots": ["img/comparecast-1.jpg", "img/comparecast-2.jpg", "img/comparecast-3.jpg"],
+    "screenshots": ["img/comparecast-1.jpg?v=3", "img/comparecast-2.jpg?v=3", "img/comparecast-3.jpg?v=3"],
     "zh": {
       "tagline": "多模型天气比较，按地块提醒",
       "description": "不同的天气模型，预报常常不一样。CompareCast 把几个模型的预报和实际下雨量放在一起比较，告诉你哪个模型在你的园地最准，还可以为每个地块设定下雨提醒。",
-      "features": ["预报与实际雨量对比", "多个天气模型并排比较", "阵风地图，提前防断枝倒树", "按地块的下雨提醒"]
+      "features": ["预报与实际雨量对比", "多个天气模型并排比较", "阵风地图，提前防断枝倒树", "MetMalaysia 雷达：看现在哪里在下雨", "按地块的下雨提醒"]
     },
     "en": {
       "tagline": "Multi-model weather comparison with per-plot reminders",
       "description": "Different weather models often disagree. CompareCast puts several models next to the rain that actually fell, shows which one is most accurate for your farm, and lets you set rain reminders for each plot.",
-      "features": ["Forecast vs actual rain", "Several weather models side by side", "Wind gust map, to prepare for broken branches", "Rain reminders for each plot"]
+      "features": ["Forecast vs actual rain", "Several weather models side by side", "Wind gust map, to prepare for broken branches", "MetMalaysia radar: see where rain is falling now", "Rain reminders for each plot"]
     },
     "ms": {
       "tagline": "Perbandingan cuaca pelbagai model dengan peringatan mengikut plot",
       "description": "Model cuaca yang berbeza selalu beri ramalan berbeza. CompareCast bandingkan ramalan beberapa model dengan hujan sebenar, tunjuk model mana paling tepat untuk kebun anda, dan boleh tetapkan peringatan hujan untuk setiap plot.",
-      "features": ["Ramalan vs hujan sebenar", "Bandingkan beberapa model cuaca", "Peta angin kencang, elak dahan patah", "Peringatan hujan mengikut plot"]
+      "features": ["Ramalan vs hujan sebenar", "Bandingkan beberapa model cuaca", "Peta angin kencang, elak dahan patah", "Radar MetMalaysia: lihat di mana hujan sedang turun", "Peringatan hujan mengikut plot"]
     },
     "demo": {
       "type": "compare",
