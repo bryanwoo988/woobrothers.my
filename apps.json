@@ -1782,5 +1782,60 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "china-mrl",
+    "name": "China MRL",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/china-mrl/",
+    "added": "2026-11-11",
+    "author": "stanley",
+    "logo": "img/china-mrl-logo.png",
+    "cover": "img/china-mrl-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "MRL residue sisa 残留 农残 maximum residue limit had maksimum sisa 最大残留限量 GB 2763 China China 中国 export eksport 出口 pesticide racun perosak 农药 durian 榴莲 fruit buah 水果 vegetables sayur 蔬菜 market access akses pasaran 准入 GACC",
+    "screenshots": [
+      "img/china-mrl-1.jpg",
+      "img/china-mrl-2.jpg",
+      "img/china-mrl-3.jpg"
+    ],
+    "zh": {
+      "tagline": "中国农药最大残留限量查询（GB 2763-2026），出口前先查",
+      "description": "要把水果蔬菜出口到中国，先要知道中国对每种农药定的残留上限。选作物（例如榴莲），就列出所有适用的残留限量，包括直接条目和按类别适用的条目，并注明要检测哪个部位、原文在 PDF 哪一页。收录 GB 2763-2026 全部 10,749 条数值，可以按农药搜索、导出 CSV、打印限量表、保存常查的条目。另一个分页查「这个原产国、这种作物能不能出口到中国」，提醒残留限量和市场准入是两回事。资料截至 2026 年 11 月，以中文原文为准。",
+      "features": [
+        "选作物，列出所有适用的中国残留限量",
+        "GB 2763-2026 全部 10,749 条数值",
+        "注明检测部位和原文 PDF 页码",
+        "查原产国和作物的市场准入条件",
+        "搜索、导出 CSV、打印和保存"
+      ]
+    },
+    "en": {
+      "tagline": "China's pesticide residue limits (GB 2763-2026), checked before you export",
+      "description": "Before exporting fruit or vegetables to China, you need to know China's limit for each pesticide. Pick a crop such as durian and the app lists every limit that applies, both direct entries and those that apply through a food group, with the part to be tested and the page in the original PDF. It covers all 10,749 numeric rows of GB 2763-2026, with pesticide search, CSV export, a printable limit sheet and saved references. A second tab checks whether a given origin and crop can be exported to China at all, and reminds you that residue limits and market access are separate questions. Data as of November 2026; the Chinese original controls.",
+      "features": [
+        "Every China residue limit for your crop",
+        "All 10,749 numeric rows of GB 2763-2026",
+        "Part to be tested and the source PDF page",
+        "Market-access check by origin and crop",
+        "Search, CSV export, print and save"
+      ]
+    },
+    "ms": {
+      "tagline": "Had maksimum sisa racun perosak China (GB 2763-2026), semak sebelum eksport",
+      "description": "Sebelum mengeksport buah atau sayur ke China, anda perlu tahu had China bagi setiap racun perosak. Pilih tanaman seperti durian dan aplikasi menyenaraikan setiap had yang terpakai, sama ada entri langsung atau melalui kumpulan makanan, berserta bahagian yang perlu diuji dan halaman dalam PDF asal. Ia merangkumi kesemua 10,749 baris angka GB 2763-2026, dengan carian racun perosak, eksport CSV, helaian had yang boleh dicetak dan rujukan yang disimpan. Tab kedua menyemak sama ada asal dan tanaman tertentu boleh dieksport ke China, dan mengingatkan bahawa had sisa dan akses pasaran ialah dua perkara berasingan. Data setakat November 2026; teks asal bahasa Cina adalah muktamad.",
+      "features": [
+        "Setiap had sisa China untuk tanaman anda",
+        "Kesemua 10,749 baris angka GB 2763-2026",
+        "Bahagian yang diuji dan halaman PDF sumber",
+        "Semakan akses pasaran mengikut asal dan tanaman",
+        "Carian, eksport CSV, cetak dan simpan"
+      ]
+    },
+    "demo": null
   }
 ]
