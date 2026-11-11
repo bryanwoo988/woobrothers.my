@@ -164,6 +164,15 @@ section{padding-block:96px}
 .copy{font:600 14px var(--font-body);background:transparent;color:var(--fg);border:1px solid var(--line-strong);border-radius:var(--r);padding:0 16px;min-height:44px;cursor:pointer}
 .copy:hover{border-color:var(--fg)}
 
+.shareband{background:var(--surface);border-top:1px solid var(--line)}
+.shareband .wrap{padding-block:32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.shareband .qr{flex:none;width:132px;height:132px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:var(--r)}
+.shareband .qr img{width:100%;height:100%;display:block;image-rendering:pixelated}
+.shareband .txt{flex:1;min-width:220px;display:flex;flex-direction:column;gap:8px}
+.shareband h2{font-size:24px}
+.shareband p{color:var(--muted);font-size:15px}
+.shareband .url{font:500 15px var(--font-data);user-select:all}
+.shareband .cacts{margin-top:4px}
 footer{background:var(--deep);color:var(--on-deep-2);font-size:14px}
 footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
@@ -542,6 +551,18 @@ html.lp-open{overflow:hidden}
   </div>
 </main>
 
+<section class="shareband" aria-labelledby="shareTitle"><div class="wrap">
+  <div class="qr"><img src="img/qr-woobrothers.svg" width="116" height="116" alt="QR code: woobrothers.my"></div>
+  <div class="txt">
+    <h2 id="shareTitle" data-i18n="shareTitle"></h2>
+    <p data-i18n="shareText"></p>
+    <div class="url" id="shareUrl">woobrothers.my</div>
+    <div class="cacts">
+      <a class="btn primary sm" id="shareWa" href="https://wa.me/?text=https%3A%2F%2Fwoobrothers.my%2F" target="_blank" rel="noopener" data-goatcounter-click="share-whatsapp"><span data-i18n="shareWa"></span></a>
+      <button class="copy" type="button" data-copy="shareUrl" data-i18n="copyLink"></button>
+    </div>
+  </div>
+</div></section>
 <footer><div class="wrap"><span data-i18n="foot"></span><span>woobrothers.my</span></div></footer>
 <button class="totop" id="toTop" type="button" aria-label="Back to top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
@@ -576,7 +597,7 @@ pr3t:"认真做",pr3:"不是做来玩的。每个 App 都是为了真正帮到�
 pr4t:"数据来源公开",pr4:"使用 Copernicus 卫星、Open-Meteo 天气等公开数据，每个来源都写清楚。",
 bandCount:n=>`目前 ${n} 个 App · 陆续增加中`,bandTitle:"看看我们做了哪些 App",bandText:"App 目录列出我们所有的 App，可以搜索，也可以按类别筛选。",
 contactLabel:"联系",contactTitle:"想合作，或者有建议？",contactText:"如果你也想为农友出一分力，或者对我们的 App 有建议，欢迎联系我们。WhatsApp 最快。",
-waBtn:"WhatsApp 我们",copy:"复制",copied:"已复制",
+waBtn:"WhatsApp 我们",copy:"复制",copied:"已复制",shareTitle:"分享 Woo Brothers",shareText:"用另一部手机扫描二维码就能打开，或者把链接发到 WhatsApp。",shareWa:"分享到 WhatsApp",copyLink:"复制链接",shareMsg:"免费的农业 App，全部放在一起：天气、病虫害、榴莲和油棕。",
 dirLabel:"App 目录",dirTitle:"我们的农业 App",dirText:"输入关键字搜索，或者按类别筛选。所有 App 都免费使用。",
 search:"搜索关键字",toTop:"回到顶部",sortLabel:"排序",sortNew:"最新在前",sortOld:"最旧在前",sortAZ:"按字母 A–Z",clear:"清除",all:"全部",allFree:"全部免费 · RM 0",loading:"加载中…",
 results:(n,t)=>n===t?`共 ${t} 个 App`:`找到 ${n} 个 App（共 ${t} 个）`,
@@ -608,7 +629,7 @@ pr3t:"Built with care",pr3:"Not built for fun. Every app is made to truly help p
 pr4t:"Open data sources",pr4:"Built on open data such as Copernicus satellites and Open-Meteo weather. Every source is clearly shown.",
 bandCount:n=>`${n} apps so far · more on the way`,bandTitle:"See the apps we have built",bandText:"The App Directory lists all our apps. Search by keyword or filter by category.",
 contactLabel:"Contact",contactTitle:"Want to work with us, or have an idea?",contactText:"If you also want to help farmers, or have suggestions for our apps, please get in touch. WhatsApp is the fastest way.",
-waBtn:"WhatsApp us",copy:"Copy",copied:"Copied",
+waBtn:"WhatsApp us",copy:"Copy",copied:"Copied",shareTitle:"Share Woo Brothers",shareText:"Scan the QR code with another phone to open the site, or send the link on WhatsApp.",shareWa:"Share on WhatsApp",copyLink:"Copy link",shareMsg:"Free farm apps in one place: weather, pests, durian and oil palm.",
 dirLabel:"App Directory",dirTitle:"Our farm apps",dirText:"Search by keyword or filter by category. Every app is free to use.",
 search:"Search keyword",toTop:"Back to top",sortLabel:"Sort",sortNew:"Newest first",sortOld:"Oldest first",sortAZ:"A–Z",clear:"Clear",all:"All",allFree:"All free · RM 0",loading:"Loading…",
 results:(n,t)=>n===t?`${t} apps`:`${n} of ${t} apps`,
@@ -640,7 +661,7 @@ pr3t:"Dibina dengan teliti",pr3:"Bukan untuk suka-suka. Setiap aplikasi dibuat u
 pr4t:"Sumber data terbuka",pr4:"Guna data terbuka seperti satelit Copernicus dan cuaca Open-Meteo. Setiap sumber dinyatakan dengan jelas.",
 bandCount:n=>`${n} aplikasi setakat ini · lebih akan datang`,bandTitle:"Lihat aplikasi yang kami bina",bandText:"Direktori Aplikasi menyenaraikan semua aplikasi kami. Cari dengan kata kunci atau tapis mengikut kategori.",
 contactLabel:"Hubungi",contactTitle:"Mahu bekerjasama, atau ada cadangan?",contactText:"Jika anda juga mahu membantu petani, atau ada cadangan untuk aplikasi kami, sila hubungi kami. WhatsApp paling cepat.",
-waBtn:"WhatsApp kami",copy:"Salin",copied:"Disalin",
+waBtn:"WhatsApp kami",copy:"Salin",copied:"Disalin",shareTitle:"Kongsi Woo Brothers",shareText:"Imbas kod QR dengan telefon lain untuk membuka laman ini, atau hantar pautan melalui WhatsApp.",shareWa:"Kongsi ke WhatsApp",copyLink:"Salin pautan",shareMsg:"Aplikasi pertanian percuma di satu tempat: cuaca, perosak, durian dan sawit.",
 dirLabel:"Direktori Aplikasi",dirTitle:"Aplikasi pertanian kami",dirText:"Cari dengan kata kunci atau tapis mengikut kategori. Semua aplikasi percuma.",
 search:"Carian Kata Kunci",toTop:"Kembali ke atas",sortLabel:"Susun",sortNew:"Terbaru dahulu",sortOld:"Terlama dahulu",sortAZ:"Abjad A–Z",clear:"Padam",all:"Semua",allFree:"Semua percuma · RM 0",loading:"Memuatkan…",
 results:(n,t)=>n===t?`${t} aplikasi`:`${n} daripada ${t} aplikasi`,
@@ -938,6 +959,7 @@ function apply(){
   document.querySelectorAll("[data-i18n]").forEach(e=>{const v=d[e.dataset.i18n];e.textContent=typeof v==="string"?v:""});
   document.querySelectorAll("[data-i18n-html]").forEach(e=>{e.innerHTML=d[e.dataset.i18nHtml]??""});
   $("langBtn").textContent=d.pill;
+  $("shareWa").href="https://wa.me/?text="+encodeURIComponent(d.shareMsg+" https://woobrothers.my/");
   $("toTop").setAttribute("aria-label",d.toTop);$("toTop").title=d.toTop;
   $("bandCount").textContent=d.bandCount(APPS.length);
   drawProbs();drawDir();if(current)drawDetail();
@@ -979,9 +1001,10 @@ mq.addEventListener("change",drawTheme);
 /* ---------- copy ---------- */
 document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
   const e=$(b.dataset.copy);
-  const done=()=>{b.textContent=T[lang].copied;setTimeout(()=>b.textContent=T[lang].copy,1500)};
+  const done=()=>{b.textContent=T[lang].copied;setTimeout(()=>b.textContent=T[lang][b.dataset.i18n],1500)};
   const sel=()=>{const r=document.createRange();r.selectNodeContents(e);const s=getSelection();s.removeAllRanges();s.addRange(r)};
-  if(navigator.clipboard){navigator.clipboard.writeText(e.textContent.trim()).then(done,sel)}else sel();
+  const v=b.dataset.copy==="shareUrl"?"https://woobrothers.my/":e.textContent.trim();
+  if(navigator.clipboard){navigator.clipboard.writeText(v).then(done,sel)}else sel();
 }));
 
 drawTheme();apply();route();loadApps();
