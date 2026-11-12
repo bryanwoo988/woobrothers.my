@@ -54,3 +54,11 @@ Woo Brothers 农业 App 网站。免费、非营利。
 - `null` 不要加引号。
 
 格式出错时，App 目录页会显示红色提示和出错的行号。
+
+## 访问统计
+
+网站用 GoatCounter 统计（不用 cookie，不追踪个人）：<https://woobrothers.goatcounter.com>
+
+- 页面浏览：首页记为 `/`，App 目录记为 `/apps`，每个 App 的详情页记为 `/app/<代号>`（也就是「查看详情」的次数）。
+- 按钮点击（Events）：`open-<代号>` 是「打开网站」，`share-whatsapp` 是分享按钮，`contact-whatsapp` 和 `contact-whatsapp-stanley` 是联系按钮。
+- 要统计新的按钮，在按钮上加 `data-gc-event="名字"` 就行。

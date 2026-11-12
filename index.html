@@ -460,7 +460,7 @@ html.lp-open{overflow:hidden}
             <div class="who">Bryan Woo</div>
           </div>
           <div class="cacts">
-            <a class="btn primary sm" href="https://wa.me/601140015077" target="_blank" rel="noopener" data-goatcounter-click="contact-whatsapp"><span data-i18n="waBtn"></span></a>
+            <a class="btn primary sm" href="https://wa.me/601140015077" target="_blank" rel="noopener" data-gc-event="contact-whatsapp"><span data-i18n="waBtn"></span></a>
             <button class="copy" type="button" data-copy="wa" data-i18n="copy"></button>
           </div>
         </div>
@@ -471,7 +471,7 @@ html.lp-open{overflow:hidden}
             <div class="who">Stanley Woo</div>
           </div>
           <div class="cacts">
-            <a class="btn primary sm" href="https://wa.me/60193824740" target="_blank" rel="noopener" data-goatcounter-click="contact-whatsapp-stanley"><span data-i18n="waBtn"></span></a>
+            <a class="btn primary sm" href="https://wa.me/60193824740" target="_blank" rel="noopener" data-gc-event="contact-whatsapp-stanley"><span data-i18n="waBtn"></span></a>
             <button class="copy" type="button" data-copy="wa2" data-i18n="copy"></button>
           </div>
         </div>
@@ -558,7 +558,7 @@ html.lp-open{overflow:hidden}
     <p data-i18n="shareText"></p>
     <div class="url" id="shareUrl">woobrothers.my</div>
     <div class="cacts">
-      <a class="btn primary sm" id="shareWa" href="https://wa.me/?text=https%3A%2F%2Fwoobrothers.my%2F" target="_blank" rel="noopener" data-goatcounter-click="share-whatsapp"><span data-i18n="shareWa"></span></a>
+      <a class="btn primary sm" id="shareWa" href="https://wa.me/?text=https%3A%2F%2Fwoobrothers.my%2F" target="_blank" rel="noopener" data-gc-event="share-whatsapp"><span data-i18n="shareWa"></span></a>
       <button class="copy" type="button" data-copy="shareUrl" data-i18n="copyLink"></button>
     </div>
   </div>
@@ -691,7 +691,7 @@ const initials=n=>String(n).split(/\s+/).filter(Boolean).map(w=>w[0]).join("").s
 const catOf=a=>CATS[a.category]||{zh:a.category,en:a.category,ms:a.category,icon:'<circle cx="12" cy="12" r="8"/>'};
 function openBtn(a,cls){
   const d=T[lang];
-  return a.url?`<a class="btn primary ${cls}" href="${esc(a.url)}" target="_blank" rel="noopener" data-goatcounter-click="open-${esc(a.id)}"><span>${d.open}</span>${EXT}</a>`
+  return a.url?`<a class="btn primary ${cls}" href="${esc(a.url)}" target="_blank" rel="noopener" data-gc-event="open-${esc(a.id)}"><span>${d.open}</span>${EXT}</a>`
               :`<span class="btn off ${cls}"><span>${d.soon}</span></span>`;
 }
 const round=v=>Math.round(v*100)/100;
@@ -934,6 +934,7 @@ async function loadApps(){
 /* ---------- views: #home, #apps, #app-<id>, #contact ---------- */
 function route(){
   const h=location.hash.replace("#","");
+  countView(h);
   const isDetail=h.startsWith("app-")&&APPS.some(a=>"app-"+a.id===h);
   const isDir=h==="apps"||(h.startsWith("app-")&&!isDetail);
   const isHome=!isDetail&&!isDir;
@@ -945,6 +946,26 @@ function route(){
   if(target)requestAnimationFrame(()=>target.scrollIntoView());else window.scrollTo(0,0);
 }
 window.addEventListener("hashchange",route);
+
+/* ---------- visit counts (GoatCounter, cookie-free) ----------
+   The site changes page with #hash links, which GoatCounter does not see on its own, so each page
+   is counted here as /, /apps or /app/<id>. A view of /app/<id> is a "view details".
+   Clicks on [data-gc-event] (Open website, WhatsApp) are counted as events. */
+const gcQueue=[];let gcLast=null;
+function gcSend(o){const g=window.goatcounter;if(g&&g.count)g.count(o);else gcQueue.push(o)}
+function gcReady(){const g=window.goatcounter;if(!g||!g.count)return;gcQueue.splice(0).forEach(o=>g.count(o))}
+function countView(h){
+  if(!appsReady)return;
+  const id=h.startsWith("app-")?h.slice(4):"";
+  const path=id&&APPS.some(a=>a.id===id)?"/app/"+id:h==="apps"||h.startsWith("app-")?"/apps":"/";
+  if(path===gcLast)return;gcLast=path;
+  const a=id&&APPS.find(x=>x.id===id);
+  gcSend({path,title:a?a.name:path==="/apps"?"App Directory":"Home"});
+}
+document.addEventListener("click",e=>{
+  const el=e.target.closest&&e.target.closest("[data-gc-event]");
+  if(el)gcSend({path:el.dataset.gcEvent,title:el.dataset.gcEvent,event:true});
+});
 
 /* Back-to-top button: shows after about one screen of scrolling. */
 const toTop=$("toTop");
@@ -1009,5 +1030,6 @@ document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
 
 drawTheme();apply();route();loadApps();
 </script>
+<script data-goatcounter="https://woobrothers.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true,"no_events":true}' async src="//gc.zgo.at/count.js" onload="gcReady()"></script>
 </body>
 </html>
