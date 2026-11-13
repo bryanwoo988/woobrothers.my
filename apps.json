@@ -433,10 +433,7 @@
     "author": "stanley",
     "logo": "img/insecteye-logo.png",
     "cover": "img/insecteye-cover.jpg",
-    "languages": [
-      "EN",
-      "华"
-    ],
+    "languages": ["BM", "EN", "华"],
     "keywords": "insect serangga 昆虫 trap perangkap 诱捕 sticky card kad melekit 黄板 粘虫板 light lampu 诱虫灯 colour warna 颜色 wavelength 波长 aphid afid 蚜虫 whitefly lalat putih 粉虱 thrips 蓟马 durian 榴莲 vegetables sayur 蔬菜",
     "screenshots": [
       "img/insecteye-1.jpg",
