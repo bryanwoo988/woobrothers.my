@@ -683,6 +683,8 @@ const NS="http://www.w3.org/2000/svg";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const L=v=>v==null?"":typeof v==="string"||typeof v==="number"?String(v):(v[lang]??v.en??v.zh??Object.values(v)[0]??"");
 const LA=v=>Array.isArray(v)?v:(v&&(v[lang]||v.en||v.zh))||[];
+// Images may be one value/array for every language, or {en,zh,ms}: pick the site language, fall back to English.
+const LI=v=>v&&typeof v==="object"&&!Array.isArray(v)?(v[lang]||v.en||Object.values(v)[0]||[]):(v||[]);
 function el(tag,a,p){const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
 function txt(p,x,y,s,o){const t=el("text",Object.assign({x,y,"font-size":10,"font-family":"JetBrains Mono, monospace",fill:"var(--muted)"},o||{}),p);t.textContent=s;return t}
 const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
@@ -764,7 +766,7 @@ function drawDir(){
   $("emptyState").hidden=list.length>0;
   $("appGrid").innerHTML=list.map(a=>{
     const t=a[lang]||a.en||{},c=catOf(a);
-    const covers=[].concat(a.cover||[]);
+    const covers=[].concat(LI(a.cover));
     const cover=covers.length>1?`<div class="slides">${covers.map(u=>`<img src="${esc(u)}" alt="" loading="lazy">`).join("")}</div><span class="dots">${covers.map((_,i)=>`<span data-i="${i}"${i?"":' class="on"'}></span>`).join("")}</span>`
       :covers.length?`<img class="cimg" src="${esc(covers[0])}" alt="" loading="lazy">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
     const logo=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
@@ -820,7 +822,7 @@ function drawDetail(){
   $("dLangs").textContent=`${d.langsLabel}: ${(a.languages||[]).join(" · ")}${a.url?"":" · "+d.linkNote}`;
   $("dBy").textContent=byText(a);$("dBy").hidden=!a.author;
   $("dAdded").textContent=addedText(a);$("dAdded").hidden=!a.added;
-  const shots=a.screenshots||[];
+  const shots=[].concat(LI(a.screenshots));
   $("shotsBox").hidden=!shots.length;
   $("gallery").innerHTML=shots.map((s,i)=>`<img src="${esc(s)}" alt="${esc(a.name)} ${i+1}" loading="lazy">`).join("");
   const demo=a.demo;

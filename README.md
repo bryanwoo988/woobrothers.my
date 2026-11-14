@@ -37,6 +37,7 @@ Woo Brothers 农业 App 网站。免费、非营利。
 | `languages` | 支持的语言 | `["BM", "EN", "华"]` |
 | `keywords` | 额外搜索关键字，用空格分开 | `"rain hujan 下雨"` |
 | `screenshots` | 截图路径列表，可以空 `[]` | `["img/myapp-1.png"]` |
+| `cover` / `screenshots` 按语言 | 想让图片跟着网站语言换，就按语言分开写。网站选哪个语言就显示哪一组；没有那个语言（例如 app 没有马来文）就显示 `en` 那一组 | `{"en": ["img/myapp-en-1.jpg"], "zh": ["img/myapp-zh-1.jpg"]}`，封面 `{"en": "img/myapp-cover-en.jpg", "zh": "img/myapp-cover-zh.jpg"}` |
 | `zh` / `en` / `ms` | 三种语言的 `tagline`（一句话）、`description`（介绍）、`features`（功能列表） | |
 | `demo` | 互动图表，不需要就写 `null` | 见下面 |
 
