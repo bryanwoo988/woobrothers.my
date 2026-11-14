@@ -1834,5 +1834,60 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "soilimprovement",
+    "name": "Soil Recovery · 土壤修复",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/soilimprovement/",
+    "added": "2026-11-14",
+    "author": "stanley",
+    "logo": "img/soilimprovement-logo.png",
+    "cover": "img/soilimprovement-cover.jpg",
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "soil tanah 土壤 修复 recovery pemulihan soil test ujian tanah 土壤检测 EC pH salt garam 盐分 organic matter bahan organik 有机质 liquid fertilizer baja cecair 液肥 发酵 microbes mikrob 微生物 mycorrhiza mikoriza 菌根 Huang Jui-chang 黄瑞彰 Tainan 台南",
+    "screenshots": [
+      "img/soilimprovement-1.jpg",
+      "img/soilimprovement-2.jpg",
+      "img/soilimprovement-3.jpg"
+    ],
+    "zh": {
+      "tagline": "土壤修复：黄瑞彰博士的土壤研究和修复方法",
+      "description": "整理台湾台南区农业改良场「土壤营养师」黄瑞彰博士的研究、理论和田间方法，教你怎样把疲乏的土壤养回来。输入土壤化验报告（EC、pH、有机质、磷钾钙镁），就按轻重缓急给出改善建议；另有 14 种缺素和根部问题的症状指南、9 步修复流程、发酵液肥配方和用量计算、田间试验数据和 41 份文献。为黄博士 2026 年 12 月在莎阿南的课程而编写，非台南区农业改良场官方出版。",
+      "features": [
+        "输入土壤化验报告，按优先顺序给出改善建议",
+        "14 种缺素和根部问题的症状指南",
+        "9 步土壤修复流程",
+        "发酵液肥配方和桶量计算",
+        "田间试验数据、41 份文献和术语表"
+      ]
+    },
+    "en": {
+      "tagline": "Soil Recovery: Dr. Huang Jui-chang's soil research and recovery methods",
+      "description": "Collects the research, principles and field methods of Dr. Huang Jui-chang, the \"Soil Nutritionist\" at Taiwan's Tainan District Agricultural Research and Extension Station, on bringing tired farm soil back to health. Enter a soil lab report (EC, pH, organic matter, P, K, Ca, Mg) and get a prescription in priority order. It also has a guide to 14 nutrient and root problems, a 9-step recovery playbook, fermented liquid-fertiliser recipes with a drum calculator, field trial data and 41 papers. Compiled for Dr. Huang's course in Shah Alam in December 2026; not an official Tainan DARES publication.",
+      "features": [
+        "Soil test checker with a prescription in priority order",
+        "Symptom guide for 14 nutrient and root problems",
+        "9-step soil recovery playbook",
+        "Fermented liquid-fertiliser recipes and drum calculator",
+        "Field trial data, 41 papers and a glossary"
+      ]
+    },
+    "ms": {
+      "tagline": "Pemulihan Tanah: kajian dan kaedah pemulihan tanah Dr. Huang Jui-chang",
+      "description": "Menghimpunkan kajian, prinsip dan kaedah lapangan Dr. Huang Jui-chang, \"Pakar Nutrisi Tanah\" di Stesen Penyelidikan dan Pengembangan Pertanian Daerah Tainan, Taiwan, untuk memulihkan tanah ladang yang letih. Masukkan laporan makmal tanah (EC, pH, bahan organik, P, K, Ca, Mg) dan dapatkan preskripsi mengikut keutamaan. Turut ada panduan 14 masalah nutrien dan akar, panduan pemulihan 9 langkah, resipi baja cecair tapaian dengan kalkulator tong, data ujian ladang dan 41 kertas kajian. Disusun untuk kursus Dr. Huang di Shah Alam pada Disember 2026; bukan terbitan rasmi Tainan DARES.",
+      "features": [
+        "Semakan ujian tanah dengan preskripsi mengikut keutamaan",
+        "Panduan simptom 14 masalah nutrien dan akar",
+        "Panduan pemulihan tanah 9 langkah",
+        "Resipi baja cecair tapaian dan kalkulator tong",
+        "Data ujian ladang, 41 kertas kajian dan glosari"
+      ]
+    },
+    "demo": null
   }
 ]
