@@ -1786,5 +1786,56 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "embrew",
+    "name": "EM Brew Lab · 益菌坊",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/embrew/",
+    "added": "2026-11-15",
+    "author": "stanley",
+    "logo": "img/embrew-logo.png",
+    "cover": {"en": "img/embrew-cover-en.jpg", "zh": "img/embrew-cover-zh.jpg", "ms": "img/embrew-cover-ms.jpg"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "EM effective microbes mikrob berkesan 益菌 有效微生物 brew bancuhan 发酵 ferment penapaian molasses molases 糖蜜 flour tepung 面粉 Azomite moss lumut 青苔 trunk batang 树干 soil tanah 土壤 dilution pencairan 稀释 Bacillus velezensis amyloliquefaciens pH",
+    "screenshots": {"en": ["img/embrew-en-1.jpg", "img/embrew-en-2.jpg", "img/embrew-en-3.jpg"], "zh": ["img/embrew-zh-1.jpg", "img/embrew-zh-2.jpg", "img/embrew-zh-3.jpg"], "ms": ["img/embrew-ms-1.jpg", "img/embrew-ms-2.jpg", "img/embrew-ms-3.jpg"]},
+    "zh": {
+      "tagline": "益菌发酵液：配方、发酵追踪和稀释计算",
+      "description": "教你自己发酵益菌液，用来处理榴莲树干青苔和改善土壤。选水桶大小，自动算出糖蜜、面粉、火山矿粉和益菌的用量，并列出加料顺序；记录开始日期，每天搅拌点一下就记下；最后按用途（土壤处理、大面积叶面喷／淋、青苔防治）算出发酵液和清水的分量。也写明发酵出问题时怎么判断能不能救，以及剩余发酵液的正确处理方法。离线可用。",
+      "features": [
+        "按水桶容量算出四种材料的用量",
+        "一步一步的加料顺序",
+        "发酵追踪：开始日期和每日搅拌记录",
+        "按用途计算稀释比例",
+        "发酵失败的判断和废液处理方法"
+      ]
+    },
+    "en": {
+      "tagline": "Brew effective microbes: recipe, fermentation tracker and dilution calculator",
+      "description": "A step-by-step guide to brewing your own effective-microbe liquid for durian trunk moss and soil treatment. Pick a tank size and it works out how much molasses, flour, Azomite and microbes to use, in the order to add them. Log the start date and tap a square each day you stir. Then it calculates brew and water for each use: soil treatment, large-area foliar spray or drench, or moss control. It also explains how to tell whether a bad batch can be saved and how to dispose of leftover brew safely. Works offline.",
+      "features": [
+        "Ingredient amounts scaled to your tank size",
+        "Mixing sequence, step by step",
+        "Fermentation tracker with start date and daily stir log",
+        "Dilution calculator for each use",
+        "What to do when a batch goes bad, and safe disposal"
+      ]
+    },
+    "ms": {
+      "tagline": "Bancuhan mikrob berkesan: resipi, penjejak penapaian dan kalkulator pencairan",
+      "description": "Panduan langkah demi langkah untuk membancuh sendiri cecair mikrob berkesan bagi rawatan lumut batang durian dan tanah. Pilih saiz tong, dan app kira jumlah molases, tepung, Azomite dan mikrob mengikut urutan masukkan bahan. Catat tarikh mula dan tekan satu petak setiap hari anda kacau. Kemudian app kira cecair tapaian dan air untuk setiap kegunaan: rawatan tanah, semburan daun atau siraman kawasan luas, atau kawalan lumut. Turut diterangkan cara menilai sama ada kelompok yang rosak boleh diselamatkan dan cara membuang sisa dengan selamat. Boleh guna tanpa internet.",
+      "features": [
+        "Jumlah bahan mengikut saiz tong",
+        "Urutan masukkan bahan, langkah demi langkah",
+        "Penjejak penapaian dengan tarikh mula dan log kacau harian",
+        "Kalkulator pencairan untuk setiap kegunaan",
+        "Apa perlu dibuat jika kelompok rosak, dan cara buang sisa dengan selamat"
+      ]
+    },
+    "demo": null
   }
 ]
