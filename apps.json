@@ -1888,5 +1888,56 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "ganoderma",
+    "name": "Ganoderma BSR Manager",
+    "category": "pest",
+    "url": "https://stanleywoosweeleong.github.io/Ganoderma/",
+    "added": "2026-11-15",
+    "author": "stanley",
+    "logo": "img/ganoderma-logo.png",
+    "cover": {"en": "img/ganoderma-cover-en.jpg", "zh": "img/ganoderma-cover-zh.jpg", "ms": "img/ganoderma-cover-ms.jpg"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "Ganoderma boninense BSR basal stem rot reput pangkal batang 茎基腐病 灵芝病 oil palm sawit 油棕 coconut kelapa 椰子 Trichoderma 木霉 biocontrol kawalan biologi 生物防治 AMF mikoriza 菌根 EFB tandan kosong 空果串 hexaconazole census bancian 普查 DSI AUDPC",
+    "screenshots": {"en": ["img/ganoderma-en-1.jpg", "img/ganoderma-en-2.jpg", "img/ganoderma-en-3.jpg"], "zh": ["img/ganoderma-zh-1.jpg", "img/ganoderma-zh-2.jpg", "img/ganoderma-zh-3.jpg"], "ms": ["img/ganoderma-ms-1.jpg", "img/ganoderma-ms-2.jpg", "img/ganoderma-ms-3.jpg"]},
+    "zh": {
+      "tagline": "油棕灵芝病（茎基腐病）：评估、分批防治计划和木霉自制",
+      "description": "管理油棕和椰子的灵芝病（Ganoderma boninense 引起的茎基腐病）。先按四项观察给棕树评 0–4 级（健康、早期、中期、严重、死亡），再按阶段生成有日期的多批次计划：卫生处理、培土、木霉、细菌灌根、菌根、空果串堆肥和普查日期；木霉批次如果离己唑醇树干注射不到 28 天会提醒。还可按计划算出木霉米饭自制排程，按区块记录普查并算出发病率、病情指数（DSI）和 AUDPC，比较处理区和对照区。证据页整理了已发表的研究和马来西亚的购买渠道。注意：生物防治只能预防和减缓，没有研究证明能治好已感染的成龄棕树；计划里的剂量和间隔是规划假设，请以产品标签和 MPOB 建议为准。",
+      "features": [
+        "0–4 级病情评估",
+        "按阶段生成多批次防治计划（含日期）",
+        "木霉米饭自制排程",
+        "区块普查：发病率、DSI、AUDPC，处理区对比对照区",
+        "研究证据和马来西亚购买渠道"
+      ]
+    },
+    "en": {
+      "tagline": "Ganoderma basal stem rot in oil palm: assess, plan multi-batch biocontrol, brew Trichoderma",
+      "description": "Manages basal stem rot (BSR) caused by Ganoderma boninense in oil palm and coconut. Score a palm 0–4 (Healthy, Early, Moderate, Severe, Dead) from four observations, then build a dated multi-batch plan for its stage: sanitation, soil mounding, Trichoderma, bacterial drench, AMF, EFB compost and census dates. It warns when a Trichoderma batch falls within 28 days of a hexaconazole trunk injection. It turns the plan into a Trichoderma rice-grain brewing schedule, records block censuses with disease incidence, DSI and AUDPC, and compares treated and control blocks. The Evidence tab summarises the published research and where to buy products in Malaysia. Biocontrol prevents and slows BSR; no study has cured an established infection in a mature palm. Plan amounts and intervals are planning assumptions, so follow product labels and MPOB advice.",
+      "features": [
+        "0–4 palm assessment",
+        "Dated multi-batch plan for each stage",
+        "Trichoderma rice-grain brewing schedule",
+        "Block census with incidence, DSI and AUDPC, treated vs control",
+        "Research evidence and where to buy in Malaysia"
+      ]
+    },
+    "ms": {
+      "tagline": "Reput pangkal batang Ganoderma sawit: nilai, rancang kawalan biologi berperingkat, hasilkan Trichoderma",
+      "description": "Mengurus reput pangkal batang (BSR) yang disebabkan oleh Ganoderma boninense pada sawit dan kelapa. Nilai pokok pada skala 0–4 (Sihat, Awal, Sederhana, Teruk, Mati) daripada empat pemerhatian, kemudian bina pelan berperingkat bertarikh mengikut peringkat: sanitasi, penimbusan tanah, Trichoderma, siraman bakteria, AMF, kompos EFB dan tarikh bancian. App memberi amaran jika kelompok Trichoderma jatuh dalam 28 hari selepas suntikan batang heksakonazol. Pelan ditukar kepada jadual penghasilan Trichoderma beras, bancian blok direkod dengan kejadian penyakit, DSI dan AUDPC, dan blok rawatan dibandingkan dengan blok kawalan. Tab Bukti merumuskan kajian yang diterbitkan dan tempat membeli produk di Malaysia. Kawalan biologi mencegah dan melambatkan BSR; tiada kajian yang menyembuhkan jangkitan pada pokok matang. Jumlah dan selang dalam pelan ialah andaian perancangan, jadi ikut label produk dan nasihat MPOB.",
+      "features": [
+        "Penilaian pokok skala 0–4",
+        "Pelan berperingkat bertarikh untuk setiap peringkat",
+        "Jadual penghasilan Trichoderma beras",
+        "Bancian blok dengan kejadian, DSI dan AUDPC, rawatan lawan kawalan",
+        "Bukti kajian dan tempat membeli di Malaysia"
+      ]
+    },
+    "demo": null
   }
 ]
