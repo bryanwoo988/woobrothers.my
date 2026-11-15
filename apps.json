@@ -1837,5 +1837,56 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "rainbulletin",
+    "name": "RainBulletin · 雨情",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/rainbulletin/",
+    "added": "2026-11-15",
+    "author": "stanley",
+    "logo": "img/rainbulletin-logo.png",
+    "cover": {"en": "img/rainbulletin-cover-en.jpg", "zh": "img/rainbulletin-cover-zh.jpg", "ms": "img/rainbulletin-cover-ms.jpg"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "rain hujan 雨 降雨 radar 雷达 Windy Rain Alarm district daerah 县 bulletin buletin 通报 WhatsApp Malaysia 马来西亚 Semenanjung 半岛 Sabah Sarawak 东马 mm/h favourites kegemaran 收藏点",
+    "screenshots": {"en": ["img/rainbulletin-en-1.jpg", "img/rainbulletin-en-2.jpg", "img/rainbulletin-en-3.jpg"], "zh": ["img/rainbulletin-zh-1.jpg", "img/rainbulletin-zh-2.jpg", "img/rainbulletin-zh-3.jpg"], "ms": ["img/rainbulletin-ms-1.jpg", "img/rainbulletin-ms-2.jpg", "img/rainbulletin-ms-3.jpg"]},
+    "zh": {
+      "tagline": "把雨量雷达截图变成全国各县的降雨通报",
+      "description": "在 Windy 或 Rain Alarm 截一张雨量雷达图，贴进来，app 会自动对准地图，把雨量换算到马来西亚 160 个县，各县按雨量深浅上色。点一下县就看到县名和雨量；「速览 ≥2.5」只列出正在下真雨的收藏点；最后一键生成 WhatsApp 通报，发送前还可以改文字。各县雨量完全来自你贴的截图，不是天气模型的预报。离线可用，只有右下角的「雨势减弱时间」需要上网。仅供个人参考，正式警告以马来西亚气象局为准。",
+      "features": [
+        "贴上雷达截图，自动对准地图",
+        "160 个县按雨量上色",
+        "收藏点和「速览 ≥2.5」",
+        "一键生成 WhatsApp 通报，可先修改文字",
+        "对不准时可手动拖动校准"
+      ]
+    },
+    "en": {
+      "tagline": "Turn a rain radar screenshot into a district-by-district rain bulletin",
+      "description": "Take a rain radar screenshot in Windy or Rain Alarm and paste it in. The app lines it up with the map, converts the colours to rainfall for Malaysia's 160 districts and shades each one. Tap a district for its name and rain; Quick ≥2.5 lists only the favourite places getting real rain; then one tap builds a WhatsApp bulletin you can edit before sending. District shading comes only from the screenshot you paste, not from a forecast model. Works offline; only the \"rain easing by\" line needs a connection. Personal reference only; official warnings come from MET Malaysia.",
+      "features": [
+        "Paste a radar screenshot and it lines up with the map",
+        "All 160 districts shaded by rain",
+        "Favourite places and a Quick ≥2.5 list",
+        "One-tap WhatsApp bulletin, editable before sending",
+        "Manual alignment when the automatic fit misses"
+      ]
+    },
+    "ms": {
+      "tagline": "Tukar tangkapan skrin radar hujan kepada buletin hujan mengikut daerah",
+      "description": "Ambil tangkapan skrin radar hujan dalam Windy atau Rain Alarm dan tampal ke dalam app. App akan menjajarkannya dengan peta, menukar warna kepada kadar hujan untuk 160 daerah di Malaysia dan mewarnakan setiap daerah. Tekan daerah untuk melihat nama dan hujannya; Pantas ≥2.5 hanya menyenaraikan lokasi kegemaran yang sedang hujan betul; kemudian satu tekan menyediakan buletin WhatsApp yang boleh disunting sebelum dihantar. Warna daerah datang hanya daripada tangkapan skrin yang anda tampal, bukan ramalan model. Boleh guna tanpa internet; hanya baris \"hujan reda pada\" perlukan sambungan. Rujukan peribadi sahaja; amaran rasmi daripada MET Malaysia.",
+      "features": [
+        "Tampal tangkapan skrin radar, app jajarkan dengan peta",
+        "160 daerah diwarnakan mengikut hujan",
+        "Lokasi kegemaran dan senarai Pantas ≥2.5",
+        "Buletin WhatsApp satu tekan, boleh disunting dahulu",
+        "Jajaran manual jika padanan automatik tersasar"
+      ]
+    },
+    "demo": null
   }
 ]
