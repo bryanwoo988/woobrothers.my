@@ -1939,5 +1939,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "humuslab",
+    "name": "HumusLab · 沃土有机质",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/HumusLab/",
+    "added": "2026-11-16",
+    "author": "stanley",
+    "logo": "img/humuslab-logo.png",
+    "cover": {"en": "img/humuslab-cover-en.jpg", "zh": "img/humuslab-cover-zh.jpg", "ms": "img/humuslab-cover-ms.jpg"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "soil organic matter bahan organik tanah 土壤有机质 humus humus 腐殖质 humic acid asid humik 腐植酸 fulvic acid asid fulvik 黄腐酸 humin 胡敏素 compost kompos 堆肥 mulch sungkupan 覆盖 durian 榴莲 Phytophthora leonardite",
+    "screenshots": {"en": ["img/humuslab-en-1.jpg", "img/humuslab-en-2.jpg", "img/humuslab-en-3.jpg"], "zh": ["img/humuslab-zh-1.jpg", "img/humuslab-zh-2.jpg", "img/humuslab-zh-3.jpg"], "ms": ["img/humuslab-ms-1.jpg", "img/humuslab-ms-2.jpg", "img/humuslab-ms-3.jpg"]},
+    "zh": {
+      "tagline": "土壤有机质与腐植酸：是什么、有没有用、怎样养",
+      "description": "讲清楚土壤有机质是什么，以及现在的科学怎样看它：微生物把落叶和残根分解、再重建，有机质能留多久主要看微生物碰不碰得到、有没有被黏土保护。腐植酸、黄腐酸和胡敏素是按溶解度分出来的三部分，不是三种固定分子；app 比较了黄腐酸和腐植酸，每项试验都标出证据强弱，并按土壤和树况回答「要不要买腐植酸产品」，教你怎样看标签和简单检查溶解度。养土篇讲怎样把树下的地盖住、用什么材料、榴莲按树龄每个阶段施多少，以及有机质和榴莲疫霉病的关系。最后用三项不用工具的观察，两分钟判断有机质够不够。",
+      "features": [
+        "土壤有机质的现代观点，附图解",
+        "腐植酸、黄腐酸、胡敏素的分别",
+        "每项试验都标出证据强弱",
+        "「要不要买腐植酸产品」判断，以及怎样看标签",
+        "榴莲树下覆盖和施有机肥的做法",
+        "两分钟田间检查有机质"
+      ]
+    },
+    "en": {
+      "tagline": "Soil organic matter and humic substances: what they are, whether they help, how to build them",
+      "description": "Explains what soil organic matter is and how current science sees it: microbes break down and rebuild leaves and dead roots, and how long organic matter lasts depends mainly on whether microbes can reach it and whether clay protects it. Humic acid, fulvic acid and humin are three fractions sorted by solubility, not three fixed molecules. The app compares fulvic and humic acid, rates the evidence behind each trial, answers \"should I buy a humic product?\" from your soil and tree condition, and shows how to read a label and check solubility at home. The Build section covers keeping the ground under the trees covered, which materials to use, how much to apply to durian at each stage by tree age, and the link between organic matter and durian Phytophthora. The Check section judges organic matter in two minutes from three observations, with no tools.",
+      "features": [
+        "The current view of soil organic matter, with diagrams",
+        "Humic acid, fulvic acid and humin explained",
+        "Evidence rating for each trial",
+        "\"Should I buy a humic product?\" and how to read the label",
+        "Mulching and organic fertiliser for durian",
+        "Two-minute field check of organic matter"
+      ]
+    },
+    "ms": {
+      "tagline": "Bahan organik tanah dan bahan humik: apa itu, adakah berkesan, cara membinanya",
+      "description": "Menerangkan apa itu bahan organik tanah dan pandangan sains terkini: mikrob mengurai dan membina semula daun dan akar mati, dan berapa lama bahan organik kekal bergantung terutamanya pada sama ada mikrob boleh mencapainya dan sama ada tanah liat melindunginya. Asid humik, asid fulvik dan humin ialah tiga bahagian yang diasingkan mengikut keterlarutan, bukan tiga molekul tetap. App membandingkan asid fulvik dan asid humik, menilai kekuatan bukti setiap ujian, menjawab \"perlukah saya beli produk humik?\" berdasarkan tanah dan keadaan pokok, serta menunjukkan cara membaca label dan menyemak keterlarutan di rumah. Bahagian Bina merangkumi cara menutup tanah di bawah pokok, bahan yang sesuai, kadar untuk durian mengikut umur pokok dan peringkat, serta kaitan bahan organik dengan Phytophthora durian. Bahagian Semak menilai bahan organik dalam dua minit daripada tiga pemerhatian, tanpa alat.",
+      "features": [
+        "Pandangan terkini tentang bahan organik tanah, dengan rajah",
+        "Beza asid humik, asid fulvik dan humin",
+        "Penilaian kekuatan bukti setiap ujian",
+        "\"Perlukah beli produk humik?\" dan cara membaca label",
+        "Sungkupan dan baja organik untuk durian",
+        "Semakan bahan organik di ladang dalam dua minit"
+      ]
+    },
+    "demo": null
   }
 ]
