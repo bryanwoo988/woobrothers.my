@@ -1994,5 +1994,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "soil",
+    "name": "Soil Science · 土壤科学",
+    "category": "learn",
+    "url": "https://stanleywoosweeleong.github.io/Soil/",
+    "added": "2026-11-18",
+    "author": "stanley",
+    "logo": "img/soil-logo.png",
+    "cover": {"en": "img/soil-cover-en.jpg", "zh": "img/soil-cover-zh.jpg", "ms": "img/soil-cover-ms.jpg"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "soil tanah 土壤 sains tanah soil science 土壤科学 texture tekstur 质地 pH lime kapur 石灰 slope cerun 坡度 fertiliser baja 肥料 deficiency kekurangan 缺素 peat gambut 泥炭土 acid sulfate erosion hakisan 侵蚀 compost kompos 堆肥 oil palm sawit 油棕 durian 榴莲 paddy padi 稻 quiz kuiz 测验",
+    "screenshots": {"en": ["img/soil-en-1.jpg", "img/soil-en-2.jpg", "img/soil-en-3.jpg"], "zh": ["img/soil-zh-1.jpg", "img/soil-zh-2.jpg", "img/soil-zh-3.jpg"], "ms": ["img/soil-ms-1.jpg", "img/soil-ms-2.jpg", "img/soil-ms-3.jpg"]},
+    "zh": {
+      "tagline": "土壤科学：田间指南、计算工具和地块记录",
+      "description": "按田间做事的顺序编成七个单元：认识土壤、土壤性质、看场地（取样、马来西亚土壤、泥炭土和酸性硫酸盐土）、保护土壤、改良土壤、作物施肥，以及油棕、几种果树和稻。每个单元有实践活动和小测验。五个工具：USDA 土壤质地三角（可输入瓶子沉降测试）、土壤 pH 解读（按作物给参考范围，不给石灰用量，因为那要实验室测定）、坡度计算、缺素检索、肥料计算（单质肥、复合肥、每株、果树施肥计划、一包肥里有多少养分和成本）。工具结果可以存进地块记录，按地块和年份统计养分和成本，导出 CSV 或备份。三语搜索和术语表。课程里的数字是教学例子，正式的施石灰和施肥建议要以土壤化验和农业官员意见为准。",
+      "features": [
+        "七个单元，附实践活动和小测验",
+        "USDA 土壤质地三角和瓶子测试",
+        "按作物解读土壤 pH",
+        "坡度计算和缺素检索",
+        "肥料计算：单质肥、复合肥、每株、果树计划、成本",
+        "地块记录，可导出 CSV 和备份"
+      ]
+    },
+    "en": {
+      "tagline": "Soil science: a field guide, site tools and plot records",
+      "description": "Seven units in the order the work is done in the field: know your soil, soil properties, reading a site (sampling, Malaysian soils, peat and acid sulfate soils), protecting soil, improving soil, feeding crops, then oil palm, selected fruit trees and paddy. Each unit ends with a practical activity and a quiz. Five tools: the USDA soil texture triangle (with jar-test input), a soil pH explorer with guide ranges per crop (it gives no lime rate, which needs a laboratory test), a slope calculator, a nutrient deficiency key, and a fertiliser calculator (straight, compound, per plant, tree programme, bag contents and cost). Tool results can be saved to per-plot records that total nutrients and cost by plot and year, with CSV export and backup. Search and a glossary work in all three languages. Numbers in the lessons are teaching examples; real lime and fertiliser recommendations should come from a soil test and an agriculture officer.",
+      "features": [
+        "Seven units with practicals and quizzes",
+        "USDA soil texture triangle and jar test",
+        "Soil pH explorer by crop",
+        "Slope calculator and deficiency key",
+        "Fertiliser calculator: straight, compound, per plant, tree programme, cost",
+        "Per-plot records with CSV export and backup"
+      ]
+    },
+    "ms": {
+      "tagline": "Sains tanah: panduan lapangan, alat di tapak dan rekod plot",
+      "description": "Tujuh unit mengikut urutan kerja di lapangan: kenali tanah, sifat tanah, membaca tapak (persampelan, tanah Malaysia, tanah gambut dan tanah sulfat masam), melindungi tanah, memperbaiki tanah, membaja tanaman, serta sawit, beberapa pokok buah dan padi. Setiap unit diakhiri dengan amali dan kuiz. Lima alat: segi tiga tekstur tanah USDA (dengan input ujian balang), peneroka pH tanah dengan julat panduan mengikut tanaman (tiada kadar kapur kerana ia perlukan ujian makmal), kalkulator cerun, kunci tanda kekurangan nutrien dan kalkulator baja (baja tunggal, sebatian, setiap pokok, program pokok, kandungan beg dan kos). Keputusan alat boleh disimpan ke rekod plot yang menjumlahkan nutrien dan kos mengikut plot dan tahun, dengan eksport CSV dan sandaran. Carian dan glosari dalam tiga bahasa. Angka dalam pelajaran ialah contoh pengajaran; cadangan kapur dan baja sebenar perlu berdasarkan ujian tanah dan nasihat pegawai pertanian.",
+      "features": [
+        "Tujuh unit dengan amali dan kuiz",
+        "Segi tiga tekstur tanah USDA dan ujian balang",
+        "Peneroka pH tanah mengikut tanaman",
+        "Kalkulator cerun dan kunci tanda kekurangan",
+        "Kalkulator baja: tunggal, sebatian, setiap pokok, program pokok, kos",
+        "Rekod plot dengan eksport CSV dan sandaran"
+      ]
+    },
+    "demo": null
   }
 ]
