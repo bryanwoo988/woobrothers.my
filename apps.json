@@ -2048,5 +2048,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "modelduel",
+    "name": "ModelDuel · 天气模型争霸战",
+    "category": "weather",
+    "url": "https://stanleywoosweeleong.github.io/modelduellab/",
+    "added": "2026-11-19",
+    "author": "stanley",
+    "logo": "img/modelduel-logo.png",
+    "cover": {"en": "img/modelduel-cover-en.jpg", "zh": "img/modelduel-cover-zh.jpg", "ms": "img/modelduel-cover-ms.jpg"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "MET Malaysia METMalaysia 气象局 ECMWF forecast ramalan 预报 verification pengesahan 验证 rain hujan 下雨 ERA5 CSI POD FAR bias score skor 评分 model 模型 farm kebun 果园 WhatsApp Excel",
+    "screenshots": {"en": ["img/modelduel-en-1.jpg", "img/modelduel-en-2.jpg", "img/modelduel-en-3.jpg"], "zh": ["img/modelduel-zh-1.jpg", "img/modelduel-zh-2.jpg", "img/modelduel-zh-3.jpg"], "ms": ["img/modelduel-ms-1.jpg", "img/modelduel-ms-2.jpg", "img/modelduel-ms-3.jpg"]},
+    "zh": {
+      "tagline": "MET Malaysia 对 ECMWF：哪个预报在你的园地更准？",
+      "description": "每天记录马来西亚气象局（MET Malaysia）和 ECMWF 对你园地的降雨预报，等实际雨量（ERA5）回填后逐日对比打分，用 CSI、命中率（POD）、空报率（FAR）和偏差告诉你哪一个比较可信。内置 114 个地点，服务器每天早上自动记录预报，打开 App 就会补入；自己新增的地点要每天打开记录一次。显示未来 3 天两边的预报，MET 还分早上、下午、晚上三个时段。可看逐日对照、走势和跨农场排名，导出 Excel，分享到 WhatsApp。这是长期实验：实测雨量约 5 天后才回填，最快第 5–6 天才有第一个分数，约 2 周后才有参考价值，3 周后才够可信。",
+      "features": [
+        "MET Malaysia 和 ECMWF 并排对比",
+        "按 ERA5 实际雨量打分：CSI、POD、FAR、偏差",
+        "114 个内置地点，服务器每天自动记录",
+        "未来 3 天预报，MET 分早午晚时段",
+        "逐日对照、走势和跨农场排名",
+        "导出 Excel、分享到 WhatsApp"
+      ]
+    },
+    "en": {
+      "tagline": "MET Malaysia vs ECMWF: which forecast is right for your farm?",
+      "description": "Logs MET Malaysia's and ECMWF's rain forecasts for your farm every day, then scores them day by day once actual rain (ERA5) is backfilled, using CSI, hit rate (POD), false alarm ratio (FAR) and bias to show which one to trust. 114 farms are built in and the server logs their forecasts every morning, added when you open the app; farms you add yourself need the app opened once a day. It shows both forecasts for the next 3 days, with MET split into morning, afternoon and night. There is a day-by-day table, a trend, a cross-farm ranking, Excel export and WhatsApp sharing. It is a long-term experiment: actual rain arrives about 5 days later, so the first score appears on day 5–6 at the earliest, becomes indicative after about 2 weeks and trustworthy after about 3.",
+      "features": [
+        "MET Malaysia and ECMWF side by side",
+        "Scored on ERA5 actual rain: CSI, POD, FAR, bias",
+        "114 built-in farms logged by the server every day",
+        "Next 3 days, with MET's morning, afternoon and night periods",
+        "Day-by-day table, trend and cross-farm ranking",
+        "Excel export and WhatsApp sharing"
+      ]
+    },
+    "ms": {
+      "tagline": "MET Malaysia lawan ECMWF: ramalan mana lebih tepat untuk kebun anda?",
+      "description": "Merekod ramalan hujan MET Malaysia dan ECMWF untuk kebun anda setiap hari, kemudian memberi skor hari demi hari apabila hujan sebenar (ERA5) diisi, menggunakan CSI, kadar kena (POD), nisbah amaran palsu (FAR) dan bias untuk menunjukkan yang mana boleh dipercayai. 114 kebun sudah terbina dan pelayan merekod ramalannya setiap pagi, ditambah apabila anda membuka app; kebun yang anda tambah sendiri perlu dibuka sekali sehari. Ia menunjukkan kedua-dua ramalan untuk 3 hari akan datang, dengan MET dibahagi kepada pagi, petang dan malam. Turut ada jadual hari demi hari, trend, kedudukan antara kebun, eksport Excel dan kongsi WhatsApp. Ini eksperimen jangka panjang: hujan sebenar diisi kira-kira 5 hari kemudian, jadi skor pertama paling awal pada hari ke-5–6, menjadi panduan selepas kira-kira 2 minggu dan boleh dipercayai selepas kira-kira 3 minggu.",
+      "features": [
+        "MET Malaysia dan ECMWF bersebelahan",
+        "Skor berdasarkan hujan sebenar ERA5: CSI, POD, FAR, bias",
+        "114 kebun terbina, direkod pelayan setiap hari",
+        "3 hari akan datang, dengan tempoh pagi, petang dan malam MET",
+        "Jadual hari demi hari, trend dan kedudukan antara kebun",
+        "Eksport Excel dan kongsi WhatsApp"
+      ]
+    },
+    "demo": null
   }
 ]
