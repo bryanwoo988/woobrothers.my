@@ -930,6 +930,7 @@ async function loadApps(){
     }
     if(!Array.isArray(data))throw new Error("apps.json must start with [ and end with ]");
     data.forEach((a,i)=>{if(!a.id||!a.name)throw new Error(`App #${i+1} is missing "id" or "name"`)});
+    data.forEach(a=>{if(CJK.test(a.name)&&!a.name.split(" · ").some(s=>!CJK.test(s)))console.warn(`App "${a.id}": name needs an English part ("English · 中文") so English and Malay pages show no Chinese`)});
     APPS=data;APPS.forEach((a,i)=>{a._h=haystack(a);a._i=i});appsReady=true;
   }catch(e){
     $("loadError").hidden=false;$("errDetail").textContent=String(e.message||e);
