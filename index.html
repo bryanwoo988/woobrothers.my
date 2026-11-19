@@ -614,7 +614,7 @@ heroLabel:"Woo Brothers · Agri-tech for good",
 h1:"Useful farm technology, <em>free</em> for every farmer.",
 lead:"We are a group of friends who care about farming. In our spare time we build farm apps and share them with farmers and growers who need them. No fees. Nothing for sale.",
 ctaApps:"Browse the App Directory",ctaContact:"Contact us",
-f1:"Every app is completely free, with no hidden charges",f2:"We are not a company and we sell nothing",f3:"Available in Bahasa Malaysia, English and 华文",
+f1:"Every app is completely free, with no hidden charges",f2:"We are not a company and we sell nothing",f3:"Available in Bahasa Malaysia, English and Chinese",
 whyLabel:"Why",whyTitle:"Why we do this",whyQuote:"Good technology should not be only for big companies.",
 why1:"Farming supports many families in Malaysia. But many good farm tools are costly and hard to use, so small growers rarely get to use them.",
 why2:"We want to give back. We take the technology we know, turn it into simple, useful tools, and give them free to the people who need them.",
@@ -646,7 +646,7 @@ heroLabel:"Woo Brothers · Teknologi pertanian untuk masyarakat",
 h1:"Teknologi pertanian yang berguna, <em>percuma</em> untuk setiap petani.",
 lead:"Kami sekumpulan rakan yang prihatin terhadap pertanian. Pada masa lapang, kami bina aplikasi pertanian dan kongsikan dengan petani dan pekebun yang memerlukan. Tiada bayaran. Tiada jualan.",
 ctaApps:"Lihat Direktori Aplikasi",ctaContact:"Hubungi kami",
-f1:"Semua aplikasi percuma sepenuhnya, tiada caj tersembunyi",f2:"Kami bukan syarikat dan tidak menjual apa-apa",f3:"Tersedia dalam Bahasa Malaysia, English dan 华文",
+f1:"Semua aplikasi percuma sepenuhnya, tiada caj tersembunyi",f2:"Kami bukan syarikat dan tidak menjual apa-apa",f3:"Tersedia dalam Bahasa Malaysia, Bahasa Inggeris dan Bahasa Cina",
 whyLabel:"Tujuan",whyTitle:"Kenapa kami buat ini",whyQuote:"Teknologi yang baik tidak sepatutnya untuk syarikat besar sahaja.",
 why1:"Pertanian menyara ramai keluarga di Malaysia. Tetapi banyak teknologi pertanian yang bagus mahal dan rumit, jadi pekebun kecil susah untuk menggunakannya.",
 why2:"Kami mahu menyumbang kembali kepada masyarakat. Kami jadikan teknologi yang kami faham sebagai alat yang mudah dan berguna, dan berikan secara percuma kepada yang memerlukan.",
@@ -684,6 +684,11 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const L=v=>v==null?"":typeof v==="string"||typeof v==="number"?String(v):(v[lang]??v.en??v.zh??Object.values(v)[0]??"");
 const LA=v=>Array.isArray(v)?v:(v&&(v[lang]||v.en||v.zh))||[];
 // Images may be one value/array for every language, or {en,zh,ms}: pick the site language, fall back to English.
+// In English and Malay, hide the Chinese part of a bilingual name ("RainBulletin · 雨情" → "RainBulletin")
+// and show the Chinese-language label as "ZH". Search still matches the full original name.
+const CJK=/[\u3400-\u9fff\uf900-\ufaff]/;
+const NM=a=>{if(lang==="zh")return a.name;const k=a.name.split(" · ").filter(s=>!CJK.test(s)).join(" · ");return k||a.name};
+const LG=a=>(a.languages||[]).map(s=>lang!=="zh"&&s==="华"?"ZH":s);
 const LI=v=>v&&typeof v==="object"&&!Array.isArray(v)?(v[lang]||v.en||Object.values(v)[0]||[]):(v||[]);
 function el(tag,a,p){const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
 function txt(p,x,y,s,o){const t=el("text",Object.assign({x,y,"font-size":10,"font-family":"JetBrains Mono, monospace",fill:"var(--muted)"},o||{}),p);t.textContent=s;return t}
@@ -728,7 +733,7 @@ const newTag=a=>isNew(a)?`<span class="newmark">${esc(T[lang].newTag)}</span>`:"
 const SORTS={
   new:(x,y)=>(y.added||"").localeCompare(x.added||"")||y._i-x._i,
   old:(x,y)=>(x.added||"").localeCompare(y.added||"")||x._i-y._i,
-  az:(x,y)=>x.name.localeCompare(y.name,"en",{sensitivity:"base"})
+  az:(x,y)=>NM(x).localeCompare(NM(y),"en",{sensitivity:"base"})
 };
 function haystack(a){
   const parts=[a.name,a.keywords||"",(a.languages||[]).join(" "),a.category,AUTHORS[a.author]||""];
@@ -769,12 +774,12 @@ function drawDir(){
     const covers=[].concat(LI(a.cover));
     const cover=covers.length>1?`<div class="slides">${covers.map(u=>`<img src="${esc(u)}" alt="" loading="lazy">`).join("")}</div><span class="dots">${covers.map((_,i)=>`<span data-i="${i}"${i?"":' class="on"'}></span>`).join("")}</span>`
       :covers.length?`<img class="cimg" src="${esc(covers[0])}" alt="" loading="lazy">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
-    const logo=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
+    const logo=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(NM(a)));
     return `<article class="acard">
-      <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(a.name)}">${cover}<span class="logo">${logo}</span></a>
+      <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(NM(a))}">${cover}<span class="logo">${logo}</span></a>
       <div class="body">${newTag(a)}
-        <div class="meta"><span class="tags"><span class="tag free">${d.free}</span><span class="tag">${hl(c[lang])}</span></span><span class="langs">${esc((a.languages||[]).join(" · "))}</span></div>
-        <h3>${hl(a.name)}</h3>
+        <div class="meta"><span class="tags"><span class="tag free">${d.free}</span><span class="tag">${hl(c[lang])}</span></span><span class="langs">${esc(LG(a).join(" · "))}</span></div>
+        <h3>${hl(NM(a))}</h3>
         ${a.author?`<p class="by">${hl(byText(a))}</p>`:""}
         <p class="q">${hl(t.tagline||"")}</p>
         <div class="acts"><a class="btn line sm" href="#app-${esc(a.id)}"><span>${d.details}</span>${ARROW}</a>${openBtn(a,"sm")}</div>
@@ -812,19 +817,19 @@ let current=null,demoSel=0,demoX=0,demoFor=null;
 function drawDetail(){
   const a=APPS.find(x=>x.id===current);if(!a)return;
   const d=T[lang],t=a[lang]||a.en||{},c=catOf(a);
-  $("dLogo").innerHTML=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(a.name));
+  $("dLogo").innerHTML=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(NM(a)));
   $("dTags").innerHTML=`<span class="tag free">${d.free}</span><span class="tag">${esc(c[lang])}</span>${newTag(a)}`;
-  $("dName").textContent=a.name;
+  $("dName").textContent=NM(a);
   $("dQ").textContent=t.tagline||"";
   $("dAct").innerHTML=openBtn(a,"");
   $("dDesc").textContent=t.description||"";
   $("dFeats").innerHTML=(t.features||[]).map(x=>`<li>${esc(x)}</li>`).join("");
-  $("dLangs").textContent=`${d.langsLabel}: ${(a.languages||[]).join(" · ")}${a.url?"":" · "+d.linkNote}`;
+  $("dLangs").textContent=`${d.langsLabel}: ${LG(a).join(" · ")}${a.url?"":" · "+d.linkNote}`;
   $("dBy").textContent=byText(a);$("dBy").hidden=!a.author;
   $("dAdded").textContent=addedText(a);$("dAdded").hidden=!a.added;
   const shots=[].concat(LI(a.screenshots));
   $("shotsBox").hidden=!shots.length;
-  $("gallery").innerHTML=shots.map((s,i)=>`<img src="${esc(s)}" alt="${esc(a.name)} ${i+1}" loading="lazy">`).join("");
+  $("gallery").innerHTML=shots.map((s,i)=>`<img src="${esc(s)}" alt="${esc(NM(a))} ${i+1}" loading="lazy">`).join("");
   const demo=a.demo;
   $("demoBox").hidden=!demo;
   if(demo){
