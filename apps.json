@@ -2102,5 +2102,56 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "soundofdurian",
+    "name": "The Sound of Durian · 敲榴莲",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/thesoundofdurian/",
+    "added": "2026-11-21",
+    "author": "stanley",
+    "logo": "img/soundofdurian-logo.png",
+    "cover": {"en": "img/soundofdurian-cover-en.jpg", "zh": "img/soundofdurian-cover-zh.jpg", "ms": "img/soundofdurian-cover-ms.jpg"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "durian 榴莲 ripeness kematangan 成熟 熟度 knock tap ketuk 敲 sound bunyi 声音 drop gugur 落果 harvest tuai 采收 microphone mikrofon 麦克风",
+    "screenshots": {"en": ["img/soundofdurian-en-1.jpg", "img/soundofdurian-en-2.jpg", "img/soundofdurian-en-3.jpg"], "zh": ["img/soundofdurian-zh-1.jpg", "img/soundofdurian-zh-2.jpg", "img/soundofdurian-zh-3.jpg"], "ms": ["img/soundofdurian-ms-1.jpg", "img/soundofdurian-ms-2.jpg", "img/soundofdurian-ms-3.jpg"]},
+    "zh": {
+      "tagline": "敲一敲听声辨熟：拿自然落果的声音做基准",
+      "description": "用手机麦克风听敲榴莲的声音来判断熟度的田间实验工具。先收集约 10 粒自己园里自然掉落的榴莲（当作 100% 树上熟），用同一件硬物（例如汤匙柄）敲，录进基准库；之后敲树上还没掉的果，app 只分析敲击后约 250 毫秒的低频共振（果肉和空腔的声音），和落果基准比较，给出「约 X–Y% 接近熟」和信心度。鸟叫和风声大多会被过滤，摩托车或人声会降低信心度，可以重录。app 自己写明：它不测干物质或糖度，信心低时会说「不确定」，不会硬给数字；真正的判断还是要靠切开、闻香和自然落果。",
+      "features": [
+        "用自己园里的自然落果做「熟」的基准",
+        "敲击后自动判断，有把握就自动停止",
+        "只分析低频共振，过滤大部分鸟叫和风声",
+        "给出接近熟的范围和信心度，没把握就说不确定",
+        "敲击灵敏度可调"
+      ]
+    },
+    "en": {
+      "tagline": "Tap and listen for ripeness, measured against your own dropped fruit",
+      "description": "A field-experiment tool that uses the phone's microphone to judge durian ripeness from the sound of a knock. First collect about 10 naturally-dropped durians from your own trees (treated as 100% tree-ripe), tap each with the same hard object such as a spoon handle, and record them into the baseline. Then tap a fruit still on the tree: the app analyses only the low-frequency resonance in the ~250 ms after the hit (the flesh and cavity sound), compares it with the drop-fruit baseline, and gives \"≈ X–Y% toward ripe\" with a confidence level. Most birdsong and wind are filtered out; a motorbike or a shout lowers confidence and you can re-record. The app is open about its limits: it does not measure dry matter or sugar, says \"unsure\" rather than inventing a number, and the real call still comes from cutting, aroma and natural drop.",
+      "features": [
+        "Your own naturally-dropped fruit as the \"ripe\" baseline",
+        "Judges as it listens and stops once confident",
+        "Low-frequency analysis that filters most birdsong and wind",
+        "Range toward ripe with a confidence level, or \"unsure\"",
+        "Adjustable tap sensitivity"
+      ]
+    },
+    "ms": {
+      "tagline": "Ketuk dan dengar kematangan, berbanding buah gugur anda sendiri",
+      "description": "Alat ujian kebun yang menggunakan mikrofon telefon untuk menilai kematangan durian daripada bunyi ketukan. Mula-mula kumpul kira-kira 10 biji durian yang gugur sendiri dari pokok anda (dianggap 100% masak di pokok), ketuk setiap satu dengan objek keras yang sama seperti hulu sudu, dan rakam ke dalam rujukan. Kemudian ketuk buah yang masih di pokok: app hanya menganalisis resonans frekuensi rendah dalam ~250 ms selepas ketukan (bunyi isi dan rongga), membandingkannya dengan rujukan buah gugur, dan memberi \"≈ X–Y% ke arah masak\" bersama tahap keyakinan. Kebanyakan bunyi burung dan angin ditapis; bunyi motosikal atau jeritan menurunkan keyakinan dan anda boleh merakam semula. App ini jujur tentang hadnya: ia tidak mengukur bahan kering atau gula, menyatakan \"tidak pasti\" dan bukannya mereka angka, dan keputusan sebenar tetap bergantung pada membelah buah, bau dan gugur semula jadi.",
+      "features": [
+        "Buah gugur anda sendiri sebagai rujukan \"masak\"",
+        "Menilai sambil mendengar dan berhenti apabila yakin",
+        "Analisis frekuensi rendah yang menapis kebanyakan bunyi burung dan angin",
+        "Julat ke arah masak dengan tahap keyakinan, atau \"tidak pasti\"",
+        "Kepekaan ketukan boleh dilaras"
+      ]
+    },
+    "demo": null
   }
 ]
