@@ -165,6 +165,7 @@
       ]
     },
     "ms": {
+      "name": "Pemantau ENSO",
       "tagline": "Pemantau El Niño, monsun dan MJO untuk dusun",
       "description": "Membaca data RONI dan Niño 3.4 mingguan NOAA untuk tunjuk sama ada kita dalam El Niño, La Niña atau neutral, kemudian tambah Dipol Lautan Hindi (IOD), MJO dan luruan Monsun Timur Laut. Setiap satu disertakan maksudnya untuk dusun: berjaga dengan kemarau, sediakan saliran, atau tangguhkan semburan. Untuk amaran rasmi hujan lebat dan banjir, ia bawa anda ke MetMalaysia.",
       "features": [
@@ -353,6 +354,7 @@
       ]
     },
     "ms": {
+      "name": "Kumbang Pengorek Durian",
       "tagline": "Pengorek lubang jarum durian: kenal pasti, gred, tindakan, jadual",
       "description": "Lubang pada batang datang daripada punca berbeza yang perlukan rawatan yang sama sekali berbeza, dan silap kenal membazir wang. Aplikasi ini mula-mula bantu anda bezakan pengorek lubang jarum (kumbang ambrosia), kumbang tanduk panjang dan Phytophthora, kemudian beri gred pokok mengikut bilangan lubang dan keadaan kulit kayu, serta pelan tindakan dan jadual semburan. Ia juga terangkan kenapa racun sistemik tidak berkesan untuk kumbang ini dan kenapa perangkap alkohol tidak digunakan.",
       "features": [
@@ -404,6 +406,7 @@
       ]
     },
     "ms": {
+      "name": "Kenal Pasti Penyakit Batang Durian",
       "tagline": "Phytophthora, mati rosot, Fusarium atau penyakit akar? Tandakan apa yang anda nampak",
       "description": "Empat penyakit batang durian nampak serupa tetapi perlukan rawatan yang sama sekali berbeza. Tandakan hanya simptom yang betul-betul anda nampak pada pokok (gam meleleh, bintik hitam, kulat putih, pokok layu dengan batang yang bersih) dan aplikasi akan tunjuk penyakit yang paling mungkin. Ia juga merangkumi racun kulat dan pengurusan kerintangan, mikrob berfaedah, reput buah dan rekod ladang. Boleh digunakan sepenuhnya tanpa internet.",
       "features": [
@@ -502,6 +505,7 @@
       ]
     },
     "ms": {
+      "name": "Taman Pembelajaran C:N",
       "tagline": "Apa perlu saya buat untuk durian sekarang? Tindakan hari ini, diterangkan dengan C:N",
       "description": "Durian yang asyik keluar pucuk tetapi tidak berbunga, putik yang gugur, pokok yang perlu pulih selepas tuaian: setiap satu perlukan tindakan berbeza. Pilih masalah anda, jawab beberapa soalan yang betul-betul mengubah keputusan (kelembapan tanah, kematangan pokok, baja nitrogen baru-baru ini), dan aplikasi akan beri tindakan hari ini, apa yang perlu diperhatikan seterusnya, dan sebab karbon dan nitrogen di sebaliknya. Disertakan pelajaran, profil tanaman lain dan sumber kajian.",
       "features": [
@@ -651,6 +655,7 @@
       ]
     },
     "ms": {
+      "name": "Serangga",
       "tagline": "Kenali serangga, kenal pasti langkah demi langkah, dan pelajari serangga ladang Malaysia",
       "description": "Bermula dengan badan serangga, pengelasan dan kitaran hidup, kemudian 17 order serangga yang biasa di Malaysia, dan seterusnya perosak serta serangga berguna bagi sawit, padi, sayur, buah dan koko, dengan kaedah kawalan mengikut turutan IPM. Kunci langkah demi langkah memberitahu order serangga selepas beberapa soalan. Boleh digunakan tanpa internet.",
       "features": [
@@ -753,6 +758,7 @@
       ]
     },
     "ms": {
+      "name": "Fisiologi Tumbuhan",
       "tagline": "Kursus fisiologi tumbuhan luar talian, dari air hingga pembungaan",
       "description": "Kursus fisiologi tumbuhan yang lengkap: cara air dan nutrien masuk ke tumbuhan, fotosintesis dan respirasi, nitrogen dan tekanan, hormon tumbuhan, kemudian cahaya, pergerakan dan pembungaan. Setiap bab hanya guna istilah yang telah diajar sebelumnya dan dilabel mengikut peperiksaan pertengahan semester. 27 rajah yang boleh diseret dengan jari memudahkan konsep abstrak difahami.",
       "features": [
@@ -804,6 +810,7 @@
       ]
     },
     "ms": {
+      "name": "Wiki Sawit",
       "tagline": "Rujukan sawit luar talian",
       "description": "Buku panduan sawit dalam telefon anda, dari sejarah, botani dan bentuk buah hingga iklim, tanah, pembentukan hasil, pembiakbakaan, kultur tisu, tapak semaian dan penyediaan tanah. 20 bab, 90 bahagian dan 16 carta interaktif. Selepas ditambah ke skrin utama, ia tidak perlukan internet, jadi boleh digunakan di ladang.",
       "features": [
@@ -855,6 +862,7 @@
       ]
     },
     "ms": {
+      "name": "Sawit Basics",
       "tagline": "Asas sawit: penuaian, penggredan, baja, perosak dan angka utama",
       "description": "Panduan poket untuk eksekutif ladang baharu yang bersedia untuk temuduga atau bulan-bulan pertama di ladang: cara sawit tumbuh, cara dituai dan digred, cara dibaja dan dilindungi, serta angka yang perlu dihafal. Kandungan daripada Smallholder Oil Palm Handbook dan statistik MPOB, dengan 83 foto dan rajah serta ujian kendiri.",
       "features": [
@@ -906,6 +914,7 @@
       ]
     },
     "ms": {
+      "name": "IPM Durian",
       "tagline": "Pengurusan perosak bersepadu durian: beritahu apa yang anda nampak, ia beritahu apa yang berkesan",
       "description": "Anda tidak perlu tahu nama perosak. Tekan di mana masalah itu, apa yang anda nampak dan jenis makhluknya, dan aplikasi akan meletakkannya dalam salah satu daripada kira-kira 22 kumpulan perosak, kemudian menunjukkan langkah bukan kimia yang perlu dibuat dahulu dan pilihan organik serta konvensional yang disusun mengikut keberkesanan. Setiap halaman perosak mencadangkan giliran berdasarkan semburan terakhir anda supaya tidak mengulang mod tindakan yang sama, dan memberi amaran tentang lebah semasa berbunga, tempoh sebelum tuai dan produk yang diharamkan. Turut ada pintasan untuk masalah durian biasa, gred keterukan pengorek dan pelajaran ringkas. Boleh digunakan tanpa internet.",
       "features": [
@@ -953,6 +962,7 @@
       ]
     },
     "ms": {
+      "name": "AgriPro Nota Agronomi",
       "tagline": "Buku nota agronomi: nutrien, pH tanah, peraturan campuran dan penasihat baja",
       "description": "Tekan mana-mana nutrien untuk lihat fungsinya dalam tumbuhan, enzim utamanya, dan cara ia bersaing, menyekat atau membantu nutrien lain. Carta ketersediaan pH menunjukkan nutrien yang boleh diserap pada setiap pH tanah; peraturan campuran menerangkan cara membancuh baja daun tanpa menjadi gel atau menyumbat muncung; dan penasihat mencadangkan resipi mengikut tanaman dan varieti durian. Boleh digunakan tanpa internet.",
       "features": [
@@ -1055,6 +1065,7 @@
       ]
     },
     "ms": {
+      "name": "Penumpuan Angin",
       "tagline": "Amaran ribut, hujan dan angin kencang daripada penumpuan angin aras rendah ECMWF",
       "description": "Apabila angin aras rendah berkumpul di satu tempat, udara terpaksa naik, dan dari situlah ribut petir petang, hujan lebat dan angin kencang bermula. Wind Accumulation memetakan penumpuan angin aras rendah ECMWF, menunjukkan jam mana dalam 48 jam akan datang paling berisiko, dan menggunakan 51 ahli ensemble untuk menunjukkan tahap keyakinan ramalan. Anda boleh tindih imej satelit inframerah dan isobar serta kongsi hasilnya di WhatsApp. Semua masa dipaparkan dalam waktu Malaysia.",
       "features": [
@@ -1315,6 +1326,7 @@
       ]
     },
     "ms": {
+      "name": "Carta Hormon Buah Tropika",
       "tagline": "Carta hormon buah tropika: perubahan hormon semasa berbunga, pembentukan buah dan kemasakan bagi 13 tanaman",
       "description": "Adakah giberelin, sitokinin, ABA, auksin dan etilena naik atau turun semasa berbunga, pembentukan buah dan kemasakan? Aplikasi ini menukar kajian tentang 13 buah tropika, termasuk durian, mangga, longan, manggis, rambutan dan pisang, kepada carta, dan setiap sel menyatakan sama ada ia diukur, disimpulkan, hanya diuji sebagai semburan, atau belum dikaji. Ia juga menyenaraikan cara pengawal atur biasa seperti paklobutrazol mengubah hormon, berapa lama ia kekal dalam tanah, dan had sisa buah mengikut pasaran. Setiap nilai ada sumbernya, dan boleh digunakan tanpa internet.",
       "features": [
@@ -1366,6 +1378,7 @@
       ]
     },
     "ms": {
+      "name": "Serangga Taijiang",
       "tagline": "Panduan lapangan 180 serangga Taman Negara Taijiang",
       "description": "Panduan lapangan luar talian bagi 180 serangga di Taman Negara Taijiang (Tainan, Taiwan), berdasarkan buku panduan serangga terbitan taman tersebut. Layari dan cari mengikut order, atau kecilkan pilihan dengan menekan habitat, tempat serangga hinggap, bulan dan saiznya; kunci langkah demi langkah membawa anda ke order serangga. Kalendar menunjukkan serangga yang aktif bulan ini, dan bahagian Belajar merangkumi badan serangga, bahagian mulut, kaki dan kitaran hidup. Turut ada kuiz foto, kad imbas dan buku nota lapangan, dalam bahasa Cina Ringkas dan Tradisional, Inggeris dan Melayu.",
       "features": [
@@ -1468,6 +1481,7 @@
       ]
     },
     "ms": {
+      "name": "Potong Rumput",
       "tagline": "Bina tanah kebun dengan memotong rumput, bukan menyembur racun, untuk penanam durian",
       "description": "Kenapa memotong rumput lebih baik membina tanah daripada menyembur racun rumpai? Akar yang hidup memberi makan tanah sepanjang masa, manakala akar yang mati disembur hanya memberi sekali. Dalam 9 bahagian ringkas, setiap satu dengan rajah, panduan ini menerangkan bagaimana rumput dan tanah saling mempengaruhi: rumput berbanding tanaman penutup berdaun lebar, apa yang tumbuh memberitahu tentang tanah, di mana kacang pinto dan lalang masing-masing menang, serta bila dan setinggi mana perlu memotong. Ia juga merangkumi pengurusan lantai kebun sepanjang dua musim durian, dengan kajian di sebalik setiap perkara. Boleh digunakan tanpa internet.",
       "features": [
@@ -1570,6 +1584,7 @@
       ]
     },
     "ms": {
+      "name": "Triaj Nutrien",
       "tagline": "Triaj Nutrien: periksa daun untuk cari nutrien yang kurang pada tanaman",
       "description": "Daun kuning, hangus di tepi atau keunguan biasanya bermaksud tanaman kekurangan sesuatu nutrien. Pilih tanaman (durian, pokok buah lain, sayur atau sawit), nyatakan sama ada anda baru menyembur, membaja atau ada hujan lebat, kemudian sama ada simptom bermula pada daun tua atau muda dan rupa daun itu. Aplikasi menunjukkan kekurangan yang paling mungkin dan apa perlu dibuat sekarang, dengan nasihat semburan daun dan pembajaan tanah. Turut merangkumi bacaan pH dan EC tanah, antagonisme nutrien, ketoksikan dan simptom yang mirip, semuanya bergambar, dan boleh digunakan tanpa internet.",
       "features": [
@@ -1725,6 +1740,7 @@
       ]
     },
     "ms": {
+      "name": "MRL China",
       "tagline": "Had maksimum sisa racun perosak China (GB 2763-2026), semak sebelum eksport",
       "description": "Sebelum mengeksport buah atau sayur ke China, anda perlu tahu had China bagi setiap racun perosak. Pilih tanaman seperti durian dan aplikasi menyenaraikan setiap had yang terpakai, sama ada entri langsung atau melalui kumpulan makanan, berserta bahagian yang perlu diuji dan halaman dalam PDF asal. Ia merangkumi kesemua 10,749 baris angka GB 2763-2026, dengan carian racun perosak, eksport CSV, helaian had yang boleh dicetak dan rujukan yang disimpan. Tab kedua menyemak sama ada asal dan tanaman tertentu boleh dieksport ke China, dan mengingatkan bahawa had sisa dan akses pasaran ialah dua perkara berasingan. Data setakat November 2026; teks asal bahasa Cina adalah muktamad.",
       "features": [
@@ -1776,6 +1792,7 @@
       ]
     },
     "ms": {
+      "name": "Pemulihan Tanah",
       "tagline": "Pemulihan Tanah: kajian dan kaedah pemulihan tanah Dr. Huang Jui-chang",
       "description": "Menghimpunkan kajian, prinsip dan kaedah lapangan Dr. Huang Jui-chang, \"Pakar Nutrisi Tanah\" di Stesen Penyelidikan dan Pengembangan Pertanian Daerah Tainan, Taiwan, untuk memulihkan tanah ladang yang letih. Masukkan laporan makmal tanah (EC, pH, bahan organik, P, K, Ca, Mg) dan dapatkan preskripsi mengikut keutamaan. Turut ada panduan 14 masalah nutrien dan akar, panduan pemulihan 9 langkah, resipi baja cecair tapaian dengan kalkulator tong, data ujian ladang dan 41 kertas kajian. Disusun untuk kursus Dr. Huang di Shah Alam pada Disember 2026; bukan terbitan rasmi Tainan DARES.",
       "features": [
@@ -1929,6 +1946,7 @@
       ]
     },
     "ms": {
+      "name": "Ganoderma Pengurus BSR",
       "tagline": "Reput pangkal batang Ganoderma sawit: nilai, rancang kawalan biologi berperingkat, hasilkan Trichoderma",
       "description": "Mengurus reput pangkal batang (BSR) yang disebabkan oleh Ganoderma boninense pada sawit dan kelapa. Nilai pokok pada skala 0–4 (Sihat, Awal, Sederhana, Teruk, Mati) daripada empat pemerhatian, kemudian bina pelan berperingkat bertarikh mengikut peringkat: sanitasi, penimbusan tanah, Trichoderma, siraman bakteria, AMF, kompos EFB dan tarikh bancian. App memberi amaran jika kelompok Trichoderma jatuh dalam 28 hari selepas suntikan batang heksakonazol. Pelan ditukar kepada jadual penghasilan Trichoderma beras, bancian blok direkod dengan kejadian penyakit, DSI dan AUDPC, dan blok rawatan dibandingkan dengan blok kawalan. Tab Bukti merumuskan kajian yang diterbitkan dan tempat membeli produk di Malaysia. Kawalan biologi mencegah dan melambatkan BSR; tiada kajian yang menyembuhkan jangkitan pada pokok matang. Jumlah dan selang dalam pelan ialah andaian perancangan, jadi ikut label produk dan nasihat MPOB.",
       "features": [
@@ -2036,6 +2054,7 @@
       ]
     },
     "ms": {
+      "name": "Sains Tanah",
       "tagline": "Sains tanah: panduan lapangan, alat di tapak dan rekod plot",
       "description": "Tujuh unit mengikut urutan kerja di lapangan: kenali tanah, sifat tanah, membaca tapak (persampelan, tanah Malaysia, tanah gambut dan tanah sulfat masam), melindungi tanah, memperbaiki tanah, membaja tanaman, serta sawit, beberapa pokok buah dan padi. Setiap unit diakhiri dengan amali dan kuiz. Lima alat: segi tiga tekstur tanah USDA (dengan input ujian balang), peneroka pH tanah dengan julat panduan mengikut tanaman (tiada kadar kapur kerana ia perlukan ujian makmal), kalkulator cerun, kunci tanda kekurangan nutrien dan kalkulator baja (baja tunggal, sebatian, setiap pokok, program pokok, kandungan beg dan kos). Keputusan alat boleh disimpan ke rekod plot yang menjumlahkan nutrien dan kos mengikut plot dan tahun, dengan eksport CSV dan sandaran. Carian dan glosari dalam tiga bahasa. Angka dalam pelajaran ialah contoh pengajaran; cadangan kapur dan baja sebenar perlu berdasarkan ujian tanah dan nasihat pegawai pertanian.",
       "features": [
@@ -2142,6 +2161,7 @@
       ]
     },
     "ms": {
+      "name": "Bunyi Durian",
       "tagline": "Ketuk dan dengar kematangan, berbanding buah gugur anda sendiri",
       "description": "Alat ujian kebun yang menggunakan mikrofon telefon untuk menilai kematangan durian daripada bunyi ketukan. Mula-mula kumpul kira-kira 10 biji durian yang gugur sendiri dari pokok anda (dianggap 100% masak di pokok), ketuk setiap satu dengan objek keras yang sama seperti hulu sudu, dan rakam ke dalam rujukan. Kemudian ketuk buah yang masih di pokok: app hanya menganalisis resonans frekuensi rendah dalam ~250 ms selepas ketukan (bunyi isi dan rongga), membandingkannya dengan rujukan buah gugur, dan memberi \"≈ X–Y% ke arah masak\" bersama tahap keyakinan. Kebanyakan bunyi burung dan angin ditapis; bunyi motosikal atau jeritan menurunkan keyakinan dan anda boleh merakam semula. App ini jujur tentang hadnya: ia tidak mengukur bahan kering atau gula, menyatakan \"tidak pasti\" dan bukannya mereka angka, dan keputusan sebenar tetap bergantung pada membelah buah, bau dan gugur semula jadi.",
       "features": [

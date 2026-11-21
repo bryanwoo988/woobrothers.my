@@ -687,7 +687,7 @@ const LA=v=>Array.isArray(v)?v:(v&&(v[lang]||v.en||v.zh))||[];
 // In English and Malay, hide the Chinese part of a bilingual name ("RainBulletin · 雨情" → "RainBulletin")
 // and show the Chinese-language label as "ZH". Search still matches the full original name.
 const CJK=/[\u3400-\u9fff\uf900-\ufaff]/;
-const NM=a=>{if(lang==="zh")return a.name;const k=a.name.split(" · ").filter(s=>!CJK.test(s)).join(" · ");return k||a.name};
+const NM=a=>{if(lang==="zh")return a.name;if(a[lang]&&a[lang].name)return a[lang].name;const k=a.name.split(" · ").filter(s=>!CJK.test(s)).join(" · ");return k||a.name};
 const LG=a=>(a.languages||[]).map(s=>lang!=="zh"&&s==="华"?"ZH":s);
 const LI=v=>v&&typeof v==="object"&&!Array.isArray(v)?(v[lang]||v.en||Object.values(v)[0]||[]):(v||[]);
 function el(tag,a,p){const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
@@ -736,7 +736,7 @@ const SORTS={
   az:(x,y)=>NM(x).localeCompare(NM(y),"en",{sensitivity:"base"})
 };
 function haystack(a){
-  const parts=[a.name,a.keywords||"",(a.languages||[]).join(" "),a.category,AUTHORS[a.author]||""];
+  const parts=[a.name,(a.ms&&a.ms.name)||"",a.keywords||"",(a.languages||[]).join(" "),a.category,AUTHORS[a.author]||""];
   for(const l of ORDER){const t=a[l]||{};parts.push(t.tagline||"",t.description||"",(t.features||[]).join(" "),catOf(a)[l]||"")}
   return parts.join(" ").toLowerCase();
 }
