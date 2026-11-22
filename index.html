@@ -199,7 +199,7 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-
 .dir-hero h1{font-size:clamp(30px,5vw,52px);margin-top:12px}
 .dir-hero p{color:var(--on-deep-2);margin-top:10px;max-width:36em;font-size:16px;line-height:1.55}
 .toolbar{margin-top:24px;padding-block:0 20px;display:flex;flex-direction:column;gap:12px}
-.search{display:flex;align-items:center;gap:12px;background:var(--bg);color:var(--fg);border-radius:var(--r);padding:0 14px;min-height:50px;border:1px solid transparent}
+.search{display:flex;align-items:center;gap:12px;background:var(--bg);color:var(--fg);border-radius:var(--r);padding:0 14px;min-height:50px;border:1px solid var(--deep-line)}
 .search:focus-within{border-color:var(--accent)}
 .search svg{flex:none;color:var(--muted)}
 .search input{flex:1;min-width:0;border:0;background:transparent;color:var(--fg);font:500 16px var(--font-body);min-height:48px;outline:0}
@@ -213,10 +213,10 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-
 .sortsel{display:inline-flex;align-items:center;gap:8px;color:var(--muted)}
 .sortsel select{font:600 13px var(--font-body);color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:999px;padding:6px 30px 6px 12px;min-height:34px;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 15px) 50%,calc(100% - 10px) 50%;background-size:5px 5px;background-repeat:no-repeat}
 .sortsel select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-/* Phones: all categories stay visible (nothing hidden off-screen), as small chips over two rows */
-@media (max-width:560px){
-  .filters{gap:6px}
-  .fchip{min-height:34px;padding:0 12px;font-size:13.5px;gap:6px}
+/* Phones and tablets: categories become one row that scrolls sideways; the right edge fades to show there is more */
+@media (max-width:900px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:calc(var(--gutter,20px)*-1);padding-inline:var(--gutter,20px);scroll-padding-inline:var(--gutter,20px);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--gutter,20px),#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 var(--gutter,20px),#000 calc(100% - 28px),transparent)}
+  .filters::-webkit-scrollbar{display:none}
 }
 .totop{position:fixed;right:max(16px,env(safe-area-inset-right,0px) + 16px);bottom:calc(env(safe-area-inset-bottom,0px) + 20px);z-index:40;width:48px;height:48px;border-radius:50%;border:1px solid var(--deep-line);background:var(--deep);color:var(--on-deep);display:grid;place-items:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}
 .totop.show{opacity:1;visibility:visible;transform:none}
