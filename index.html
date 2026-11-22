@@ -69,7 +69,7 @@ html{padding-top:env(safe-area-inset-top,0px)}
 body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:17px;line-height:1.7;margin:0;-webkit-font-smoothing:antialiased}
 img{max-width:100%}
 [hidden]{display:none!important}
-.wrap{max-width:1120px;margin:0 auto;padding-inline:24px}
+.wrap{--gutter:24px;max-width:1120px;margin:0 auto;padding-inline:var(--gutter)}
 h1,h2,h3{font-family:var(--font-display);text-wrap:balance;margin:0;line-height:1.12;letter-spacing:-.01em;font-weight:600}
 p{margin:0}
 a{color:inherit}
@@ -195,31 +195,36 @@ footer{background:var(--deep);color:var(--on-deep-2);font-size:14px}
 footer .wrap{padding-block:28px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
 /* directory */
-.dir-hero{background:var(--deep);color:var(--on-deep);padding-block:64px 0}
-.dir-hero h1{font-size:clamp(34px,5vw,56px);margin-top:18px}
-.dir-hero p{color:var(--on-deep-2);margin-top:16px;max-width:36em;font-size:18px}
-.toolbar{margin-top:40px;padding-block:20px 24px;border-top:1px solid var(--deep-line);display:flex;flex-direction:column;gap:16px}
-.search{display:flex;align-items:center;gap:12px;background:var(--bg);color:var(--fg);border-radius:var(--r);padding:0 16px;min-height:56px;border:1px solid transparent}
+.dir-hero{background:var(--deep);color:var(--on-deep);padding-block:40px 0}
+.dir-hero h1{font-size:clamp(30px,5vw,52px);margin-top:12px}
+.dir-hero p{color:var(--on-deep-2);margin-top:10px;max-width:36em;font-size:16px;line-height:1.55}
+.toolbar{margin-top:24px;padding-block:0 20px;display:flex;flex-direction:column;gap:12px}
+.search{display:flex;align-items:center;gap:12px;background:var(--bg);color:var(--fg);border-radius:var(--r);padding:0 14px;min-height:50px;border:1px solid transparent}
 .search:focus-within{border-color:var(--accent)}
 .search svg{flex:none;color:var(--muted)}
-.search input{flex:1;min-width:0;border:0;background:transparent;color:var(--fg);font:500 17px var(--font-body);min-height:54px;outline:0}
+.search input{flex:1;min-width:0;border:0;background:transparent;color:var(--fg);font:500 16px var(--font-body);min-height:48px;outline:0}
 .search input::placeholder{color:var(--muted)}
 .search button{background:transparent;border:0;color:var(--muted);cursor:pointer;min-width:44px;min-height:44px;font-size:14px}
 .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.fchip{font:500 14px var(--font-body);background:transparent;color:var(--on-deep-2);border:1px solid var(--deep-line);border-radius:var(--r);min-height:40px;padding:0 14px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.fchip{font:500 14px var(--font-body);background:transparent;color:var(--on-deep-2);border:1px solid var(--deep-line);border-radius:999px;min-height:36px;padding:0 14px;white-space:nowrap;flex:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
 .fchip span{font:500 12px var(--font-data);opacity:.7}
 .fchip:hover{color:var(--on-deep);border-color:var(--on-deep-2)}
 .fchip[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
-.sortbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.sortbar .lbl{font:500 12px var(--font-data);color:var(--on-deep-2);text-transform:uppercase;letter-spacing:.08em;margin-right:4px}
-.sortbar .fchip{min-height:36px;font-size:13px}
+.sortsel{display:inline-flex;align-items:center;gap:8px;color:var(--muted)}
+.sortsel select{font:600 13px var(--font-body);color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:999px;padding:6px 30px 6px 12px;min-height:34px;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 15px) 50%,calc(100% - 10px) 50%;background-size:5px 5px;background-repeat:no-repeat}
+.sortsel select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* Phones and tablets: categories become one row that scrolls sideways */
+@media (max-width:900px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:calc(var(--gutter,20px)*-1);padding-inline:var(--gutter,20px);scroll-padding-inline:var(--gutter,20px);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 var(--gutter,20px),#000 calc(100% - 28px),transparent)}
+  .filters::-webkit-scrollbar{display:none}
+}
 .totop{position:fixed;right:max(16px,env(safe-area-inset-right,0px) + 16px);bottom:calc(env(safe-area-inset-bottom,0px) + 20px);z-index:40;width:48px;height:48px;border-radius:50%;border:1px solid var(--deep-line);background:var(--deep);color:var(--on-deep);display:grid;place-items:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}
 .totop.show{opacity:1;visibility:visible;transform:none}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .totop{background:var(--line-strong);color:var(--fg);border-color:var(--muted)}}
 :root[data-theme="dark"] .totop{background:var(--line-strong);color:var(--fg);border-color:var(--muted)}
 .totop:hover{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
 @media (prefers-reduced-motion: reduce){.totop{transition:none}}
-.result-line{font:500 13px var(--font-data);color:var(--muted);padding-block:28px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.result-line{font:500 13px var(--font-data);color:var(--muted);padding-block:18px 14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .app-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
 .acard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);display:flex;flex-direction:column;overflow:hidden;transition:border-color .2s,transform .2s}
 .acard:hover{border-color:var(--line-strong);transform:translateY(-2px)}
@@ -325,7 +330,7 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
   .lp-logo img:first-child{width:46px;height:46px}
   .lp-logo img:last-child{height:30px}
   .brand-word{height:24px}
-  .wrap{padding-inline:16px}
+  .wrap{--gutter:16px}
   .nav .navlink{display:none}
   .promise-grid{grid-template-columns:minmax(0,1fr)}
   .pr,.pr+.pr{padding-left:0;border-left:0;border-bottom:1px solid var(--line);padding-bottom:24px}
@@ -512,12 +517,11 @@ html.lp-open{overflow:hidden}
           <button type="button" id="qClear" hidden data-i18n="clear"></button>
         </label>
         <div class="filters" id="filters" role="group" aria-label="Category"></div>
-        <div class="sortbar" id="sortbar" role="group" aria-label="Sort"></div>
       </div>
     </div>
   </div>
   <div class="wrap">
-    <div class="result-line"><span id="resultCount" aria-live="polite"></span><span data-i18n="allFree"></span></div>
+    <div class="result-line"><span id="resultCount" aria-live="polite"></span><label class="sortsel"><span id="sortLbl"></span><select id="sortSel"></select></label></div>
     <div class="load-error" id="loadError" hidden role="alert"><h3 data-i18n="errTitle"></h3><p data-i18n="errText"></p><code id="errDetail"></code></div>
     <div class="app-grid" id="appGrid"></div>
     <div class="empty" id="emptyState" hidden><h3 data-i18n="emptyTitle"></h3><p data-i18n="emptyText"></p></div>
@@ -763,6 +767,12 @@ function hl(s){
   const terms=query.split(/\s+/).filter(Boolean).map(q=>esc(q).replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
   return terms.length?t.replace(new RegExp(terms.join("|"),"gi"),m=>`<mark>${m}</mark>`):t;
 }
+// Sort is a small menu on the result line, so it does not take a row of its own
+function drawSort(d){
+  $("sortLbl").textContent=d.sortLabel;
+  $("sortSel").innerHTML=[["new",d.sortNew],["old",d.sortOld],["az",d.sortAZ]].map(([k,t])=>`<option value="${k}"${k===sort?" selected":""}>${esc(t)}</option>`).join("");
+}
+$("sortSel").addEventListener("change",e=>{sort=e.target.value;try{localStorage.setItem("wb-sort",sort)}catch(_){}drawDir()});
 function drawDir(){
   const d=T[lang];
   $("q").placeholder=d.search;
@@ -771,7 +781,7 @@ function drawDir(){
     // While apps.json loads, draw the category chips and sort bar without counts so the page keeps its shape.
     $("resultCount").textContent=$("loadError").hidden?d.loading:"";$("appGrid").innerHTML=$("loadError").hidden?'<div class="skel" aria-hidden="true"><i class="sk-cover"></i><i class="sk-line w60"></i><i class="sk-line w90"></i><i class="sk-line w40"></i></div>'.repeat(4):"";$("emptyState").hidden=true;
     $("filters").innerHTML=["all",...Object.keys(CATS)].map(k=>`<button type="button" class="fchip" aria-pressed="${k===cat}" disabled>${k==="all"?d.all:esc(catOf({category:k})[lang])}<span>&nbsp;</span></button>`).join("");
-    $("sortbar").innerHTML=`<span class="lbl">${esc(d.sortLabel)}</span>`+[["new",d.sortNew],["old",d.sortOld],["az",d.sortAZ]].map(([k,t])=>`<button type="button" class="fchip" aria-pressed="${k===sort}" disabled>${esc(t)}</button>`).join("");
+    drawSort(d);
     return}
   const terms=query.toLowerCase().split(/\s+/).filter(Boolean);
   const textMatch=a=>terms.every(t=>a._h.includes(t));
@@ -784,11 +794,7 @@ function drawDir(){
     b.innerHTML=`${k==="all"?d.all:esc(catOf({category:k})[lang])}<span>${n}</span>`;
     b.addEventListener("click",()=>{cat=k;drawDir()});f.appendChild(b);
   });
-  const sb=$("sortbar");sb.innerHTML=`<span class="lbl">${esc(d.sortLabel)}</span>`;
-  [["new",d.sortNew],["old",d.sortOld],["az",d.sortAZ]].forEach(([k,t])=>{
-    const b=document.createElement("button");b.type="button";b.className="fchip";b.setAttribute("aria-pressed",k===sort);b.textContent=t;
-    b.addEventListener("click",()=>{sort=k;try{localStorage.setItem("wb-sort",k)}catch(e){}drawDir()});sb.appendChild(b);
-  });
+  drawSort(d);
   const list=APPS.filter(a=>(cat==="all"||a.category===cat)&&textMatch(a)).sort(SORTS[sort]);
   $("resultCount").textContent=d.results(list.length,APPS.length);
   $("emptyState").hidden=list.length>0;
