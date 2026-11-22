@@ -101,6 +101,7 @@ App 一更新，使用者下次打开时就要看到一个弹窗，写清楚：
 | Soil Science | 还没有，需要开发者加上 |
 | ModelDuel | 还没有，需要开发者加上 |
 | The Sound of Durian | 还没有，需要开发者加上 |
+| Durian Ripening | 还没有，需要开发者加上 |
 
 ## 2. 有新版本时先问一句
 

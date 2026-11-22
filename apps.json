@@ -2173,5 +2173,60 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "durianripening",
+    "name": "Durian Ripening · 榴梿成熟学",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/durianplucking/",
+    "added": "2026-11-22",
+    "author": "stanley",
+    "logo": "img/durianripening-logo.png",
+    "cover": {"en": "img/durianripening-cover-en.jpg", "zh": "img/durianripening-cover-zh.jpg", "ms": "img/durianripening-cover-ms.jpg"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "durian 榴梿 榴莲 harvest tuai 采收 cut potong 割果 tree-drop gugur 树熟 落果 ripening pemasakan 成熟 DAA anthesis flowering berbunga 开花 Musang King D197 shelf life export eksport 出口 MyGAP MyLadang glut lambakan",
+    "screenshots": {"en": ["img/durianripening-en-1.jpg", "img/durianripening-en-2.jpg", "img/durianripening-en-3.jpg"], "zh": ["img/durianripening-zh-1.jpg", "img/durianripening-zh-2.jpg", "img/durianripening-zh-3.jpg"], "ms": ["img/durianripening-ms-1.jpg", "img/durianripening-ms-2.jpg", "img/durianripening-ms-3.jpg"]},
+    "zh": {
+      "tagline": "树熟还是割果？按品种和开花日期算出割果时机",
+      "description": "帮榴梿园主决定什么时候割果。选品种、填开花日期（超过 70% 花开的那天），再选采收方式、割果时的成熟度（85%、90% 或 95%）和销往哪里（本地、短途、长途出口），就算出预计割果日期，并给出建议的采收线，以及大约的风味、常温和冷链保存天数。「我的果园」可以用自己的树号（方便配合 MyGAP／MyLadang 溯源）登记每棵树的开花和落果日期，几季之后就能算出那棵树自己的落果天数，可导出导入 Excel（CSV）。「数据洞察」把记录画成图，包括采收高峰的人手安排。「成熟科学」讲榴梿是呼吸跃变型水果、2026 年的「榴梿海啸」、各种出口方式，以及农业局 2026 年的割果指引。app 不替你决定割不割；日期和数字都是估算，割之前还要看果上的成熟迹象。",
+      "features": [
+        "按品种和开花日期算出割果窗口",
+        "按销售去向建议采收线，附风味和保存天数",
+        "逐棵树记录开花和落果，校准自己的落果天数",
+        "Excel（CSV）导出导入",
+        "采收高峰和多季记录图表",
+        "成熟科学和农业局 2026 割果指引"
+      ]
+    },
+    "en": {
+      "tagline": "Tree-drop or cut? Work out the cut date from the variety and flowering date",
+      "description": "Helps durian growers decide when to cut. Pick the variety, enter the flowering date (the day more than 70% of flowers were open), then choose how you harvest, how ripe to cut (85%, 90% or 95%) and where the fruit is going (local, short-haul or long-haul export). It gives an estimated cut window and a recommended harvest line, with the expected flavour and roughly how many days the fruit keeps at room temperature and in a cold chain. My Farms logs each tree's flowering and drop dates under your own tree IDs (to line up with MyGAP / MyLadang traceability), so within a few seasons you get that tree's own drop timing; data exports and imports as Excel (CSV). Insights turns the records into charts, including the upcoming harvest load for labour planning. The Science tab explains why durian is a climacteric fruit, the 2026 \"durian tsunami\", export routes and the Malaysian DOA cut-harvest guideline (2026). The app does not decide for you; dates and figures are estimates, so check the signs on the fruit before cutting.",
+      "features": [
+        "Cut window from variety and flowering date",
+        "Recommended harvest line by market, with flavour and shelf life",
+        "Per-tree flowering and drop log that calibrates your own timing",
+        "Excel (CSV) export and import",
+        "Charts of harvest load and records across seasons",
+        "Ripening science and the DOA cut-harvest guideline (2026)"
+      ]
+    },
+    "ms": {
+      "name": "Sains Pemasakan Durian",
+      "tagline": "Gugur atau potong? Kira tarikh potong daripada varieti dan tarikh berbunga",
+      "description": "Membantu pekebun durian memutuskan bila hendak memotong buah. Pilih varieti, masukkan tarikh berbunga (hari lebih 70% bunga kembang), kemudian pilih cara tuaian, tahap kematangan semasa dipotong (85%, 90% atau 95%) dan destinasi buah (tempatan, jarak dekat atau eksport jarak jauh). App memberi anggaran tempoh potong dan laluan tuaian yang disyorkan, bersama jangkaan rasa dan anggaran berapa hari buah tahan pada suhu bilik dan dalam rantaian sejuk. Kebun Saya merekod tarikh berbunga dan gugur setiap pokok mengikut nombor pokok anda sendiri (selari dengan kebolehkesanan MyGAP / MyLadang), jadi dalam beberapa musim anda mendapat masa gugur pokok itu sendiri; data boleh dieksport dan diimport sebagai Excel (CSV). Analisis menukar rekod kepada carta, termasuk beban tuaian akan datang untuk merancang tenaga kerja. Tab Sains menerangkan mengapa durian buah klimakterik, \"tsunami durian\" 2026, laluan eksport dan garis panduan penuaian durian potong Jabatan Pertanian (2026). App tidak membuat keputusan untuk anda; tarikh dan angka ialah anggaran, jadi periksa tanda pada buah sebelum memotong.",
+      "features": [
+        "Tempoh potong daripada varieti dan tarikh berbunga",
+        "Laluan tuaian disyorkan mengikut pasaran, dengan rasa dan jangka hayat",
+        "Log berbunga dan gugur setiap pokok untuk menentukur masa sendiri",
+        "Eksport dan import Excel (CSV)",
+        "Carta beban tuaian dan rekod merentas musim",
+        "Sains pemasakan dan garis panduan potong Jabatan Pertanian (2026)"
+      ]
+    },
+    "demo": null
   }
 ]
