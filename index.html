@@ -166,6 +166,8 @@ section{padding-block:96px}
 
 .shareband{background:var(--surface);border-top:1px solid var(--line)}
 .shareband .wrap{padding-block:32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+/* Until apps.json has loaded, the views are nearly empty; keep the share band and footer out of sight so a refresh does not open on the QR code. */
+body.loading .shareband,body.loading footer{display:none}
 .shareband .qr{flex:none;width:132px;height:132px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:var(--r)}
 .shareband .qr img{width:100%;height:100%;display:block;image-rendering:pixelated}
 .shareband .txt{flex:1;min-width:220px;display:flex;flex-direction:column;gap:8px}
@@ -335,7 +337,7 @@ html.lp-open{overflow:hidden}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
-<body>
+<body class="loading">
 <div class="lp" id="langPick" role="dialog" aria-modal="true" aria-labelledby="lpTitle" hidden>
   <div class="lp-box">
     <div class="lp-logo"><img src="img/brand/emblem-108.png" alt=""><img src="img/brand/wordmark.png" alt="Woo Brothers"></div>
@@ -936,7 +938,7 @@ async function loadApps(){
     $("loadError").hidden=false;$("errDetail").textContent=String(e.message||e);
   }
   $("bandCount").textContent=T[lang].bandCount(APPS.length);
-  drawDir();route();
+  drawDir();route();document.body.classList.remove("loading");
 }
 
 /* ---------- views: #home, #apps, #app-<id>, #contact ---------- */
