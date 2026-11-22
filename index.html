@@ -167,7 +167,8 @@ section{padding-block:96px}
 .shareband{background:var(--surface);border-top:1px solid var(--line)}
 .shareband .wrap{padding-block:32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
 /* Until apps.json has loaded, the views are nearly empty; keep the share band and footer out of sight so a refresh does not open on the QR code. */
-body.loading .shareband,body.loading footer{display:none}
+body.loading .shareband,body.loading footer,body.loading .soon{display:none}
+body.loading #appGrid{min-height:100vh}
 .shareband .qr{flex:none;width:132px;height:132px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:var(--r)}
 .shareband .qr img{width:100%;height:100%;display:block;image-rendering:pixelated}
 .shareband .txt{flex:1;min-width:220px;display:flex;flex-direction:column;gap:8px}
@@ -751,7 +752,12 @@ function drawDir(){
   const d=T[lang];
   $("q").placeholder=d.search;
   $("qClear").hidden=!query;
-  if(!appsReady){$("resultCount").textContent=$("loadError").hidden?d.loading:"";$("filters").innerHTML="";$("appGrid").innerHTML="";$("emptyState").hidden=true;return}
+  if(!appsReady){
+    // While apps.json loads, draw the category chips and sort bar without counts so the page keeps its shape.
+    $("resultCount").textContent=$("loadError").hidden?d.loading:"";$("appGrid").innerHTML="";$("emptyState").hidden=true;
+    $("filters").innerHTML=["all",...Object.keys(CATS)].map(k=>`<button type="button" class="fchip" aria-pressed="${k===cat}" disabled>${k==="all"?d.all:esc(catOf({category:k})[lang])}<span>&nbsp;</span></button>`).join("");
+    $("sortbar").innerHTML=`<span class="lbl">${esc(d.sortLabel)}</span>`+[["new",d.sortNew],["old",d.sortOld],["az",d.sortAZ]].map(([k,t])=>`<button type="button" class="fchip" aria-pressed="${k===sort}" disabled>${esc(t)}</button>`).join("");
+    return}
   const terms=query.toLowerCase().split(/\s+/).filter(Boolean);
   const textMatch=a=>terms.every(t=>a._h.includes(t));
   const f=$("filters");f.innerHTML="";
