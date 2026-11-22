@@ -17,7 +17,7 @@ Woo Brothers 农业 App 网站。免费、非营利。
 
 朋友要加 App：请他们照 [`app-template.md`](app-template.md) 填好，连同图片发过来。
 
-1. 把图片上传到 `img/`，例如 `img/myapp-logo.png`。
+1. 把图片转成 WebP 再上传到 `img/`，例如 `img/myapp-logo.webp`：logo 240×240（质量 85），封面最宽 1280、截图最宽 780（质量 80）。WebP 比 JPG/PNG 小一半以上，网站打开得更快。
 2. 打开 `apps.json`，复制一整个 `{ … }` 区块，贴在最后一个 App 后面。
 3. 前一个 App 的 `}` 后面要加逗号 `,`。
 4. 修改内容，然后 Commit。大约一分钟后网站会更新。
@@ -33,11 +33,11 @@ Woo Brothers 农业 App 网站。免费、非营利。
 | `url` | App 网址；还没有就写 `null` | `"https://…"` |
 | `added` | 加进网站的日期（马来西亚时间）。用途：「最新在前 / 最旧在前」排序；详情页显示「上架日期」；7 天内加的 App 卡片上自动显示「新」标签。同一天的按 `apps.json` 里的先后，所以新 App 一律加在最后 | `"2026-10-22"` |
 | `author` | 谁做的：`"bryan"`（Bryan Woo）或 `"stanley"`（Stanley Woo）。卡片名字下面和详情页会显示「开发者」，搜索名字也找得到。要加新的开发者，在 `index.html` 的 `AUTHORS` 里加一行 | `"stanley"` |
-| `logo` / `cover` | 图片路径；没有就写 `null` | `"img/myapp-logo.png"` |
-| `cover` 多张 | 放几张图片就会自动轮播（每 5 秒换一张，也可以左右滑） | `["img/myapp-cover.jpg", "img/myapp-cover-2.jpg"]` |
+| `logo` / `cover` | 图片路径；没有就写 `null` | `"img/myapp-logo.webp"` |
+| `cover` 多张 | 放几张图片就会自动轮播（每 5 秒换一张，也可以左右滑） | `["img/myapp-cover.webp", "img/myapp-cover-2.webp"]` |
 | `languages` | 支持的语言 | `["BM", "EN", "华"]` |
 | `keywords` | 额外搜索关键字，用空格分开 | `"rain hujan 下雨"` |
-| `screenshots` | 截图路径列表，可以空 `[]` | `["img/myapp-1.png"]` |
+| `screenshots` | 截图路径列表，可以空 `[]` | `["img/myapp-1.webp"]` |
 | `cover` / `screenshots` 按语言 | 想让图片跟着网站语言换，就按语言分开写。网站选哪个语言就显示哪一组；没有那个语言（例如 app 没有马来文）就显示 `en` 那一组 | `{"en": ["img/myapp-en-1.jpg"], "zh": ["img/myapp-zh-1.jpg"]}`，封面 `{"en": "img/myapp-cover-en.jpg", "zh": "img/myapp-cover-zh.jpg"}` |
 | `zh` / `en` / `ms` | 三种语言的 `tagline`（一句话）、`description`（介绍）、`features`（功能列表） | |
 | `demo` | 互动图表，不需要就写 `null` | 见下面 |
@@ -64,3 +64,9 @@ Woo Brothers 农业 App 网站。免费、非营利。
 - 页面浏览：首页记为 `/`，App 目录记为 `/apps`，每个 App 的详情页记为 `/app/<代号>`（也就是「查看详情」的次数）。
 - 按钮点击（Events）：`open-<代号>` 是「打开网站」，`share-whatsapp` 是分享按钮，`contact-whatsapp` 和 `contact-whatsapp-stanley` 是联系按钮。
 - 要统计新的按钮，在按钮上加 `data-gc-event="名字"` 就行。
+
+## 速度
+
+- 字体放在 `fonts/`（自己托管，不连 Google Fonts）；中文用手机自带的系统字体，不用下载。
+- `apps.json` 在页面一开始就并行下载；下载完之前，App 目录显示灰色占位卡片，QR 分享区和页脚先隐藏。
+- App 图片全部用 WebP；logo 和封面要到画面里才下载（`loading="lazy"`）。

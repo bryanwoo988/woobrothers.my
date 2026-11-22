@@ -27,10 +27,17 @@
 <meta property="og:image:alt" content="Woo Brothers · Agritech Software">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://woobrothers.my/img/brand/og-image.jpg?v=2">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<!-- Start downloading the app list straight away, in parallel with the page. -->
+<script>window.APPS_REQ=fetch("apps.json",{cache:"no-cache"}).catch(e=>e);</script>
+<link rel="preload" href="fonts/figtree-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+/* Self-hosted Latin fonts (fonts/, SIL OFL). Chinese uses the phone's own system font, which needs no download. */
+@font-face{font-family:"Bricolage Grotesque";src:url(fonts/bricolage-grotesque-latin.woff2) format("woff2");font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Figtree";src:url(fonts/figtree-latin-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Figtree";src:url(fonts/figtree-latin-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Figtree";src:url(fonts/figtree-latin-600.woff2) format("woff2");font-weight:600 900;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url(fonts/jetbrains-mono-latin-500.woff2) format("woff2");font-weight:500;font-display:swap}
 /* Layout: three views in one file — Home, App Directory (#apps, searchable grid) and App Detail (#app-<id>). App data lives in apps.json. Deep field green, durian yellow used sparingly, square-cornered controls. */
 :root{
   --bg:#F3F5EF;--surface:#FFFFFF;--fg:#11241A;--muted:#4D5F53;--line:#D3DACD;--line-strong:#AEB9A8;
@@ -38,8 +45,8 @@
   --accent:#D9A821;--accent-ink:#7A5800;--on-accent:#1A1400;
   --fc:#2F7FC1;--good:#2F8F46;--mid:#7E9426;--weak:#C0612A;--error:#B3261E;
   --r:4px;--r-card:6px;
-  --font-display:"Bricolage Grotesque","Noto Sans SC",system-ui,sans-serif;
-  --font-body:"Figtree","Noto Sans SC",system-ui,sans-serif;
+  --font-display:"Bricolage Grotesque","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC",system-ui,sans-serif;
+  --font-body:"Figtree","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC",system-ui,sans-serif;
   --font-data:"JetBrains Mono",ui-monospace,monospace;
   color-scheme:light;
 }
@@ -169,6 +176,14 @@ section{padding-block:96px}
 /* Until apps.json has loaded, the views are nearly empty; keep the share band and footer out of sight so a refresh does not open on the QR code. */
 body.loading .shareband,body.loading footer,body.loading .soon{display:none}
 body.loading #appGrid{min-height:100vh}
+/* Placeholder cards shown for the fraction of a second while the app list loads */
+.skel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;padding-bottom:22px}
+.skel i{display:block;background:var(--line);border-radius:4px;animation:skpulse 1.1s ease-in-out infinite alternate}
+.skel .sk-cover{aspect-ratio:16/9;border-radius:0;margin-bottom:34px}
+.skel .sk-line{height:12px;margin:12px 20px 0}
+.skel .w60{width:60%;height:20px}.skel .w90{width:85%}.skel .w40{width:40%}
+@keyframes skpulse{from{opacity:.55}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.skel i{animation:none}}
 .shareband .qr{flex:none;width:132px;height:132px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:var(--r)}
 .shareband .qr img{width:100%;height:100%;display:block;image-rendering:pixelated}
 .shareband .txt{flex:1;min-width:220px;display:flex;flex-direction:column;gap:8px}
@@ -341,7 +356,7 @@ html.lp-open{overflow:hidden}
 <body class="loading">
 <div class="lp" id="langPick" role="dialog" aria-modal="true" aria-labelledby="lpTitle" hidden>
   <div class="lp-box">
-    <div class="lp-logo"><img src="img/brand/emblem-108.png" alt=""><img src="img/brand/wordmark.png" alt="Woo Brothers"></div>
+    <div class="lp-logo"><img src="img/brand/emblem-108.webp" alt=""><img src="img/brand/wordmark.webp" alt="Woo Brothers"></div>
     <h2 id="lpTitle">Choose your language</h2>
     <p>Pilih bahasa · 选择语言</p>
     <div class="lp-opts">
@@ -355,8 +370,8 @@ html.lp-open{overflow:hidden}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Woo Brothers">
-      <img class="brand-mark" src="img/brand/emblem-108.png" width="36" height="36" alt="">
-      <img class="brand-word" src="img/brand/wordmark.png" width="248" height="32" alt="">
+      <img class="brand-mark" src="img/brand/emblem-108.webp" width="36" height="36" alt="">
+      <img class="brand-word" src="img/brand/wordmark.webp" width="248" height="32" alt="">
     </a>
     <nav class="nav" aria-label="Main">
       <a class="navlink" href="#home" id="navHome" data-i18n="navHome"></a>
@@ -754,7 +769,7 @@ function drawDir(){
   $("qClear").hidden=!query;
   if(!appsReady){
     // While apps.json loads, draw the category chips and sort bar without counts so the page keeps its shape.
-    $("resultCount").textContent=$("loadError").hidden?d.loading:"";$("appGrid").innerHTML="";$("emptyState").hidden=true;
+    $("resultCount").textContent=$("loadError").hidden?d.loading:"";$("appGrid").innerHTML=$("loadError").hidden?'<div class="skel" aria-hidden="true"><i class="sk-cover"></i><i class="sk-line w60"></i><i class="sk-line w90"></i><i class="sk-line w40"></i></div>'.repeat(4):"";$("emptyState").hidden=true;
     $("filters").innerHTML=["all",...Object.keys(CATS)].map(k=>`<button type="button" class="fchip" aria-pressed="${k===cat}" disabled>${k==="all"?d.all:esc(catOf({category:k})[lang])}<span>&nbsp;</span></button>`).join("");
     $("sortbar").innerHTML=`<span class="lbl">${esc(d.sortLabel)}</span>`+[["new",d.sortNew],["old",d.sortOld],["az",d.sortAZ]].map(([k,t])=>`<button type="button" class="fchip" aria-pressed="${k===sort}" disabled>${esc(t)}</button>`).join("");
     return}
@@ -777,12 +792,12 @@ function drawDir(){
   const list=APPS.filter(a=>(cat==="all"||a.category===cat)&&textMatch(a)).sort(SORTS[sort]);
   $("resultCount").textContent=d.results(list.length,APPS.length);
   $("emptyState").hidden=list.length>0;
-  $("appGrid").innerHTML=list.map(a=>{
+  $("appGrid").innerHTML=list.map((a,idx)=>{
     const t=a[lang]||a.en||{},c=catOf(a);
     const covers=[].concat(LI(a.cover));
-    const cover=covers.length>1?`<div class="slides">${covers.map(u=>`<img src="${esc(u)}" alt="" loading="lazy">`).join("")}</div><span class="dots">${covers.map((_,i)=>`<span data-i="${i}"${i?"":' class="on"'}></span>`).join("")}</span>`
-      :covers.length?`<img class="cimg" src="${esc(covers[0])}" alt="" loading="lazy">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
-    const logo=a.logo?`<img src="${esc(a.logo)}" alt="">`:esc(initials(NM(a)));
+    const cover=covers.length>1?`<div class="slides">${covers.map(u=>`<img src="${esc(u)}" alt="" loading="lazy" decoding="async">`).join("")}</div><span class="dots">${covers.map((_,i)=>`<span data-i="${i}"${i?"":' class="on"'}></span>`).join("")}</span>`
+      :covers.length?`<img class="cimg" src="${esc(covers[0])}" alt="" loading="lazy"${idx<2?' fetchpriority="high"':""} decoding="async">`:`<div class="pattern"></div><svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${c.icon}</svg>`;
+    const logo=a.logo?`<img src="${esc(a.logo)}" alt="" loading="lazy" decoding="async">`:esc(initials(NM(a)));
     return `<article class="acard">
       <a class="cover" href="#app-${esc(a.id)}" aria-label="${esc(NM(a))}">${cover}<span class="logo">${logo}</span></a>
       <div class="body">${newTag(a)}
@@ -928,7 +943,7 @@ function lineCol(text,pos){const before=text.slice(0,pos).split("\n");return `li
 async function loadApps(){
   let text="";
   try{
-    const r=await fetch("apps.json",{cache:"no-cache"});
+    let r=await window.APPS_REQ;if(!(r instanceof Response))r=await fetch("apps.json",{cache:"no-cache"});
     if(!r.ok)throw new Error(`HTTP ${r.status}: apps.json not found`);
     text=await r.text();
     let data;

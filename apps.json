@@ -6,11 +6,11 @@
     "url": "https://bryanwoo988.github.io/CompareCast/",
     "added": "2026-10-10",
     "author": "bryan",
-    "logo": "img/comparecast-logo.png",
-    "cover": "img/comparecast-cover.jpg?v=3",
+    "logo": "img/comparecast-logo.webp",
+    "cover": "img/comparecast-cover.webp",
     "languages": ["BM", "EN", "华"],
     "keywords": "rain hujan 下雨 雨 forecast ramalan 预报 weather cuaca 天气 wind angin 风 gust model ECMWF GFS ICON plot 地块 reminder peringatan 提醒",
-    "screenshots": ["img/comparecast-1.jpg?v=3", "img/comparecast-2.jpg?v=3", "img/comparecast-3.jpg?v=3"],
+    "screenshots": ["img/comparecast-1.webp", "img/comparecast-2.webp", "img/comparecast-3.webp"],
     "zh": {
       "tagline": "多模型天气比较，按地块提醒",
       "description": "不同的天气模型，预报常常不一样。CompareCast 把几个模型的预报和实际下雨量放在一起比较，告诉你哪个模型在你的园地最准，还可以为每个地块设定下雨提醒。",
@@ -49,11 +49,11 @@
     "url": "https://stanleywoosweeleong.github.io/suhu/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/suhu-logo.png",
-    "cover": {"en": "img/suhu-cover-en.jpg", "zh": "img/suhu-cover-zh.jpg", "ms": "img/suhu-cover-ms.jpg"},
+    "logo": "img/suhu-logo.webp",
+    "cover": {"en": "img/suhu-cover-en.webp", "zh": "img/suhu-cover-zh.webp", "ms": "img/suhu-cover-ms.webp"},
     "languages": ["BM", "EN", "华"],
     "keywords": "ENSO El Niño La Niña 厄尔尼诺 拉尼娜 iklim climate 气候 kemarau drought 干旱 jerebu haze 烟霾 IOD MJO NOAA PM2.5 api fire 火点 hotspot panas heat 高温 UV Sabah Sarawak 沙巴 砂拉越",
-    "screenshots": {"en": ["img/suhu-en-1.jpg", "img/suhu-en-2.jpg", "img/suhu-en-3.jpg"], "zh": ["img/suhu-zh-1.jpg", "img/suhu-zh-2.jpg", "img/suhu-zh-3.jpg"], "ms": ["img/suhu-ms-1.jpg", "img/suhu-ms-2.jpg", "img/suhu-ms-3.jpg"]},
+    "screenshots": {"en": ["img/suhu-en-1.webp", "img/suhu-en-2.webp", "img/suhu-en-3.webp"], "zh": ["img/suhu-zh-1.webp", "img/suhu-zh-2.webp", "img/suhu-zh-3.webp"], "ms": ["img/suhu-ms-1.webp", "img/suhu-ms-2.webp", "img/suhu-ms-3.webp"]},
     "zh": {
       "tagline": "厄尔尼诺监测，看懂马来西亚的干旱和烟霾风险",
       "description": "厄尔尼诺一来，园里会不会旱、会不会有烟霾？SUHU 汇集 NOAA、澳洲气象局等机构的厄尔尼诺（ENSO）、印度洋偶极子（IOD）和 MJO 监测数据，翻译成半岛、沙巴和砂拉越的干旱、烟霾和洪水风险。它不是另一个预报，而是帮你读懂官方数据。数据每 6 小时自动更新，可以安装到手机，离线也能看。",
@@ -94,11 +94,11 @@
     "url": "https://bryanwoo988.github.io/NDVI/",
     "added": "2026-10-10",
     "author": "bryan",
-    "logo": "img/ndvi-logo.png",
-    "cover": "img/ndvi-cover.jpg?v=2",
+    "logo": "img/ndvi-logo.webp",
+    "cover": "img/ndvi-cover.webp",
     "languages": ["BM", "EN", "华"],
     "keywords": "NDVI NDMI satellite satelit 卫星 Sentinel remote sensing penderiaan jauh 遥感 crop tanaman 作物 长势 growth tumbesaran moisture kelembapan 水分 weather cuaca 天气 plot 地块",
-    "screenshots": ["img/ndvi-1.jpg", "img/ndvi-2.jpg", "img/ndvi-3.jpg"],
+    "screenshots": ["img/ndvi-1.webp", "img/ndvi-2.webp", "img/ndvi-3.webp"],
     "zh": {
       "tagline": "Sentinel-2 卫星看地块长势、水分和天气",
       "description": "用 Sentinel-2 卫星图计算植被指数（NDVI）和水分指数（NDMI），找出长得比较弱的地方，同时看地块当地的天气。巡园不用再靠猜，直接去最需要的地方。",
@@ -137,11 +137,11 @@
     "url": "https://stanleywoosweeleong.github.io/enso/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/enso-logo.png",
-    "cover": "img/enso-cover.jpg?v=2",
+    "logo": "img/enso-logo.webp",
+    "cover": "img/enso-cover.webp",
     "languages": ["BM", "EN", "华"],
     "keywords": "ENSO El Niño La Niña 厄尔尼诺 拉尼娜 RONI Niño 3.4 IOD MJO monsoon monsun 季风 surge iklim climate 气候 hujan rain 下雨 orchard dusun 果园 MetMalaysia NOAA",
-    "screenshots": ["img/enso-1.jpg?v=2", "img/enso-2.jpg", "img/enso-3.jpg"],
+    "screenshots": ["img/enso-1.webp", "img/enso-2.webp", "img/enso-3.webp"],
     "zh": {
       "tagline": "给果园看的厄尔尼诺、季风和 MJO 监测",
       "description": "直接读 NOAA 的 RONI 和每周 Niño 3.4 数据，告诉你现在是厄尔尼诺、拉尼娜还是中性，再加上印度洋偶极子（IOD）、MJO 和东北季风寒潮。每一项都附上对果园的意思：要防旱、顾排水，还是先别喷药。官方暴雨和水灾警报请看 MetMalaysia。",
@@ -225,11 +225,11 @@
     "url": "https://stanleywoosweeleong.github.io/SkewT/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/skewt-logo.png",
-    "cover": "img/skewt-cover.jpg?v=2",
+    "logo": "img/skewt-logo.webp",
+    "cover": "img/skewt-cover.webp",
     "languages": ["BM", "EN", "华"],
     "keywords": "Skew-T sounding 探空 thunderstorm ribut petir 雷暴 CAPE storm hujan rain 下雨 atmosphere atmosfera 大气 ECMWF GFS model jet hail 冰雹 forecast ramalan 预报 farm ladang 园地",
-    "screenshots": ["img/skewt-1.jpg", "img/skewt-2.jpg", "img/skewt-3.jpg"],
+    "screenshots": ["img/skewt-1.webp", "img/skewt-2.webp", "img/skewt-3.webp"],
     "zh": {
       "tagline": "大气垂直剖面，判断今天会不会有雷雨",
       "description": "气象员用来判断雷暴的 Skew-T 探空图，现在按你的园地位置直接画出来。它把天气模型的高空数据整理成水汽、不稳定度和触发条件三要素，加上逐小时风险条，帮你判断下午是短阵雨还是真正的风暴。还有一整套入门指南，教你一步一步看懂这张图。",
@@ -272,14 +272,14 @@
     "url": "https://stanleywoosweeleong.github.io/TerraDurian/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/terradurian-logo.png",
-    "cover": "img/terradurian-cover.jpg",
+    "logo": "img/terradurian-logo.webp",
+    "cover": "img/terradurian-cover.webp",
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 NASA satellite satelit 卫星 SMAP soil moisture kelembapan tanah 土壤水分 flowering berbunga 开花 催花 irrigation pengairan 灌溉 MODIS NDVI drought kemarau 干旱 forecast ramalan 预报 soil tanah 土壤",
-    "screenshots": ["img/terradurian-1.jpg", "img/terradurian-2.jpg", "img/terradurian-3.jpg"],
+    "screenshots": ["img/terradurian-1.webp", "img/terradurian-2.webp", "img/terradurian-3.webp"],
     "zh": {
       "tagline": "用 NASA 卫星数据管理榴莲园：土壤水分、催花和灌溉",
       "description": "输入园地位置，TerraDurian 就会拉取 NASA 的卫星和气候数据（POWER、MODIS、SMAP）、ERA5-Land 土壤水分、SoilGrids 土壤和 16 天天气预报。它算出这块地种榴莲的适合度，看根区水分压力是否足够催花，并按 FAO-56 方法算出要不要灌溉。",
@@ -322,15 +322,15 @@
     "url": "https://stanleywoosweeleong.github.io/Pinholeborer/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/durian-borer-logo.png",
-    "cover": {"en": "img/durian-borer-cover-en.jpg", "zh": "img/durian-borer-cover-zh.jpg", "ms": "img/durian-borer-cover-ms.jpg"},
+    "logo": "img/durian-borer-logo.webp",
+    "cover": {"en": "img/durian-borer-cover-en.webp", "zh": "img/durian-borer-cover-zh.webp", "ms": "img/durian-borer-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 borer pengorek 蛀干 小蠹 pinhole ambrosia beetle kumbang 甲虫 trunk batang 树干 Phytophthora Fusarium dieback mati rosot 回枯 spray semburan 喷药 schedule jadual 时间表",
-    "screenshots": {"en": ["img/durian-borer-en-1.jpg", "img/durian-borer-en-2.jpg", "img/durian-borer-en-3.jpg"], "zh": ["img/durian-borer-zh-1.jpg", "img/durian-borer-zh-2.jpg", "img/durian-borer-zh-3.jpg"], "ms": ["img/durian-borer-ms-1.jpg", "img/durian-borer-ms-2.jpg", "img/durian-borer-ms-3.jpg"]},
+    "screenshots": {"en": ["img/durian-borer-en-1.webp", "img/durian-borer-en-2.webp", "img/durian-borer-en-3.webp"], "zh": ["img/durian-borer-zh-1.webp", "img/durian-borer-zh-2.webp", "img/durian-borer-zh-3.webp"], "ms": ["img/durian-borer-ms-1.webp", "img/durian-borer-ms-2.webp", "img/durian-borer-ms-3.webp"]},
     "zh": {
       "tagline": "榴莲蛀干小蠹：辨认、分级、处理、排时间表",
       "description": "树干上的小洞有好几种，处理方法完全不同，认错了就白花钱。这个 App 先教你分清小蠹（针孔）、天牛和疫霉病，再按洞的数量和树皮状况给树分级，然后列出该怎么处理和喷药时间表。它也解释为什么内吸药对小蠹没用、为什么不建议用酒精诱捕器。",
@@ -374,15 +374,15 @@
     "url": "https://stanleywoosweeleong.github.io/duriantrunkdiseases/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/durian-trunk-logo.png",
-    "cover": {"en": "img/durian-trunk-cover-en.jpg", "zh": "img/durian-trunk-cover-zh.jpg", "ms": "img/durian-trunk-cover-ms.jpg"},
+    "logo": "img/durian-trunk-logo.webp",
+    "cover": {"en": "img/durian-trunk-cover-en.webp", "zh": "img/durian-trunk-cover-zh.webp", "ms": "img/durian-trunk-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 trunk batang 树干 disease penyakit 病 Phytophthora canker kanker 溃疡 Fusarium Botryosphaeriaceae dieback mati rosot 回枯 root akar 根 white root akar putih 白根病 fungicide racun kulat 杀菌剂 gum 流胶",
-    "screenshots": {"en": ["img/durian-trunk-en-1.jpg", "img/durian-trunk-en-2.jpg", "img/durian-trunk-en-3.jpg"], "zh": ["img/durian-trunk-zh-1.jpg", "img/durian-trunk-zh-2.jpg", "img/durian-trunk-zh-3.jpg"], "ms": ["img/durian-trunk-ms-1.jpg", "img/durian-trunk-ms-2.jpg", "img/durian-trunk-ms-3.jpg"]},
+    "screenshots": {"en": ["img/durian-trunk-en-1.webp", "img/durian-trunk-en-2.webp", "img/durian-trunk-en-3.webp"], "zh": ["img/durian-trunk-zh-1.webp", "img/durian-trunk-zh-2.webp", "img/durian-trunk-zh-3.webp"], "ms": ["img/durian-trunk-ms-1.webp", "img/durian-trunk-ms-2.webp", "img/durian-trunk-ms-3.webp"]},
     "zh": {
       "tagline": "疫霉、回枯、镰刀菌还是根病？勾选看到的症状",
       "description": "榴莲树干上的四种病看起来很像，处理方法却完全不同。你只要勾选树上真的看得到的症状（流胶、小黑点、白色霉、整棵树枯萎），App 就会指出最可能是哪一种病。另外还有杀菌剂和抗药性说明、有益微生物、果腐和田间记录。整个 App 离线也能用。",
@@ -426,11 +426,11 @@
     "url": "https://stanleywoosweeleong.github.io/insecteye/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/insecteye-logo.png",
-    "cover": {"en": "img/insecteye-cover-en.jpg", "zh": "img/insecteye-cover-zh.jpg", "ms": "img/insecteye-cover-ms.jpg"},
+    "logo": "img/insecteye-logo.webp",
+    "cover": {"en": "img/insecteye-cover-en.webp", "zh": "img/insecteye-cover-zh.webp", "ms": "img/insecteye-cover-ms.webp"},
     "languages": ["BM", "EN", "华"],
     "keywords": "insect serangga 昆虫 trap perangkap 诱捕 sticky card kad melekit 黄板 粘虫板 light lampu 诱虫灯 colour warna 颜色 wavelength 波长 aphid afid 蚜虫 whitefly lalat putih 粉虱 thrips 蓟马 durian 榴莲 vegetables sayur 蔬菜",
-    "screenshots": {"en": ["img/insecteye-en-1.jpg", "img/insecteye-en-2.jpg", "img/insecteye-en-3.jpg"], "zh": ["img/insecteye-zh-1.jpg", "img/insecteye-zh-2.jpg", "img/insecteye-zh-3.jpg"], "ms": ["img/insecteye-ms-1.jpg", "img/insecteye-ms-2.jpg", "img/insecteye-ms-3.jpg"]},
+    "screenshots": {"en": ["img/insecteye-en-1.webp", "img/insecteye-en-2.webp", "img/insecteye-en-3.webp"], "zh": ["img/insecteye-zh-1.webp", "img/insecteye-zh-2.webp", "img/insecteye-zh-3.webp"], "ms": ["img/insecteye-ms-1.webp", "img/insecteye-ms-2.webp", "img/insecteye-ms-3.webp"]},
     "zh": {
       "tagline": "昆虫看到什么颜色？选对黄板和诱虫灯",
       "description": "为什么黄板能粘到蚜虫和粉虱，诱虫灯却吸引另一批虫？InsectEye 让你拖动颜色条，看每个波长对昆虫眼睛的作用，以及哪些害虫有记录的反应。按你要对付的害虫和目的（监测还是大量诱杀），它会推荐合适的诱捕方式，还告诉你黏板多久要换，以及榴莲园和菜园各生长期的用法。",
@@ -473,15 +473,15 @@
     "url": "https://stanleywoosweeleong.github.io/carbonnitrogen/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/cn-garden-logo.png",
-    "cover": {"en": "img/cn-garden-cover-en.jpg", "zh": "img/cn-garden-cover-zh.jpg", "ms": "img/cn-garden-cover-ms.jpg"},
+    "logo": "img/cn-garden-logo.webp",
+    "cover": {"en": "img/cn-garden-cover-en.webp", "zh": "img/cn-garden-cover-zh.webp", "ms": "img/cn-garden-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "C:N carbon nitrogen karbon nitrogen 碳氮比 durian 榴莲 flowering berbunga 开花 flush pucuk 抽梢 fertiliser baja 肥料 fruit drop gugur buah 落果 lesson pelajaran 课程",
-    "screenshots": {"en": ["img/cn-garden-en-1.jpg", "img/cn-garden-en-2.jpg", "img/cn-garden-en-3.jpg"], "zh": ["img/cn-garden-zh-1.jpg", "img/cn-garden-zh-2.jpg", "img/cn-garden-zh-3.jpg"], "ms": ["img/cn-garden-ms-1.jpg", "img/cn-garden-ms-2.jpg", "img/cn-garden-ms-3.jpg"]},
+    "screenshots": {"en": ["img/cn-garden-en-1.webp", "img/cn-garden-en-2.webp", "img/cn-garden-en-3.webp"], "zh": ["img/cn-garden-zh-1.webp", "img/cn-garden-zh-2.webp", "img/cn-garden-zh-3.webp"], "ms": ["img/cn-garden-ms-1.webp", "img/cn-garden-ms-2.webp", "img/cn-garden-ms-3.webp"]},
     "zh": {
       "tagline": "榴莲现在该做什么？按碳氮比给今天的行动",
       "description": "榴莲一直抽梢不开花、花苞掉落、刚收成要恢复……每种情况的做法都不一样。选出你的问题，回答几个会改变决定的问题（土壤湿度、树龄、最近有没有下氮肥），App 就会给出今天该做的事和接下来要观察什么，并说明背后碳和氮的道理。另外有课程、其他作物资料和研究来源。",
@@ -525,15 +525,15 @@
     "url": "https://stanleywoosweeleong.github.io/emulsiontypes/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/formulab-logo.png",
-    "cover": {"en": "img/formulab-cover-en.jpg", "zh": "img/formulab-cover-zh.jpg", "ms": "img/formulab-cover-ms.jpg"},
+    "logo": "img/formulab-logo.webp",
+    "cover": {"en": "img/formulab-cover-en.webp", "zh": "img/formulab-cover-zh.webp", "ms": "img/formulab-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "formulation formulasi 剂型 pesticide racun perosak 农药 EC EW SC WP WG CS SL emulsion emulsi 乳油 tank mix campuran tangki 混药 mixing order turutan campuran 混药顺序 sprayer penyembur 喷雾器",
-    "screenshots": {"en": ["img/formulab-en-1.jpg", "img/formulab-en-2.jpg", "img/formulab-en-3.jpg"], "zh": ["img/formulab-zh-1.jpg", "img/formulab-zh-2.jpg", "img/formulab-zh-3.jpg"], "ms": ["img/formulab-ms-1.jpg", "img/formulab-ms-2.jpg", "img/formulab-ms-3.jpg"]},
+    "screenshots": {"en": ["img/formulab-en-1.webp", "img/formulab-en-2.webp", "img/formulab-en-3.webp"], "zh": ["img/formulab-zh-1.webp", "img/formulab-zh-2.webp", "img/formulab-zh-3.webp"], "ms": ["img/formulab-ms-1.webp", "img/formulab-ms-2.webp", "img/formulab-ms-3.webp"]},
     "zh": {
       "tagline": "农药剂型通：EC、SC、WP 有什么不同？",
       "description": "农药瓶上的 EC、EW、SC、WP、CS 是剂型代码，决定药怎么保存、怎么稀释、有什么优缺点。FormuLab 把常见剂型按类别列出来，点开就看到简单说明和比较。混药时，勾选要放进药桶的东西，它会排出正确的加药顺序，避免结块、分层和堵喷头，还会按喷雾器类型提醒注意事项。",
@@ -576,11 +576,11 @@
     "url": "https://stanleywoosweeleong.github.io/ChemLogLab2/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/chemlog-logo.png",
-    "cover": {"en": "img/chemlog-cover-en.jpg", "zh": "img/chemlog-cover-zh.jpg", "ms": "img/chemlog-cover-ms.jpg"},
+    "logo": "img/chemlog-logo.webp",
+    "cover": {"en": "img/chemlog-cover-en.webp", "zh": "img/chemlog-cover-zh.webp", "ms": "img/chemlog-cover-ms.webp"},
     "languages": ["BM", "EN", "华"],
     "keywords": "tank mix campuran tangki 配药 混药 calculator kalkulator 计算 spray semburan 喷药 fertiliser baja 施肥 log rekod 记录 stock stok 库存 cost kos 成本 worker pekerja 工人 zone zon 区 WhatsApp",
-    "screenshots": {"en": ["img/chemlog-en-1.jpg", "img/chemlog-en-2.jpg"], "zh": ["img/chemlog-zh-1.jpg", "img/chemlog-zh-2.jpg"], "ms": ["img/chemlog-ms-1.jpg", "img/chemlog-ms-2.jpg"]},
+    "screenshots": {"en": ["img/chemlog-en-1.webp", "img/chemlog-en-2.webp"], "zh": ["img/chemlog-zh-1.webp", "img/chemlog-zh-2.webp"], "ms": ["img/chemlog-ms-1.webp", "img/chemlog-ms-2.webp"]},
     "zh": {
       "tagline": "配药计算和喷药、施肥记录",
       "description": "输入药桶容量和每种药的用量，ChemLog 马上算出每桶要放多少、需要几包，结果可以直接用 WhatsApp 发给工人。每次喷药或施肥都能按园地、区和工人记录下来，同时追踪库存和成本。离线也能用，资料可以导出备份。",
@@ -623,15 +623,15 @@
     "url": "https://bryanwoo988.github.io/Entomology/",
     "added": "2026-10-22",
     "author": "bryan",
-    "logo": "img/entomology-logo.png",
-    "cover": {"en": "img/entomology-cover-en.jpg", "zh": "img/entomology-cover-zh.jpg", "ms": "img/entomology-cover-ms.jpg"},
+    "logo": "img/entomology-logo.webp",
+    "cover": {"en": "img/entomology-cover-en.webp", "zh": "img/entomology-cover-zh.webp", "ms": "img/entomology-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "insect serangga 昆虫 entomology entomologi 昆虫学 identify kenal pasti 辨认 pest perosak 害虫 beetle kumbang 甲虫 oil palm sawit 油棕 rice padi 稻 vegetables sayur 蔬菜 IPM quiz kuiz 测验",
-    "screenshots": {"en": ["img/entomology-en-1.jpg", "img/entomology-en-2.jpg", "img/entomology-en-3.jpg"], "zh": ["img/entomology-zh-1.jpg", "img/entomology-zh-2.jpg", "img/entomology-zh-3.jpg"], "ms": ["img/entomology-ms-1.jpg", "img/entomology-ms-2.jpg", "img/entomology-ms-3.jpg"]},
+    "screenshots": {"en": ["img/entomology-en-1.webp", "img/entomology-en-2.webp", "img/entomology-en-3.webp"], "zh": ["img/entomology-zh-1.webp", "img/entomology-zh-2.webp", "img/entomology-zh-3.webp"], "ms": ["img/entomology-ms-1.webp", "img/entomology-ms-2.webp", "img/entomology-ms-3.webp"]},
     "zh": {
       "tagline": "认识昆虫，一步一步辨认，学马来西亚农场常见昆虫",
       "description": "从昆虫身体构造、分类和生活史开始，学到马来西亚常见的 17 个昆虫目，再到油棕、稻米、蔬菜、水果和可可的害虫与益虫，以及按综合防治（IPM）顺序的防治方法。内置一步一步的辨认检索表，回答几个问题就能认出昆虫属于哪一目。离线可用。",
@@ -675,15 +675,15 @@
     "url": "https://bryanwoo988.github.io/Meteorology/",
     "added": "2026-10-22",
     "author": "bryan",
-    "logo": "img/meteorology-logo.png",
-    "cover": {"en": "img/meteorology-cover-en.jpg", "zh": "img/meteorology-cover-zh.jpg", "ms": "img/meteorology-cover-ms.jpg"},
+    "logo": "img/meteorology-logo.webp",
+    "cover": {"en": "img/meteorology-cover-en.webp", "zh": "img/meteorology-cover-zh.webp", "ms": "img/meteorology-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "meteorology meteorologi 气象学 weather cuaca 天气 monsoon monsun 季风 ENSO MJO forecast ramalan 预报 ECMWF ensemble Skew-T radar satellite satelit 卫星 haze jerebu 烟霾 course kursus 课程",
-    "screenshots": {"en": ["img/meteorology-en-1.jpg", "img/meteorology-en-2.jpg", "img/meteorology-en-3.jpg"], "zh": ["img/meteorology-zh-1.jpg", "img/meteorology-zh-2.jpg", "img/meteorology-zh-3.jpg"], "ms": ["img/meteorology-ms-1.jpg", "img/meteorology-ms-2.jpg", "img/meteorology-ms-3.jpg"]},
+    "screenshots": {"en": ["img/meteorology-en-1.webp", "img/meteorology-en-2.webp", "img/meteorology-en-3.webp"], "zh": ["img/meteorology-zh-1.webp", "img/meteorology-zh-2.webp", "img/meteorology-zh-3.webp"], "ms": ["img/meteorology-ms-1.webp", "img/meteorology-ms-2.webp", "img/meteorology-ms-3.webp"]},
     "zh": {
       "tagline": "离线气象学课程，以马来西亚为例",
       "description": "从大气怎么运作讲起，一直到 ECMWF 的集合预报怎么做出来，全程用马来西亚的天气做例子：季风、午后雷雨、MetMalaysia 警报、水灾、干旱和烟霾。每一章只用前面教过的词，适合初学者。有很多可以用手指拖动的互动图，最后一个阶段讲天气和农业的关系。",
@@ -726,15 +726,15 @@
     "url": "https://bryanwoo988.github.io/plant-physiology/",
     "added": "2026-10-22",
     "author": "bryan",
-    "logo": "img/plant-physiology-logo.png",
-    "cover": {"en": "img/plant-physiology-cover-en.jpg", "zh": "img/plant-physiology-cover-zh.jpg", "ms": "img/plant-physiology-cover-ms.jpg"},
+    "logo": "img/plant-physiology-logo.webp",
+    "cover": {"en": "img/plant-physiology-cover-en.webp", "zh": "img/plant-physiology-cover-zh.webp", "ms": "img/plant-physiology-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "plant physiology fisiologi tumbuhan 植物生理学 photosynthesis fotosintesis 光合作用 water air 水分 nutrient nutrien 营养 hormone hormon 激素 flowering berbunga 开花 respiration respirasi 呼吸 course kursus 课程",
-    "screenshots": {"en": ["img/plant-physiology-en-1.jpg", "img/plant-physiology-en-2.jpg", "img/plant-physiology-en-3.jpg"], "zh": ["img/plant-physiology-zh-1.jpg", "img/plant-physiology-zh-2.jpg", "img/plant-physiology-zh-3.jpg"], "ms": ["img/plant-physiology-ms-1.jpg", "img/plant-physiology-ms-2.jpg", "img/plant-physiology-ms-3.jpg"]},
+    "screenshots": {"en": ["img/plant-physiology-en-1.webp", "img/plant-physiology-en-2.webp", "img/plant-physiology-en-3.webp"], "zh": ["img/plant-physiology-zh-1.webp", "img/plant-physiology-zh-2.webp", "img/plant-physiology-zh-3.webp"], "ms": ["img/plant-physiology-ms-1.webp", "img/plant-physiology-ms-2.webp", "img/plant-physiology-ms-3.webp"]},
     "zh": {
       "tagline": "离线植物生理学课程：从水分到开花",
       "description": "一门完整的植物生理学课程：水分和养分怎么进到植物、光合作用和呼吸作用、氮素和逆境、植物激素，再到光、运动和开花。每一章只用前面教过的词，并标明属于第几次期中考的范围。27 个可以用手指拖动的互动图，帮你看懂抽象的概念。",
@@ -778,15 +778,15 @@
     "url": "https://bryanwoo988.github.io/OilPalmWiki/",
     "added": "2026-10-22",
     "author": "bryan",
-    "logo": "img/oilpalmwiki-logo.png",
-    "cover": {"en": "img/oilpalmwiki-cover-en.jpg", "zh": "img/oilpalmwiki-cover-zh.jpg", "ms": "img/oilpalmwiki-cover-ms.jpg"},
+    "logo": "img/oilpalmwiki-logo.webp",
+    "cover": {"en": "img/oilpalmwiki-cover-en.webp", "zh": "img/oilpalmwiki-cover-zh.webp", "ms": "img/oilpalmwiki-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "oil palm sawit 油棕 kelapa sawit wiki 百科 rujukan reference 手册 tenera dura pisifera climate iklim 气候 soil tanah 土壤 yield hasil 产量 nursery tapak semaian 苗圃 breeding pembiakbakaan 育种",
-    "screenshots": {"en": ["img/oilpalmwiki-en-1.jpg", "img/oilpalmwiki-en-2.jpg", "img/oilpalmwiki-en-3.jpg"], "zh": ["img/oilpalmwiki-zh-1.jpg", "img/oilpalmwiki-zh-2.jpg", "img/oilpalmwiki-zh-3.jpg"], "ms": ["img/oilpalmwiki-ms-1.jpg", "img/oilpalmwiki-ms-2.jpg", "img/oilpalmwiki-ms-3.jpg"]},
+    "screenshots": {"en": ["img/oilpalmwiki-en-1.webp", "img/oilpalmwiki-en-2.webp", "img/oilpalmwiki-en-3.webp"], "zh": ["img/oilpalmwiki-zh-1.webp", "img/oilpalmwiki-zh-2.webp", "img/oilpalmwiki-zh-3.webp"], "ms": ["img/oilpalmwiki-ms-1.webp", "img/oilpalmwiki-ms-2.webp", "img/oilpalmwiki-ms-3.webp"]},
     "zh": {
       "tagline": "离线油棕种植百科",
       "description": "一本放在手机里的油棕种植手册，从油棕的历史、植物学和果型，到气候、土壤、产量形成、育种、组培、苗圃和开垦。共 20 章、90 节，16 个互动图表。装到主屏幕后完全不用网络，在园里也能查。",
@@ -830,15 +830,15 @@
     "url": "https://bryanwoo988.github.io/SawitBasics/",
     "added": "2026-10-22",
     "author": "bryan",
-    "logo": "img/sawitbasics-logo.png",
-    "cover": {"en": "img/sawitbasics-cover-en.jpg", "zh": "img/sawitbasics-cover-zh.jpg", "ms": "img/sawitbasics-cover-ms.jpg"},
+    "logo": "img/sawitbasics-logo.webp",
+    "cover": {"en": "img/sawitbasics-cover-en.webp", "zh": "img/sawitbasics-cover-zh.webp", "ms": "img/sawitbasics-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "oil palm sawit 油棕 basics asas 基础 harvesting penuaian 收割 grading penggredan 分级 FFB BTS 鲜果串 fertiliser baja 肥料 Ganoderma rat tikus 老鼠 mill kilang 榨油厂 OER executive eksekutif 主管 interview temuduga 面试",
-    "screenshots": {"en": ["img/sawitbasics-en-1.jpg", "img/sawitbasics-en-2.jpg", "img/sawitbasics-en-3.jpg"], "zh": ["img/sawitbasics-zh-1.jpg", "img/sawitbasics-zh-2.jpg", "img/sawitbasics-zh-3.jpg"], "ms": ["img/sawitbasics-ms-1.jpg", "img/sawitbasics-ms-2.jpg", "img/sawitbasics-ms-3.jpg"]},
+    "screenshots": {"en": ["img/sawitbasics-en-1.webp", "img/sawitbasics-en-2.webp", "img/sawitbasics-en-3.webp"], "zh": ["img/sawitbasics-zh-1.webp", "img/sawitbasics-zh-2.webp", "img/sawitbasics-zh-3.webp"], "ms": ["img/sawitbasics-ms-1.webp", "img/sawitbasics-ms-2.webp", "img/sawitbasics-ms-3.webp"]},
     "zh": {
       "tagline": "油棕园新人必备：收割、分级、施肥、病虫害和关键数字",
       "description": "给刚进油棕园的新主管准备面试或头几个月用的口袋手册：油棕怎么生长、怎么收割和分级、怎么施肥和保护，还有面试和早会常问的关键数字（产量、出油率等）。内容来自小园主油棕手册和 MPOB 统计，附 83 张照片和图解，还有自测题。",
@@ -882,15 +882,15 @@
     "url": "https://stanleywoosweeleong.github.io/DurianIPM/",
     "added": "2026-11-06",
     "author": "stanley",
-    "logo": "img/durianipm-logo.png",
-    "cover": {"en": "img/durianipm-cover.jpg", "ms": "img/durianipm-cover-ms.jpg", "zh": "img/durianipm-cover-zh.jpg"},
+    "logo": "img/durianipm-logo.webp",
+    "cover": {"en": "img/durianipm-cover.webp", "ms": "img/durianipm-cover-ms.webp", "zh": "img/durianipm-cover-zh.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 IPM pest perosak 虫害 害虫 disease penyakit 病害 Phytophthora 疫霉 psyllid psilid 木虱 leafhopper 青蚊 叶蝉 thrips 蓟马 mite hama 螨 borer pengorek 蛀虫 mealybug 粉蚧 MoA IRAC rotation giliran 轮替 organic organik 有机 insecticide racun serangga 杀虫剂 fungicide 杀菌剂 MRL residue sisa 残留",
-    "screenshots": {"en": ["img/durianipm-1.jpg", "img/durianipm-2.jpg", "img/durianipm-3.jpg"], "ms": ["img/durianipm-ms-1.jpg", "img/durianipm-ms-2.jpg", "img/durianipm-ms-3.jpg"], "zh": ["img/durianipm-zh-1.jpg", "img/durianipm-zh-2.jpg", "img/durianipm-zh-3.jpg"]},
+    "screenshots": {"en": ["img/durianipm-1.webp", "img/durianipm-2.webp", "img/durianipm-3.webp"], "ms": ["img/durianipm-ms-1.webp", "img/durianipm-ms-2.webp", "img/durianipm-ms-3.webp"], "zh": ["img/durianipm-zh-1.webp", "img/durianipm-zh-2.webp", "img/durianipm-zh-3.webp"]},
     "zh": {
       "tagline": "榴莲综合防治：看到什么问题，就告诉你什么有效",
       "description": "不用先知道是什么虫。点一下问题出现在哪个部位、看到什么、是什么样的虫，App 就把它归到约 22 个害虫类别之一，告诉你最先该做的非化学措施，以及按效果排序的有机和化学用药选择。每个害虫页面都会根据「上次喷的药」建议轮替，避开同一作用机理；也会提醒开花期对蜜蜂的危害、接近收成的安全间隔，以及哪些药已经禁用。另有常见问题快捷入口、钻蛀害虫分级和简短课程，离线可用。",
@@ -934,11 +934,11 @@
     "url": "https://stanleywoosweeleong.github.io/agripronutrients/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/agripro-nutrients-logo.png",
-    "cover": {"en": "img/agripro-nutrients-cover-en.jpg", "zh": "img/agripro-nutrients-cover-zh.jpg", "ms": "img/agripro-nutrients-cover-ms.jpg"},
+    "logo": "img/agripro-nutrients-logo.webp",
+    "cover": {"en": "img/agripro-nutrients-cover-en.webp", "zh": "img/agripro-nutrients-cover-zh.webp", "ms": "img/agripro-nutrients-cover-ms.webp"},
     "languages": ["BM", "EN", "华"],
     "keywords": "nutrient nutrien 营养 养分 fertiliser baja 肥料 deficiency kekurangan 缺素 pH soil tanah 土壤 antagonism antagonisme 拮抗 synergy sinergi 协同 tank mix campuran tangki 混配 durian 榴莲 Musang King 猫山王 advisor penasihat 顾问",
-    "screenshots": {"en": ["img/agripro-nutrients-en-1.jpg", "img/agripro-nutrients-en-2.jpg", "img/agripro-nutrients-en-3.jpg"], "zh": ["img/agripro-nutrients-zh-1.jpg", "img/agripro-nutrients-zh-2.jpg", "img/agripro-nutrients-zh-3.jpg"], "ms": ["img/agripro-nutrients-ms-1.jpg", "img/agripro-nutrients-ms-2.jpg", "img/agripro-nutrients-ms-3.jpg"]},
+    "screenshots": {"en": ["img/agripro-nutrients-en-1.webp", "img/agripro-nutrients-en-2.webp", "img/agripro-nutrients-en-3.webp"], "zh": ["img/agripro-nutrients-zh-1.webp", "img/agripro-nutrients-zh-2.webp", "img/agripro-nutrients-zh-3.webp"], "ms": ["img/agripro-nutrients-ms-1.webp", "img/agripro-nutrients-ms-2.webp", "img/agripro-nutrients-ms-3.webp"]},
     "zh": {
       "tagline": "农学笔记：营养元素、土壤 pH、混配规则和施肥顾问",
       "description": "点一下任何营养元素，就会看到它在植物里的作用、关键酶，以及和其他元素之间的拮抗、抑制和协同关系。pH 有效性图告诉你不同土壤 pH 下哪些养分吸收得到；混配规则说明叶面肥怎样调才不会结块、堵喷头；施肥顾问按作物和榴莲品种给出配方建议。离线可用。",
@@ -982,15 +982,15 @@
     "url": "https://stanleywoosweeleong.github.io/droneusage/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/dronedose-logo.png",
-    "cover": {"en": "img/dronedose-cover-en.jpg", "zh": "img/dronedose-cover-zh.jpg", "ms": "img/dronedose-cover-ms.jpg"},
+    "logo": "img/dronedose-logo.webp",
+    "cover": {"en": "img/dronedose-cover-en.webp", "zh": "img/dronedose-cover-zh.webp", "ms": "img/dronedose-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "drone dron 无人机 DJI Agras T50 T40 spray semburan 喷药 dosage dos 药量 tank tangki 药箱 mix campuran 配药 acre ekar 英亩 hectare hektar 公顷 durian 榴莲 calculator kalkulator 计算",
-    "screenshots": {"en": ["img/dronedose-en-1.jpg", "img/dronedose-en-2.jpg", "img/dronedose-en-3.jpg"], "zh": ["img/dronedose-zh-1.jpg", "img/dronedose-zh-2.jpg", "img/dronedose-zh-3.jpg"], "ms": ["img/dronedose-ms-1.jpg", "img/dronedose-ms-2.jpg", "img/dronedose-ms-3.jpg"]},
+    "screenshots": {"en": ["img/dronedose-en-1.webp", "img/dronedose-en-2.webp", "img/dronedose-en-3.webp"], "zh": ["img/dronedose-zh-1.webp", "img/dronedose-zh-2.webp", "img/dronedose-zh-3.webp"], "ms": ["img/dronedose-ms-1.webp", "img/dronedose-ms-2.webp", "img/dronedose-ms-3.webp"]},
     "zh": {
       "tagline": "农用无人机药量计算，以大疆机型为准",
       "description": "用无人机喷药，不能直接照搬背负式喷雾器的稀释倍数。选好大疆机型和药箱容量，输入地图面积和遥控器上的亩用量，再输入药剂的标签用量，DroneDose 就算出要飞几箱、每箱放多少水和药，配药表可以一键复制发给飞手。离线可用。",
@@ -1033,15 +1033,15 @@
     "url": "https://stanleywoosweeleong.github.io/windaccum/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/windaccum-logo.png",
-    "cover": "img/windaccum-cover.jpg",
+    "logo": "img/windaccum-logo.webp",
+    "cover": "img/windaccum-cover.webp",
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "wind angin 风 convergence penumpuan 辐合 thunderstorm ribut petir 雷暴 storm ribut rain hujan 降雨 下雨 gust angin kencang 强风 ECMWF ensemble 集合 satellite satelit 卫星 isobar isobar 等压线 forecast ramalan 预报 WhatsApp",
-    "screenshots": ["img/windaccum-1.jpg", "img/windaccum-2.jpg", "img/windaccum-3.jpg"],
+    "screenshots": ["img/windaccum-1.webp", "img/windaccum-2.webp", "img/windaccum-3.webp"],
     "zh": {
       "tagline": "雷暴、降雨、强风预警：看 ECMWF 低层风辐合",
       "description": "低空的风往同一处汇聚，空气就会被迫上升，容易形成午后雷暴、大雨和阵风。风的累积在地图上画出 ECMWF 模型的低层风辐合，告诉你未来 48 小时哪个时段最危险，再用 51 个集合成员看预报有多可信。可以叠加红外卫星云图和等压线，结果能用 WhatsApp 分享。所有时间都按马来西亚时间显示。",
@@ -1085,14 +1085,14 @@
     "url": "https://stanleywoosweeleong.github.io/duriantreescience/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/duriantreescience-logo.png",
-    "cover": {"en": "img/duriantreescience-cover-en.jpg", "zh": "img/duriantreescience-cover-zh.jpg"},
+    "logo": "img/duriantreescience-logo.webp",
+    "cover": {"en": "img/duriantreescience-cover-en.webp", "zh": "img/duriantreescience-cover-zh.webp"},
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 botany botani 植物学 physiology fisiologi 生理学 flower bunga 花 pollination pendebungaan 授粉 fruit buah 果实 clone klon 品种 Musang King 猫山王 D197 Black Thorn 黑刺 cultivar kultivar handbook buku panduan 手册",
-    "screenshots": {"en": ["img/duriantreescience-en-1.jpg", "img/duriantreescience-en-2.jpg", "img/duriantreescience-en-3.jpg"], "zh": ["img/duriantreescience-zh-1.jpg", "img/duriantreescience-zh-2.jpg", "img/duriantreescience-zh-3.jpg"]},
+    "screenshots": {"en": ["img/duriantreescience-en-1.webp", "img/duriantreescience-en-2.webp", "img/duriantreescience-en-3.webp"], "zh": ["img/duriantreescience-zh-1.webp", "img/duriantreescience-zh-2.webp", "img/duriantreescience-zh-3.webp"]},
     "zh": {
       "tagline": "榴莲树的植物学与生理学图解手册",
       "description": "从分类、树形、根和树干，到树干开花、蝙蝠授粉、催花、坐果和果实发育，再到营养、水分、修剪和病虫害，一步一步讲清楚榴莲树怎么生长。后半部分比较泰国、马来西亚、越南、印尼、菲律宾和中国海南的种植方法和品种。共 45 个章节、31 张图版，离线可用。",
@@ -1135,14 +1135,14 @@
     "url": "https://stanleywoosweeleong.github.io/Moarotationguide/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/pest-moa-logo.png",
-    "cover": {"en": "img/pest-moa-cover-en.jpg", "zh": "img/pest-moa-cover-zh.jpg"},
+    "logo": "img/pest-moa-logo.webp",
+    "cover": {"en": "img/pest-moa-cover-en.webp", "zh": "img/pest-moa-cover-zh.webp"},
     "languages": [
       "EN",
       "华"
     ],
     "keywords": "insecticide racun serangga 杀虫剂 rotation giliran 轮替 轮换 IRAC MoA mode of action mod tindakan 作用机理 resistance kerintangan 抗药性 thrips 蓟马 mite hama 红蜘蛛 psyllid 木虱 leafhopper 叶蝉 mealybug 粉蚧 caterpillar ulat 毛虫 tank mix campuran tangki 混药",
-    "screenshots": {"en": ["img/pest-moa-en-1.jpg", "img/pest-moa-en-2.jpg", "img/pest-moa-en-3.jpg"], "zh": ["img/pest-moa-zh-1.jpg", "img/pest-moa-zh-2.jpg", "img/pest-moa-zh-3.jpg"]},
+    "screenshots": {"en": ["img/pest-moa-en-1.webp", "img/pest-moa-en-2.webp", "img/pest-moa-en-3.webp"], "zh": ["img/pest-moa-zh-1.webp", "img/pest-moa-zh-2.webp", "img/pest-moa-zh-3.webp"]},
     "zh": {
       "tagline": "按 IRAC 作用机理轮替杀虫剂，减缓抗药性",
       "description": "同一类杀虫剂连续用，害虫很快就会产生抗药性。虫药轮替收录 69 种有效成分，按 IRAC 作用机理分组，标明能防哪些害虫、抗药风险和毒性等级。选好害虫和上次用的药组，轮替助手就告诉你哪些要避开、可以换哪些组，并提醒有交互抗性的组合。另附混药顺序。依据郑先生（Mr. Tee）的作用机理轮替表制作，离线可用。",
@@ -1185,15 +1185,15 @@
     "url": "https://stanleywoosweeleong.github.io/AMIS/",
     "added": "2026-10-22",
     "author": "stanley",
-    "logo": "img/amis-logo.png",
-    "cover": {"en": "img/amis-cover-en.jpg", "zh": "img/amis-cover-zh.jpg", "ms": "img/amis-cover-ms.jpg"},
+    "logo": "img/amis-logo.webp",
+    "cover": {"en": "img/amis-cover-en.webp", "zh": "img/amis-cover-zh.webp", "ms": "img/amis-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "microbe mikrob 微生物 beneficial berfaedah 有益菌 Trichoderma Bacillus biocontrol kawalan biologi 生物防治 PGPR synergy sinergi 协同 tank mix campuran tangki 混配 first aid pertolongan cemas 急救 durian 榴莲 heavy metal logam berat 重金属 fermentation penapaian 发酵",
-    "screenshots": {"en": ["img/amis-en-1.jpg", "img/amis-en-2.jpg", "img/amis-en-3.jpg"], "zh": ["img/amis-zh-1.jpg", "img/amis-zh-2.jpg", "img/amis-zh-3.jpg"], "ms": ["img/amis-ms-1.jpg", "img/amis-ms-2.jpg", "img/amis-ms-3.jpg"]},
+    "screenshots": {"en": ["img/amis-en-1.webp", "img/amis-en-2.webp", "img/amis-en-3.webp"], "zh": ["img/amis-zh-1.webp", "img/amis-zh-2.webp", "img/amis-zh-3.webp"], "ms": ["img/amis-ms-1.webp", "img/amis-ms-2.webp", "img/amis-ms-3.webp"]},
     "zh": {
       "tagline": "农业有益微生物决策工具：选菌、搭配、混配和作物急救",
       "description": "收录 83 种有益微生物、42 种作物，每一种都写明功能、抗逆性、用量和自己扩繁的方法。协同指南告诉你哪些菌种搭配效果加倍、哪些互相拮抗；混配检查器即时判断微生物、叶面肥和农药能不能同桶；作物急救按作物和紧急程度给出今天该做的事，也会直说什么时候微生物不是答案。另有重金属土壤、生产和发酵安全指南。大部分功能离线可用，AI 顾问需要自己填 API key。",
@@ -1236,8 +1236,8 @@
     "url": "https://stanleywoosweeleong.github.io/Rainlog-lab/",
     "added": "2026-10-23",
     "author": "stanley",
-    "logo": "img/rainlog-lab-logo.png",
-    "cover": "img/rainlog-lab-cover.jpg",
+    "logo": "img/rainlog-lab-logo.webp",
+    "cover": "img/rainlog-lab-cover.webp",
     "languages": [
       "BM",
       "EN",
@@ -1245,9 +1245,9 @@
     ],
     "keywords": "rain hujan 雨 雨量 rainfall taburan hujan 降雨量 record rekod 记录 dry spell kemarau 干旱 flowering berbunga 开花 催花 orchard dusun 果园 durian 榴莲 monthly bulanan 每月 Excel Raub 劳勿 Bentong 文冬",
     "screenshots": [
-      "img/rainlog-lab-1.jpg",
-      "img/rainlog-lab-2.jpg",
-      "img/rainlog-lab-3.jpg"
+      "img/rainlog-lab-1.webp",
+      "img/rainlog-lab-2.webp",
+      "img/rainlog-lab-3.webp"
     ],
     "zh": {
       "tagline": "每个园地的雨量记录，看出干旱期和催花信号",
@@ -1294,15 +1294,15 @@
     "url": "https://stanleywoosweeleong.github.io/crophormone/",
     "added": "2026-10-27",
     "author": "stanley",
-    "logo": "img/crophormone-logo.png",
-    "cover": {"en": "img/crophormone-cover-en.jpg", "zh": "img/crophormone-cover-zh.jpg", "ms": "img/crophormone-cover-ms.jpg"},
+    "logo": "img/crophormone-logo.webp",
+    "cover": {"en": "img/crophormone-cover-en.webp", "zh": "img/crophormone-cover-zh.webp", "ms": "img/crophormone-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "hormone hormon 激素 gibberellin giberelin 赤霉素 GA cytokinin sitokinin 细胞分裂素 ABA auxin auksin 生长素 ethylene etilena 乙烯 paclobutrazol 多效唑 flowering berbunga 开花 fruit set pembentukan buah 坐果 ripening kemasakan 成熟 durian 榴莲 mango mangga 芒果 longan 龙眼 residue sisa 残留",
-    "screenshots": {"en": ["img/crophormone-en-1.jpg", "img/crophormone-en-2.jpg", "img/crophormone-en-3.jpg"], "zh": ["img/crophormone-zh-1.jpg", "img/crophormone-zh-2.jpg", "img/crophormone-zh-3.jpg"], "ms": ["img/crophormone-ms-1.jpg", "img/crophormone-ms-2.jpg", "img/crophormone-ms-3.jpg"]},
+    "screenshots": {"en": ["img/crophormone-en-1.webp", "img/crophormone-en-2.webp", "img/crophormone-en-3.webp"], "zh": ["img/crophormone-zh-1.webp", "img/crophormone-zh-2.webp", "img/crophormone-zh-3.webp"], "ms": ["img/crophormone-ms-1.webp", "img/crophormone-ms-2.webp", "img/crophormone-ms-3.webp"]},
     "zh": {
       "tagline": "热带水果激素图表：13 种作物在开花、坐果和成熟阶段的激素变化",
       "description": "赤霉素、细胞分裂素、脱落酸、生长素和乙烯，在开花、坐果和成熟时各自是升还是降？这个 App 把榴莲、芒果、龙眼、山竹、红毛丹、香蕉等 13 种热带水果的研究整理成图表，每一格都标明是实测、推断、只做过喷施试验，还是还没有研究。另外列出常用的调节剂（例如多效唑）怎样影响激素、在土壤里残留多久，以及各国的果实残留限量。每项数据都附上来源，离线可用。",
@@ -1346,15 +1346,15 @@
     "url": "https://stanleywoosweeleong.github.io/taijiang-insects/",
     "added": "2026-10-27",
     "author": "stanley",
-    "logo": "img/taijiang-insects-logo.png",
-    "cover": {"en": "img/taijiang-insects-cover-en.jpg", "zh": "img/taijiang-insects-cover-zh.jpg", "ms": "img/taijiang-insects-cover-ms.jpg"},
+    "logo": "img/taijiang-insects-logo.webp",
+    "cover": {"en": "img/taijiang-insects-cover-en.webp", "zh": "img/taijiang-insects-cover-zh.webp", "ms": "img/taijiang-insects-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "insect serangga 昆虫 昆蟲 field guide panduan lapangan 图鉴 圖鑑 Taijiang Taiwan 台江 台湾 dragonfly pepatung 蜻蜓 identify kenal pasti 辨认 mangrove bakau 红树林 calendar kalendar 月历 quiz kuiz",
-    "screenshots": {"en": ["img/taijiang-insects-en-1.jpg", "img/taijiang-insects-en-2.jpg", "img/taijiang-insects-en-3.jpg"], "zh": ["img/taijiang-insects-zh-1.jpg", "img/taijiang-insects-zh-2.jpg", "img/taijiang-insects-zh-3.jpg"], "ms": ["img/taijiang-insects-ms-1.jpg", "img/taijiang-insects-ms-2.jpg", "img/taijiang-insects-ms-3.jpg"]},
+    "screenshots": {"en": ["img/taijiang-insects-en-1.webp", "img/taijiang-insects-en-2.webp", "img/taijiang-insects-en-3.webp"], "zh": ["img/taijiang-insects-zh-1.webp", "img/taijiang-insects-zh-2.webp", "img/taijiang-insects-zh-3.webp"], "ms": ["img/taijiang-insects-ms-1.webp", "img/taijiang-insects-ms-2.webp", "img/taijiang-insects-ms-3.webp"]},
     "zh": {
       "tagline": "台江国家公园 180 种昆虫图鉴",
       "description": "以台江国家公园（台湾台南）的 180 种昆虫为对象的离线图鉴，内容整理自《游黽飛蛉：台江昆蟲圖鑑》。可以按目浏览和搜索，或者勾选看到的栖地、停留位置、月份和大小来缩小范围，也有一步一步辨认昆虫目的检索。月历显示这个月有哪些昆虫活动；学习单元介绍昆虫身体、口器、足和生活史。另有照片测验、闪卡和野外笔记，支持简体、繁体、英文和马来文。",
@@ -1398,15 +1398,15 @@
     "url": "https://stanleywoosweeleong.github.io/Rainscore-lab/",
     "added": "2026-10-28",
     "author": "stanley",
-    "logo": "img/rainscore-lab-logo.png",
-    "cover": {"en": "img/rainscore-lab-cover-en.jpg", "zh": "img/rainscore-lab-cover-zh.jpg", "ms": "img/rainscore-lab-cover-ms.jpg"},
+    "logo": "img/rainscore-lab-logo.webp",
+    "cover": {"en": "img/rainscore-lab-cover-en.webp", "zh": "img/rainscore-lab-cover-zh.webp", "ms": "img/rainscore-lab-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "rain hujan 雨 雨量 forecast ramalan 预报 accuracy ketepatan 准确 model ECMWF IFS ICON JMA CMA GEM GFS ERA5 compare banding 比较 orchard dusun 果园 Excel WhatsApp",
-    "screenshots": {"en": ["img/rainscore-lab-en-1.jpg", "img/rainscore-lab-en-2.jpg", "img/rainscore-lab-en-3.jpg"], "zh": ["img/rainscore-lab-zh-1.jpg", "img/rainscore-lab-zh-2.jpg", "img/rainscore-lab-zh-3.jpg"], "ms": ["img/rainscore-lab-ms-1.jpg", "img/rainscore-lab-ms-2.jpg", "img/rainscore-lab-ms-3.jpg"]},
+    "screenshots": {"en": ["img/rainscore-lab-en-1.webp", "img/rainscore-lab-en-2.webp", "img/rainscore-lab-en-3.webp"], "zh": ["img/rainscore-lab-zh-1.webp", "img/rainscore-lab-zh-2.webp", "img/rainscore-lab-zh-3.webp"], "ms": ["img/rainscore-lab-ms-1.webp", "img/rainscore-lab-ms-2.webp", "img/rainscore-lab-ms-3.webp"]},
     "zh": {
       "tagline": "哪个天气模型在你的园地最准？6 个模型的雨量预报对比实际雨量",
       "description": "RainScore Lab 是一个研究工具：把 IFS 9km、ICON、JMA、CMA、GEM、GFS 六个天气模型的雨量预报，和 ERA5 再分析的实际雨量逐日对比，算出每个模型平均差多少毫米、下不下雨猜对几成，告诉你在这个园地哪个模型最准。每天清晨自动收集 114 个预载园地的数据，打开就能看；也能加自己的园地、导出 Excel、分享到 WhatsApp。",
@@ -1449,15 +1449,15 @@
     "url": "https://stanleywoosweeleong.github.io/grasscutting/",
     "added": "2026-10-28",
     "author": "stanley",
-    "logo": "img/grasscutting-logo.png",
-    "cover": {"en": "img/grasscutting-cover-en.jpg", "zh": "img/grasscutting-cover-zh.jpg", "ms": "img/grasscutting-cover-ms.jpg"},
+    "logo": "img/grasscutting-logo.webp",
+    "cover": {"en": "img/grasscutting-cover-en.webp", "zh": "img/grasscutting-cover-zh.webp", "ms": "img/grasscutting-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "grass rumput 草 割草 cutting memotong mowing soil tanah 土壤 养土 herbicide racun rumpai 除草剂 glyphosate glifosat 草甘膦 cover crop tanaman penutup 覆盖作物 pinto peanut kacang pinto 蔓花生 cogongrass lalang 白茅 durian 榴莲 roots akar 根",
-    "screenshots": {"en": ["img/grasscutting-en-1.jpg", "img/grasscutting-en-2.jpg", "img/grasscutting-en-3.jpg"], "zh": ["img/grasscutting-zh-1.jpg", "img/grasscutting-zh-2.jpg", "img/grasscutting-zh-3.jpg"], "ms": ["img/grasscutting-ms-1.jpg", "img/grasscutting-ms-2.jpg", "img/grasscutting-ms-3.jpg"]},
+    "screenshots": {"en": ["img/grasscutting-en-1.webp", "img/grasscutting-en-2.webp", "img/grasscutting-en-3.webp"], "zh": ["img/grasscutting-zh-1.webp", "img/grasscutting-zh-2.webp", "img/grasscutting-zh-3.webp"], "ms": ["img/grasscutting-ms-1.webp", "img/grasscutting-ms-2.webp", "img/grasscutting-ms-3.webp"]},
     "zh": {
       "tagline": "割草养土：用割草代替喷除草剂，养出榴莲园的好土",
       "description": "为什么割草比喷除草剂更能养土？活的根会一直喂养土壤，被除草剂杀死的根只喂一次。这个小手册用 9 个章节讲清楚草和土壤怎样互相影响：单子叶草和双子叶覆盖植物的差别、长什么草反映土壤状况、蔓花生和白茅各在什么土壤占优势、什么时候割、割多高。另有榴莲园干湿两季的地面管理，每一点都附上研究来源，离线可用。",
@@ -1501,15 +1501,15 @@
     "url": "https://stanleywoosweeleong.github.io/typhoonwatch/",
     "added": "2026-11-01",
     "author": "stanley",
-    "logo": "img/typhoonwatch-logo.png",
-    "cover": {"en": "img/typhoonwatch-cover-en.jpg", "zh": "img/typhoonwatch-cover-zh.jpg", "ms": "img/typhoonwatch-cover-ms.jpg"},
+    "logo": "img/typhoonwatch-logo.webp",
+    "cover": {"en": "img/typhoonwatch-cover-en.webp", "zh": "img/typhoonwatch-cover-zh.webp", "ms": "img/typhoonwatch-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "typhoon taufan 台风 颱風 风眼 cyclone siklon 气旋 JMA monsoon monsun 季风 cold surge luruan sejuk 寒潮 pressure tekanan 气压 isobar 等压线 squall ribut 飑线 Sumatra Sabah Sarawak",
-    "screenshots": {"en": ["img/typhoonwatch-en-1.jpg", "img/typhoonwatch-en-2.jpg", "img/typhoonwatch-en-3.jpg"], "zh": ["img/typhoonwatch-zh-1.jpg", "img/typhoonwatch-zh-2.jpg", "img/typhoonwatch-zh-3.jpg"], "ms": ["img/typhoonwatch-ms-1.jpg", "img/typhoonwatch-ms-2.jpg", "img/typhoonwatch-ms-3.jpg"]},
+    "screenshots": {"en": ["img/typhoonwatch-en-1.webp", "img/typhoonwatch-en-2.webp", "img/typhoonwatch-en-3.webp"], "zh": ["img/typhoonwatch-zh-1.webp", "img/typhoonwatch-zh-2.webp", "img/typhoonwatch-zh-3.webp"], "ms": ["img/typhoonwatch-ms-1.webp", "img/typhoonwatch-ms-2.webp", "img/typhoonwatch-ms-3.webp"]},
     "zh": {
       "tagline": "台风监测：日本气象厅公报，离你多远、季风会不会受影响",
       "description": "台风本身几乎不会到马来西亚，但会加强东北季风，带来大雨。风眼每 3 小时镜像一次日本气象厅（WMO 指定的西北太平洋台风中心）的台风公报，显示台风在哪里、强度多少、离你的地点多远、预计路径。另有等压线地图、东北季风寒潮指数，以及每个地点「偏湿 / 偏干 / 平稳」的气压趋势读数。离线也能看上一次的资料。这不是警报服务，官方警报请看 MetMalaysia。",
@@ -1552,15 +1552,15 @@
     "url": "https://stanleywoosweeleong.github.io/NutrientTriage/",
     "added": "2026-11-03",
     "author": "stanley",
-    "logo": "img/nutrienttriage-logo.png",
-    "cover": {"en": "img/nutrienttriage-cover-en.jpg", "zh": "img/nutrienttriage-cover-zh.jpg", "ms": "img/nutrienttriage-cover-ms.jpg"},
+    "logo": "img/nutrienttriage-logo.webp",
+    "cover": {"en": "img/nutrienttriage-cover-en.webp", "zh": "img/nutrienttriage-cover-zh.webp", "ms": "img/nutrienttriage-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "nutrient nutrien 养分 营养 deficiency kekurangan 缺素 缺乏 leaf daun 叶子 yellow kuning 黄叶 magnesium kalium nitrogen boron 镁 钾 氮 硼 pH EC soil tanah 土壤 fertiliser baja 肥料 durian 榴莲 oil palm sawit 油棕 vegetables sayur 蔬菜 diagnose diagnosis 辨症",
-    "screenshots": {"en": ["img/nutrienttriage-en-1.jpg", "img/nutrienttriage-en-2.jpg", "img/nutrienttriage-en-3.jpg"], "zh": ["img/nutrienttriage-zh-1.jpg", "img/nutrienttriage-zh-2.jpg", "img/nutrienttriage-zh-3.jpg"], "ms": ["img/nutrienttriage-ms-1.jpg", "img/nutrienttriage-ms-2.jpg", "img/nutrienttriage-ms-3.jpg"]},
+    "screenshots": {"en": ["img/nutrienttriage-en-1.webp", "img/nutrienttriage-en-2.webp", "img/nutrienttriage-en-3.webp"], "zh": ["img/nutrienttriage-zh-1.webp", "img/nutrienttriage-zh-2.webp", "img/nutrienttriage-zh-3.webp"], "ms": ["img/nutrienttriage-ms-1.webp", "img/nutrienttriage-ms-2.webp", "img/nutrienttriage-ms-3.webp"]},
     "zh": {
       "tagline": "养分辨症：看叶子，找出作物缺哪一种元素",
       "description": "叶子发黄、焦边、变紫，往往是缺了某种养分。选好作物（榴莲、其他果树、蔬菜或油棕），说明最近有没有喷药、施肥或下大雨，再选症状先出现在老叶还是嫩叶、叶子长什么样，App 就会告诉你最可能缺哪一种元素，以及马上该怎么处理：叶面喷施和土壤施用的建议。另有土壤 pH 和 EC 判读、元素之间的拮抗、毒害和容易混淆的症状，每一项都有图解，离线可用。",
@@ -1604,8 +1604,8 @@
     "url": "https://stanleywoosweeleong.github.io/Offseason/",
     "added": "2026-11-04",
     "author": "stanley",
-    "logo": "img/offseason-logo.png",
-    "cover": {"en": "img/offseason-cover-en.jpg", "zh": "img/offseason-cover-zh.jpg", "ms": "img/offseason-cover-ms.jpg"},
+    "logo": "img/offseason-logo.webp",
+    "cover": {"en": "img/offseason-cover-en.webp", "zh": "img/offseason-cover-zh.webp", "ms": "img/offseason-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
@@ -1614,7 +1614,7 @@
       "ខ្មែរ"
     ],
     "keywords": "off-season luar musim 反季节 反季 durian 榴莲 flowering berbunga 开花 催花 induction aruhan paclobutrazol PBZ 多效唑 Musang King 猫山王 Monthong 金枕 Ri6 harvest tuaian 收成 planner perancang 计划 Vietnam Thailand 越南 泰国",
-    "screenshots": {"en": ["img/offseason-en-1.jpg", "img/offseason-en-2.jpg", "img/offseason-en-3.jpg"], "zh": ["img/offseason-zh-1.jpg", "img/offseason-zh-2.jpg", "img/offseason-zh-3.jpg"], "ms": ["img/offseason-ms-1.jpg", "img/offseason-ms-2.jpg", "img/offseason-ms-3.jpg"]},
+    "screenshots": {"en": ["img/offseason-en-1.webp", "img/offseason-en-2.webp", "img/offseason-en-3.webp"], "zh": ["img/offseason-zh-1.webp", "img/offseason-zh-2.webp", "img/offseason-zh-3.webp"], "ms": ["img/offseason-ms-1.webp", "img/offseason-ms-2.webp", "img/offseason-ms-3.webp"]},
     "zh": {
       "tagline": "反季节榴莲：从催花到收成，每一步都有研究依据",
       "description": "反季节的榴莲价格可以是旺季的 2 到 3 倍，但催花、保果到收成每一步都不容易。这个 App 把整个反季节周期整理成 8 个步骤：选收成月份、整理树势、喷多效唑（PBZ）、控水、从花芽到开花、保住果实、收成，以及收成后避免 PBZ 累积。计划页选好品种和目标收成日，就算出喷药期和逐日时间表；PBZ 页并排列出所有榴莲 PBZ 试验，还有药桶用量计算。每个数字都附上研究来源，离线可用。",
@@ -1657,15 +1657,15 @@
     "url": "https://stanleywoosweeleong.github.io/DurianExport/",
     "added": "2026-11-08",
     "author": "stanley",
-    "logo": "img/durianexport-logo.png",
-    "cover": {"en": "img/durianexport-cover-en.jpg", "zh": "img/durianexport-cover-zh.jpg", "ms": "img/durianexport-cover-ms.jpg"},
+    "logo": "img/durianexport-logo.webp",
+    "cover": {"en": "img/durianexport-cover-en.webp", "zh": "img/durianexport-cover-zh.webp", "ms": "img/durianexport-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "export eksport 出口 输华 China China 中国 durian 榴莲 SF Express 顺丰 logistics logistik 物流 air freight kargo udara 空运 cold chain rantaian sejuk 冷链 phytosanitary fitosanitari 植检 MAQIS FAMA Form E GACC MyGAP documents dokumen 文件 Shenzhen 深圳",
-    "screenshots": {"en": ["img/durianexport-en-1.jpg", "img/durianexport-en-2.jpg", "img/durianexport-en-3.jpg"], "zh": ["img/durianexport-zh-1.jpg", "img/durianexport-zh-2.jpg", "img/durianexport-zh-3.jpg"], "ms": ["img/durianexport-ms-1.jpg", "img/durianexport-ms-2.jpg", "img/durianexport-ms-3.jpg"]},
+    "screenshots": {"en": ["img/durianexport-en-1.webp", "img/durianexport-en-2.webp", "img/durianexport-en-3.webp"], "zh": ["img/durianexport-zh-1.webp", "img/durianexport-zh-2.webp", "img/durianexport-zh-3.webp"], "ms": ["img/durianexport-ms-1.webp", "img/durianexport-ms-2.webp", "img/durianexport-ms-3.webp"]},
     "zh": {
       "tagline": "榴莲输华通：鲜榴莲从果园空运到中国的流程、文件和航班",
       "description": "根据顺丰马来西亚的鲜果冷链物流宣传册整理：鲜榴莲从果园采收、包装预冷、送到吉隆坡机场，空运到深圳，清关后配送到中国各城市，全程保持 2–5°C。文件清单按「有没有干冰」「是不是果肉产品」列出出口需要的文件（植检证书、FAMA、MAQIS、产地证 Form E 等），可以逐项打勾。航班页选交货日和目的城市，就算出几号到货。另有中国约 200 个城市的送达时效，以及鲜榴莲输华的注册和 MyGAP 要求。本 App 由 Stanley Woo 整理，并非顺丰官方 App。",
@@ -1708,15 +1708,15 @@
     "url": "https://stanleywoosweeleong.github.io/china-mrl/",
     "added": "2026-11-11",
     "author": "stanley",
-    "logo": "img/china-mrl-logo.png",
-    "cover": {"en": "img/china-mrl-cover-en.jpg", "zh": "img/china-mrl-cover-zh.jpg", "ms": "img/china-mrl-cover-ms.jpg"},
+    "logo": "img/china-mrl-logo.webp",
+    "cover": {"en": "img/china-mrl-cover-en.webp", "zh": "img/china-mrl-cover-zh.webp", "ms": "img/china-mrl-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "MRL residue sisa 残留 农残 maximum residue limit had maksimum sisa 最大残留限量 GB 2763 China China 中国 export eksport 出口 pesticide racun perosak 农药 durian 榴莲 fruit buah 水果 vegetables sayur 蔬菜 market access akses pasaran 准入 GACC",
-    "screenshots": {"en": ["img/china-mrl-en-1.jpg", "img/china-mrl-en-2.jpg", "img/china-mrl-en-3.jpg"], "zh": ["img/china-mrl-zh-1.jpg", "img/china-mrl-zh-2.jpg", "img/china-mrl-zh-3.jpg"], "ms": ["img/china-mrl-ms-1.jpg", "img/china-mrl-ms-2.jpg", "img/china-mrl-ms-3.jpg"]},
+    "screenshots": {"en": ["img/china-mrl-en-1.webp", "img/china-mrl-en-2.webp", "img/china-mrl-en-3.webp"], "zh": ["img/china-mrl-zh-1.webp", "img/china-mrl-zh-2.webp", "img/china-mrl-zh-3.webp"], "ms": ["img/china-mrl-ms-1.webp", "img/china-mrl-ms-2.webp", "img/china-mrl-ms-3.webp"]},
     "zh": {
       "tagline": "中国农药最大残留限量查询（GB 2763-2026），出口前先查",
       "description": "要把水果蔬菜出口到中国，先要知道中国对每种农药定的残留上限。选作物（例如榴莲），就列出所有适用的残留限量，包括直接条目和按类别适用的条目，并注明要检测哪个部位、原文在 PDF 哪一页。收录 GB 2763-2026 全部 10,749 条数值，可以按农药搜索、导出 CSV、打印限量表、保存常查的条目。另一个分页查「这个原产国、这种作物能不能出口到中国」，提醒残留限量和市场准入是两回事。资料截至 2026 年 11 月，以中文原文为准。",
@@ -1760,15 +1760,15 @@
     "url": "https://stanleywoosweeleong.github.io/soilimprovement/",
     "added": "2026-11-14",
     "author": "stanley",
-    "logo": "img/soilimprovement-logo.png",
-    "cover": {"en": "img/soilimprovement-cover-en.jpg", "zh": "img/soilimprovement-cover-zh.jpg", "ms": "img/soilimprovement-cover-ms.jpg"},
+    "logo": "img/soilimprovement-logo.webp",
+    "cover": {"en": "img/soilimprovement-cover-en.webp", "zh": "img/soilimprovement-cover-zh.webp", "ms": "img/soilimprovement-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "soil tanah 土壤 修复 recovery pemulihan soil test ujian tanah 土壤检测 EC pH salt garam 盐分 organic matter bahan organik 有机质 liquid fertilizer baja cecair 液肥 发酵 microbes mikrob 微生物 mycorrhiza mikoriza 菌根 Huang Jui-chang 黄瑞彰 Tainan 台南",
-    "screenshots": {"en": ["img/soilimprovement-en-1.jpg", "img/soilimprovement-en-2.jpg", "img/soilimprovement-en-3.jpg"], "zh": ["img/soilimprovement-zh-1.jpg", "img/soilimprovement-zh-2.jpg", "img/soilimprovement-zh-3.jpg"], "ms": ["img/soilimprovement-ms-1.jpg", "img/soilimprovement-ms-2.jpg", "img/soilimprovement-ms-3.jpg"]},
+    "screenshots": {"en": ["img/soilimprovement-en-1.webp", "img/soilimprovement-en-2.webp", "img/soilimprovement-en-3.webp"], "zh": ["img/soilimprovement-zh-1.webp", "img/soilimprovement-zh-2.webp", "img/soilimprovement-zh-3.webp"], "ms": ["img/soilimprovement-ms-1.webp", "img/soilimprovement-ms-2.webp", "img/soilimprovement-ms-3.webp"]},
     "zh": {
       "tagline": "土壤修复：黄瑞彰博士的土壤研究和修复方法",
       "description": "整理台湾台南区农业改良场「土壤营养师」黄瑞彰博士的研究、理论和田间方法，教你怎样把疲乏的土壤养回来。输入土壤化验报告（EC、pH、有机质、磷钾钙镁），就按轻重缓急给出改善建议；另有 14 种缺素和根部问题的症状指南、9 步修复流程、发酵液肥配方和用量计算、田间试验数据和 41 份文献。为黄博士 2026 年 12 月在莎阿南的课程而编写，非台南区农业改良场官方出版。",
@@ -1812,15 +1812,15 @@
     "url": "https://stanleywoosweeleong.github.io/embrew/",
     "added": "2026-11-15",
     "author": "stanley",
-    "logo": "img/embrew-logo.png",
-    "cover": {"en": "img/embrew-cover-en.jpg", "zh": "img/embrew-cover-zh.jpg", "ms": "img/embrew-cover-ms.jpg"},
+    "logo": "img/embrew-logo.webp",
+    "cover": {"en": "img/embrew-cover-en.webp", "zh": "img/embrew-cover-zh.webp", "ms": "img/embrew-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "EM effective microbes mikrob berkesan 益菌 有效微生物 brew bancuhan 发酵 ferment penapaian molasses molases 糖蜜 flour tepung 面粉 Azomite moss lumut 青苔 trunk batang 树干 soil tanah 土壤 dilution pencairan 稀释 Bacillus velezensis amyloliquefaciens pH",
-    "screenshots": {"en": ["img/embrew-en-1.jpg", "img/embrew-en-2.jpg", "img/embrew-en-3.jpg"], "zh": ["img/embrew-zh-1.jpg", "img/embrew-zh-2.jpg", "img/embrew-zh-3.jpg"], "ms": ["img/embrew-ms-1.jpg", "img/embrew-ms-2.jpg", "img/embrew-ms-3.jpg"]},
+    "screenshots": {"en": ["img/embrew-en-1.webp", "img/embrew-en-2.webp", "img/embrew-en-3.webp"], "zh": ["img/embrew-zh-1.webp", "img/embrew-zh-2.webp", "img/embrew-zh-3.webp"], "ms": ["img/embrew-ms-1.webp", "img/embrew-ms-2.webp", "img/embrew-ms-3.webp"]},
     "zh": {
       "tagline": "益菌发酵液：配方、发酵追踪和稀释计算",
       "description": "教你自己发酵益菌液，用来处理榴莲树干青苔和改善土壤。选水桶大小，自动算出糖蜜、面粉、火山矿粉和益菌的用量，并列出加料顺序；记录开始日期，每天搅拌点一下就记下；最后按用途（土壤处理、大面积叶面喷／淋、青苔防治）算出发酵液和清水的分量。也写明发酵出问题时怎么判断能不能救，以及剩余发酵液的正确处理方法。离线可用。",
@@ -1863,15 +1863,15 @@
     "url": "https://stanleywoosweeleong.github.io/rainbulletin/",
     "added": "2026-11-15",
     "author": "stanley",
-    "logo": "img/rainbulletin-logo.png",
-    "cover": {"en": "img/rainbulletin-cover-en.jpg", "zh": "img/rainbulletin-cover-zh.jpg", "ms": "img/rainbulletin-cover-ms.jpg"},
+    "logo": "img/rainbulletin-logo.webp",
+    "cover": {"en": "img/rainbulletin-cover-en.webp", "zh": "img/rainbulletin-cover-zh.webp", "ms": "img/rainbulletin-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "rain hujan 雨 降雨 radar 雷达 Windy Rain Alarm district daerah 县 bulletin buletin 通报 WhatsApp Malaysia 马来西亚 Semenanjung 半岛 Sabah Sarawak 东马 mm/h favourites kegemaran 收藏点",
-    "screenshots": {"en": ["img/rainbulletin-en-1.jpg", "img/rainbulletin-en-2.jpg", "img/rainbulletin-en-3.jpg"], "zh": ["img/rainbulletin-zh-1.jpg", "img/rainbulletin-zh-2.jpg", "img/rainbulletin-zh-3.jpg"], "ms": ["img/rainbulletin-ms-1.jpg", "img/rainbulletin-ms-2.jpg", "img/rainbulletin-ms-3.jpg"]},
+    "screenshots": {"en": ["img/rainbulletin-en-1.webp", "img/rainbulletin-en-2.webp", "img/rainbulletin-en-3.webp"], "zh": ["img/rainbulletin-zh-1.webp", "img/rainbulletin-zh-2.webp", "img/rainbulletin-zh-3.webp"], "ms": ["img/rainbulletin-ms-1.webp", "img/rainbulletin-ms-2.webp", "img/rainbulletin-ms-3.webp"]},
     "zh": {
       "tagline": "把雨量雷达截图变成全国各县的降雨通报",
       "description": "在 Windy 或 Rain Alarm 截一张雨量雷达图，贴进来，app 会自动对准地图，把雨量换算到马来西亚 160 个县，各县按雨量深浅上色。点一下县就看到县名和雨量；「速览 ≥2.5」只列出正在下真雨的收藏点；最后一键生成 WhatsApp 通报，发送前还可以改文字。各县雨量完全来自你贴的截图，不是天气模型的预报。离线可用，只有右下角的「雨势减弱时间」需要上网。仅供个人参考，正式警告以马来西亚气象局为准。",
@@ -1914,15 +1914,15 @@
     "url": "https://stanleywoosweeleong.github.io/Ganoderma/",
     "added": "2026-11-15",
     "author": "stanley",
-    "logo": "img/ganoderma-logo.png",
-    "cover": {"en": "img/ganoderma-cover-en.jpg", "zh": "img/ganoderma-cover-zh.jpg", "ms": "img/ganoderma-cover-ms.jpg"},
+    "logo": "img/ganoderma-logo.webp",
+    "cover": {"en": "img/ganoderma-cover-en.webp", "zh": "img/ganoderma-cover-zh.webp", "ms": "img/ganoderma-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "Ganoderma boninense BSR basal stem rot reput pangkal batang 茎基腐病 灵芝病 oil palm sawit 油棕 coconut kelapa 椰子 Trichoderma 木霉 biocontrol kawalan biologi 生物防治 AMF mikoriza 菌根 EFB tandan kosong 空果串 hexaconazole census bancian 普查 DSI AUDPC",
-    "screenshots": {"en": ["img/ganoderma-en-1.jpg", "img/ganoderma-en-2.jpg", "img/ganoderma-en-3.jpg"], "zh": ["img/ganoderma-zh-1.jpg", "img/ganoderma-zh-2.jpg", "img/ganoderma-zh-3.jpg"], "ms": ["img/ganoderma-ms-1.jpg", "img/ganoderma-ms-2.jpg", "img/ganoderma-ms-3.jpg"]},
+    "screenshots": {"en": ["img/ganoderma-en-1.webp", "img/ganoderma-en-2.webp", "img/ganoderma-en-3.webp"], "zh": ["img/ganoderma-zh-1.webp", "img/ganoderma-zh-2.webp", "img/ganoderma-zh-3.webp"], "ms": ["img/ganoderma-ms-1.webp", "img/ganoderma-ms-2.webp", "img/ganoderma-ms-3.webp"]},
     "zh": {
       "tagline": "油棕灵芝病（茎基腐病）：评估、分批防治计划和木霉自制",
       "description": "管理油棕和椰子的灵芝病（Ganoderma boninense 引起的茎基腐病）。先按四项观察给棕树评 0–4 级（健康、早期、中期、严重、死亡），再按阶段生成有日期的多批次计划：卫生处理、培土、木霉、细菌灌根、菌根、空果串堆肥和普查日期；木霉批次如果离己唑醇树干注射不到 28 天会提醒。还可按计划算出木霉米饭自制排程，按区块记录普查并算出发病率、病情指数（DSI）和 AUDPC，比较处理区和对照区。证据页整理了已发表的研究和马来西亚的购买渠道。注意：生物防治只能预防和减缓，没有研究证明能治好已感染的成龄棕树；计划里的剂量和间隔是规划假设，请以产品标签和 MPOB 建议为准。",
@@ -1966,15 +1966,15 @@
     "url": "https://stanleywoosweeleong.github.io/HumusLab/",
     "added": "2026-11-16",
     "author": "stanley",
-    "logo": "img/humuslab-logo.png",
-    "cover": {"en": "img/humuslab-cover-en.jpg", "zh": "img/humuslab-cover-zh.jpg", "ms": "img/humuslab-cover-ms.jpg"},
+    "logo": "img/humuslab-logo.webp",
+    "cover": {"en": "img/humuslab-cover-en.webp", "zh": "img/humuslab-cover-zh.webp", "ms": "img/humuslab-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "soil organic matter bahan organik tanah 土壤有机质 humus humus 腐殖质 humic acid asid humik 腐植酸 fulvic acid asid fulvik 黄腐酸 humin 胡敏素 compost kompos 堆肥 mulch sungkupan 覆盖 durian 榴莲 Phytophthora leonardite",
-    "screenshots": {"en": ["img/humuslab-en-1.jpg", "img/humuslab-en-2.jpg", "img/humuslab-en-3.jpg"], "zh": ["img/humuslab-zh-1.jpg", "img/humuslab-zh-2.jpg", "img/humuslab-zh-3.jpg"], "ms": ["img/humuslab-ms-1.jpg", "img/humuslab-ms-2.jpg", "img/humuslab-ms-3.jpg"]},
+    "screenshots": {"en": ["img/humuslab-en-1.webp", "img/humuslab-en-2.webp", "img/humuslab-en-3.webp"], "zh": ["img/humuslab-zh-1.webp", "img/humuslab-zh-2.webp", "img/humuslab-zh-3.webp"], "ms": ["img/humuslab-ms-1.webp", "img/humuslab-ms-2.webp", "img/humuslab-ms-3.webp"]},
     "zh": {
       "tagline": "土壤有机质与腐植酸：是什么、有没有用、怎样养",
       "description": "讲清楚土壤有机质是什么，以及现在的科学怎样看它：微生物把落叶和残根分解、再重建，有机质能留多久主要看微生物碰不碰得到、有没有被黏土保护。腐植酸、黄腐酸和胡敏素是按溶解度分出来的三部分，不是三种固定分子；app 比较了黄腐酸和腐植酸，每项试验都标出证据强弱，并按土壤和树况回答「要不要买腐植酸产品」，教你怎样看标签和简单检查溶解度。养土篇讲怎样把树下的地盖住、用什么材料、榴莲按树龄每个阶段施多少，以及有机质和榴莲疫霉病的关系。最后用三项不用工具的观察，两分钟判断有机质够不够。",
@@ -2020,15 +2020,15 @@
     "url": "https://stanleywoosweeleong.github.io/Soil/",
     "added": "2026-11-18",
     "author": "stanley",
-    "logo": "img/soil-logo.png",
-    "cover": {"en": "img/soil-cover-en.jpg", "zh": "img/soil-cover-zh.jpg", "ms": "img/soil-cover-ms.jpg"},
+    "logo": "img/soil-logo.webp",
+    "cover": {"en": "img/soil-cover-en.webp", "zh": "img/soil-cover-zh.webp", "ms": "img/soil-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "soil tanah 土壤 sains tanah soil science 土壤科学 texture tekstur 质地 pH lime kapur 石灰 slope cerun 坡度 fertiliser baja 肥料 deficiency kekurangan 缺素 peat gambut 泥炭土 acid sulfate erosion hakisan 侵蚀 compost kompos 堆肥 oil palm sawit 油棕 durian 榴莲 paddy padi 稻 quiz kuiz 测验",
-    "screenshots": {"en": ["img/soil-en-1.jpg", "img/soil-en-2.jpg", "img/soil-en-3.jpg"], "zh": ["img/soil-zh-1.jpg", "img/soil-zh-2.jpg", "img/soil-zh-3.jpg"], "ms": ["img/soil-ms-1.jpg", "img/soil-ms-2.jpg", "img/soil-ms-3.jpg"]},
+    "screenshots": {"en": ["img/soil-en-1.webp", "img/soil-en-2.webp", "img/soil-en-3.webp"], "zh": ["img/soil-zh-1.webp", "img/soil-zh-2.webp", "img/soil-zh-3.webp"], "ms": ["img/soil-ms-1.webp", "img/soil-ms-2.webp", "img/soil-ms-3.webp"]},
     "zh": {
       "tagline": "土壤科学：田间指南、计算工具和地块记录",
       "description": "按田间做事的顺序编成七个单元：认识土壤、土壤性质、看场地（取样、马来西亚土壤、泥炭土和酸性硫酸盐土）、保护土壤、改良土壤、作物施肥，以及油棕、几种果树和稻。每个单元有实践活动和小测验。五个工具：USDA 土壤质地三角（可输入瓶子沉降测试）、土壤 pH 解读（按作物给参考范围，不给石灰用量，因为那要实验室测定）、坡度计算、缺素检索、肥料计算（单质肥、复合肥、每株、果树施肥计划、一包肥里有多少养分和成本）。工具结果可以存进地块记录，按地块和年份统计养分和成本，导出 CSV 或备份。三语搜索和术语表。课程里的数字是教学例子，正式的施石灰和施肥建议要以土壤化验和农业官员意见为准。",
@@ -2075,15 +2075,15 @@
     "url": "https://stanleywoosweeleong.github.io/modelduellab/",
     "added": "2026-11-19",
     "author": "stanley",
-    "logo": "img/modelduel-logo.png",
-    "cover": {"en": "img/modelduel-cover-en.jpg", "zh": "img/modelduel-cover-zh.jpg", "ms": "img/modelduel-cover-ms.jpg"},
+    "logo": "img/modelduel-logo.webp",
+    "cover": {"en": "img/modelduel-cover-en.webp", "zh": "img/modelduel-cover-zh.webp", "ms": "img/modelduel-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "MET Malaysia METMalaysia 气象局 ECMWF forecast ramalan 预报 verification pengesahan 验证 rain hujan 下雨 ERA5 CSI POD FAR bias score skor 评分 model 模型 farm kebun 果园 WhatsApp Excel",
-    "screenshots": {"en": ["img/modelduel-en-1.jpg", "img/modelduel-en-2.jpg", "img/modelduel-en-3.jpg"], "zh": ["img/modelduel-zh-1.jpg", "img/modelduel-zh-2.jpg", "img/modelduel-zh-3.jpg"], "ms": ["img/modelduel-ms-1.jpg", "img/modelduel-ms-2.jpg", "img/modelduel-ms-3.jpg"]},
+    "screenshots": {"en": ["img/modelduel-en-1.webp", "img/modelduel-en-2.webp", "img/modelduel-en-3.webp"], "zh": ["img/modelduel-zh-1.webp", "img/modelduel-zh-2.webp", "img/modelduel-zh-3.webp"], "ms": ["img/modelduel-ms-1.webp", "img/modelduel-ms-2.webp", "img/modelduel-ms-3.webp"]},
     "zh": {
       "tagline": "MET Malaysia 对 ECMWF：哪个预报在你的园地更准？",
       "description": "每天记录马来西亚气象局（MET Malaysia）和 ECMWF 对你园地的降雨预报，等实际雨量（ERA5）回填后逐日对比打分，用 CSI、命中率（POD）、空报率（FAR）和偏差告诉你哪一个比较可信。内置 114 个地点，服务器每天早上自动记录预报，打开 App 就会补入；自己新增的地点要每天打开记录一次。显示未来 3 天两边的预报，MET 还分早上、下午、晚上三个时段。可看逐日对照、走势和跨农场排名，导出 Excel，分享到 WhatsApp。这是长期实验：实测雨量约 5 天后才回填，最快第 5–6 天才有第一个分数，约 2 周后才有参考价值，3 周后才够可信。",
@@ -2129,15 +2129,15 @@
     "url": "https://stanleywoosweeleong.github.io/thesoundofdurian/",
     "added": "2026-11-21",
     "author": "stanley",
-    "logo": "img/soundofdurian-logo.png",
-    "cover": {"en": "img/soundofdurian-cover-en.jpg", "zh": "img/soundofdurian-cover-zh.jpg", "ms": "img/soundofdurian-cover-ms.jpg"},
+    "logo": "img/soundofdurian-logo.webp",
+    "cover": {"en": "img/soundofdurian-cover-en.webp", "zh": "img/soundofdurian-cover-zh.webp", "ms": "img/soundofdurian-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "durian 榴莲 ripeness kematangan 成熟 熟度 knock tap ketuk 敲 sound bunyi 声音 drop gugur 落果 harvest tuai 采收 microphone mikrofon 麦克风",
-    "screenshots": {"en": ["img/soundofdurian-en-1.jpg", "img/soundofdurian-en-2.jpg", "img/soundofdurian-en-3.jpg"], "zh": ["img/soundofdurian-zh-1.jpg", "img/soundofdurian-zh-2.jpg", "img/soundofdurian-zh-3.jpg"], "ms": ["img/soundofdurian-ms-1.jpg", "img/soundofdurian-ms-2.jpg", "img/soundofdurian-ms-3.jpg"]},
+    "screenshots": {"en": ["img/soundofdurian-en-1.webp", "img/soundofdurian-en-2.webp", "img/soundofdurian-en-3.webp"], "zh": ["img/soundofdurian-zh-1.webp", "img/soundofdurian-zh-2.webp", "img/soundofdurian-zh-3.webp"], "ms": ["img/soundofdurian-ms-1.webp", "img/soundofdurian-ms-2.webp", "img/soundofdurian-ms-3.webp"]},
     "zh": {
       "tagline": "敲一敲听声辨熟：拿自然落果的声音做基准",
       "description": "用手机麦克风听敲榴莲的声音来判断熟度的田间实验工具。先收集约 10 粒自己园里自然掉落的榴莲（当作 100% 树上熟），用同一件硬物（例如汤匙柄）敲，录进基准库；之后敲树上还没掉的果，app 只分析敲击后约 250 毫秒的低频共振（果肉和空腔的声音），和落果基准比较，给出「约 X–Y% 接近熟」和信心度。鸟叫和风声大多会被过滤，摩托车或人声会降低信心度，可以重录。app 自己写明：它不测干物质或糖度，信心低时会说「不确定」，不会硬给数字；真正的判断还是要靠切开、闻香和自然落果。",
@@ -2181,15 +2181,15 @@
     "url": "https://stanleywoosweeleong.github.io/durianplucking/",
     "added": "2026-11-22",
     "author": "stanley",
-    "logo": "img/durianripening-logo.png",
-    "cover": {"en": "img/durianripening-cover-en.jpg", "zh": "img/durianripening-cover-zh.jpg", "ms": "img/durianripening-cover-ms.jpg"},
+    "logo": "img/durianripening-logo.webp",
+    "cover": {"en": "img/durianripening-cover-en.webp", "zh": "img/durianripening-cover-zh.webp", "ms": "img/durianripening-cover-ms.webp"},
     "languages": [
       "BM",
       "EN",
       "华"
     ],
     "keywords": "durian 榴梿 榴莲 harvest tuai 采收 cut potong 割果 tree-drop gugur 树熟 落果 ripening pemasakan 成熟 DAA anthesis flowering berbunga 开花 Musang King D197 shelf life export eksport 出口 MyGAP MyLadang glut lambakan",
-    "screenshots": {"en": ["img/durianripening-en-1.jpg", "img/durianripening-en-2.jpg", "img/durianripening-en-3.jpg"], "zh": ["img/durianripening-zh-1.jpg", "img/durianripening-zh-2.jpg", "img/durianripening-zh-3.jpg"], "ms": ["img/durianripening-ms-1.jpg", "img/durianripening-ms-2.jpg", "img/durianripening-ms-3.jpg"]},
+    "screenshots": {"en": ["img/durianripening-en-1.webp", "img/durianripening-en-2.webp", "img/durianripening-en-3.webp"], "zh": ["img/durianripening-zh-1.webp", "img/durianripening-zh-2.webp", "img/durianripening-zh-3.webp"], "ms": ["img/durianripening-ms-1.webp", "img/durianripening-ms-2.webp", "img/durianripening-ms-3.webp"]},
     "zh": {
       "tagline": "树熟还是割果？按品种和开花日期算出割果时机",
       "description": "帮榴梿园主决定什么时候割果。选品种、填开花日期（超过 70% 花开的那天），再选采收方式、割果时的成熟度（85%、90% 或 95%）和销往哪里（本地、短途、长途出口），就算出预计割果日期，并给出建议的采收线，以及大约的风味、常温和冷链保存天数。「我的果园」可以用自己的树号（方便配合 MyGAP／MyLadang 溯源）登记每棵树的开花和落果日期，几季之后就能算出那棵树自己的落果天数，可导出导入 Excel（CSV）。「数据洞察」把记录画成图，包括采收高峰的人手安排。「成熟科学」讲榴梿是呼吸跃变型水果、2026 年的「榴梿海啸」、各种出口方式，以及农业局 2026 年的割果指引。app 不替你决定割不割；日期和数字都是估算，割之前还要看果上的成熟迹象。",
