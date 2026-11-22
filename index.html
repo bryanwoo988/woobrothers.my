@@ -342,6 +342,34 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
   .dlogo{width:64px;height:64px}
   .demo{padding:20px}
 }
+/* Phones: tighter vertical rhythm on every page, so content starts sooner and sections do not float apart */
+@media (max-width:560px){
+  .hero{padding-block:32px 40px}
+  .hero .wrap{gap:28px}
+  .hero h1{margin-top:14px}
+  .hero .lead{margin-top:16px;font-size:17px}
+  .cta{margin-top:24px}
+  section{padding-block:44px}
+  .sec-head h2{margin-top:12px}
+  .sec-head p{margin-top:10px;font-size:16px}
+  .why .quote{margin-top:20px}
+  .pgrid,.promise-grid{margin-top:28px}
+  .dir-hero{padding-top:24px}
+  .toolbar{margin-top:18px}
+  .detail-top{padding-block:16px 28px}
+  .dhead{margin-top:14px;gap:16px}
+  .dbody{padding-block:28px 24px;gap:28px}
+  .shots{padding-bottom:40px}
+  .shareband .wrap{padding-block:24px}
+  footer .wrap{padding-block:20px}
+  .why .wrap,.contact .wrap{gap:24px}
+  .why .body{font-size:16px;gap:14px}
+  .pr,.pr+.pr{padding-top:18px;padding-bottom:18px;gap:8px}
+  .pr h3{font-size:19px}
+  .ppanel{padding:22px;gap:18px}
+  .band .wrap{gap:24px}
+  .ccard{padding-block:16px}
+}
 @media (max-width:380px){.brand-mark{width:34px;height:34px}.brand-word{height:21px}.brand{gap:8px}}
 .lp{position:fixed;inset:0;z-index:50;background:var(--deep);color:var(--on-deep);display:grid;place-items:center;padding:24px 16px;overflow:auto}
 .lp[hidden]{display:none}
