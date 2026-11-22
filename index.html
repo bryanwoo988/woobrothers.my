@@ -287,6 +287,16 @@ mark{background:color-mix(in srgb,var(--accent) 35%,transparent);color:inherit;p
 .feats li::before{content:"";flex:none;width:6px;height:6px;margin-top:10px;background:var(--accent)}
 .dinfo small{color:var(--muted);font-size:13px;display:block}
 .dinfo small+small{margin-top:-16px}
+/* No sample chart: use the full width — description on the left, features and details on the right (desktop) */
+@media (min-width:901px){
+  .dbody.nodemo{grid-template-columns:minmax(0,1fr)}
+  .dbody.nodemo>div:last-child{display:none}
+  .dbody.nodemo .dinfo{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);column-gap:56px;row-gap:0;align-items:start}
+  .dbody.nodemo .desc{grid-column:1;grid-row:1/span 5}
+  .dbody.nodemo .feats{grid-column:2;grid-template-columns:minmax(0,1fr);border-top:0;padding-top:4px;margin-bottom:20px}
+  .dbody.nodemo small{grid-column:2;margin-top:0}
+  .dbody.nodemo small+small{margin-top:4px}
+}
 .demo{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-card);padding:28px;min-width:0}
 .demo-head{display:flex;justify-content:space-between;gap:8px;font:500 12px var(--font-data);color:var(--muted)}
 .seg{display:grid;margin-top:16px;border:1px solid var(--line-strong);border-radius:var(--r)}
@@ -339,7 +349,13 @@ svg.chart .sel{fill:color-mix(in srgb,var(--accent) 18%,transparent)}
   .cta .btn,.soon .btn{width:100%}
   .sep{display:none}
   .app-grid{grid-template-columns:minmax(0,1fr)}
-  .dlogo{width:64px;height:64px}
+  .dlogo{width:56px;height:56px}
+  .dhead{grid-template-columns:56px minmax(0,1fr);row-gap:14px}
+  .dhead>div:nth-child(2){display:contents}
+  .dhead .tags{grid-column:2;align-self:center}
+  .dhead #dName{grid-column:1/-1;margin-top:0!important}
+  .dhead .q{grid-column:1/-1;font-size:17px;margin-top:-6px}
+  .dinfo .desc{font-size:16.5px}
   .demo{padding:20px}
 }
 /* Phones: tighter vertical rhythm on every page, so content starts sooner and sections do not float apart */
@@ -888,7 +904,7 @@ function drawDetail(){
   $("shotsBox").hidden=!shots.length;
   $("gallery").innerHTML=shots.map((s,i)=>`<img src="${esc(s)}" alt="${esc(NM(a))} ${i+1}" loading="lazy">`).join("");
   const demo=a.demo;
-  $("demoBox").hidden=!demo;
+  $("demoBox").hidden=!demo;document.querySelector(".dbody").classList.toggle("nodemo",!demo);
   if(demo){
     if(demoFor!==a.id){demoFor=a.id;demoSel=0;demoX=(demo.type==="compare")?Math.min(2,(demo.xLabels||[]).length-1):LA(demo.xLabels).length-1}
     $("demoTitle").textContent=L(demo.title);
