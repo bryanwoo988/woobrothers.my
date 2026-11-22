@@ -1067,6 +1067,15 @@ document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
 
 drawTheme();apply();route();loadApps();
 </script>
+<script>
+/* Offline cache (sw.js): repeat visits open from the phone, and the directory still works with no signal. */
+if("serviceWorker" in navigator&&location.protocol!=="file:")addEventListener("load",()=>{
+  navigator.serviceWorker.register("sw.js").catch(()=>{});
+  // Hand the worker the images this visit has already shown, so they are kept for offline use too.
+  const sendSeen=()=>navigator.serviceWorker.ready.then(r=>r.active&&r.active.postMessage({cacheImages:performance.getEntriesByType("resource").map(e=>e.name).filter(u=>u.includes("/img/"))})).catch(()=>{});
+  sendSeen();addEventListener("pagehide",sendSeen);
+});
+</script>
 <script data-goatcounter="https://woobrothers.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true,"no_events":true}' async src="//gc.zgo.at/count.js" onload="gcReady()"></script>
 </body>
 </html>
