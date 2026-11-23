@@ -2228,5 +2228,57 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "orchardgps",
+    "name": "Orchard GPS · 果园坐标",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/Myfarmgps/",
+    "added": "2026-11-23",
+    "author": "stanley",
+    "logo": "img/orchardgps-logo.webp",
+    "cover": {"en": "img/orchardgps-cover-en.webp", "zh": "img/orchardgps-cover-zh.webp", "ms": "img/orchardgps-cover-ms.webp"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "GPS location lokasi 位置 坐标 coordinates koordinat latitude longitude 经纬度 elevation ketinggian 海拔 orchard dusun 果园 kebun farm WhatsApp Stanley map peta 地图 satellite satelit 卫星",
+    "screenshots": {"en": ["img/orchardgps-en-1.webp", "img/orchardgps-en-2.webp", "img/orchardgps-en-3.webp"], "zh": ["img/orchardgps-zh-1.webp", "img/orchardgps-zh-2.webp", "img/orchardgps-zh-3.webp"], "ms": ["img/orchardgps-ms-1.webp", "img/orchardgps-ms-2.webp", "img/orchardgps-ms-3.webp"]},
+    "zh": {
+      "tagline": "记录果园的 GPS 坐标，用 WhatsApp 发给胡瑞良",
+      "description": "站在果园里按一下，读取经纬度、位置精度和海拔（手机 GPS 海拔精度在 15 米以内就用它，否则用 Open-Meteo 的地图估算）。在卫星地图上确认位置；GPS 不准时可以拖动图钉或点地图到正确位置，再按「锁定这个位置」。填上园主姓名和地名（中文或英文/马来文至少一个），app 先显示要发出的 WhatsApp 消息，可以修改，再打开 WhatsApp 发给胡瑞良（Stanley Woo），由你自己按发送。打开不用网络，发送和卫星地图需要上网；还没发送的资料会暂存在手机里。坐标会传给 Open-Meteo 查海拔，地图图块来自 Esri；资料不会存在任何服务器上。",
+      "features": [
+        "读取经纬度、位置精度和海拔",
+        "卫星地图确认位置，可拖动图钉校正",
+        "先看消息、可修改，再用 WhatsApp 发送",
+        "三语界面，深色和浅色模式",
+        "离线也能打开，没发送的资料会暂存"
+      ]
+    },
+    "en": {
+      "tagline": "Record your orchard's GPS location and send it to Stanley Woo on WhatsApp",
+      "description": "Stand in the orchard and tap once to read the latitude, longitude, position accuracy and elevation (the phone's GPS altitude when it is accurate to 15 m or better, otherwise a map estimate from Open-Meteo). Check the spot on a satellite map; if GPS is poor, drag the pin or tap the map to the right place and lock it. Enter the farmer's name and a location name (Chinese, or English/Malay, at least one). The app first shows the WhatsApp message so you can edit it, then opens WhatsApp to Stanley Woo, and you tap Send yourself. It opens without internet; sending and the satellite map need a connection, and unsent details are kept on the phone. The coordinates are sent to Open-Meteo for the elevation lookup and map tiles come from Esri; nothing is stored on a server.",
+      "features": [
+        "Latitude, longitude, position accuracy and elevation",
+        "Satellite map check, with a draggable pin to correct the spot",
+        "Preview and edit the message before WhatsApp opens",
+        "Three languages, light and dark mode",
+        "Opens offline; unsent details are kept on the phone"
+      ]
+    },
+    "ms": {
+      "name": "Dusun GPS",
+      "tagline": "Rekod lokasi GPS dusun anda dan hantar kepada Stanley Woo melalui WhatsApp",
+      "description": "Berdiri di dalam dusun dan tekan sekali untuk membaca latitud, longitud, ketepatan kedudukan dan ketinggian (ketinggian GPS telefon jika tepat hingga 15 m atau lebih baik, jika tidak anggaran peta daripada Open-Meteo). Semak kedudukan pada peta satelit; jika GPS kurang tepat, seret pin atau tekan peta ke tempat yang betul dan kuncikan. Masukkan nama petani dan nama tempat (Cina, atau Inggeris/Melayu, sekurang-kurangnya satu). App menunjukkan mesej WhatsApp dahulu supaya boleh disunting, kemudian membuka WhatsApp kepada Stanley Woo, dan anda sendiri tekan Hantar. Boleh dibuka tanpa internet; menghantar dan peta satelit perlukan sambungan, dan butiran yang belum dihantar disimpan di telefon. Koordinat dihantar kepada Open-Meteo untuk mencari ketinggian dan jubin peta datang daripada Esri; tiada apa-apa disimpan di pelayan.",
+      "features": [
+        "Latitud, longitud, ketepatan kedudukan dan ketinggian",
+        "Semak pada peta satelit, pin boleh diseret untuk membetulkan",
+        "Lihat dan sunting mesej sebelum WhatsApp dibuka",
+        "Tiga bahasa, mod cerah dan gelap",
+        "Boleh dibuka tanpa internet; butiran belum dihantar disimpan"
+      ]
+    },
+    "demo": null
   }
 ]
