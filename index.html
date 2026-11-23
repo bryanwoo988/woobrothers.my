@@ -147,6 +147,16 @@ section{padding-block:96px}
 .pdots{display:flex;gap:6px;margin-top:auto}
 .pdots i{width:22px;height:3px;background:var(--line)}
 .pdots i.on{background:var(--accent)}
+@media (max-width:900px){
+  .plist .ppanel{padding:4px 20px 22px 80px;gap:14px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:inset 3px 0 0 var(--accent)}
+  .plist .ppanel:last-child{border-bottom:0}
+  .plist .pdots{display:none}
+  .pgrid>.plist{border-bottom:0}
+  .ptab[aria-expanded="true"]{border-bottom:0}
+  .ptab svg{opacity:.6;transform:rotate(90deg)}
+  .ptab[aria-expanded="true"] svg{opacity:1;transform:rotate(-90deg)}
+}
+@media (max-width:560px){.plist .ppanel{padding-left:20px}}
 
 .promise-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:48px;border-top:1px solid var(--line-strong)}
 .pr{padding:28px 24px 8px 0;display:flex;flex-direction:column;gap:12px}
@@ -653,7 +663,7 @@ whyLabel:"初衷",whyTitle:"为什么我们要做这件事",whyQuote:"好的技�
 why1:"农业养活了马来西亚许多家庭。可是很多好用的农业技术，价格高、操作复杂，小园主和种植户很难用上。",
 why2:"我们想回馈社会。把我们懂的技术，做成简单、实用的工具，免费送给有需要的人。",
 why3:"这不是生意，也不是随便玩玩。每一个 App 我们都认真做，因为我们相信，当每一位种植户都能看懂自己的园地，整个马来西亚的农业都会更好。",
-probLabel:"我们看到的问题",probTitle:"农友想用科技，却常常被挡在门外",probSub:"点左边每一个问题，看看我们怎么解决。",
+probLabel:"我们看到的问题",probTitle:"农友想用科技，却常常被挡在门外",probSub:"点每一个问题，看看我们怎么解决。",
 kProblem:"问题",kOurs:"我们的做法",
 probs:[["价格太高","很多农业软件要按月或按年订阅，小园主和种植户负担不起。","所有 App 完全免费，不用订阅，也不用付任何费用。"],["操作太复杂","专业工具界面复杂、术语很多，没有受过训练很难上手。","大按钮、少术语，打开就知道该看哪里。"],["语言不通","大部分农业工具只有英文，很多农友看不习惯。","每个 App 都支持 Bahasa Malaysia、English 和华文。"],["数据看不懂","卫星图和天气模型数据很多，却不知道对自己的园地有什么意义。","把数据变成简单的答案：哪块地要去看、哪个预报比较准。"]],
 promLabel:"我们的承诺",promTitle:"免费，而且认真",
@@ -685,9 +695,9 @@ whyLabel:"Why",whyTitle:"Why we do this",whyQuote:"Good technology should not be
 why1:"Farming supports many families in Malaysia. But many good farm tools are costly and hard to use, so small growers rarely get to use them.",
 why2:"We want to give back. We take the technology we know, turn it into simple, useful tools, and give them free to the people who need them.",
 why3:"This is not a business, and it is not a hobby we take lightly. We build every app with care, because when every grower understands their own land, farming in Malaysia gets better for everyone.",
-probLabel:"What we see",probTitle:"Farmers want to use technology, but are often shut out",probSub:"Tap each problem on the left to see how we answer it.",
+probLabel:"What we see",probTitle:"Farmers want to use technology, but are often shut out",probSub:"Tap each problem to see how we answer it.",
 kProblem:"The problem",kOurs:"What we do",
-probs:[["Too expensive","Many farm software tools need a monthly or yearly subscription that small growers cannot afford.","Every app is completely free. No subscription, no fees."],["Too complicated","Professional tools have busy screens and technical words. They are hard to use without training.","Big buttons and few technical words. You know where to look straight away."],["Language barrier","Most farm tools are in English only, which many farmers are not comfortable with.","Every app works in Bahasa Malaysia, English and 华文."],["Data is hard to read","Satellite images and weather models give lots of data, but it is unclear what it means for your own farm.","We turn data into simple answers: which patch to check, and which forecast to trust."]],
+probs:[["Too expensive","Many farm software tools need a monthly or yearly subscription that small growers cannot afford.","Every app is completely free. No subscription, no fees."],["Too complicated","Professional tools have busy screens and technical words. They are hard to use without training.","Big buttons and few technical words. You know where to look straight away."],["Language barrier","Most farm tools are in English only, which many farmers are not comfortable with.","Every app works in Bahasa Malaysia, English and Chinese."],["Data is hard to read","Satellite images and weather models give lots of data, but it is unclear what it means for your own farm.","We turn data into simple answers: which patch to check, and which forecast to trust."]],
 promLabel:"Our promise",promTitle:"Free, and done properly",
 pr1t:"Completely free",pr1:"No fees, no subscriptions, no hidden charges. Now and later.",
 pr2t:"Not a company",pr2:"We sell no products, and we do not make money from these apps.",
@@ -717,9 +727,9 @@ whyLabel:"Tujuan",whyTitle:"Kenapa kami buat ini",whyQuote:"Teknologi yang baik 
 why1:"Pertanian menyara ramai keluarga di Malaysia. Tetapi banyak teknologi pertanian yang bagus mahal dan rumit, jadi pekebun kecil susah untuk menggunakannya.",
 why2:"Kami mahu menyumbang kembali kepada masyarakat. Kami jadikan teknologi yang kami faham sebagai alat yang mudah dan berguna, dan berikan secara percuma kepada yang memerlukan.",
 why3:"Ini bukan perniagaan, dan bukan sekadar suka-suka. Setiap aplikasi dibina dengan teliti, kerana apabila setiap pekebun faham keadaan kebun sendiri, pertanian Malaysia akan jadi lebih baik.",
-probLabel:"Masalah yang kami lihat",probTitle:"Petani mahu guna teknologi, tetapi sering terhalang",probSub:"Tekan setiap masalah di sebelah kiri untuk lihat cara kami menyelesaikannya.",
+probLabel:"Masalah yang kami lihat",probTitle:"Petani mahu guna teknologi, tetapi sering terhalang",probSub:"Tekan setiap masalah untuk lihat cara kami menyelesaikannya.",
 kProblem:"Masalah",kOurs:"Cara kami",
-probs:[["Terlalu mahal","Banyak perisian pertanian perlu langganan bulanan atau tahunan yang tidak mampu dibayar oleh pekebun kecil.","Semua aplikasi percuma sepenuhnya. Tiada langganan, tiada bayaran."],["Terlalu rumit","Alat profesional ada skrin yang padat dan banyak istilah teknikal. Susah diguna tanpa latihan.","Butang besar, kurang istilah. Terus tahu apa yang perlu dilihat."],["Halangan bahasa","Kebanyakan alat pertanian hanya dalam bahasa Inggeris, dan ramai petani kurang selesa.","Setiap aplikasi boleh diguna dalam Bahasa Malaysia, English dan 华文."],["Data susah difahami","Imej satelit dan model cuaca beri banyak data, tetapi tidak jelas apa maksudnya untuk kebun sendiri.","Kami jadikan data sebagai jawapan mudah: kawasan mana perlu diperiksa, ramalan mana boleh dipercayai."]],
+probs:[["Terlalu mahal","Banyak perisian pertanian perlu langganan bulanan atau tahunan yang tidak mampu dibayar oleh pekebun kecil.","Semua aplikasi percuma sepenuhnya. Tiada langganan, tiada bayaran."],["Terlalu rumit","Alat profesional ada skrin yang padat dan banyak istilah teknikal. Susah diguna tanpa latihan.","Butang besar, kurang istilah. Terus tahu apa yang perlu dilihat."],["Halangan bahasa","Kebanyakan alat pertanian hanya dalam bahasa Inggeris, dan ramai petani kurang selesa.","Setiap aplikasi boleh diguna dalam Bahasa Malaysia, Bahasa Inggeris dan Bahasa Cina."],["Data susah difahami","Imej satelit dan model cuaca beri banyak data, tetapi tidak jelas apa maksudnya untuk kebun sendiri.","Kami jadikan data sebagai jawapan mudah: kawasan mana perlu diperiksa, ramalan mana boleh dipercayai."]],
 promLabel:"Janji kami",promTitle:"Percuma, dan dibuat dengan serius",
 pr1t:"Percuma sepenuhnya",pr1:"Tiada bayaran, tiada langganan, tiada caj tersembunyi. Sekarang dan akan datang.",
 pr2t:"Bukan syarikat",pr2:"Kami tidak menjual produk dan tidak mengaut untung daripada aplikasi ini.",
@@ -771,19 +781,30 @@ const round=v=>Math.round(v*100)/100;
 
 /* ---------- problems tabs ---------- */
 let prob=0;
+// Phones and tablets: an accordion — the answer opens right under the problem you tap (tap it again to close).
+// Desktop: list on the left, answer panel on the right.
+const probMQ=matchMedia("(max-width:900px)");
 function drawProbs(){
-  const d=T[lang],list=$("plist");list.innerHTML="";
+  const d=T[lang],list=$("plist"),panel=$("ppanel"),acc=probMQ.matches;
+  if(!acc&&prob<0)prob=0;
+  $("plist").after(panel); // take the panel out of the list before rebuilding it
+  list.innerHTML="";
   d.probs.forEach((p,i)=>{
-    const b=document.createElement("button");b.type="button";b.className="ptab";b.setAttribute("role","tab");b.setAttribute("aria-selected",i===prob);b.tabIndex=i===prob?0:-1;
+    const b=document.createElement("button");b.type="button";b.className="ptab";b.setAttribute("role","tab");b.setAttribute("aria-selected",i===prob);b.setAttribute("aria-expanded",i===prob);b.tabIndex=i===prob||(prob<0&&i===0)?0:-1;
     b.innerHTML=`<span class="n">0${i+1}</span><span>${p[0]}</span>${ARROW}`;
-    b.addEventListener("click",()=>{prob=i;drawProbs()});
-    b.addEventListener("keydown",e=>{if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();prob=(prob+(e.key==="ArrowDown"?1:3))%4;drawProbs();list.children[prob].focus()}});
+    b.addEventListener("click",()=>{prob=(acc&&prob===i)?-1:i;drawProbs();if(probMQ.matches&&prob===i)list.children[i].scrollIntoView({block:"nearest",behavior:"smooth"})});
+    b.addEventListener("keydown",e=>{if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();prob=((prob<0?0:prob)+(e.key==="ArrowDown"?1:3))%4;drawProbs();[...list.querySelectorAll(".ptab")][prob].focus()}});
     list.appendChild(b);
+    if(acc&&i===prob)list.appendChild(panel);
   });
-  $("pProblem").textContent=d.probs[prob][1];
-  $("pOurs").textContent=d.probs[prob][2];
-  $("pdots").innerHTML=d.probs.map((_,i)=>`<i class="${i===prob?"on":""}"></i>`).join("");
+  panel.hidden=prob<0;
+  if(prob>=0){
+    $("pProblem").textContent=d.probs[prob][1];
+    $("pOurs").textContent=d.probs[prob][2];
+    $("pdots").innerHTML=d.probs.map((_,i)=>`<i class="${i===prob?"on":""}"></i>`).join("");
+  }
 }
+probMQ.addEventListener("change",drawProbs);
 
 /* ---------- directory: search + filter ---------- */
 let query="",cat="all",sort="new";
