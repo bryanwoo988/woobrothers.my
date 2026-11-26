@@ -275,42 +275,46 @@
     "logo": "img/terradurian-logo.webp",
     "cover": "img/terradurian-cover.webp",
     "languages": [
+      "BM",
       "EN",
       "华"
     ],
-    "keywords": "durian 榴莲 NASA satellite satelit 卫星 SMAP soil moisture kelembapan tanah 土壤水分 flowering berbunga 开花 催花 irrigation pengairan 灌溉 MODIS NDVI drought kemarau 干旱 forecast ramalan 预报 soil tanah 土壤",
+    "keywords": "durian 榴莲 NASA satellite satelit 卫星 SMAP soil moisture kelembapan tanah 土壤水分 flowering berbunga 开花 催花 irrigation pengairan 灌溉 MODIS NDVI drought kemarau 干旱 forecast ramalan 预报 soil tanah 土壤 slope cerun 坡度 drainage saliran 排水 Phytophthora 疫霉 GIBS fire kebakaran 火点",
     "screenshots": ["img/terradurian-1.webp", "img/terradurian-2.webp", "img/terradurian-3.webp"],
     "zh": {
       "tagline": "用 NASA 卫星数据管理榴莲园：土壤水分、催花和灌溉",
-      "description": "输入园地位置，TerraDurian 就会拉取 NASA 的卫星和气候数据（POWER、MODIS、SMAP）、ERA5-Land 土壤水分、SoilGrids 土壤和 16 天天气预报。它算出这块地种榴莲的适合度，看根区水分压力是否足够催花，并按 FAO-56 方法算出要不要灌溉。",
+      "description": "输入园地位置，TerraDurian 就会拉取 NASA 的卫星和气候数据（POWER、MODIS、GIBS），通过 Cloudflare Worker 读取真实的 SMAP 卫星土壤水分，再加上 ERA5-Land、SoilGrids 土壤和 16 天天气预报。它算出这块地种榴莲的适合度，看根区水分压力是否足够催花并推算收成，按 FAO-56 方法算出每棵树每天要灌多少水。另有坡度和排水判断（Copernicus 地形）、和 10 年平均比较的气候基线、NASA 卫星图和火点图层，以及多块地的比较。数据来源都在「来源」页写清楚；非 NASA 的资料会标出来。三语界面，有浅色和深色模式，可装到手机离线打开。",
       "features": [
         "榴莲种植适合度评分",
-        "根区水分压力：催花信号和收成推算",
-        "FAO-56 水分平衡与灌溉建议",
-        "高温天数、干旱天数和 16 天预报",
-        "MODIS 植被长势（NDVI / EVI）和土壤资料"
+        "根区水分压力：催花信号和收成推算，可对照真实 SMAP 卫星数据",
+        "FAO-56 水分平衡：每棵树每天和每周的灌溉量",
+        "坡度、排水和土壤：防疫霉病的选地判断",
+        "10 年气候基线、16 天预报和 NASA 卫星图",
+        "多块地比较，可导出导入"
       ]
     },
     "en": {
       "tagline": "NASA satellite data for durian farms: soil moisture, flowering and irrigation",
-      "description": "Enter your farm's location and TerraDurian pulls NASA satellite and climate data (POWER, MODIS, SMAP), ERA5-Land soil moisture, SoilGrids soil data and a 16-day forecast. It scores how suitable the site is for durian, checks whether root-zone water stress is enough to trigger flowering, and works out irrigation needs with the FAO-56 method.",
+      "description": "Enter your farm's location and TerraDurian pulls NASA satellite and climate data (POWER, MODIS, GIBS), live SMAP soil moisture through a Cloudflare Worker, ERA5-Land, SoilGrids soil data and a 16-day forecast. It scores how suitable the site is for durian, checks whether root-zone water stress is enough to trigger flowering and projects the harvest, and works out litres per tree per day with the FAO-56 method. It also judges slope and drainage from Copernicus terrain data, compares this year with the 10-year normal, shows NASA imagery with an active-fires overlay, and lets you save and compare several plots. A Sources tab says where every number comes from, and non-NASA data is labelled. Three languages, light and dark themes, and it installs on the phone and opens offline.",
       "features": [
         "Durian site suitability score",
-        "Root-zone water stress: flowering signal and harvest projection",
-        "FAO-56 water balance and irrigation advice",
-        "Heat-stress days, dry spells and a 16-day forecast",
-        "MODIS vegetation vigour (NDVI / EVI) and soil data"
+        "Root-zone water stress: flowering signal and harvest projection, checked against live SMAP",
+        "FAO-56 water balance: litres per tree per day and per week",
+        "Slope, drainage and soil: siting against Phytophthora",
+        "10-year climate baseline, 16-day forecast and NASA imagery",
+        "Save and compare plots, with export and import"
       ]
     },
     "ms": {
       "tagline": "Data satelit NASA untuk kebun durian: kelembapan tanah, pembungaan dan pengairan",
-      "description": "Masukkan lokasi kebun dan TerraDurian akan menarik data satelit dan iklim NASA (POWER, MODIS, SMAP), kelembapan tanah ERA5-Land, data tanah SoilGrids dan ramalan 16 hari. Ia memberi skor kesesuaian tapak untuk durian, menyemak sama ada tekanan air di zon akar cukup untuk merangsang pembungaan, dan mengira keperluan pengairan dengan kaedah FAO-56.",
+      "description": "Masukkan lokasi kebun dan TerraDurian akan menarik data satelit dan iklim NASA (POWER, MODIS, GIBS), kelembapan tanah SMAP sebenar melalui Cloudflare Worker, ERA5-Land, data tanah SoilGrids dan ramalan 16 hari. Ia memberi skor kesesuaian tapak untuk durian, menyemak sama ada tekanan air di zon akar cukup untuk merangsang pembungaan dan mengunjur tuaian, serta mengira liter setiap pokok sehari dengan kaedah FAO-56. Ia juga menilai cerun dan saliran daripada data rupa bumi Copernicus, membandingkan tahun ini dengan purata 10 tahun, menunjukkan imej NASA dengan lapisan kebakaran aktif, dan membolehkan beberapa plot disimpan dan dibandingkan. Tab Sumber menerangkan asal setiap angka, dan data bukan NASA dilabelkan. Tiga bahasa, tema cerah dan gelap, dan boleh dipasang pada telefon serta dibuka tanpa internet.",
       "features": [
         "Skor kesesuaian tapak untuk durian",
-        "Tekanan air zon akar: isyarat pembungaan dan unjuran tuaian",
-        "Imbangan air FAO-56 dan nasihat pengairan",
-        "Hari tekanan haba, musim kering dan ramalan 16 hari",
-        "Kesuburan tumbuhan MODIS (NDVI / EVI) dan data tanah"
+        "Tekanan air zon akar: isyarat pembungaan dan unjuran tuaian, disemak dengan SMAP sebenar",
+        "Imbangan air FAO-56: liter setiap pokok sehari dan seminggu",
+        "Cerun, saliran dan tanah: pemilihan tapak untuk elak Phytophthora",
+        "Garis dasar iklim 10 tahun, ramalan 16 hari dan imej NASA",
+        "Simpan dan banding plot, dengan eksport dan import"
       ]
     },
     "demo": null
