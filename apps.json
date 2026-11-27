@@ -2284,5 +2284,59 @@
       ]
     },
     "demo": null
+  },
+  {
+    "id": "droneinvest",
+    "name": "DroneInvest",
+    "category": "manage",
+    "url": "https://stanleywoosweeleong.github.io/droneinvestcalc/",
+    "added": "2026-11-27",
+    "author": "stanley",
+    "logo": "img/droneinvest-logo.webp",
+    "cover": {"en": "img/droneinvest-cover-en.webp", "zh": "img/droneinvest-cover-zh.webp", "ms": "img/droneinvest-cover-ms.webp"},
+    "languages": [
+      "BM",
+      "EN",
+      "华"
+    ],
+    "keywords": "drone dron 无人机 invest pelaburan 投资 calculator kalkulator 计算 spraying semburan 喷洒 manual outsource upah 外包 payback pulang modal 回本 cost kos 成本 ROI cash flow aliran tunai 现金流 scenario senario 情景 report laporan 报告",
+    "screenshots": {"en": ["img/droneinvest-en-1.webp", "img/droneinvest-en-2.webp", "img/droneinvest-en-3.webp"], "zh": ["img/droneinvest-zh-1.webp", "img/droneinvest-zh-2.webp", "img/droneinvest-zh-3.webp"], "ms": ["img/droneinvest-ms-1.webp", "img/droneinvest-ms-2.webp", "img/droneinvest-ms-3.webp"]},
+    "zh": {
+      "tagline": "该不该买喷药无人机？对比自购、人工喷洒和外包",
+      "description": "输入你的农场、设备、作业和各项成本，DroneInvest 就算出自购无人机、人工喷洒和外包三种做法每年的成本，以及首期投入、按月计算的回本时间（已算进电池和设备更换）、五年净节省和折现后的节省。它也算出要喷几轮才打平、外包价多少才划算，并检查作业能力够不够。有保守、基本、乐观三种情境和逐项敏感度分析；每项数字都可以标记「已核实」，缺的资料会清楚列出，不会被当成零而不提。可以存多个方案、导出 JSON 和每月现金流 CSV，也能打印投资报告。金额以马币计算；示例数字只是估算，不是供应商报价，也不是购买建议。资料只存在你的浏览器里，可离线使用。",
+      "features": [
+        "自购无人机、人工喷洒、外包三种成本对比",
+        "首期投入、回本时间、五年净节省",
+        "打平轮数和外包价的保本点",
+        "保守／基本／乐观情境和敏感度分析",
+        "缺漏和未核实的资料清单",
+        "多个方案、导出 JSON／CSV、打印报告"
+      ]
+    },
+    "en": {
+      "tagline": "Should you buy a spraying drone? Compare owning one with manual spraying and outsourcing",
+      "description": "Enter your farm, equipment, operations and costs, and DroneInvest works out the annual cost of owning a drone, spraying by hand and outsourcing, plus the upfront cash, a monthly payback that includes battery and equipment replacements, five-year net savings and discounted savings. It finds the number of rounds and the outsourcing price at which the options break even, and checks whether one drone and crew have the capacity. Conservative, base and optimistic cases and a one-at-a-time sensitivity analysis show how the result moves; every input can be marked verified, and missing data is listed rather than quietly treated as zero. Save several plans, export JSON and a monthly cash-flow CSV, or print the investment report. Amounts are in ringgit; the sample figures are illustrative, not supplier quotes or a purchase recommendation. Data stays in your browser and it works offline.",
+      "features": [
+        "Annual cost of owning a drone vs manual spraying vs outsourcing",
+        "Upfront cash, payback and five-year net savings",
+        "Break-even rounds and outsourcing price",
+        "Conservative / base / optimistic cases and sensitivity analysis",
+        "Checklist of missing and unverified inputs",
+        "Several saved plans, JSON / CSV export, printable report"
+      ]
+    },
+    "ms": {
+      "tagline": "Patutkah anda beli dron semburan? Bandingkan memiliki dron dengan semburan manual dan upah luar",
+      "description": "Masukkan butiran ladang, peralatan, operasi dan kos, dan DroneInvest mengira kos tahunan memiliki dron, menyembur secara manual dan mengupah pihak luar, serta modal awal, tempoh pulang modal bulanan yang mengambil kira penggantian bateri dan peralatan, penjimatan bersih 5 tahun dan penjimatan terdiskaun. Ia mencari bilangan pusingan dan harga upah luar pada titik pulang modal, serta menyemak sama ada satu dron dan krew cukup kapasiti. Senario konservatif, asas dan optimistik serta analisis kepekaan satu demi satu menunjukkan bagaimana keputusan berubah; setiap input boleh ditanda disahkan, dan data yang tiada disenaraikan, bukan dianggap sifar secara senyap. Simpan beberapa pelan, eksport JSON dan CSV aliran tunai bulanan, atau cetak laporan pelaburan. Amaun dalam ringgit; angka contoh hanyalah anggaran, bukan sebut harga pembekal atau cadangan pembelian. Data kekal dalam pelayar anda dan boleh digunakan tanpa internet.",
+      "features": [
+        "Kos tahunan memiliki dron lawan semburan manual lawan upah luar",
+        "Modal awal, tempoh pulang modal dan penjimatan bersih 5 tahun",
+        "Titik pulang modal: bilangan pusingan dan harga upah luar",
+        "Senario konservatif / asas / optimistik dan analisis kepekaan",
+        "Senarai input yang tiada dan belum disahkan",
+        "Beberapa pelan, eksport JSON / CSV, laporan boleh dicetak"
+      ]
+    },
+    "demo": null
   }
 ]

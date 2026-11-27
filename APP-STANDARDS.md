@@ -103,6 +103,7 @@ App 一更新，使用者下次打开时就要看到一个弹窗，写清楚：
 | The Sound of Durian | 还没有，需要开发者加上 |
 | Durian Ripening | 还没有，需要开发者加上 |
 | Orchard GPS | 还没有，需要开发者加上（目前页脚只显示版本日期） |
+| DroneInvest | 还没有，需要开发者加上 |
 
 ## 2. 有新版本时先问一句
 
